@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>filterButton</name>
+   <tag></tag>
+   <elementGuidId>b42408b2-8e94-436a-8e91-c1dbc64530b1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/div/div/ul/li[6]/div/ul/li/div/form/div/div[2]/button[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/div/div/ul/li[6]/div/ul/li/div/form/div/div[2]/button[1]</value>
+   </webElementProperties>
+</WebElementEntity>

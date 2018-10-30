@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SelectRes</name>
+   <tag></tag>
+   <elementGuidId>a3377168-73b0-4a40-9d5d-5942781cd233</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;resrcDrpdown_listbox&quot;]/li[contains(text(),&quot;Cust1001&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;resrcDrpdown_listbox&quot;]/li[contains(text(),&quot;Cust1001&quot;)]</value>
+   </webElementProperties>
+</WebElementEntity>

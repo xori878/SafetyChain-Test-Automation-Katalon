@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>default_area</name>
+   <tag></tag>
+   <elementGuidId>c7084f6a-4a08-46f0-a310-c7eae8e7aa5e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-scrollable-activity-area&quot;]/div[2]/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-scrollable-activity-area&quot;]/div[2]/div[2]</value>
+   </webElementProperties>
+</WebElementEntity>

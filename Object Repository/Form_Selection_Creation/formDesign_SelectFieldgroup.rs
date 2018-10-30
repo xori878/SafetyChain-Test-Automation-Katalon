@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>formDesign_SelectFieldgroup</name>
+   <tag></tag>
+   <elementGuidId>a319de9b-19a0-4243-8028-99c7ab84b8e9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-designform-elem-option-contents&quot;]/li[4]/div/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-designform-elem-option-contents&quot;]/li[4]/div/span</value>
+   </webElementProperties>
+</WebElementEntity>

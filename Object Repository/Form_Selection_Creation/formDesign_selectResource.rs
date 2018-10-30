@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>formDesign_selectResource</name>
+   <tag></tag>
+   <elementGuidId>2400c7c6-e5e3-4c5f-9a5e-9a90b96b0861</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-left-panel-treeview&quot;]/ul/li/ul/li[2]/div/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-left-panel-treeview&quot;]/ul/li/ul/li[2]/div/span[2]</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_number</name>
+   <tag></tag>
+   <elementGuidId>083530b7-528e-445a-bb34-8e7ceb4b1dfa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-form-level&quot;]/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div/div/div/span/span/input[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-form-level&quot;]/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div/div/div/span/span/input[1]</value>
+   </webElementProperties>
+</WebElementEntity>

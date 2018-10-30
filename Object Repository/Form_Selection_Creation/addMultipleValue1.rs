@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>addMultipleValue1</name>
+   <tag></tag>
+   <elementGuidId>010ee34d-165a-4532-afd4-4246dfb09ae6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-designform-form-content-prop-area&quot;]/div[2]/div/div[2]/div/div/div/div[3]/div[1]/div/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-designform-form-content-prop-area&quot;]/div[2]/div/div[2]/div/div/div/div[3]/div[1]/div/input</value>
+   </webElementProperties>
+</WebElementEntity>

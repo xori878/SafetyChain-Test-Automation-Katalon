@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>fillForm_SelectResource</name>
+   <tag></tag>
+   <elementGuidId>cec2e77c-9223-421d-9c5d-2d3f1348d428</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;resrcDrpdown_listbox&quot;]/li[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;resrcDrpdown_listbox&quot;]/li[1]</value>
+   </webElementProperties>
+</WebElementEntity>

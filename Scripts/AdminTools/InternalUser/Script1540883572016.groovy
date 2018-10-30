@@ -43,7 +43,7 @@ WebUI.setText(findTestObject('InternalUser/ManageUser_NewUserPopUp_Username'), f
 
 WebUI.setText(findTestObject('InternalUser/ManageUsers_NewUserPopUp_Password'), 'Test')
 
-WebUI.setText(findTestObject('InternalUser/ManageUsers_NewUserPopUp_FirstName'), 'Katalon')
+WebUI.setText(findTestObject('InternalUser/ManageUsers_NewUserPopUp_FirstName'), 'Katalon1')
 
 WebUI.setText(findTestObject('InternalUser/ManageUsers_NewUserPopUp_LastName'), 'User')
 

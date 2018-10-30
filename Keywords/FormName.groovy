@@ -50,16 +50,19 @@ class FormName {
 	WebDriver driver =  DriverFactory.getWebDriver();
 	//public String form_name = "AUTO_TOOL_KATALON_"+(int)(Math.random()*100)+"_FORM";
 	//public String form_name = "AUTOQUESTIONAIREFORMTEST7";
-	public String form_name = "AUTO_29OCT_TOOL_KAT_"+Calendar.getInstance().getTimeInMillis();
+	public String form_name = "AUTO_30OCT_TOOL_KAT_"+Calendar.getInstance().getTimeInMillis();
 	@Keyword
 	def setData() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain/SCTestData/data.xlsx"))
+			println "Hi"
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			sheet.getRow(1).createCell(0).setCellValue(form_name);
+			println "Hi"
+			print form_name
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain/SCTestData/data.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
 			workbook.write(outFile);
 			outFile.close();
 		} catch (Exception e) {

@@ -32,7 +32,7 @@ public class sc_customkeywords {
 		String year = (currentDate.getTimeInMillis());
 		String n = ModuleName + year;
 		println  ModuleName +" is "+ n
-		FileInputStream file = new FileInputStream (new File("../SCTestData/TestData.xlsx"))
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/TestData.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		if(sheet.getRow(1)==null){
@@ -47,7 +47,7 @@ public class sc_customkeywords {
 		}
 		println  "Writing in Excel....."
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SCTestData/TestData.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/TestData.xlsx"));
 		workbook.write(outFile);
 		outFile.close();
 	}

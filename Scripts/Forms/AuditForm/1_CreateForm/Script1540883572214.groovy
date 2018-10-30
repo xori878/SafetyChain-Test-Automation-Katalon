@@ -148,5 +148,3 @@ WebUI.click(findTestObject('Form_Selection_Creation/button_Release'))
 
 Thread.sleep(4000)
 
-//WebUI.click(findTestObject('Form_Selection_Creation/home'))
-

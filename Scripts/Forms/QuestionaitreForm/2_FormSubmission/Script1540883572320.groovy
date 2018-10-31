@@ -31,7 +31,7 @@ WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('FormTab/login_Button'))
 
-Thread.sleep(8000)
+Thread.sleep(10000)
 
 WebUI.click(findTestObject('FormTab/form_Tab'))
 

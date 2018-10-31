@@ -57,9 +57,11 @@ WebUI.click(findTestObject('InternalUser/ManageUsers_NewUserPopUp_RolesSuperadmi
 
 WebUI.click(findTestObject('InternalUser/ManageUsers_NewUserPopUp_Location'))
 
-Thread.sleep(5000)
+Thread.sleep(7000)
 
 WebUI.click(findTestObject('InternalUser/ManageUsers_NewUserPopUp_AllLocation'))
+
+Thread.sleep(2000)
 
 WebUI.click(findTestObject('InternalUser/ManageUsers_NewUserPopUp_SaveButton'))
 

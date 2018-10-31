@@ -46,11 +46,16 @@ import org.openqa.selenium.interactions.Actions
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import java.util.Calendar;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 class FormName {
 	WebDriver driver =  DriverFactory.getWebDriver();
 	//public String form_name = "AUTO_TOOL_KATALON_"+(int)(Math.random()*100)+"_FORM";
 	//public String form_name = "AUTOQUESTIONAIREFORMTEST7";
-	public String form_name = "AUTO_30OCT_TOOL_KAT_"+Calendar.getInstance().getTimeInMillis();
+	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy-HH:mm:ss");
+	LocalDateTime now = LocalDateTime.now();
+	public String form_name = "AUTO_TOOL_KAT_"+dtf.format(now);
 	@Keyword
 	def setData() {
 		try {

@@ -37,14 +37,13 @@ CustomKeywords.'RandomRoles.clickElement'(findTestObject('Role-Latest/ManageRole
 
 WebUI.click(findTestObject('Role-Latest/ManageRoles_div_SAVE'))
 
-Thread.sleep(4000)
+Thread.sleep(6000)
 
 WebUI.click(findTestObject('User_role Attachment-Latest/UserRoleLink_span_Users'))
 
 Thread.sleep(4000)
 
-WebUI.setText(findTestObject('User_role Attachment-Latest/UserRoleLink_input_SAVE_scs-manage-roles-se'), 
-    'Superadmin')
+WebUI.setText(findTestObject('User_role Attachment-Latest/UserRoleLink_input_SAVE_scs-manage-roles-se'), 'Superadmin')
 
 Thread.sleep(4000)
 
@@ -64,8 +63,8 @@ WebUI.click(findTestObject('Role-Latest/ManageRoles_div_adit s_scs-user-icon'))
 
 Thread.sleep(4000)
 
-WebUI.verifyElementChecked(findTestObject('User_role Attachment-Latest/Page_SafetyChain/Page_SafetyChain/ToCheckElementIsTicked'), 
-    5)
+WebUI.verifyElementChecked(findTestObject('User_role Attachment-Latest/Page_SafetyChain/Page_SafetyChain/ToCheckElementIsTicked'),
+		5)
 
 WebUI.click(findTestObject('Role-Latest/ManageRoles_li_Logout'))
 

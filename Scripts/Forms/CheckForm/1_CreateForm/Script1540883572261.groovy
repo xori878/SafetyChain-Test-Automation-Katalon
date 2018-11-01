@@ -37,15 +37,15 @@ WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools_FormDesi
 //Thread.sleep(2000)
 WebUI.click(findTestObject('Form_Selection_Creation/selectCheckForm'))
 
-Thread.sleep(2000)
+Thread.sleep(3000)
 
 WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/formDesign_selectResource'), findTestObject('Form_Selection_Creation/Target_Res_Object'))
 
-Thread.sleep(4000)
+Thread.sleep(6000)
 
 WebUI.click(findTestObject('Form_Selection_Creation/formCreation_NextToDesignForm'))
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 
 CustomKeywords.'FormName.createForm'(findTestObject('Form_Selection_Creation/formDesign_FormName'))
 
@@ -137,11 +137,11 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('Form_Selection_Creation/formCreation_NextToDesignForm'))
 
-Thread.sleep(4000)
+Thread.sleep(7000)
 
 WebUI.click(findTestObject('Form_Selection_Creation/div_Preview             Form1'))
 
-Thread.sleep(3000)
+Thread.sleep(5000)
 
 WebUI.click(findTestObject('Form_Selection_Creation/button_Release'))
 

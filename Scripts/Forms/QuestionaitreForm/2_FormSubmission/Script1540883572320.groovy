@@ -72,27 +72,27 @@ not_run: Thread.sleep(4000)
 
 WebUI.click(findTestObject('FormTab/fillForm_OpenLocationOption'))
 
-Thread.sleep(2000)
+Thread.sleep(4000)
 
 not_run: WebUI.delay(3000)
 
-WebUI.waitForElementNotVisible(findTestObject('FormTab/fillForm_SelectLocation'), 5)
+not_run: WebUI.waitForElementNotVisible(findTestObject('FormTab/fillForm_SelectLocation'), 5)
 
 WebUI.click(findTestObject('FormTab/fillForm_SelectLocation'))
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 
 WebUI.click(findTestObject('FormTab/fillForm_OpenResourceOption'))
 
-Thread.sleep(2000)
+Thread.sleep(4000)
 
 not_run: WebUI.delay(4000)
 
-WebUI.waitForElementNotVisible(findTestObject('FormTab/fillForm_SelectResource'), 5)
+not_run: WebUI.waitForElementNotVisible(findTestObject('FormTab/fillForm_SelectResource'), 5)
 
 WebUI.click(findTestObject('FormTab/fillForm_SelectResource'))
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 
 //WebUI.click(findTestObject('Object Repository/FormTab/Page_SafetyChain/selectRes'))
 //WebUI.setText(findTestObject('Form_Selection_Creation/sendResourceName'), 'rest1')
@@ -140,5 +140,5 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 

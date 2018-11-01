@@ -66,7 +66,7 @@ not_run: Thread.sleep(7000)
 //WebUI.click(driver.findElement(By.xpath("//*[@id='scs-forms-grid']/div[2]/table/tbody/tr/td[1 and contains(text(),'"+fo"'))))
 not_run: CustomKeywords.'FormName.fillFormName'()
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 
 WebUI.click(findTestObject('FormTab/fillForm_OpenLocationOption'))
 
@@ -78,11 +78,11 @@ Thread.sleep(4000)
 
 WebUI.click(findTestObject('FormTab/fillForm_OpenResourceOption'))
 
-Thread.sleep(2000)
+Thread.sleep(4000)
 
 WebUI.click(findTestObject('FormTab/fillForm_SelectResource'))
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 
 //WebUI.click(findTestObject('Object Repository/FormTab/Page_SafetyChain/selectRes'))
 //WebUI.setText(findTestObject('Form_Selection_Creation/sendResourceName'), 'rest1')

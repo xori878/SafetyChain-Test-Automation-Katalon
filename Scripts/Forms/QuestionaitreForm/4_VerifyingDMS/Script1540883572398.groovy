@@ -27,7 +27,7 @@ WebUI.click(findTestObject('DMS_Forms/mainmenu_button'))
 
 WebUI.click(findTestObject('DMS_Forms/mainmenu_Document'))
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 
 CustomKeywords.'FormName.findinDMS'()
 

@@ -55,7 +55,8 @@ class FormName {
 	//public String form_name = "AUTOQUESTIONAIREFORMTEST7";
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy-HH:mm:ss");
 	LocalDateTime now = LocalDateTime.now();
-	public String form_name = "AUTO_TOOL_KAT_"+dtf.format(now);
+	public String form_name = "AUTO_TOOL_KAT_FORM_"+dtf.format(now);
+	public String task_name = "AUTO_TOOL_KAT_TASK_"+dtf.format(now);
 	@Keyword
 	def setData() {
 		try {
@@ -149,5 +150,16 @@ class FormName {
 		} catch (Exception e) {
 			KeywordUtil.markFailed("Fail to click on element")
 		}
+	}
+	@Keyword
+	def recogniseFormForTask() {
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		sheet.getRow(1).createCell(1).setCellValue(task_name);
+		file.close();
+		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
+		workbook.write(outFile);
+		outFile.close();
 	}
 }

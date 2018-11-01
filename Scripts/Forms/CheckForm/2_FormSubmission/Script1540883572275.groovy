@@ -68,7 +68,7 @@ Thread.sleep(4000)
 
 WebUI.click(findTestObject('FormTab/selectForm'))
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 
 WebUI.click(findTestObject('FormTab/fillForm_OpenLocationOption'))
 
@@ -76,15 +76,15 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('FormTab/fillForm_SelectLocation'))
 
-Thread.sleep(2000)
+Thread.sleep(4000)
 
 WebUI.click(findTestObject('FormTab/fillForm_OpenResourceOption'))
 
-Thread.sleep(2000)
+Thread.sleep(4000)
 
 WebUI.click(findTestObject('FormTab/fillForm_SelectResource'))
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 
 //WebUI.click(findTestObject('Object Repository/FormTab/Page_SafetyChain/selectRes'))
 //WebUI.setText(findTestObject('Form_Selection_Creation/sendResourceName'), 'rest1')
@@ -104,7 +104,7 @@ Thread.sleep(3000)
 driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(
 		Keys.ENTER)
 
-Thread.sleep(2000)
+Thread.sleep(3000)
 
 WebUI.setText(findTestObject('FormTab/fillForm_SelectMultipleOption'), 'Multiple Option1')
 
@@ -113,7 +113,7 @@ Thread.sleep(3000)
 driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(
 		Keys.ENTER)
 
-Thread.sleep(2000)
+Thread.sleep(3000)
 
 WebUI.click(findTestObject('FormTab/fillForm_SelectMultipleOption'))
 
@@ -134,5 +134,5 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 

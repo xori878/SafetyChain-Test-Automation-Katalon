@@ -27,17 +27,17 @@ Thread.sleep(8000)
 
 WebUI.click(findTestObject('Record/record_Tab'))
 
-Thread.sleep(4000)
+Thread.sleep(5000)
 
 WebUI.click(findTestObject('FormTab/clickToViewMoreOption'))
 
-Thread.sleep(2000)
+Thread.sleep(4000)
 
 WebUI.waitForElementNotVisible(findTestObject('FormTab/select500_Form'), 5)
 
 WebUI.click(findTestObject('FormTab/select500_Form'))
 
-Thread.sleep(8000)
+Thread.sleep(7000)
 
 CustomKeywords.'FormName.recordFormName'()
 

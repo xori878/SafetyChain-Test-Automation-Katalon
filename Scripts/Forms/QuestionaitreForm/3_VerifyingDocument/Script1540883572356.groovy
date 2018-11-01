@@ -25,7 +25,7 @@ Thread.sleep(8000)
 
 WebUI.click(findTestObject('DocumentTab/documentTab'))
 
-Thread.sleep(6000)
+Thread.sleep(7000)
 
 CustomKeywords.'FormName.documentFormName'()
 

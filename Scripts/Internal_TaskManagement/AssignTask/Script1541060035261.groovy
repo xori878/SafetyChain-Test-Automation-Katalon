@@ -102,7 +102,7 @@ not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Due By_k-icon k-i
 
 not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_0030'))
 
-WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Due By_scs-assigntask-da'), '11/01/2018 00:30')
+WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Due By_scs-assigntask-da'), '11/01/2018 06:30')
 
 WebUI.setText(findTestObject('mainmenu_Forms_Inbox/textarea_Note_scs-assign-task-'), 'ss')
 

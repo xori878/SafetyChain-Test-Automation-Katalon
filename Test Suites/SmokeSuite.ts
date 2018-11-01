@@ -4,11 +4,11 @@
    <name>SmokeSuite</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-10-31T14:50:26</lastRun>
+   <lastRun>2018-11-01T11:55:49</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
-   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <pageLoadTimeoutDefault>false</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>97c3f9e0-abba-4ba6-9dfc-cd70c1cb93ee</testSuiteGuid>
    <testCaseLink>

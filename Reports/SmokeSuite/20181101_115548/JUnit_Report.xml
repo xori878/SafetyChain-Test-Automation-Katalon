@@ -1,0 +1,2170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="SmokeSuite" time="889" tests="9" failures="4" errors="0">
+   <testsuite name="SmokeSuite" tests="9" failures="4" errors="0" time="889" timestamp="2018-11-01 12:15:47" hostname="pashine_a - Abhishek-Pashine.India.XoriantCorp.com" id="Test Suites/SmokeSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\SmokeSuite\\20181101_115548"/>
+         <property name="logFiles" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\SmokeSuite\\20181101_115548\\execution0.log"/>
+         <property name="attachments" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\SmokeSuite\\20181101_115548\\1541055125093.png, D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\SmokeSuite\\20181101_115548\\1541055353749.png"/>
+         <property name="hostName" value="pashine_a - Abhishek-Pashine.India.XoriantCorp.com"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.8.4.14"/>
+         <property name="browser" value="Chrome 70.0.3538.77"/>
+         <property name="hostAddress" value="10.21.7.138"/>
+         <property name="sessionId" value="fdc65150c4e03a467bfa6eba5d03aaba"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/AdminTools/InternalUser" classname="Test Cases/AdminTools/InternalUser" status="PASSED">
+         <system-out><![CDATA[2018-11-01 12:15:48 - [TEST_CASE][PASSED] - Test Cases/AdminTools/InternalUser: Test Cases/AdminTools/InternalUser
+
+2018-11-01 12:15:48 - [TEST_STEP][PASSED] - sc.sc_customkeywords.UniqueName: sc.sc_customkeywords.UniqueName is PASSED
+
+2018-11-01 12:15:49 - [MESSAGE][PASSED] - sc.sc_customkeywords.UniqueName is PASSED
+
+2018-11-01 12:15:49 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-11-01 12:15:54 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-11-01 12:15:54 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-11-01 12:15:55 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-01 12:15:55 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2018-11-01 12:16:07 - [MESSAGE][PASSED] - Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2018-11-01 12:16:07 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(5000): null
+
+2018-11-01 12:16:12 - [TEST_STEP][PASSED] - setText: Text 'superadmin' is set on object 'Object Repository/CommonObjects/Login_UserName'
+
+2018-11-01 12:16:12 - [MESSAGE][PASSED] - Text 'superadmin' is set on object 'Object Repository/CommonObjects/Login_UserName'
+
+2018-11-01 12:16:12 - [TEST_STEP][PASSED] - setText: Text 'sliptest23772clam' is set on object 'Object Repository/CommonObjects/Login_Password'
+
+2018-11-01 12:16:12 - [MESSAGE][PASSED] - Text 'sliptest23772clam' is set on object 'Object Repository/CommonObjects/Login_Password'
+
+2018-11-01 12:16:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/CommonObjects/Login_LoginButton' is clicked on
+
+2018-11-01 12:16:14 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/Login_LoginButton' is clicked on
+
+2018-11-01 12:16:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/CommonObjects/MainMenu_Icon' is clicked on
+
+2018-11-01 12:16:18 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/MainMenu_Icon' is clicked on
+
+2018-11-01 12:16:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/CommonObjects/MainMenu_AdminTools' is clicked on
+
+2018-11-01 12:16:19 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/MainMenu_AdminTools' is clicked on
+
+2018-11-01 12:16:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/InternalUser/MainMenu_Users' is clicked on
+
+2018-11-01 12:16:19 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/MainMenu_Users' is clicked on
+
+2018-11-01 12:16:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/InternalUser/ManageUsers_AddNewButton' is clicked on
+
+2018-11-01 12:16:22 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_AddNewButton' is clicked on
+
+2018-11-01 12:16:22 - [TEST_STEP][PASSED] - setText: Text 'UserName1541054748719' is set on object 'Object Repository/InternalUser/ManageUser_NewUserPopUp_Username'
+
+2018-11-01 12:16:24 - [MESSAGE][PASSED] - Text 'UserName1541054748719' is set on object 'Object Repository/InternalUser/ManageUser_NewUserPopUp_Username'
+
+2018-11-01 12:16:24 - [TEST_STEP][PASSED] - setText: Text 'Test' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Password'
+
+2018-11-01 12:16:24 - [MESSAGE][PASSED] - Text 'Test' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Password'
+
+2018-11-01 12:16:24 - [TEST_STEP][PASSED] - setText: Text 'Katalon1' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_FirstName'
+
+2018-11-01 12:16:24 - [MESSAGE][PASSED] - Text 'Katalon1' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_FirstName'
+
+2018-11-01 12:16:24 - [TEST_STEP][PASSED] - setText: Text 'User' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_LastName'
+
+2018-11-01 12:16:25 - [MESSAGE][PASSED] - Text 'User' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_LastName'
+
+2018-11-01 12:16:25 - [TEST_STEP][PASSED] - setText: Text 'test@xoriant.com' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Email'
+
+2018-11-01 12:16:25 - [MESSAGE][PASSED] - Text 'test@xoriant.com' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Email'
+
+2018-11-01 12:16:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Roles' is clicked on
+
+2018-11-01 12:16:25 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Roles' is clicked on
+
+2018-11-01 12:16:25 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(5000): null
+
+2018-11-01 12:16:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_RolesSuperadmin' is clicked on
+
+2018-11-01 12:16:30 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_RolesSuperadmin' is clicked on
+
+2018-11-01 12:16:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Location' is clicked on
+
+2018-11-01 12:16:31 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Location' is clicked on
+
+2018-11-01 12:16:31 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(7000): null
+
+2018-11-01 12:16:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_AllLocation' is clicked on
+
+2018-11-01 12:16:38 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_AllLocation' is clicked on
+
+2018-11-01 12:16:38 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:16:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_SaveButton' is clicked on
+
+2018-11-01 12:16:40 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_SaveButton' is clicked on
+
+2018-11-01 12:16:40 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(8000): null
+
+2018-11-01 12:16:48 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-11-01 12:16:49 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/AdminTools/Roles" classname="Test Cases/AdminTools/Roles" status="PASSED">
+         <system-out><![CDATA[2018-11-01 12:16:49 - [TEST_CASE][PASSED] - Test Cases/AdminTools/Roles: Test Cases/AdminTools/Roles
+
+2018-11-01 12:16:49 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-11-01 12:16:51 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-11-01 12:16:51 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2018-11-01 12:17:07 - [MESSAGE][PASSED] - Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2018-11-01 12:17:07 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-11-01 12:17:08 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-01 12:17:08 - [TEST_STEP][PASSED] - setText: Text 'superadmin' is set on object 'Object Repository/Role-Latest/ManageRoles_input_USER NAME_Username'
+
+2018-11-01 12:17:12 - [MESSAGE][PASSED] - Text 'superadmin' is set on object 'Object Repository/Role-Latest/ManageRoles_input_USER NAME_Username'
+
+2018-11-01 12:17:12 - [TEST_STEP][PASSED] - setText: Text 'sliptest23772clam' is set on object 'Object Repository/Role-Latest/ManageRoles_input_PASSWORD_Password'
+
+2018-11-01 12:17:12 - [MESSAGE][PASSED] - Text 'sliptest23772clam' is set on object 'Object Repository/Role-Latest/ManageRoles_input_PASSWORD_Password'
+
+2018-11-01 12:17:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Role-Latest/ManageRoles_button_LOGIN' is clicked on
+
+2018-11-01 12:17:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_button_LOGIN' is clicked on
+
+2018-11-01 12:17:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Role-Latest/ManageRoles_svg_STAGE_scsIcon scs-hamburge' is clicked on
+
+2018-11-01 12:17:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_svg_STAGE_scsIcon scs-hamburge' is clicked on
+
+2018-11-01 12:17:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Role-Latest/ManageRoles_div_Admin Tools' is clicked on
+
+2018-11-01 12:17:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_div_Admin Tools' is clicked on
+
+2018-11-01 12:17:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Role-Latest/ManageRoles_div_Roles' is clicked on
+
+2018-11-01 12:17:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_div_Roles' is clicked on
+
+2018-11-01 12:17:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Role-Latest/ManageRoles_i_UserAdmin_fa fa-plus-circle' is clicked on
+
+2018-11-01 12:17:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_i_UserAdmin_fa fa-plus-circle' is clicked on
+
+2018-11-01 12:17:21 - [TEST_STEP][PASSED] - RandomRoles.clickElement: RandomRoles.clickElement is PASSED
+
+2018-11-01 12:17:21 - [MESSAGE][PASSED] - RandomRoles.clickElement is PASSED
+
+2018-11-01 12:17:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Role-Latest/ManageRoles_div_SAVE' is clicked on
+
+2018-11-01 12:17:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_div_SAVE' is clicked on
+
+2018-11-01 12:17:23 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(6000): null
+
+2018-11-01 12:17:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_span_Users' is clicked on
+
+2018-11-01 12:17:29 - [MESSAGE][PASSED] - Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_span_Users' is clicked on
+
+2018-11-01 12:17:29 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:17:33 - [TEST_STEP][PASSED] - setText: Text 'Superadmin' is set on object 'Object Repository/User_role Attachment-Latest/UserRoleLink_input_SAVE_scs-manage-roles-se'
+
+2018-11-01 12:17:33 - [MESSAGE][PASSED] - Text 'Superadmin' is set on object 'Object Repository/User_role Attachment-Latest/UserRoleLink_input_SAVE_scs-manage-roles-se'
+
+2018-11-01 12:17:33 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:17:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_span_SAVE_fa fa-search' is clicked on
+
+2018-11-01 12:17:37 - [MESSAGE][PASSED] - Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_span_SAVE_fa fa-search' is clicked on
+
+2018-11-01 12:17:37 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:17:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_input_select_scs-grid-row-chec' is clicked on
+
+2018-11-01 12:17:41 - [MESSAGE][PASSED] - Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_input_select_scs-grid-row-chec' is clicked on
+
+2018-11-01 12:17:41 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:17:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_div_SAVE' is clicked on
+
+2018-11-01 12:17:45 - [MESSAGE][PASSED] - Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_div_SAVE' is clicked on
+
+2018-11-01 12:17:45 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:17:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Role-Latest/ManageRoles_div_adit s_scs-user-icon' is clicked on
+
+2018-11-01 12:17:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_div_adit s_scs-user-icon' is clicked on
+
+2018-11-01 12:17:55 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:17:59 - [TEST_STEP][PASSED] - verifyElementChecked: Object 'Object Repository/User_role Attachment-Latest/Page_SafetyChain/Page_SafetyChain/ToCheckElementIsTicked' is checked
+
+2018-11-01 12:17:59 - [MESSAGE][PASSED] - Object 'Object Repository/User_role Attachment-Latest/Page_SafetyChain/Page_SafetyChain/ToCheckElementIsTicked' is checked
+
+2018-11-01 12:17:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Role-Latest/ManageRoles_li_Logout' is clicked on
+
+2018-11-01 12:18:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_li_Logout' is clicked on
+
+2018-11-01 12:18:02 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-11-01 12:18:03 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/AdminTools/WorkGroup" classname="Test Cases/AdminTools/WorkGroup" status="PASSED">
+         <system-out><![CDATA[2018-11-01 12:18:03 - [TEST_CASE][PASSED] - Test Cases/AdminTools/WorkGroup: Test Cases/AdminTools/WorkGroup
+
+2018-11-01 12:18:03 - [TEST_STEP][PASSED] - sc.sc_customkeywords.UniqueName: sc.sc_customkeywords.UniqueName is PASSED
+
+2018-11-01 12:18:03 - [MESSAGE][PASSED] - sc.sc_customkeywords.UniqueName is PASSED
+
+2018-11-01 12:18:03 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-11-01 12:18:06 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-11-01 12:18:06 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-11-01 12:18:07 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-01 12:18:07 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2018-11-01 12:18:33 - [MESSAGE][PASSED] - Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2018-11-01 12:18:33 - [TEST_STEP][PASSED] - setText: Text 'superadmin' is set on object 'Object Repository/CommonObjects/Login_UserName'
+
+2018-11-01 12:18:37 - [MESSAGE][PASSED] - Text 'superadmin' is set on object 'Object Repository/CommonObjects/Login_UserName'
+
+2018-11-01 12:18:37 - [TEST_STEP][PASSED] - setText: Text 'sliptest23772clam' is set on object 'Object Repository/CommonObjects/Login_Password'
+
+2018-11-01 12:18:37 - [MESSAGE][PASSED] - Text 'sliptest23772clam' is set on object 'Object Repository/CommonObjects/Login_Password'
+
+2018-11-01 12:18:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/CommonObjects/Login_LoginButton' is clicked on
+
+2018-11-01 12:18:38 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/Login_LoginButton' is clicked on
+
+2018-11-01 12:18:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/CommonObjects/FSQA_MainMenu' is clicked on
+
+2018-11-01 12:18:42 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/FSQA_MainMenu' is clicked on
+
+2018-11-01 12:18:42 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/CommonObjects/MainMenu_AdminTools' is clicked on
+
+2018-11-01 12:18:42 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/MainMenu_AdminTools' is clicked on
+
+2018-11-01 12:18:42 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/CommonObjects/MainMenu_WorkGroups' is clicked on
+
+2018-11-01 12:18:43 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/MainMenu_WorkGroups' is clicked on
+
+2018-11-01 12:18:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/WorkGroup/WorkGroup_PlusIcon' is clicked on
+
+2018-11-01 12:18:44 - [MESSAGE][PASSED] - Object: 'Object Repository/WorkGroup/WorkGroup_PlusIcon' is clicked on
+
+2018-11-01 12:18:44 - [TEST_STEP][PASSED] - setText: Text 'WorkGroup1541054883888' is set on object 'Object Repository/WorkGroup/WorkGroup_AddingNewTextField'
+
+2018-11-01 12:18:44 - [MESSAGE][PASSED] - Text 'WorkGroup1541054883888' is set on object 'Object Repository/WorkGroup/WorkGroup_AddingNewTextField'
+
+2018-11-01 12:18:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/WorkGroup/WorkGroup_SaveButton' is clicked on
+
+2018-11-01 12:18:46 - [MESSAGE][PASSED] - Object: 'Object Repository/WorkGroup/WorkGroup_SaveButton' is clicked on
+
+2018-11-01 12:18:46 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:18:49 - [TEST_STEP][PASSED] - verifyTextPresent: Text 'WorkGroup1541054883888' is present on page 
+
+2018-11-01 12:18:50 - [MESSAGE][PASSED] - Text 'WorkGroup1541054883888' is present on page 
+
+2018-11-01 12:18:50 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-11-01 12:18:51 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/AuditForm/1_CreateForm" classname="Test Cases/Forms/AuditForm/1_CreateForm" status="PASSED">
+         <system-out><![CDATA[2018-11-01 12:18:51 - [TEST_CASE][PASSED] - Test Cases/Forms/AuditForm/1_CreateForm: Test Cases/Forms/AuditForm/1_CreateForm
+
+2018-11-01 12:18:51 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-01 12:19:09 - [MESSAGE][PASSED] - Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-01 12:19:09 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-11-01 12:19:10 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-01 12:19:10 - [TEST_STEP][PASSED] - setText: Text 'superadmin' is set on object 'Object Repository/Form_Selection_Creation/login_Username'
+
+2018-11-01 12:19:14 - [MESSAGE][PASSED] - Text 'superadmin' is set on object 'Object Repository/Form_Selection_Creation/login_Username'
+
+2018-11-01 12:19:14 - [TEST_STEP][PASSED] - setText: Text 'sliptest23772clam' is set on object 'Object Repository/Form_Selection_Creation/login_Password'
+
+2018-11-01 12:19:14 - [MESSAGE][PASSED] - Text 'sliptest23772clam' is set on object 'Object Repository/Form_Selection_Creation/login_Password'
+
+2018-11-01 12:19:14 - [TEST_STEP][PASSED] - FormName.setData: FormName.setData is PASSED
+
+2018-11-01 12:19:14 - [MESSAGE][PASSED] - FormName.setData is PASSED
+
+2018-11-01 12:19:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/login_Button' is clicked on
+
+2018-11-01 12:19:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/login_Button' is clicked on
+
+2018-11-01 12:19:16 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:19:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2018-11-01 12:19:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2018-11-01 12:19:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2018-11-01 12:19:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2018-11-01 12:19:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2018-11-01 12:19:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2018-11-01 12:19:20 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:19:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/selectAuditForm' is clicked on
+
+2018-11-01 12:19:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/selectAuditForm' is clicked on
+
+2018-11-01 12:19:22 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:19:25 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2018-11-01 12:19:26 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2018-11-01 12:19:26 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(5000): null
+
+2018-11-01 12:19:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:19:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:19:31 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:19:34 - [TEST_STEP][PASSED] - FormName.createForm: FormName.createForm is PASSED
+
+2018-11-01 12:19:34 - [MESSAGE][PASSED] - FormName.createForm is PASSED
+
+2018-11-01 12:19:34 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:19:36 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2018-11-01 12:19:37 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2018-11-01 12:19:37 - [TEST_STEP][PASSED] - setText: Text 'This is a Section' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName'
+
+2018-11-01 12:19:38 - [MESSAGE][PASSED] - Text 'This is a Section' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName'
+
+2018-11-01 12:19:38 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:19:40 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2018-11-01 12:19:40 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2018-11-01 12:19:40 - [TEST_STEP][PASSED] - setText: Text 'This is Field Group' is set on object 'Object Repository/Form_Selection_Creation/formDesign_questionGroupName_Text'
+
+2018-11-01 12:19:41 - [MESSAGE][PASSED] - Text 'This is Field Group' is set on object 'Object Repository/Form_Selection_Creation/formDesign_questionGroupName_Text'
+
+2018-11-01 12:19:41 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:19:43 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:19:44 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:19:44 - [TEST_STEP][PASSED] - setText: Text 'This is Free Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SingleLineName'
+
+2018-11-01 12:19:44 - [MESSAGE][PASSED] - Text 'This is Free Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SingleLineName'
+
+2018-11-01 12:19:44 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:19:46 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:19:47 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:19:47 - [TEST_STEP][PASSED] - setText: Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName'
+
+2018-11-01 12:19:47 - [MESSAGE][PASSED] - Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName'
+
+2018-11-01 12:19:47 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:19:49 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:19:50 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:19:50 - [TEST_STEP][PASSED] - setText: Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName'
+
+2018-11-01 12:19:51 - [MESSAGE][PASSED] - Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName'
+
+2018-11-01 12:19:51 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:19:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2018-11-01 12:19:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2018-11-01 12:19:53 - [TEST_STEP][PASSED] - setText: Text 'Single Option1' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue1'
+
+2018-11-01 12:19:53 - [MESSAGE][PASSED] - Text 'Single Option1' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue1'
+
+2018-11-01 12:19:53 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:19:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2018-11-01 12:19:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2018-11-01 12:19:56 - [TEST_STEP][PASSED] - setText: Text 'Single Option2' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue2'
+
+2018-11-01 12:19:57 - [MESSAGE][PASSED] - Text 'Single Option2' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue2'
+
+2018-11-01 12:19:57 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:19:59 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:19:59 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:19:59 - [TEST_STEP][PASSED] - setText: Text 'This is Select Multiple' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName'
+
+2018-11-01 12:20:00 - [MESSAGE][PASSED] - Text 'This is Select Multiple' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName'
+
+2018-11-01 12:20:00 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:20:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2018-11-01 12:20:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2018-11-01 12:20:03 - [TEST_STEP][PASSED] - setText: Text 'Multiple Option1' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue1'
+
+2018-11-01 12:20:04 - [MESSAGE][PASSED] - Text 'Multiple Option1' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue1'
+
+2018-11-01 12:20:04 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:20:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2018-11-01 12:20:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2018-11-01 12:20:06 - [TEST_STEP][PASSED] - setText: Text 'Multiple Option2' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue2'
+
+2018-11-01 12:20:06 - [MESSAGE][PASSED] - Text 'Multiple Option2' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue2'
+
+2018-11-01 12:20:06 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:20:08 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:20:09 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:20:09 - [TEST_STEP][PASSED] - setText: Text 'This is Numeric Field' is set on object 'Object Repository/Form_Selection_Creation/formDesignt_NumericName'
+
+2018-11-01 12:20:10 - [MESSAGE][PASSED] - Text 'This is Numeric Field' is set on object 'Object Repository/Form_Selection_Creation/formDesignt_NumericName'
+
+2018-11-01 12:20:10 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:20:12 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:20:12 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:20:12 - [TEST_STEP][PASSED] - setText: Text 'This is Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName'
+
+2018-11-01 12:20:13 - [MESSAGE][PASSED] - Text 'This is Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName'
+
+2018-11-01 12:20:13 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:20:15 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:20:16 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:20:16 - [TEST_STEP][PASSED] - setText: Text 'This is Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName'
+
+2018-11-01 12:20:16 - [MESSAGE][PASSED] - Text 'This is Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName'
+
+2018-11-01 12:20:16 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:20:18 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:20:19 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2018-11-01 12:20:19 - [TEST_STEP][PASSED] - setText: Text 'This is Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName'
+
+2018-11-01 12:20:20 - [MESSAGE][PASSED] - Text 'This is Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName'
+
+2018-11-01 12:20:20 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:20:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:20:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:20:22 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(7000): null
+
+2018-11-01 12:20:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2018-11-01 12:20:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2018-11-01 12:20:29 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:20:33 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2018-11-01 12:20:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2018-11-01 12:20:33 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/AuditForm/2_FormSubmission" classname="Test Cases/Forms/AuditForm/2_FormSubmission" status="FAILED">
+         <failure type="FAILED" message="(Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id=&quot;scs-forms-grid&quot;]/div[2]/table/tbody/tr/td[1]' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at Script1540883572231.run(Script1540883572231.groovy:54)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)"/>
+         <system-out><![CDATA[2018-11-01 12:20:37 - [TEST_CASE][FAILED] - Test Cases/Forms/AuditForm/2_FormSubmission: Test Cases/Forms/AuditForm/2_FormSubmission FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id="scs-forms-grid"]/div[2]/table/tbody/tr/td[1]' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at Script1540883572231.run(Script1540883572231.groovy:54)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)
+
+2018-11-01 12:20:38 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-01 12:20:38 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-11-01 12:20:57 - [MESSAGE][PASSED] - Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-01 12:20:57 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-11-01 12:20:59 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-01 12:20:59 - [TEST_STEP][PASSED] - Statement - driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(): null
+
+2018-11-01 12:20:59 - [TEST_STEP][PASSED] - setText: Text 'superadmin' is set on object 'Object Repository/FormTab/login_Username'
+
+2018-11-01 12:21:02 - [MESSAGE][PASSED] - Text 'superadmin' is set on object 'Object Repository/FormTab/login_Username'
+
+2018-11-01 12:21:02 - [TEST_STEP][PASSED] - setText: Text 'sliptest23772clam' is set on object 'Object Repository/FormTab/login_Password'
+
+2018-11-01 12:21:03 - [MESSAGE][PASSED] - Text 'sliptest23772clam' is set on object 'Object Repository/FormTab/login_Password'
+
+2018-11-01 12:21:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/login_Button' is clicked on
+
+2018-11-01 12:21:04 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/login_Button' is clicked on
+
+2018-11-01 12:21:04 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(8000): null
+
+2018-11-01 12:21:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2018-11-01 12:21:18 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2018-11-01 12:21:18 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(5000): null
+
+2018-11-01 12:21:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/options' is clicked on
+
+2018-11-01 12:21:23 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/options' is clicked on
+
+2018-11-01 12:21:23 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:21:25 - [TEST_STEP][PASSED] - mouseOver: Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2018-11-01 12:21:25 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2018-11-01 12:21:25 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:21:27 - [TEST_STEP][PASSED] - FormName.filterFormName: FormName.filterFormName is PASSED
+
+2018-11-01 12:21:27 - [MESSAGE][PASSED] - FormName.filterFormName is PASSED
+
+2018-11-01 12:21:27 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:21:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2018-11-01 12:21:29 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2018-11-01 12:21:29 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:21:33 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id="scs-forms-grid"]/div[2]/table/tbody/tr/td[1]' not found)
+
+2018-11-01 12:22:05 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id="scs-forms-grid"]/div[2]/table/tbody/tr/td[1]' not found)
+[[ATTACHMENT|D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\SmokeSuite\\20181101_115548\\1541055125093.png]]]]></system-out>
+         <system-err><![CDATA[2018-11-01 12:20:37 - [TEST_CASE][FAILED] - Test Cases/Forms/AuditForm/2_FormSubmission: Test Cases/Forms/AuditForm/2_FormSubmission FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id="scs-forms-grid"]/div[2]/table/tbody/tr/td[1]' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at Script1540883572231.run(Script1540883572231.groovy:54)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/AuditForm/3_VerifyingRecord" classname="Test Cases/Forms/AuditForm/3_VerifyingRecord" status="FAILED">
+         <failure type="FAILED" message="(Stack trace: com.kms.katalon.core.exception.StepFailedException: Fail to click on element
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:15)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at FormName.recordFormName(FormName.groovy:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:144)
+	at FormName.invokeMethod(FormName.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:46)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.call(StaticMetaClassSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at Script1540883572244.run(Script1540883572244.groovy:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)"/>
+         <system-out><![CDATA[2018-11-01 12:22:05 - [TEST_CASE][FAILED] - Test Cases/Forms/AuditForm/3_VerifyingRecord: Test Cases/Forms/AuditForm/3_VerifyingRecord FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Fail to click on element
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:15)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at FormName.recordFormName(FormName.groovy:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:144)
+	at FormName.invokeMethod(FormName.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:46)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.call(StaticMetaClassSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at Script1540883572244.run(Script1540883572244.groovy:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)
+
+2018-11-01 12:22:05 - [TEST_STEP][NOT_RUN] - openBrowser: NOT_RUN: openBrowser
+
+2018-11-01 12:22:05 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser
+
+2018-11-01 12:22:05 - [TEST_STEP][NOT_RUN] - maximizeWindow: NOT_RUN: maximizeWindow
+
+2018-11-01 12:22:05 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow
+
+2018-11-01 12:22:05 - [TEST_STEP][NOT_RUN] - setText: NOT_RUN: setText
+
+2018-11-01 12:22:05 - [MESSAGE][NOT_RUN] - NOT_RUN: setText
+
+2018-11-01 12:22:05 - [TEST_STEP][NOT_RUN] - setText: NOT_RUN: setText
+
+2018-11-01 12:22:05 - [MESSAGE][NOT_RUN] - NOT_RUN: setText
+
+2018-11-01 12:22:05 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-11-01 12:22:05 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-11-01 12:22:05 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(8000): null
+
+2018-11-01 12:22:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Record/record_Tab' is clicked on
+
+2018-11-01 12:22:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/record_Tab' is clicked on
+
+2018-11-01 12:22:13 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(5000): null
+
+2018-11-01 12:22:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/clickToViewMoreOption' is clicked on
+
+2018-11-01 12:22:19 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/clickToViewMoreOption' is clicked on
+
+2018-11-01 12:22:19 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:22:23 - [TEST_STEP][PASSED] - waitForElementNotVisible: Object 'Object Repository/FormTab/select500_Form' is visible after 5 second(s)
+
+2018-11-01 12:22:28 - [MESSAGE][WARNING] - Object 'Object Repository/FormTab/select500_Form' is visible after 5 second(s)
+
+2018-11-01 12:22:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/select500_Form' is clicked on
+
+2018-11-01 12:22:28 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/select500_Form' is clicked on
+
+2018-11-01 12:22:28 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(7000): null
+
+2018-11-01 12:22:35 - [TEST_STEP][FAILED] - FormName.recordFormName: Fail to click on element
+
+2018-11-01 12:22:35 - [MESSAGE][FAILED] - Fail to click on element
+
+2018-11-01 12:22:35 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[2018-11-01 12:22:05 - [TEST_CASE][FAILED] - Test Cases/Forms/AuditForm/3_VerifyingRecord: Test Cases/Forms/AuditForm/3_VerifyingRecord FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Fail to click on element
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:15)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at FormName.recordFormName(FormName.groovy:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:144)
+	at FormName.invokeMethod(FormName.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:46)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.call(StaticMetaClassSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at Script1540883572244.run(Script1540883572244.groovy:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/CheckForm/1_CreateForm" classname="Test Cases/Forms/CheckForm/1_CreateForm" status="PASSED">
+         <system-out><![CDATA[2018-11-01 12:22:39 - [TEST_CASE][PASSED] - Test Cases/Forms/CheckForm/1_CreateForm: Test Cases/Forms/CheckForm/1_CreateForm
+
+2018-11-01 12:22:39 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-01 12:22:39 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-11-01 12:23:06 - [MESSAGE][PASSED] - Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-01 12:23:06 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-11-01 12:23:07 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-01 12:23:07 - [TEST_STEP][PASSED] - setText: Text 'superadmin' is set on object 'Object Repository/Form_Selection_Creation/login_Username'
+
+2018-11-01 12:23:11 - [MESSAGE][PASSED] - Text 'superadmin' is set on object 'Object Repository/Form_Selection_Creation/login_Username'
+
+2018-11-01 12:23:11 - [TEST_STEP][PASSED] - setText: Text 'sliptest23772clam' is set on object 'Object Repository/Form_Selection_Creation/login_Password'
+
+2018-11-01 12:23:11 - [MESSAGE][PASSED] - Text 'sliptest23772clam' is set on object 'Object Repository/Form_Selection_Creation/login_Password'
+
+2018-11-01 12:23:11 - [TEST_STEP][PASSED] - FormName.setData: FormName.setData is PASSED
+
+2018-11-01 12:23:11 - [MESSAGE][PASSED] - FormName.setData is PASSED
+
+2018-11-01 12:23:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/login_Button' is clicked on
+
+2018-11-01 12:23:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/login_Button' is clicked on
+
+2018-11-01 12:23:14 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:23:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2018-11-01 12:23:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2018-11-01 12:23:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2018-11-01 12:23:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2018-11-01 12:23:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2018-11-01 12:23:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2018-11-01 12:23:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/selectCheckForm' is clicked on
+
+2018-11-01 12:23:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/selectCheckForm' is clicked on
+
+2018-11-01 12:23:18 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:23:20 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2018-11-01 12:23:21 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2018-11-01 12:23:21 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:23:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:23:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:23:25 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:23:28 - [TEST_STEP][PASSED] - FormName.createForm: FormName.createForm is PASSED
+
+2018-11-01 12:23:29 - [MESSAGE][PASSED] - FormName.createForm is PASSED
+
+2018-11-01 12:23:29 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:23:31 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2018-11-01 12:23:32 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2018-11-01 12:23:32 - [TEST_STEP][PASSED] - setText: Text 'This is Section' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName'
+
+2018-11-01 12:23:32 - [MESSAGE][PASSED] - Text 'This is Section' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName'
+
+2018-11-01 12:23:32 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:23:34 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2018-11-01 12:23:35 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2018-11-01 12:23:35 - [TEST_STEP][PASSED] - setText: Text 'This is Field Group' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FieldGroupName'
+
+2018-11-01 12:23:35 - [MESSAGE][PASSED] - Text 'This is Field Group' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FieldGroupName'
+
+2018-11-01 12:23:35 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:23:37 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:23:38 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:23:38 - [TEST_STEP][PASSED] - setText: Text 'This is Free Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FreetextName'
+
+2018-11-01 12:23:38 - [MESSAGE][PASSED] - Text 'This is Free Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FreetextName'
+
+2018-11-01 12:23:38 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:23:40 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:23:41 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:23:41 - [TEST_STEP][PASSED] - setText: Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName'
+
+2018-11-01 12:23:41 - [MESSAGE][PASSED] - Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName'
+
+2018-11-01 12:23:41 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:23:43 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:23:44 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:23:44 - [TEST_STEP][PASSED] - setText: Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName'
+
+2018-11-01 12:23:45 - [MESSAGE][PASSED] - Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName'
+
+2018-11-01 12:23:45 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:23:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2018-11-01 12:23:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2018-11-01 12:23:48 - [TEST_STEP][PASSED] - setText: Text 'Select Option1' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue1'
+
+2018-11-01 12:23:48 - [MESSAGE][PASSED] - Text 'Select Option1' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue1'
+
+2018-11-01 12:23:48 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:23:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2018-11-01 12:23:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2018-11-01 12:23:50 - [TEST_STEP][PASSED] - setText: Text 'Select Option2' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue2'
+
+2018-11-01 12:23:51 - [MESSAGE][PASSED] - Text 'Select Option2' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue2'
+
+2018-11-01 12:23:51 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:23:53 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:23:53 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:23:53 - [TEST_STEP][PASSED] - setText: Text 'This is Select Multiple ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName'
+
+2018-11-01 12:23:54 - [MESSAGE][PASSED] - Text 'This is Select Multiple ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName'
+
+2018-11-01 12:23:54 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:23:57 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2018-11-01 12:23:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2018-11-01 12:23:57 - [TEST_STEP][PASSED] - setText: Text 'Multiple Option1' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue1'
+
+2018-11-01 12:23:58 - [MESSAGE][PASSED] - Text 'Multiple Option1' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue1'
+
+2018-11-01 12:23:58 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:24:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2018-11-01 12:24:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2018-11-01 12:24:00 - [TEST_STEP][PASSED] - setText: Text 'Multiple Option2' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue2'
+
+2018-11-01 12:24:00 - [MESSAGE][PASSED] - Text 'Multiple Option2' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue2'
+
+2018-11-01 12:24:00 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:24:02 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:24:03 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:24:03 - [TEST_STEP][PASSED] - setText: Text 'This is Numeric Field.' is set on object 'Object Repository/Form_Selection_Creation/formDesignt_NumericName'
+
+2018-11-01 12:24:04 - [MESSAGE][PASSED] - Text 'This is Numeric Field.' is set on object 'Object Repository/Form_Selection_Creation/formDesignt_NumericName'
+
+2018-11-01 12:24:04 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:24:06 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:24:07 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:24:07 - [TEST_STEP][PASSED] - setText: Text 'This is Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName'
+
+2018-11-01 12:24:07 - [MESSAGE][PASSED] - Text 'This is Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName'
+
+2018-11-01 12:24:07 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:24:09 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:24:10 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:24:10 - [TEST_STEP][PASSED] - setText: Text 'This is Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName'
+
+2018-11-01 12:24:10 - [MESSAGE][PASSED] - Text 'This is Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName'
+
+2018-11-01 12:24:10 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:24:12 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:24:13 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:24:13 - [TEST_STEP][PASSED] - setText: Text 'This is Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName'
+
+2018-11-01 12:24:14 - [MESSAGE][PASSED] - Text 'This is Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName'
+
+2018-11-01 12:24:14 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:24:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:24:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:24:16 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:24:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2018-11-01 12:24:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2018-11-01 12:24:20 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:24:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2018-11-01 12:24:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2018-11-01 12:24:23 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/CheckForm/2_FormSubmission" classname="Test Cases/Forms/CheckForm/2_FormSubmission" status="FAILED">
+         <failure type="FAILED" message="(Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id=&quot;scs-forms-grid&quot;]/div[2]/table/tbody/tr/td[1]' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at Script1540883572275.run(Script1540883572275.groovy:69)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)"/>
+         <system-out><![CDATA[2018-11-01 12:24:27 - [TEST_CASE][FAILED] - Test Cases/Forms/CheckForm/2_FormSubmission: Test Cases/Forms/CheckForm/2_FormSubmission FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id="scs-forms-grid"]/div[2]/table/tbody/tr/td[1]' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at Script1540883572275.run(Script1540883572275.groovy:69)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)
+
+2018-11-01 12:24:27 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-01 12:24:27 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-11-01 12:24:51 - [MESSAGE][PASSED] - Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-01 12:24:51 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-11-01 12:24:52 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-01 12:24:52 - [TEST_STEP][PASSED] - Statement - driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(): null
+
+2018-11-01 12:24:52 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:24:55 - [TEST_STEP][PASSED] - setText: Text 'superadmin' is set on object 'Object Repository/FormTab/login_Username'
+
+2018-11-01 12:24:56 - [MESSAGE][PASSED] - Text 'superadmin' is set on object 'Object Repository/FormTab/login_Username'
+
+2018-11-01 12:24:56 - [TEST_STEP][PASSED] - setText: Text 'sliptest23772clam' is set on object 'Object Repository/FormTab/login_Password'
+
+2018-11-01 12:24:56 - [MESSAGE][PASSED] - Text 'sliptest23772clam' is set on object 'Object Repository/FormTab/login_Password'
+
+2018-11-01 12:24:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/login_Button' is clicked on
+
+2018-11-01 12:24:58 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/login_Button' is clicked on
+
+2018-11-01 12:24:58 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(8000): null
+
+2018-11-01 12:25:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2018-11-01 12:25:06 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2018-11-01 12:25:06 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(5000): null
+
+2018-11-01 12:25:11 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-11-01 12:25:11 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-11-01 12:25:11 - [TEST_STEP][NOT_RUN] - Statement - java.lang.Thread.sleep(3000): NOT_RUN: Statement - java.lang.Thread.sleep(3000)
+
+2018-11-01 12:25:11 - [MESSAGE][NOT_RUN] - NOT_RUN: Statement - java.lang.Thread.sleep(3000)
+
+2018-11-01 12:25:11 - [TEST_STEP][NOT_RUN] - waitForElementNotVisible: NOT_RUN: waitForElementNotVisible
+
+2018-11-01 12:25:11 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotVisible
+
+2018-11-01 12:25:11 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-11-01 12:25:11 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-11-01 12:25:11 - [TEST_STEP][NOT_RUN] - Statement - java.lang.Thread.sleep(7000): NOT_RUN: Statement - java.lang.Thread.sleep(7000)
+
+2018-11-01 12:25:11 - [MESSAGE][NOT_RUN] - NOT_RUN: Statement - java.lang.Thread.sleep(7000)
+
+2018-11-01 12:25:11 - [TEST_STEP][NOT_RUN] - FormName.fillFormName: NOT_RUN: FormName.fillFormName
+
+2018-11-01 12:25:11 - [MESSAGE][NOT_RUN] - NOT_RUN: FormName.fillFormName
+
+2018-11-01 12:25:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/options' is clicked on
+
+2018-11-01 12:25:12 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/options' is clicked on
+
+2018-11-01 12:25:12 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:25:14 - [TEST_STEP][PASSED] - mouseOver: Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2018-11-01 12:25:14 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2018-11-01 12:25:14 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:25:16 - [TEST_STEP][PASSED] - FormName.filterFormName: FormName.filterFormName is PASSED
+
+2018-11-01 12:25:16 - [MESSAGE][PASSED] - FormName.filterFormName is PASSED
+
+2018-11-01 12:25:16 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:25:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2018-11-01 12:25:18 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2018-11-01 12:25:18 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:25:22 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id="scs-forms-grid"]/div[2]/table/tbody/tr/td[1]' not found)
+
+2018-11-01 12:25:54 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id="scs-forms-grid"]/div[2]/table/tbody/tr/td[1]' not found)
+[[ATTACHMENT|D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\SmokeSuite\\20181101_115548\\1541055353749.png]]]]></system-out>
+         <system-err><![CDATA[2018-11-01 12:24:27 - [TEST_CASE][FAILED] - Test Cases/Forms/CheckForm/2_FormSubmission: Test Cases/Forms/CheckForm/2_FormSubmission FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id="scs-forms-grid"]/div[2]/table/tbody/tr/td[1]' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at Script1540883572275.run(Script1540883572275.groovy:69)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/CheckForm/3_VerifyingRecord" classname="Test Cases/Forms/CheckForm/3_VerifyingRecord" status="FAILED">
+         <failure type="FAILED" message="(Stack trace: com.kms.katalon.core.exception.StepFailedException: Fail to click on element
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:15)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)
+	at FormName.recordFormName(FormName.groovy:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:144)
+	at FormName.invokeMethod(FormName.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:46)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.call(StaticMetaClassSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at Script1540883572289.run(Script1540883572289.groovy:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)"/>
+         <system-out><![CDATA[2018-11-01 12:25:54 - [TEST_CASE][FAILED] - Test Cases/Forms/CheckForm/3_VerifyingRecord: Test Cases/Forms/CheckForm/3_VerifyingRecord FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Fail to click on element
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:15)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)
+	at FormName.recordFormName(FormName.groovy:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:144)
+	at FormName.invokeMethod(FormName.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:46)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.call(StaticMetaClassSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at Script1540883572289.run(Script1540883572289.groovy:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)
+
+2018-11-01 12:25:54 - [TEST_STEP][NOT_RUN] - openBrowser: NOT_RUN: openBrowser
+
+2018-11-01 12:25:54 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser
+
+2018-11-01 12:25:54 - [TEST_STEP][NOT_RUN] - maximizeWindow: NOT_RUN: maximizeWindow
+
+2018-11-01 12:25:54 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow
+
+2018-11-01 12:25:54 - [TEST_STEP][NOT_RUN] - setText: NOT_RUN: setText
+
+2018-11-01 12:25:54 - [MESSAGE][NOT_RUN] - NOT_RUN: setText
+
+2018-11-01 12:25:54 - [TEST_STEP][NOT_RUN] - setText: NOT_RUN: setText
+
+2018-11-01 12:25:54 - [MESSAGE][NOT_RUN] - NOT_RUN: setText
+
+2018-11-01 12:25:54 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-11-01 12:25:54 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-11-01 12:25:54 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(8000): null
+
+2018-11-01 12:26:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Record/record_Tab' is clicked on
+
+2018-11-01 12:26:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/record_Tab' is clicked on
+
+2018-11-01 12:26:02 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:26:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/clickToViewMoreOption' is clicked on
+
+2018-11-01 12:26:06 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/clickToViewMoreOption' is clicked on
+
+2018-11-01 12:26:06 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:26:08 - [TEST_STEP][PASSED] - waitForElementNotVisible: Object 'Object Repository/FormTab/select500_Form' is visible after 5 second(s)
+
+2018-11-01 12:26:13 - [MESSAGE][WARNING] - Object 'Object Repository/FormTab/select500_Form' is visible after 5 second(s)
+
+2018-11-01 12:26:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/select500_Form' is clicked on
+
+2018-11-01 12:26:14 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/select500_Form' is clicked on
+
+2018-11-01 12:26:14 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(8000): null
+
+2018-11-01 12:26:22 - [TEST_STEP][FAILED] - FormName.recordFormName: Fail to click on element
+
+2018-11-01 12:26:22 - [MESSAGE][FAILED] - Fail to click on element
+
+2018-11-01 12:26:22 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[2018-11-01 12:25:54 - [TEST_CASE][FAILED] - Test Cases/Forms/CheckForm/3_VerifyingRecord: Test Cases/Forms/CheckForm/3_VerifyingRecord FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Fail to click on element
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:15)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed.call(Unknown Source)
+	at FormName.recordFormName(FormName.groovy:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at groovy.lang.DelegatingMetaClass.invokeMethod(DelegatingMetaClass.java:144)
+	at FormName.invokeMethod(FormName.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:46)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.call(StaticMetaClassSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at Script1540883572289.run(Script1540883572289.groovy:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/QuestionaitreForm/1_CreateForm" classname="Test Cases/Forms/QuestionaitreForm/1_CreateForm" status="PASSED">
+         <system-out><![CDATA[2018-11-01 12:26:26 - [TEST_CASE][PASSED] - Test Cases/Forms/QuestionaitreForm/1_CreateForm: Test Cases/Forms/QuestionaitreForm/1_CreateForm
+
+2018-11-01 12:26:26 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-01 12:26:26 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-11-01 12:26:44 - [MESSAGE][PASSED] - Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-01 12:26:44 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-11-01 12:26:45 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-01 12:26:45 - [TEST_STEP][PASSED] - setText: Text 'superadmin' is set on object 'Object Repository/Form_Selection_Creation/login_Username'
+
+2018-11-01 12:26:50 - [MESSAGE][PASSED] - Text 'superadmin' is set on object 'Object Repository/Form_Selection_Creation/login_Username'
+
+2018-11-01 12:26:50 - [TEST_STEP][PASSED] - setText: Text 'sliptest23772clam' is set on object 'Object Repository/Form_Selection_Creation/login_Password'
+
+2018-11-01 12:26:50 - [MESSAGE][PASSED] - Text 'sliptest23772clam' is set on object 'Object Repository/Form_Selection_Creation/login_Password'
+
+2018-11-01 12:26:50 - [TEST_STEP][PASSED] - FormName.setData: FormName.setData is PASSED
+
+2018-11-01 12:26:50 - [MESSAGE][PASSED] - FormName.setData is PASSED
+
+2018-11-01 12:26:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/login_Button' is clicked on
+
+2018-11-01 12:26:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/login_Button' is clicked on
+
+2018-11-01 12:26:52 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:26:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2018-11-01 12:26:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2018-11-01 12:26:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2018-11-01 12:26:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2018-11-01 12:26:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2018-11-01 12:26:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2018-11-01 12:26:56 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:26:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/selectQuestionaireForm' is clicked on
+
+2018-11-01 12:26:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/selectQuestionaireForm' is clicked on
+
+2018-11-01 12:26:58 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:00 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2018-11-01 12:27:01 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2018-11-01 12:27:01 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:27:05 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:27:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:27:05 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:27:08 - [TEST_STEP][PASSED] - FormName.createForm: FormName.createForm is PASSED
+
+2018-11-01 12:27:09 - [MESSAGE][PASSED] - FormName.createForm is PASSED
+
+2018-11-01 12:27:09 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:11 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2018-11-01 12:27:12 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2018-11-01 12:27:12 - [TEST_STEP][PASSED] - setText: Text 'This is Section ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName_text'
+
+2018-11-01 12:27:12 - [MESSAGE][PASSED] - Text 'This is Section ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName_text'
+
+2018-11-01 12:27:12 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:14 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2018-11-01 12:27:15 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2018-11-01 12:27:15 - [TEST_STEP][PASSED] - setText: Text 'This is Field Group ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FieldGroupName_text'
+
+2018-11-01 12:27:15 - [MESSAGE][PASSED] - Text 'This is Field Group ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FieldGroupName_text'
+
+2018-11-01 12:27:15 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:17 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:18 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:18 - [TEST_STEP][PASSED] - setText: Text 'This is Single Line Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SingleLineName_Text'
+
+2018-11-01 12:27:19 - [MESSAGE][PASSED] - Text 'This is Single Line Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SingleLineName_Text'
+
+2018-11-01 12:27:19 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:21 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:21 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:21 - [TEST_STEP][PASSED] - setText: Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName_Text'
+
+2018-11-01 12:27:22 - [MESSAGE][PASSED] - Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName_Text'
+
+2018-11-01 12:27:22 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:24 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:25 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:25 - [TEST_STEP][PASSED] - setText: Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName_text'
+
+2018-11-01 12:27:25 - [MESSAGE][PASSED] - Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName_text'
+
+2018-11-01 12:27:25 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:27:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2018-11-01 12:27:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2018-11-01 12:27:28 - [TEST_STEP][PASSED] - setText: Text 'SingleOption1' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue1'
+
+2018-11-01 12:27:28 - [MESSAGE][PASSED] - Text 'SingleOption1' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue1'
+
+2018-11-01 12:27:28 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2018-11-01 12:27:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2018-11-01 12:27:31 - [TEST_STEP][PASSED] - setText: Text 'SingleOption2' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue2'
+
+2018-11-01 12:27:31 - [MESSAGE][PASSED] - Text 'SingleOption2' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue2'
+
+2018-11-01 12:27:31 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:33 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:34 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:34 - [TEST_STEP][PASSED] - setText: Text 'This is Select Multiple' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName_text'
+
+2018-11-01 12:27:34 - [MESSAGE][PASSED] - Text 'This is Select Multiple' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName_text'
+
+2018-11-01 12:27:34 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:27:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2018-11-01 12:27:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2018-11-01 12:27:37 - [TEST_STEP][PASSED] - setText: Text 'MultipleOption1' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue1'
+
+2018-11-01 12:27:38 - [MESSAGE][PASSED] - Text 'MultipleOption1' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue1'
+
+2018-11-01 12:27:38 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2018-11-01 12:27:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2018-11-01 12:27:40 - [TEST_STEP][PASSED] - setText: Text 'MultipleOption2' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue2'
+
+2018-11-01 12:27:40 - [MESSAGE][PASSED] - Text 'MultipleOption2' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue2'
+
+2018-11-01 12:27:40 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:42 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:43 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:43 - [TEST_STEP][PASSED] - setText: Text 'This is a Number' is set on object 'Object Repository/Form_Selection_Creation/formDesign_NumericName_Text'
+
+2018-11-01 12:27:44 - [MESSAGE][PASSED] - Text 'This is a Number' is set on object 'Object Repository/Form_Selection_Creation/formDesign_NumericName_Text'
+
+2018-11-01 12:27:44 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:46 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:46 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:46 - [TEST_STEP][PASSED] - setText: Text 'This is a Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName_Text'
+
+2018-11-01 12:27:47 - [MESSAGE][PASSED] - Text 'This is a Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName_Text'
+
+2018-11-01 12:27:47 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:49 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:50 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:50 - [TEST_STEP][PASSED] - setText: Text 'This is a Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName_text'
+
+2018-11-01 12:27:50 - [MESSAGE][PASSED] - Text 'This is a Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName_text'
+
+2018-11-01 12:27:50 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:52 - [TEST_STEP][PASSED] - dragAndDropToObject: Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:53 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2018-11-01 12:27:53 - [TEST_STEP][PASSED] - setText: Text 'This is a Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName_Text'
+
+2018-11-01 12:27:54 - [MESSAGE][PASSED] - Text 'This is a Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName_Text'
+
+2018-11-01 12:27:54 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:27:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:27:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2018-11-01 12:27:56 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:28:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2018-11-01 12:28:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2018-11-01 12:28:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2018-11-01 12:28:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2018-11-01 12:28:00 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/QuestionaitreForm/2_FormSubmission" classname="Test Cases/Forms/QuestionaitreForm/2_FormSubmission" status="PASSED">
+         <system-out><![CDATA[2018-11-01 12:28:04 - [TEST_CASE][PASSED] - Test Cases/Forms/QuestionaitreForm/2_FormSubmission: Test Cases/Forms/QuestionaitreForm/2_FormSubmission
+
+2018-11-01 12:28:04 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-11-01 12:28:04 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-11-01 12:28:07 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-11-01 12:28:07 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2018-11-01 12:28:42 - [MESSAGE][PASSED] - Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2018-11-01 12:28:42 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-11-01 12:28:43 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-01 12:28:43 - [TEST_STEP][PASSED] - Statement - driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(): null
+
+2018-11-01 12:28:43 - [TEST_STEP][PASSED] - setText: Text 'superadmin' is set on object 'Object Repository/FormTab/login_Username'
+
+2018-11-01 12:28:47 - [MESSAGE][PASSED] - Text 'superadmin' is set on object 'Object Repository/FormTab/login_Username'
+
+2018-11-01 12:28:47 - [TEST_STEP][PASSED] - setText: Text 'sliptest23772clam' is set on object 'Object Repository/FormTab/login_Password'
+
+2018-11-01 12:28:47 - [MESSAGE][PASSED] - Text 'sliptest23772clam' is set on object 'Object Repository/FormTab/login_Password'
+
+2018-11-01 12:28:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/login_Button' is clicked on
+
+2018-11-01 12:28:49 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/login_Button' is clicked on
+
+2018-11-01 12:28:49 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(10000): null
+
+2018-11-01 12:28:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2018-11-01 12:28:59 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2018-11-01 12:28:59 - [TEST_STEP][NOT_RUN] - Statement - java.lang.Thread.sleep(4000): NOT_RUN: Statement - java.lang.Thread.sleep(4000)
+
+2018-11-01 12:28:59 - [MESSAGE][NOT_RUN] - NOT_RUN: Statement - java.lang.Thread.sleep(4000)
+
+2018-11-01 12:28:59 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-11-01 12:28:59 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-11-01 12:28:59 - [TEST_STEP][NOT_RUN] - waitForElementNotVisible: NOT_RUN: waitForElementNotVisible
+
+2018-11-01 12:28:59 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotVisible
+
+2018-11-01 12:28:59 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-11-01 12:28:59 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-11-01 12:28:59 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:29:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/options' is clicked on
+
+2018-11-01 12:29:02 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/options' is clicked on
+
+2018-11-01 12:29:02 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:29:04 - [TEST_STEP][PASSED] - mouseOver: Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2018-11-01 12:29:04 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2018-11-01 12:29:04 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:29:06 - [TEST_STEP][PASSED] - FormName.filterFormName: FormName.filterFormName is PASSED
+
+2018-11-01 12:29:07 - [MESSAGE][PASSED] - FormName.filterFormName is PASSED
+
+2018-11-01 12:29:07 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:29:09 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2018-11-01 12:29:09 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2018-11-01 12:29:09 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:29:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/selectForm' is clicked on
+
+2018-11-01 12:29:13 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/selectForm' is clicked on
+
+2018-11-01 12:29:13 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:29:17 - [TEST_STEP][NOT_RUN] - FormName.fillFormName: NOT_RUN: FormName.fillFormName
+
+2018-11-01 12:29:17 - [MESSAGE][NOT_RUN] - NOT_RUN: FormName.fillFormName
+
+2018-11-01 12:29:17 - [TEST_STEP][NOT_RUN] - Statement - java.lang.Thread.sleep(4000): NOT_RUN: Statement - java.lang.Thread.sleep(4000)
+
+2018-11-01 12:29:17 - [MESSAGE][NOT_RUN] - NOT_RUN: Statement - java.lang.Thread.sleep(4000)
+
+2018-11-01 12:29:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/fillForm_OpenLocationOption' is clicked on
+
+2018-11-01 12:29:17 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/fillForm_OpenLocationOption' is clicked on
+
+2018-11-01 12:29:17 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:29:19 - [TEST_STEP][NOT_RUN] - delay: NOT_RUN: delay
+
+2018-11-01 12:29:19 - [MESSAGE][NOT_RUN] - NOT_RUN: delay
+
+2018-11-01 12:29:19 - [TEST_STEP][PASSED] - waitForElementNotVisible: Object 'Object Repository/FormTab/fillForm_SelectLocation' is visible after 5 second(s)
+
+2018-11-01 12:29:24 - [MESSAGE][WARNING] - Object 'Object Repository/FormTab/fillForm_SelectLocation' is visible after 5 second(s)
+
+2018-11-01 12:29:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/fillForm_SelectLocation' is clicked on
+
+2018-11-01 12:29:25 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/fillForm_SelectLocation' is clicked on
+
+2018-11-01 12:29:25 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:29:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/fillForm_OpenResourceOption' is clicked on
+
+2018-11-01 12:29:28 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/fillForm_OpenResourceOption' is clicked on
+
+2018-11-01 12:29:28 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:29:30 - [TEST_STEP][NOT_RUN] - delay: NOT_RUN: delay
+
+2018-11-01 12:29:30 - [MESSAGE][NOT_RUN] - NOT_RUN: delay
+
+2018-11-01 12:29:30 - [TEST_STEP][PASSED] - waitForElementNotVisible: Object 'Object Repository/FormTab/fillForm_SelectResource' is visible after 5 second(s)
+
+2018-11-01 12:29:35 - [MESSAGE][WARNING] - Object 'Object Repository/FormTab/fillForm_SelectResource' is visible after 5 second(s)
+
+2018-11-01 12:29:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/fillForm_SelectResource' is clicked on
+
+2018-11-01 12:29:35 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/fillForm_SelectResource' is clicked on
+
+2018-11-01 12:29:35 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:29:38 - [TEST_STEP][PASSED] - setText: Text 'MyText' is set on object 'Object Repository/FormTab/fillForm_FreeSingleText'
+
+2018-11-01 12:29:38 - [MESSAGE][PASSED] - Text 'MyText' is set on object 'Object Repository/FormTab/fillForm_FreeSingleText'
+
+2018-11-01 12:29:38 - [TEST_STEP][PASSED] - setText: Text 'MyParagraph' is set on object 'Object Repository/FormTab/fillForm_ParagraphText'
+
+2018-11-01 12:29:39 - [MESSAGE][PASSED] - Text 'MyParagraph' is set on object 'Object Repository/FormTab/fillForm_ParagraphText'
+
+2018-11-01 12:29:39 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:29:42 - [TEST_STEP][PASSED] - setText: Text 'SingleOption1' is set on object 'Object Repository/FormTab/fillForm_SelectOneOption'
+
+2018-11-01 12:29:42 - [MESSAGE][PASSED] - Text 'SingleOption1' is set on object 'Object Repository/FormTab/fillForm_SelectOneOption'
+
+2018-11-01 12:29:42 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:29:45 - [TEST_STEP][PASSED] - Statement - driver.findElement(org.openqa.selenium.By.xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(ENTER): null
+
+2018-11-01 12:29:45 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:29:48 - [TEST_STEP][PASSED] - setText: Text 'MultipleOption1' is set on object 'Object Repository/FormTab/fillForm_SelectMultipleOption'
+
+2018-11-01 12:29:48 - [MESSAGE][PASSED] - Text 'MultipleOption1' is set on object 'Object Repository/FormTab/fillForm_SelectMultipleOption'
+
+2018-11-01 12:29:48 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:29:51 - [TEST_STEP][PASSED] - Statement - driver.findElement(org.openqa.selenium.By.xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(ENTER): null
+
+2018-11-01 12:29:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/fillForm_SelectMultipleOption' is clicked on
+
+2018-11-01 12:29:51 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/fillForm_SelectMultipleOption' is clicked on
+
+2018-11-01 12:29:51 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:29:55 - [TEST_STEP][PASSED] - Statement - driver.findElement(org.openqa.selenium.By.xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9"): null
+
+2018-11-01 12:29:56 - [TEST_STEP][PASSED] - setText: Text '10/18/2018' is set on object 'Object Repository/FormTab/fillForm_DateText'
+
+2018-11-01 12:29:56 - [MESSAGE][PASSED] - Text '10/18/2018' is set on object 'Object Repository/FormTab/fillForm_DateText'
+
+2018-11-01 12:29:56 - [TEST_STEP][PASSED] - setText: Text '9:00 AM' is set on object 'Object Repository/FormTab/fillForm_TimeText'
+
+2018-11-01 12:29:56 - [MESSAGE][PASSED] - Text '9:00 AM' is set on object 'Object Repository/FormTab/fillForm_TimeText'
+
+2018-11-01 12:29:56 - [TEST_STEP][PASSED] - setText: Text '10/18/2018 9:00 AM' is set on object 'Object Repository/FormTab/fillForm_DateTimeText'
+
+2018-11-01 12:29:56 - [MESSAGE][PASSED] - Text '10/18/2018 9:00 AM' is set on object 'Object Repository/FormTab/fillForm_DateTimeText'
+
+2018-11-01 12:29:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/fillForm_SubmitButton' is clicked on
+
+2018-11-01 12:29:56 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/fillForm_SubmitButton' is clicked on
+
+2018-11-01 12:29:56 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(2000): null
+
+2018-11-01 12:29:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/FormTab/fillForm_SubmissionOkButton' is clicked on
+
+2018-11-01 12:29:58 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/fillForm_SubmissionOkButton' is clicked on
+
+2018-11-01 12:29:58 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/QuestionaitreForm/3_VerifyingDocument" classname="Test Cases/Forms/QuestionaitreForm/3_VerifyingDocument" status="PASSED">
+         <system-out><![CDATA[2018-11-01 12:30:01 - [TEST_CASE][PASSED] - Test Cases/Forms/QuestionaitreForm/3_VerifyingDocument: Test Cases/Forms/QuestionaitreForm/3_VerifyingDocument
+
+2018-11-01 12:30:02 - [TEST_STEP][NOT_RUN] - openBrowser: NOT_RUN: openBrowser
+
+2018-11-01 12:30:02 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser
+
+2018-11-01 12:30:02 - [TEST_STEP][NOT_RUN] - setText: NOT_RUN: setText
+
+2018-11-01 12:30:02 - [MESSAGE][NOT_RUN] - NOT_RUN: setText
+
+2018-11-01 12:30:02 - [TEST_STEP][NOT_RUN] - setText: NOT_RUN: setText
+
+2018-11-01 12:30:02 - [MESSAGE][NOT_RUN] - NOT_RUN: setText
+
+2018-11-01 12:30:02 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-11-01 12:30:02 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-11-01 12:30:02 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(8000): null
+
+2018-11-01 12:30:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/DocumentTab/documentTab' is clicked on
+
+2018-11-01 12:30:10 - [MESSAGE][PASSED] - Object: 'Object Repository/DocumentTab/documentTab' is clicked on
+
+2018-11-01 12:30:10 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(6000): null
+
+2018-11-01 12:30:16 - [TEST_STEP][PASSED] - FormName.documentFormName: FormName.documentFormName is PASSED
+
+2018-11-01 12:30:16 - [MESSAGE][PASSED] - FormName.documentFormName is PASSED
+
+2018-11-01 12:30:16 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/QuestionaitreForm/4_VerifyingDMS" classname="Test Cases/Forms/QuestionaitreForm/4_VerifyingDMS" status="PASSED">
+         <system-out><![CDATA[2018-11-01 12:30:20 - [TEST_CASE][PASSED] - Test Cases/Forms/QuestionaitreForm/4_VerifyingDMS: Test Cases/Forms/QuestionaitreForm/4_VerifyingDMS
+
+2018-11-01 12:30:20 - [TEST_STEP][NOT_RUN] - openBrowser: NOT_RUN: openBrowser
+
+2018-11-01 12:30:20 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser
+
+2018-11-01 12:30:20 - [TEST_STEP][NOT_RUN] - setText: NOT_RUN: setText
+
+2018-11-01 12:30:20 - [MESSAGE][NOT_RUN] - NOT_RUN: setText
+
+2018-11-01 12:30:20 - [TEST_STEP][NOT_RUN] - setText: NOT_RUN: setText
+
+2018-11-01 12:30:20 - [MESSAGE][NOT_RUN] - NOT_RUN: setText
+
+2018-11-01 12:30:20 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-11-01 12:30:20 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-11-01 12:30:20 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:30:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/DMS_Forms/mainmenu_button' is clicked on
+
+2018-11-01 12:30:24 - [MESSAGE][PASSED] - Object: 'Object Repository/DMS_Forms/mainmenu_button' is clicked on
+
+2018-11-01 12:30:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/DMS_Forms/mainmenu_Document' is clicked on
+
+2018-11-01 12:30:24 - [MESSAGE][PASSED] - Object: 'Object Repository/DMS_Forms/mainmenu_Document' is clicked on
+
+2018-11-01 12:30:24 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(3000): null
+
+2018-11-01 12:30:27 - [TEST_STEP][PASSED] - FormName.findinDMS: FormName.findinDMS is PASSED
+
+2018-11-01 12:30:28 - [MESSAGE][PASSED] - FormName.findinDMS is PASSED
+
+2018-11-01 12:30:28 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-11-01 12:30:32 - [TEST_STEP][PASSED] - doubleClick: Object: 'Object Repository/DMS_Forms/openDocument' is double clicked on
+
+2018-11-01 12:30:32 - [MESSAGE][PASSED] - Object: 'Object Repository/DMS_Forms/openDocument' is double clicked on
+
+2018-11-01 12:30:32 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-11-01 12:15:47 - [TEST_SUITE][FAILED] - SmokeSuite: Test Cases/Forms/AuditForm/2_FormSubmission FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id="scs-forms-grid"]/div[2]/table/tbody/tr/td[1]' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at Script1540883572231.run(Script1540883572231.groovy:54)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)]]></system-out>
+      <system-err><![CDATA[2018-11-01 12:15:47 - [TEST_SUITE][FAILED] - SmokeSuite: Test Cases/Forms/AuditForm/2_FormSubmission FAILED because (of) (Stack trace: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/FormTab/selectForm' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //*[@id="scs-forms-grid"]/div[2]/table/tbody/tr/td[1]' not found)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:36)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:53)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at Script1540883572231.run(Script1540883572231.groovy:54)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:183)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:108)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:294)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:264)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:256)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:200)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:142)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+	at TempTestSuite1541053548416.run(TempTestSuite1541053548416.groovy:36)
+	at groovy.lang.GroovyShell.runScriptOrMainOrTestOrRunnable(GroovyShell.java:263)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:518)
+	at groovy.lang.GroovyShell.run(GroovyShell.java:507)
+	at groovy.ui.GroovyMain.processOnce(GroovyMain.java:653)
+	at groovy.ui.GroovyMain.run(GroovyMain.java:384)
+	at groovy.ui.GroovyMain.process(GroovyMain.java:370)
+	at groovy.ui.GroovyMain.processArgs(GroovyMain.java:129)
+	at groovy.ui.GroovyMain.main(GroovyMain.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:109)
+	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:131)
+)]]></system-err>
+   </testsuite>
+</testsuites>

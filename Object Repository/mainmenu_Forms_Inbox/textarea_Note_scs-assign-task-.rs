@@ -9,11 +9,15 @@
          <key>XPATH</key>
          <value>//div[@id='scs-popup']/div/div/div[2]/div[6]/div[2]/textarea</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-popup&quot;]/div/div/div/div/div/textarea</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -45,7 +49,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;scs-popup&quot;)/div[@class=&quot;ng-scope&quot;]/div[@class=&quot;scs-assign-task-template ng-scope&quot;]/div[@class=&quot;scs-assign-task-body&quot;]/div[@class=&quot;scs-assign-task-row&quot;]/div[@class=&quot;scs-assign-task-right&quot;]/textarea[@class=&quot;scs-assign-task-textarea ng-untouched ng-valid ng-valid-maxlength ng-not-empty ng-dirty ng-valid-parse&quot;]</value>
+      <value>//*[@id=&quot;scs-popup&quot;]/div/div/div/div/div/textarea</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

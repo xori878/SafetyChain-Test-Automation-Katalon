@@ -57,49 +57,50 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Assign Tasks'))
 
-WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Task Name_scs-assign-tas'), 'MyTask')
+WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Task Name_scs-assign-tas'), findTestData('FormData').getValue('TaskName', 
+        1))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_AA'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_AA'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_AK'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_AK'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_NWG79956'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_NWG79956'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_WorkGroup24322'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_WorkGroup24322'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Select Resource'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Select Resource'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Select Resource'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Select Resource'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_AK'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_AK'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_AA'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_AA'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_WorkGroup24322'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_WorkGroup24322'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/div_Resource'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/div_Resource'))
 
-WebUI.doubleClick(findTestObject('mainmenu_Forms_Inbox/span_Select Resource'))
+not_run: WebUI.doubleClick(findTestObject('mainmenu_Forms_Inbox/span_Select Resource'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/body_STAGE        SuperAdmin U'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/body_STAGE        SuperAdmin U'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_WorkGroup24322'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_WorkGroup24322'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_NWG79956'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_NWG79956'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Select Resource'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Select Resource'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/div_Select Resource'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/div_Select Resource'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/body_STAGE        SuperAdmin U_1'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/body_STAGE        SuperAdmin U_1'))
 
-WebUI.doubleClick(findTestObject('mainmenu_Forms_Inbox/body_STAGE        SuperAdmin U_2'))
+not_run: WebUI.doubleClick(findTestObject('mainmenu_Forms_Inbox/body_STAGE        SuperAdmin U_2'))
 
-WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Due By_scs-assigntask-da'), 's')
+not_run: WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Due By_scs-assigntask-da'), 's')
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Due By_k-icon k-i-clock'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Due By_k-icon k-i-clock'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_0030'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_0030'))
 
 WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Due By_scs-assigntask-da'), '11/01/2018 00:30')
 
@@ -113,9 +114,11 @@ WebUI.click(findTestObject('mainmenu_Forms_Inbox/div_Inbox'))
 
 WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Task Total_searchInput n'), 'asas')
 
-WebUI.sendKeys(findTestObject('mainmenu_Forms_Inbox/input_Task Total_searchInput n'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('mainmenu_Forms_Inbox/Submit'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/div_Task Total_k-grid-content'))
+not_run: WebUI.sendKeys(findTestObject('mainmenu_Forms_Inbox/input_Task Total_searchInput n'), Keys.chord(Keys.ENTER))
 
-WebUI.closeBrowser()
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/div_Task Total_k-grid-content'))
+
+not_run: WebUI.closeBrowser()
 

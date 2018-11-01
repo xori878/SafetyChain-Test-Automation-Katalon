@@ -9,11 +9,15 @@
          <key>XPATH</key>
          <value>(//input[@type='text'])[2]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-popup&quot;]/div/div/div/div/div/input</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -27,7 +31,7 @@
       <value>scs-assign-task-input ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
@@ -41,11 +45,11 @@
       <value>assignTaskInfo.taskName</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;scs-popup&quot;)/div[@class=&quot;ng-scope&quot;]/div[@class=&quot;scs-assign-task-template ng-scope&quot;]/div[@class=&quot;scs-assign-task-body&quot;]/div[@class=&quot;scs-assign-task-row&quot;]/div[@class=&quot;scs-assign-task-right&quot;]/input[@class=&quot;scs-assign-task-input ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse&quot;]</value>
+      <value>//*[@id=&quot;scs-popup&quot;]/div/div/div/div/div/input</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

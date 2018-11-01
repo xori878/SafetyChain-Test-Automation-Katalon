@@ -61,10 +61,10 @@ Thread.sleep(4000)
 
 WebUI.click(findTestObject('Role-Latest/ManageRoles_div_adit s_scs-user-icon'))
 
-Thread.sleep(4000)
+Thread.sleep(5000)
 
-WebUI.verifyElementChecked(findTestObject('User_role Attachment-Latest/Page_SafetyChain/Page_SafetyChain/ToCheckElementIsTicked'),
-		5)
+WebUI.verifyElementChecked(findTestObject('User_role Attachment-Latest/Page_SafetyChain/Page_SafetyChain/ToCheckElementIsTicked'), 
+    5)
 
 WebUI.click(findTestObject('Role-Latest/ManageRoles_li_Logout'))
 

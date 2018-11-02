@@ -53,7 +53,7 @@ Thread.sleep(2000)
 
 WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/formDesign_SelectSection'), findTestObject('Form_Selection_Creation/default_area'))
 
-WebUI.setText(findTestObject('Form_Selection_Creation/formDesign_SectionName'), 'This is Section')
+WebUI.setText(findTestObject('Form_Selection_Creation/formDesign_SectionName'), 'This is a Section')
 
 Thread.sleep(2000)
 

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>selectForm</name>
+   <name>selectTask</name>
    <tag></tag>
-   <elementGuidId>1afc3925-d6db-4323-bb7d-97171d3cb327</elementGuidId>
+   <elementGuidId>50483490-3bee-47dd-ac63-54c296eda12b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;scs-forms-grid&quot;]/div/table/tbody/tr/td[1]</value>
+         <value>//*[@id=&quot;scs-inbox-grid-container&quot;]/div/table/tbody/tr</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;scs-forms-grid&quot;]/div/table/tbody/tr/td[1]</value>
+      <value>//*[@id=&quot;scs-inbox-grid-container&quot;]/div/table/tbody/tr</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Resource</name>
+   <name>Inbox</name>
    <tag></tag>
-   <elementGuidId>0f2a2092-1199-46e9-874d-52015b6a7e3d</elementGuidId>
+   <elementGuidId>3e92ff2a-63a9-4b3f-a25d-ca2007bb74d2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='scs-popup']/div/div/div[2]/div[4]</value>
+         <value>//div[@id='17ec1ed7-f52a-42e7-93ed-162088daeef1']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-main-navigation&quot;]/div/div[contains(text(),&quot;Inbox&quot;)]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -22,53 +26,59 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ng-if</name>
+      <name>class</name>
       <type>Main</type>
-      <value>assignTaskInfo.taskType === 'Form'</value>
+      <value>k-list-optionlabel ng-scope k-state-selected k-state-focused k-state-hover</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>id</name>
       <type>Main</type>
-      <value>scs-assign-task-row ng-scope</value>
+      <value>17ec1ed7-f52a-42e7-93ed-162088daeef1</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>             Resource                              Select Resource                      </value>
+      <value>Select Resource</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;scs-popup&quot;)/div[@class=&quot;ng-scope&quot;]/div[@class=&quot;scs-assign-task-template ng-scope&quot;]/div[@class=&quot;scs-assign-task-body&quot;]/div[@class=&quot;scs-assign-task-row ng-scope&quot;]</value>
+      <value>//*[@id=&quot;scs-main-navigation&quot;]/div/div[contains(text(),&quot;Inbox&quot;)]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <value>//div[@id='scs-popup']/div/div/div[2]/div[4]</value>
+      <name>xpath:attributes</name>
+      <value>//div[@id='17ec1ed7-f52a-42e7-93ed-162088daeef1']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='WorkGroup24322'])[1]/following::div[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No data found.'])[11]/following::div[5]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Assign To'])[1]/following::div[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='WorkGroup42424'])[3]/following::div[7]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No data found.'])[12]/preceding::div[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
-      <value>//div[2]/div/div/div[2]/div[4]</value>
+      <value>//div[25]/div/div</value>
    </webElementXpaths>
 </WebElementEntity>

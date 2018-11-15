@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectInDocument</name>
+   <tag></tag>
+   <elementGuidId>3e1d9b7a-e67f-4226-a5df-426115f08c07</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-documents-grid&quot;]/div/table/tbody/tr/td[contains(text(),&quot;Desert.jpg&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-documents-grid&quot;]/div/table/tbody/tr/td[contains(text(),&quot;Desert.jpg&quot;)]</value>
+   </webElementProperties>
+</WebElementEntity>

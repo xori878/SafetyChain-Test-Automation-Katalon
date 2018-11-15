@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>addnew_Button_DependencyRule</name>
+   <tag></tag>
+   <elementGuidId>45531973-2355-46a5-836d-e46cd9167e9e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-designform-form-content-prop-area&quot;]/div/div/div[1]/div/div/div/button</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-designform-form-content-prop-area&quot;]/div/div/div[1]/div/div/div/button</value>
+   </webElementProperties>
+</WebElementEntity>

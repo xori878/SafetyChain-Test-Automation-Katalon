@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>task_Options</name>
+   <tag></tag>
+   <elementGuidId>fc2f1246-70f9-4b47-bd93-ed82cd7eaede</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-tasks-grid&quot;]/div[1]/div/table/thead/tr/th[3]/a/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-tasks-grid&quot;]/div[1]/div/table/thead/tr/th[3]/a/i</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>filter_Task_Name</name>
+   <tag></tag>
+   <elementGuidId>672cc5d5-af82-4f6b-b920-2d96216a6a89</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/div[last()]/div/ul/li/div/ul/li/div/form/div/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/div[last()]/div/ul/li/div/ul/li/div/form/div/input</value>
+   </webElementProperties>
+</WebElementEntity>

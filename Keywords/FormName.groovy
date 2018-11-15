@@ -57,6 +57,8 @@ class FormName {
 	LocalDateTime now = LocalDateTime.now();
 	public String form_name = "AUTO_TOOL_KAT_FORM_"+dtf.format(now);
 	public String task_name = "AUTO_TOOL_KAT_TASK_"+dtf.format(now);
+	public String document_name = "AUTO_TOOL_KAT_DOCUMENT_"+dtf.format(now);
+	public String new_document_name = "AUTO_TOOL_KAT_DOCUMENT1_"+dtf.format(now);
 	@Keyword
 	def setData() {
 		try {
@@ -161,5 +163,90 @@ class FormName {
 		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
 		workbook.write(outFile);
 		outFile.close();
+	}
+
+	@Keyword
+	def setDocumentName() {
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		sheet.getRow(1).createCell(2).setCellValue(document_name);
+		sheet.getRow(1).createCell(3).setCellValue(new_document_name);
+		file.close();
+		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
+		workbook.write(outFile);
+		outFile.close();
+	}
+
+	@Keyword
+	def setNewDocumentName() {
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		sheet.getRow(1).createCell(3).setCellValue(new_document_name);
+		file.close();
+		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
+		workbook.write(outFile);
+		outFile.close();
+	}
+	@Keyword
+	def getDocumentName() {
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		String documentName = sheet.getRow(1).getCell(2);
+		file.close();
+
+		driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]")).click()
+
+	}
+
+	@Keyword
+	def getDocumentName1() {
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		String documentName = sheet.getRow(1).getCell(3);
+		file.close();
+
+		driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]")).click()
+
+	}
+
+	@Keyword
+	def getSize() {
+		try {
+
+			Actions actions = new Actions(driver);
+			WebElement srcElement = driver.findElement(By.xpath("//*[@id='scs-rule-builder-right-header-container']/div[contains(text(),'Value')]"));
+			WebElement targetElement = driver.findElement(By.xpath("//*[@id='scs-rule-builder-container']/div/div/div[3]/div[2]"));
+			//actions.dragAndDrop(srcElement, targetElement);
+			actions.dragAndDropBy(srcElement, 660, 230)
+			actions.build().perform();
+
+			//WebElement dragElement = driver.findElement(By.id("//*[@id='scs-rule-builder-right-header-container']/div[contains(text(),'Value')]"));
+			//WebElement dropElement = driver.findElement(By.id("//*[@id='scs-rule-builder-container']/div/div/div[3]/div[2]"));
+			//Actions act = new Actions(driver);
+			//	builder.clickAndHold(dragElement).moveToElement(dropElement).release().build().perform();
+			//	act.dragAndDropBy(dragElement,580,230).build().perform();
+			/*	WebElement From=driver.findElement(By.xpath("//*[@id='scs-rule-builder-right-header-container']/div[contains(text(),'Value')]"));
+			 //	WebElement To=driver.findElement(By.xpath("//*[@id='scs-rule-builder-container']/div/div/div[1]/div[2]"));
+			 WebElement To=driver.findElement(By.xpath("//*[@id='scs-rule-builder-container']/div/div/div[1]/div/div/span"));
+			 Actions act=new Actions(driver);
+			 //
+			 act.dragAndDrop(From, To).build().perform();
+			 */
+			/*WebElement Image = driver.findElement(By.xpath("//*[@id='scs-rule-builder-container']/div/div/div[1]/div[2]"));
+			 //Get width of element.
+			 int ImageWidth = Image.getSize().getWidth();
+			 println("Image width Is "+ImageWidth+" pixels");
+			 //Get height of element.
+			 int ImageHeight = Image.getSize().getHeight();
+			 println("Image height Is "+ImageHeight+" pixels");*/
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
 	}
 }

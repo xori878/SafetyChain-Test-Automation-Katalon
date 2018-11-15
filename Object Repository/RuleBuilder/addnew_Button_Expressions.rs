@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>addnew_Button_Expressions</name>
+   <tag></tag>
+   <elementGuidId>f91161de-093e-4fc4-9738-f411924477c8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-designform-form-content-prop-area&quot;]/div/div/div[2]/div/div/div/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-designform-form-content-prop-area&quot;]/div/div/div[2]/div/div/div/button</value>
+   </webElementProperties>
+</WebElementEntity>

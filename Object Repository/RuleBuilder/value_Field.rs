@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>value_Field</name>
+   <tag></tag>
+   <elementGuidId>f99f23a2-d54f-46ec-b4af-f1bf22b7833e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-rule-builder-container&quot;]/div/div/div/div/div/div/div/div/div/div/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-rule-builder-container&quot;]/div/div/div/div/div/div/div/div/div/div/input</value>
+   </webElementProperties>
+</WebElementEntity>

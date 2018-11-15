@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>deleteDocument</name>
+   <tag></tag>
+   <elementGuidId>35906a94-3dfe-47f1-bcbf-e7c5fb7fe756</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-documentmgmt-header-section&quot;]/div[2]/span[9]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-documentmgmt-header-section&quot;]/div[2]/span[9]</value>
+   </webElementProperties>
+</WebElementEntity>

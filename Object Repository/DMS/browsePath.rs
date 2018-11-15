@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>browsePath</name>
+   <tag></tag>
+   <elementGuidId>611e8488-d9eb-4e65-b3af-00f76a37b6ed</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-upload-new-doc-dms-body-popup&quot;]/div/div/div/div/div/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-upload-new-doc-dms-body-popup&quot;]/div/div/div/div/div/input</value>
+   </webElementProperties>
+</WebElementEntity>

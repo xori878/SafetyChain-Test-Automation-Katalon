@@ -249,4 +249,9 @@ class FormName {
 			KeywordUtil.markFailed("Fail to click on element")
 		}
 	}
+	@Keyword
+	def upload() {
+		driver.findElement(By.xpath("//*[@id='scs-document-file-upload-input']")).sendKeys("../SafetyChain-Test-Automation-Katalon/SCTestData/Desert.jpg");
+
+	}
 }

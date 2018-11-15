@@ -57,6 +57,8 @@ not_run: WebUI.sendKeys(findTestObject('DMS/newDocumentField'), Keys.chord(Keys.
 
 Thread.sleep(4000)
 
+not_run: CustomKeywords.'FormName.upload'()
+
 WebUI.sendKeys(findTestObject('DMS/uploadFile'), 'C:\\Users\\pashine_a\\Desert.jpg')
 
 Thread.sleep(18000)

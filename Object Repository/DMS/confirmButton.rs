@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>saveButton</name>
+   <name>confirmButton</name>
    <tag></tag>
    <elementGuidId>0ea9731e-10a1-43e6-83c3-57b9e91770cd</elementGuidId>
    <selectorCollection>

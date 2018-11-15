@@ -91,7 +91,7 @@ WebUI.setText(findTestObject('DMS/descriptionField'), 'This is a document file')
 
 Thread.sleep(2000)
 
-WebUI.click(findTestObject('DMS/saveButton'))
+WebUI.click(findTestObject('DMS/confirmButton'))
 
 Thread.sleep(4000)
 
@@ -109,7 +109,7 @@ WebUI.setText(findTestObject('DMS/descriptionField'), 'This is a document file')
 
 Thread.sleep(2000)
 
-WebUI.click(findTestObject('DMS/saveButton'))
+WebUI.click(findTestObject('DMS/confirmButton'))
 
 Thread.sleep(2000)
 
@@ -125,7 +125,7 @@ WebUI.check(findTestObject('DMS/selectLinkToResource'))
 
 Thread.sleep(2000)
 
-WebUI.click(findTestObject('DMS/saveButton'))
+WebUI.click(findTestObject('DMS/confirmButton'))
 
 Thread.sleep(2000)
 
@@ -217,7 +217,7 @@ WebUI.click(findTestObject('DMS/restoreButton'))
 
 Thread.sleep(2000)
 
-WebUI.click(findTestObject('DMS/saveButton'))
+WebUI.click(findTestObject('DMS/confirmButton'))
 
 Thread.sleep(2000)
 

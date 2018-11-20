@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>mainMenuLocation</name>
+   <tag></tag>
+   <elementGuidId>3d40a26e-469a-4d99-a7d3-624a24129e52</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-main-navigation&quot;]//div[contains(text(),&quot;Locations&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-main-navigation&quot;]//div[contains(text(),&quot;Locations&quot;)]</value>
+   </webElementProperties>
+</WebElementEntity>

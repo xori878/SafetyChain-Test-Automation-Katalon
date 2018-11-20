@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>locationAddPlus</name>
+   <tag></tag>
+   <elementGuidId>4af86258-1482-4cf6-8b35-c12dba55c16f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;{{settings.treeId}}_tv_active&quot;]/div//i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;{{settings.treeId}}_tv_active&quot;]/div//i</value>
+   </webElementProperties>
+</WebElementEntity>

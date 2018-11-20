@@ -46,8 +46,10 @@ import org.openqa.selenium.interactions.Actions
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import java.util.Calendar;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.awt.*;
 
 class FormName {
 	WebDriver driver =  DriverFactory.getWebDriver();
@@ -55,10 +57,14 @@ class FormName {
 	//public String form_name = "AUTOQUESTIONAIREFORMTEST7";
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy-HH:mm:ss");
 	LocalDateTime now = LocalDateTime.now();
-	public String form_name = "AUTO_TOOL_KAT_FORM_"+dtf.format(now);
-	public String task_name = "AUTO_TOOL_KAT_TASK_"+dtf.format(now);
-	public String document_name = "AUTO_TOOL_KAT_DOCUMENT_"+dtf.format(now);
-	public String new_document_name = "AUTO_TOOL_KAT_DOCUMENT1_"+dtf.format(now);
+	public String form_name = "AUTO_TOOL_KAT_FORM_ON_"+dtf.format(now);
+	public String task_name = "AUTO_TOOL_KAT_TASK_ON_"+dtf.format(now);
+	public String document_name = "AUTO_TOOL_KAT_DOCUMENT_ON_"+dtf.format(now);
+	public String new_document_name = "AUTO_TOOL_KAT_RESTORE_DOCUMENT_ON_"+dtf.format(now);
+	public String task_document_name_DMS =  "AUTO_TOOL_KAT_ASSIGN_TASK_DOCUMENT_ON_"+dtf.format(now);
+	public String task_name_DMS = "AUTO_TOOL_KAT_DMS_TASK_ON_"+dtf.format(now);
+
+
 	@Keyword
 	def setData() {
 		try {
@@ -172,6 +178,8 @@ class FormName {
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		sheet.getRow(1).createCell(2).setCellValue(document_name);
 		sheet.getRow(1).createCell(3).setCellValue(new_document_name);
+		sheet.getRow(1).createCell(4).setCellValue(task_document_name_DMS);
+		sheet.getRow(1).createCell(5).setCellValue(task_name_DMS);
 		file.close();
 		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
 		workbook.write(outFile);
@@ -212,17 +220,47 @@ class FormName {
 		driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]")).click()
 
 	}
+	@Keyword
+	def getDocumentName3() {
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		String documentName = sheet.getRow(1).getCell(4);
+		file.close();
 
+		driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]")).click()
+
+	}
+	@Keyword
+	def getTaskName() {
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		String documentName = sheet.getRow(1).getCell(5);
+		file.close();
+
+		driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]")).click()
+
+	}
 	@Keyword
 	def getSize() {
 		try {
+			Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
+			int width = (short) size.getWidth();
+			int height = (short) size.getHeight();
 
 			Actions actions = new Actions(driver);
-			WebElement srcElement = driver.findElement(By.xpath("//*[@id='scs-rule-builder-right-header-container']/div[contains(text(),'Value')]"));
+			WebElement srcElement = driver.findElement(By.xpath("//*[@id='scs-rule-builder-right-header-container']/div[13]"));
+			//WebElement srcElement = driver.findElement(By.xpath("//*[@id='scs-rule-builder-right-header-container']/div[contains(text(),'Value')]"));
 			WebElement targetElement = driver.findElement(By.xpath("//*[@id='scs-rule-builder-container']/div/div/div[3]/div[2]"));
 			//actions.dragAndDrop(srcElement, targetElement);
-			actions.dragAndDropBy(srcElement, 660, 230)
-			actions.build().perform();
+			actions.click(srcElement)
+			Thread.sleep(3000)
+			actions.clickAndHold(srcElement)
+			Thread.sleep(2000)
+			actions.moveByOffset(width/2, 230).release().build().perform()
+			//	actions.dragAndDropBy(srcElement, width/2, 230)
+			//	actions.build().perform();
 
 			//WebElement dragElement = driver.findElement(By.id("//*[@id='scs-rule-builder-right-header-container']/div[contains(text(),'Value')]"));
 			//WebElement dropElement = driver.findElement(By.id("//*[@id='scs-rule-builder-container']/div/div/div[3]/div[2]"));

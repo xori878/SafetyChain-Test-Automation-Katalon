@@ -45,7 +45,19 @@ Thread.sleep(2000)
 
 WebUI.sendKeys(findTestObject('DMS/searchDocument'), Keys.chord(Keys.ENTER))
 
+not_run: WebUI.click(findTestObject('DMS/addDocumentButton'))
+
+not_run: Thread.sleep(4000)
+
+not_run: WebUI.setText(findTestObject('DMS/newDocumentField'), 'MyDoc')
+
+not_run: Thread.sleep(2000)
+
+not_run: WebUI.sendKeys(findTestObject('DMS/newDocumentField'), Keys.chord(Keys.ENTER))
+
 Thread.sleep(4000)
+
+not_run: CustomKeywords.'FormName.upload'()
 
 WebUI.sendKeys(findTestObject('DMS/uploadFile'), 'C:\\Users\\pashine_a\\Desert.jpg')
 
@@ -64,6 +76,8 @@ WebUI.click(findTestObject('DMS/selectInDocument'))
 WebUI.click(findTestObject('DMS/viewDocument'))
 
 Thread.sleep(24000)
+
+not_run: WebUI.sendKeys(findTestObject('DMS/uploadFile'), Keys.chord(Keys.ENTER))
 
 WebUI.back()
 
@@ -125,6 +139,8 @@ Thread.sleep(6000)
 
 CustomKeywords.'FormName.getDocumentName'()
 
+not_run: WebUI.click(findTestObject('DMS/selectInDocument'))
+
 Thread.sleep(2000)
 
 WebUI.click(findTestObject('DMS/manageLinks'))
@@ -138,6 +154,8 @@ WebUI.click(findTestObject('DMS/confirmButton'))
 Thread.sleep(4000)
 
 CustomKeywords.'FormName.getDocumentName'()
+
+not_run: WebUI.click(findTestObject('DMS/selectInDocument'))
 
 Thread.sleep(2000)
 
@@ -157,6 +175,8 @@ Thread.sleep(24000)
 
 CustomKeywords.'FormName.getDocumentName'()
 
+not_run: WebUI.click(findTestObject('DMS/selectInDocument'))
+
 Thread.sleep(2000)
 
 WebUI.click(findTestObject('DMS/download'))
@@ -165,15 +185,19 @@ Thread.sleep(8000)
 
 CustomKeywords.'FormName.getDocumentName'()
 
+not_run: WebUI.click(findTestObject('DMS/selectInDocument'))
+
 WebUI.click(findTestObject('DMS/deleteDocument'))
 
 Thread.sleep(2000)
 
 WebUI.click(findTestObject('DMS/confirmDeleteYes'))
 
-Thread.sleep(8000)
+Thread.sleep(12000)
 
 CustomKeywords.'FormName.getDocumentName1'()
+
+not_run: WebUI.click(findTestObject('DMS/selectInDocument1'))
 
 WebUI.click(findTestObject('DMS/deleteDocument'))
 
@@ -191,6 +215,10 @@ WebUI.click(findTestObject('DMS/deleteDocumentDMS'))
 
 Thread.sleep(2000)
 
+not_run: WebUI.click(findTestObject('DMS/viewdeletedDocument'))
+
+not_run: Thread.sleep(4000)
+
 WebUI.setText(findTestObject('DMS/searchDocument'), GlobalVariable.DocumentName)
 
 Thread.sleep(2000)
@@ -204,6 +232,8 @@ WebUI.sendKeys(findTestObject('DMS/searchDocument'), Keys.chord(Keys.ENTER))
 Thread.sleep(4000)
 
 CustomKeywords.'FormName.getDocumentName1'()
+
+not_run: WebUI.click(findTestObject('DMS/selectInDocument1'))
 
 Thread.sleep(2000)
 
@@ -224,6 +254,8 @@ WebUI.click(findTestObject('DMS/documentTypes'))
 WebUI.refresh()
 
 Thread.sleep(3000)
+
+Thread.sleep(2000)
 
 WebUI.setText(findTestObject('DMS/searchDocument'), GlobalVariable.DocumentName)
 
@@ -289,7 +321,7 @@ WebUI.click(findTestObject('DMS_Forms/mainmenu_button'))
 
 WebUI.click(findTestObject('DMS_Forms/mainmenu_Document'))
 
-Thread.sleep(18000)
+Thread.sleep(4000)
 
 WebUI.setText(findTestObject('DMS/searchDocument'), GlobalVariable.DocumentName)
 
@@ -308,4 +340,6 @@ CustomKeywords.'FormName.getDocumentName3'()
 Thread.sleep(2000)
 
 WebUI.click(findTestObject('DMS/viewDocument'))
+
+not_run: WebUI.click(findTestObject('DMS/selectInDocument1'))
 

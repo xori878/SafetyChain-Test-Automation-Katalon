@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectSecondResourceToLink</name>
+   <tag></tag>
+   <elementGuidId>979c2bf6-9384-4775-aaad-5b2daa1884c6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;grid-Customers&quot;]//tr[2]/td[1]/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;grid-Customers&quot;]//tr[2]/td[1]/input</value>
+   </webElementProperties>
+</WebElementEntity>

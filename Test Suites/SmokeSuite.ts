@@ -4,7 +4,7 @@
    <name>SmokeSuite</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-11-01T11:55:49</lastRun>
+   <lastRun>2018-11-22T15:55:03</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>

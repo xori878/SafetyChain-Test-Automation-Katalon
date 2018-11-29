@@ -23,7 +23,7 @@ not_run: WebUI.setText(findTestObject('Record/login_Password'), GlobalVariable.P
 
 not_run: WebUI.click(findTestObject('Record/login_Button'))
 
-Thread.sleep(8000)
+not_run: Thread.sleep(8000)
 
 WebUI.click(findTestObject('Record/record_Tab'))
 
@@ -38,6 +38,50 @@ WebUI.waitForElementNotVisible(findTestObject('FormTab/select500_Form'), 5)
 WebUI.click(findTestObject('FormTab/select500_Form'))
 
 Thread.sleep(7000)
+
+CustomKeywords.'FormName.recordFormName'()
+
+Thread.sleep(4000)
+
+WebUI.click(findTestObject('Record/editForm'))
+
+Thread.sleep(2000)
+
+WebUI.setText(findTestObject('FormTab/fillForm_FreeSingleText'), 'MyTextEdited')
+
+WebUI.setText(findTestObject('FormTab/fillForm_ParagraphText'), 'MyParagraphEdited')
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('Record/submitButton'))
+
+Thread.sleep(4000)
+
+WebUI.setText(findTestObject('Record/commentText'), 'This form is edited in record.')
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('Record/acceptSubmitButton'))
+
+Thread.sleep(6000)
+
+WebUI.click(findTestObject('Record/okButton'))
+
+Thread.sleep(4000)
+
+WebUI.click(findTestObject('Record/record'))
+
+Thread.sleep(5000)
+
+not_run: WebUI.click(findTestObject('FormTab/clickToViewMoreOption'))
+
+not_run: Thread.sleep(4000)
+
+not_run: WebUI.waitForElementNotVisible(findTestObject('FormTab/select500_Form'), 5)
+
+not_run: WebUI.click(findTestObject('FormTab/select500_Form'))
+
+not_run: Thread.sleep(7000)
 
 CustomKeywords.'FormName.recordFormName'()
 

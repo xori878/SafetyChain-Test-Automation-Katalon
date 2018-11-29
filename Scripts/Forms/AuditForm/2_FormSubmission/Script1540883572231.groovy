@@ -100,7 +100,7 @@ WebUI.setText(findTestObject('FormTab/fillForm_SelectOneOption'), 'Single Option
 Thread.sleep(3000)
 
 driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(
-		Keys.ENTER)
+    Keys.ENTER)
 
 Thread.sleep(3000)
 
@@ -109,7 +109,7 @@ WebUI.setText(findTestObject('FormTab/fillForm_SelectMultipleOption'), 'Multiple
 Thread.sleep(3000)
 
 driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(
-		Keys.ENTER)
+    Keys.ENTER)
 
 Thread.sleep(3000)
 
@@ -118,7 +118,7 @@ WebUI.click(findTestObject('FormTab/fillForm_SelectMultipleOption'))
 Thread.sleep(4000)
 
 driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]')).sendKeys(
-		'9')
+    '9')
 
 WebUI.setText(findTestObject('FormTab/fillForm_DateText'), '10/29/2018')
 
@@ -128,9 +128,9 @@ WebUI.setText(findTestObject('FormTab/fillForm_DateTimeText'), '10/29/2018 4:00 
 
 WebUI.click(findTestObject('FormTab/fillForm_SubmitButton'))
 
-Thread.sleep(2000)
+Thread.sleep(4000)
 
 WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
 
-Thread.sleep(4000)
+Thread.sleep(6000)
 

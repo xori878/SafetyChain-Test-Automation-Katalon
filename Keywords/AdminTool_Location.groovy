@@ -47,12 +47,44 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.interactions.Actions
 
+import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import java.util.Calendar;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.awt.*;
+
 class AdminTool_Location {
 	WebDriver driver =  DriverFactory.getWebDriver();
+	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yy-HH:mm");
+	LocalDateTime now = LocalDateTime.now();
+	public String location_name = "LOCATION_ON_"+dtf.format(now);
+	public String location_name1 = "SUBLOCATION_ON_"+dtf.format(now);
+	public String customer_name = "CUSTOMER_ON_"+dtf.format(now);
+	public String customer_name1 = "SUBCUSTOMER1_ON_"+dtf.format(now);
+	public String customer_name2 = "SUBCUSTOMER2_ON_"+dtf.format(now);
+	public String equipment_name = "EQUIPMENT_ON_"+dtf.format(now);
+	public String equipment_name1 = "SUBEQUIPMENT1_ON_"+dtf.format(now);
+	public String equipment_name2 = "SUBEQUIPMENT2_ON_"+dtf.format(now);
+	public String item_name = "ITEM_ON_"+dtf.format(now);
+	public String item_name1 = "SUBITEM1_ON_"+dtf.format(now);
+	public String item_name2 = "SUBITEM2_ON_"+dtf.format(now);
+	public String supplier_name = "SUPPLIER_ON_"+dtf.format(now);
+	public String supplier_name1 = "SUBSUPPLIER1_ON_"+dtf.format(now);
+	public String supplier_name2 = "SUBSUPPLIER2_ON_"+dtf.format(now);
+	String resource_name_link;
 	@Keyword
 	def selectLocation() {
 		try {
-			String locationName = "TestLocation2";
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String locationName = sheet.getRow(1).getCell(0).toString();
+			file.close();
 			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+locationName+"')]"))
 			Actions action = new Actions(driver)
 			action.doubleClick(element)
@@ -60,6 +92,374 @@ class AdminTool_Location {
 			action.moveToElement(element).build().perform()
 
 			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def selectCustomer() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String resourceName = sheet.getRow(1).getCell(2).toString();
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			sheet.getRow(1).createCell(15).setCellValue("Customers");
+			workbook.write(outFile);
+			outFile.close();
+			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+resourceName+"')]"))
+			Actions action = new Actions(driver)
+			action.doubleClick(element)
+			Thread.sleep(4000)
+			action.moveToElement(element).build().perform()
+
+			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def hoverCustomer() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String resourceName = sheet.getRow(1).getCell(2).toString();
+			file.close();
+			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+resourceName+"')]"))
+			Actions action = new Actions(driver)
+			Thread.sleep(4000)
+			action.moveToElement(element).build().perform()
+
+			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def selectEquipment() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String resourceName = sheet.getRow(1).getCell(3).toString();
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			sheet.getRow(1).createCell(15).setCellValue("Equipment");
+			workbook.write(outFile);
+			outFile.close();
+			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+resourceName+"')]"))
+			Actions action = new Actions(driver)
+			action.doubleClick(element)
+			Thread.sleep(4000)
+			action.moveToElement(element).build().perform()
+
+			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+
+	@Keyword
+	def selectItem() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String resourceName = sheet.getRow(1).getCell(4).toString();
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			sheet.getRow(1).createCell(15).setCellValue("Items");
+			workbook.write(outFile);
+			outFile.close();
+			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+resourceName+"')]"))
+			Actions action = new Actions(driver)
+			action.doubleClick(element)
+			Thread.sleep(4000)
+			action.moveToElement(element).build().perform()
+
+			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def selectSupplier() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String resourceName = sheet.getRow(1).getCell(5).toString();
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			sheet.getRow(1).createCell(15).setCellValue("Suppliers");
+			workbook.write(outFile);
+			outFile.close();
+			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+resourceName+"')]"))
+			Actions action = new Actions(driver)
+			action.doubleClick(element)
+			Thread.sleep(4000)
+			action.moveToElement(element).build().perform()
+
+			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def resourceLinkName() {
+		try {
+			resource_name_link = driver.findElement(By.xpath("//*[@id='grid-Customers']//tr[2]/td[2]")).getText().toString();
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			sheet.getRow(1).createCell(14).setCellValue(resource_name_link);
+			workbook.write(outFile);
+			outFile.close();
+			printName(resource_name_link)
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	public void printName(String s){
+		println "Name : "+s;
+	}
+	@Keyword
+	def sup() {
+		try {
+			//			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			//			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			//			XSSFSheet sheet = workbook.getSheetAt(0);
+			//			String resourceName = sheet.getRow(1).getCell(5).toString();
+			//			file.close();
+			//			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+resourceName+"')]"))
+			//			Actions action = new Actions(driver)
+			//			action.doubleClick(element)
+			//			Thread.sleep(4000)
+			//			action.moveToElement(element).build().perform()
+
+			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+
+	@Keyword
+	def dragDropRes() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String resName= sheet.getRow(1).getCell(16).toString();
+			file.close();
+			Actions action = new Actions(driver)
+			WebElement element = driver.findElement(By.xpath("//*[@id='scs-left-panel-treeview']/ul/li/ul/li/div/span[contains(text(),'"+resName+"')]"))
+			WebElement target = driver.findElement(By.xpath("//*[@id='scs-formdesigner-select-resource-grid']"))
+			Thread.sleep(2000)
+			action.moveToElement(element).build().perform()
+			Thread.sleep(2000)
+			action.dragAndDrop(element, target).build().perform()
+
+			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def selectResType(){
+		try{
+
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String resType = sheet.getRow(1).getCell(15).toString();
+			file.close();
+			String selectresource = "//*[@id='scs-product-dropdown_listbox']/li[contains(text(),'"+resType+"')]"
+			driver.findElement(By.xpath("//*[@id='scs-form-designer-selectresource-container']/div/div/div[1]/span")).click()
+			Thread.sleep(4000)
+			driver.findElement(By.xpath(selectresource)).click()
+			Thread.sleep(4000)
+		}catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def validate(){
+		try{
+
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String resType = sheet.getRow(1).getCell(15).toString();
+			String resName= resType+" > "+sheet.getRow(1).getCell(16).toString() + " > " +sheet.getRow(1).getCell(18).toString();
+			file.close();
+			String result = driver.findElement(By.xpath("//*[@id='scs-formdesigner-select-resource-grid']/div/div[1]")).getText()
+			if(resName.equals(result)){
+				println "Successfull"
+			}else{
+				println "Unsuccessfull"
+			}
+		}catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def setLocationName() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			sheet.getRow(1).createCell(0).setCellValue(location_name);
+			workbook.write(outFile);
+			outFile.close();
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+
+	@Keyword
+	def setLocationNameInLocation() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			sheet.getRow(1).createCell(1).setCellValue(location_name1);
+			workbook.write(outFile);
+			outFile.close();
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def setCustomerName() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			sheet.getRow(1).createCell(2).setCellValue(customer_name);
+			sheet.getRow(1).createCell(6).setCellValue(customer_name1);
+			sheet.getRow(1).createCell(7).setCellValue(customer_name2);
+			sheet.getRow(1).createCell(16).setCellValue(customer_name);
+			sheet.getRow(1).createCell(17).setCellValue(customer_name1);
+			sheet.getRow(1).createCell(18).setCellValue(customer_name2);
+			workbook.write(outFile);
+			outFile.close();
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def setEquipmentName() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			sheet.getRow(1).createCell(3).setCellValue(equipment_name);
+			sheet.getRow(1).createCell(8).setCellValue(equipment_name1);
+			sheet.getRow(1).createCell(9).setCellValue(equipment_name2);
+			sheet.getRow(1).createCell(16).setCellValue(equipment_name);
+			sheet.getRow(1).createCell(17).setCellValue(equipment_name1);
+			sheet.getRow(1).createCell(18).setCellValue(equipment_name2);
+			workbook.write(outFile);
+			outFile.close();
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def setItemName() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			sheet.getRow(1).createCell(4).setCellValue(item_name);
+			sheet.getRow(1).createCell(10).setCellValue(item_name1);
+			sheet.getRow(1).createCell(11).setCellValue(item_name2);
+			sheet.getRow(1).createCell(16).setCellValue(item_name);
+			sheet.getRow(1).createCell(17).setCellValue(item_name1);
+			sheet.getRow(1).createCell(18).setCellValue(item_name2);
+			workbook.write(outFile);
+			outFile.close();
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+
+	@Keyword
+	def setSupplierName() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			sheet.getRow(1).createCell(5).setCellValue(supplier_name);
+			sheet.getRow(1).createCell(12).setCellValue(supplier_name1);
+			sheet.getRow(1).createCell(13).setCellValue(supplier_name2);
+			sheet.getRow(1).createCell(16).setCellValue(supplier_name);
+			sheet.getRow(1).createCell(17).setCellValue(supplier_name1);
+			sheet.getRow(1).createCell(18).setCellValue(supplier_name2);
+			workbook.write(outFile);
+			outFile.close();
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def checkLocation() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String name = sheet.getRow(1).getCell(0).toString() + " > " +sheet.getRow(1).getCell(1).toString();
+			String location = "//td[span[contains(text(),'Locations > "+name+"')]]/input"
+
+			file.close();
+			println location
+			driver.findElement(By.xpath(location)).click()
 		} catch (WebElementNotFoundException e) {
 			KeywordUtil.markFailed("Element not found")
 		} catch (Exception e) {

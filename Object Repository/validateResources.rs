@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>validateResources</name>
+   <tag></tag>
+   <elementGuidId>38782238-7d38-4903-a77a-f39402b35a0c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-left-panel-treeview&quot;]/ul/li/ul/li/div/span[contains(text(),&quot;CUSTOMER_ON_28/11/18-18:36&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-left-panel-treeview&quot;]/ul/li/ul/li/div/span[contains(text(),&quot;CUSTOMER_ON_28/11/18-18:36&quot;)]</value>
+   </webElementProperties>
+</WebElementEntity>

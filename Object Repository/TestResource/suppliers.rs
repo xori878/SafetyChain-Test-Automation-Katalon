@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>suppliers</name>
+   <tag></tag>
+   <elementGuidId>606ce237-3431-4484-83ae-7e7bcc584503</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-manage-resource-list-view-data&quot;]/div/div/div/div[4]/div[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-manage-resource-list-view-data&quot;]/div/div/div/div[4]/div[1]</value>
+   </webElementProperties>
+</WebElementEntity>

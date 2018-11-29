@@ -57,13 +57,13 @@ class FormName {
 	//public String form_name = "AUTOQUESTIONAIREFORMTEST7";
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy-HH:mm:ss");
 	LocalDateTime now = LocalDateTime.now();
-	public String form_name = "AUTO_TOOL_KAT_FORM_ON_"+dtf.format(now);
-	public String task_name = "AUTO_TOOL_KAT_TASK_ON_"+dtf.format(now);
-	public String document_name = "AUTO_TOOL_KAT_DOCUMENT_ON_"+dtf.format(now);
-	public String new_document_name = "AUTO_TOOL_KAT_RESTORE_DOCUMENT_ON_"+dtf.format(now);
-	public String task_document_name_DMS =  "AUTO_TOOL_KAT_ASSIGN_TASK_DOCUMENT_ON_"+dtf.format(now);
-	public String task_name_DMS = "AUTO_TOOL_KAT_DMS_TASK_ON_"+dtf.format(now);
-
+	public String form_name = "AUTO_TEST_FORM_ON_"+dtf.format(now);
+	public String task_name = "AUTO_TEST_TASK_ON_"+dtf.format(now);
+	public String document_name = "AUTO_TEST_DOCUMENT_ON_"+dtf.format(now);
+	public String new_document_name = "AUTO_TEST_RESTORE_DOCUMENT_ON_"+dtf.format(now);
+	public String task_document_name_DMS =  "AUTO_TEST_ASSIGN_TASK_DOCUMENT_ON_"+dtf.format(now);
+	public String task_name_DMS = "AUTO_TEST_DMS_TASK_ON_"+dtf.format(now);
+	public String location_name = "AUTO_TEST_LOCATION_ON_"+dtf.format(now);
 
 	@Keyword
 	def setData() {
@@ -291,5 +291,22 @@ class FormName {
 	def upload() {
 		driver.findElement(By.xpath("//*[@id='scs-document-file-upload-input']")).sendKeys("../SafetyChain-Test-Automation-Katalon/SCTestData/Desert.jpg");
 
+	}
+	@Keyword
+	def setLocationName() {
+		try {
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			sheet.getRow(1).createCell(0).setCellValue(location_name);
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			workbook.write(outFile);
+			outFile.close();
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
 	}
 }

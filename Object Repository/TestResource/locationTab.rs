@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>locationTab</name>
+   <tag></tag>
+   <elementGuidId>1a8dd555-dd1f-4e97-bd5f-3a418f158d28</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;tabstrip&quot;]/ul//span[contains(text(),&quot;Locations&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;tabstrip&quot;]/ul//span[contains(text(),&quot;Locations&quot;)]</value>
+   </webElementProperties>
+</WebElementEntity>

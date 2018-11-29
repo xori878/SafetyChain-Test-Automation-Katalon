@@ -82,11 +82,11 @@ WebUI.click(findTestObject('New_User_Latest/NewUserCreation_button_SAVE'))
 
 Thread.sleep(3000)
 
-WebUI.setText(findTestObject('SearchNewUser/input_ADD NEW_filterText'), 'anan')
+WebUI.setText(findTestObject('Role-Latest/SearchNewUser/input_ADD NEW_filterText'), 'anan')
 
 Thread.sleep(3000)
 
-WebUI.click(findTestObject('SearchNewUser/span_ADD NEW_fa fa-search'))
+WebUI.click(findTestObject('Role-Latest/SearchNewUser/span_ADD NEW_fa fa-search'))
 
 Thread.sleep(3000)
 

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Locations" time="79" tests="1" failures="0" errors="0">
+   <testsuite name="Locations" tests="1" failures="0" errors="0" time="79" timestamp="2018-11-30 14:54:32" hostname="pashine_a - Abhishek-Pashine.India.XoriantCorp.com" id="Test Suites/Locations">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\Locations\\20181130_145430"/>
+         <property name="logFiles" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\Locations\\20181130_145430\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="pashine_a - Abhishek-Pashine.India.XoriantCorp.com"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.9.0.1"/>
+         <property name="browser" value="Chrome 70.0.3538.110"/>
+         <property name="hostAddress" value="10.21.7.147"/>
+         <property name="sessionId" value="b91381157c0c9849852a5049379cc102"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/CheckResoucesAsPerLocation/checkLocation" classname="Test Cases/CheckResoucesAsPerLocation/checkLocation" status="PASSED">
+         <system-out><![CDATA[2018-11-30 14:54:33 - [TEST_CASE][PASSED] - Test Cases/CheckResoucesAsPerLocation/checkLocation: Test Cases/CheckResoucesAsPerLocation/checkLocation
+
+2018-11-30 14:54:33 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-30 14:54:34 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2018-11-30 14:54:34 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2018-11-30 14:54:52 - [MESSAGE][PASSED] - Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2018-11-30 14:54:52 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2018-11-30 14:54:53 - [MESSAGE][PASSED] - Current window maximized
+
+2018-11-30 14:54:53 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/login_Username"), UserName): Text 'superadmin' is set on object 'Object Repository/TestUserLocation/login_Username'
+
+2018-11-30 14:55:02 - [MESSAGE][PASSED] - Text 'superadmin' is set on object 'Object Repository/TestUserLocation/login_Username'
+
+2018-11-30 14:55:02 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/login_Password"), Password): Text 'sliptest23772boot' is set on object 'Object Repository/TestUserLocation/login_Password'
+
+2018-11-30 14:55:02 - [MESSAGE][PASSED] - Text 'sliptest23772boot' is set on object 'Object Repository/TestUserLocation/login_Password'
+
+2018-11-30 14:55:02 - [TEST_STEP][PASSED] - AdminTool_Location.setLocationName(): AdminTool_Location.setLocationName is PASSED
+
+2018-11-30 14:55:03 - [MESSAGE][PASSED] - AdminTool_Location.setLocationName is PASSED
+
+2018-11-30 14:55:03 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/login_Button")): Object: 'Object Repository/TestUserLocation/login_Button' is clicked on
+
+2018-11-30 14:55:05 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/login_Button' is clicked on
+
+2018-11-30 14:55:05 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2018-11-30 14:55:09 - [TEST_STEP][PASSED] - AdminTool_Location.setLocationNameInLocation(): AdminTool_Location.setLocationNameInLocation is PASSED
+
+2018-11-30 14:55:09 - [MESSAGE][PASSED] - AdminTool_Location.setLocationNameInLocation is PASSED
+
+2018-11-30 14:55:09 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2018-11-30 14:55:10 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2018-11-30 14:55:10 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/adminTool")): Object: 'Object Repository/TestUserLocation/adminTool' is clicked on
+
+2018-11-30 14:55:11 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/adminTool' is clicked on
+
+2018-11-30 14:55:11 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuResourceDesigner")): Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2018-11-30 14:55:11 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2018-11-30 14:55:11 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2018-11-30 14:55:15 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/locations")): Object: 'Object Repository/TestUserLocation/locations' is clicked on
+
+2018-11-30 14:55:15 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/locations' is clicked on
+
+2018-11-30 14:55:15 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2018-11-30 14:55:19 - [TEST_STEP][NOT_RUN] - refresh(): NOT_RUN: refresh()
+
+2018-11-30 14:55:19 - [MESSAGE][NOT_RUN] - NOT_RUN: refresh()
+
+2018-11-30 14:55:19 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2018-11-30 14:55:19 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2018-11-30 14:55:19 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/categories")): Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2018-11-30 14:55:19 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2018-11-30 14:55:19 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2018-11-30 14:55:21 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/defaultArea")): Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2018-11-30 14:55:21 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2018-11-30 14:55:21 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/hoverHeading")): Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2018-11-30 14:55:21 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2018-11-30 14:55:21 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2018-11-30 14:55:21 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2018-11-30 14:55:21 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("LocationName", 1)): Text 'LOCATION_ON_30/11/18-14:55' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2018-11-30 14:55:22 - [MESSAGE][PASSED] - Text 'LOCATION_ON_30/11/18-14:55' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2018-11-30 14:55:22 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2018-11-30 14:55:24 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveButton")): Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2018-11-30 14:55:24 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2018-11-30 14:55:24 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2018-11-30 14:55:28 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2018-11-30 14:55:28 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2018-11-30 14:55:28 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuLocation")): Object: 'Object Repository/TestUserLocation/mainMenuLocation' is clicked on
+
+2018-11-30 14:55:28 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuLocation' is clicked on
+
+2018-11-30 14:55:28 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2018-11-30 14:55:32 - [TEST_STEP][PASSED] - AdminTool_Location.selectLocation(): Element has been clicked
+
+2018-11-30 14:55:37 - [MESSAGE][PASSED] - Element has been clicked
+
+2018-11-30 14:55:37 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2018-11-30 14:55:37 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2018-11-30 14:55:37 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2018-11-30 14:55:39 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubLocationName", 1)): Text 'SUBLOCATION_ON_30/11/18-14:55' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2018-11-30 14:55:39 - [MESSAGE][PASSED] - Text 'SUBLOCATION_ON_30/11/18-14:55' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2018-11-30 14:55:39 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2018-11-30 14:55:41 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveLocationDetailButton")): Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on
+
+2018-11-30 14:55:41 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on
+
+2018-11-30 14:55:41 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2018-11-30 14:55:45 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/customerSelect")): Object: 'Object Repository/TestUserLocation/customerSelect' is clicked on
+
+2018-11-30 14:55:45 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/customerSelect' is clicked on
+
+2018-11-30 14:55:45 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2018-11-30 14:55:49 - [TEST_STEP][PASSED] - check(findTestObject("TestUserLocation/select4ResouceInCustomer")): Object 'Object Repository/TestUserLocation/select4ResouceInCustomer' is checked
+
+2018-11-30 14:55:49 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/select4ResouceInCustomer' is checked
+
+2018-11-30 14:55:49 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2018-11-30 14:55:51 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveLocationDetailButton")): Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on
+
+2018-11-30 14:55:52 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-11-30 14:54:32 - [TEST_SUITE][PASSED] - Locations: Test Cases/CheckResoucesAsPerLocation/checkLocation]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

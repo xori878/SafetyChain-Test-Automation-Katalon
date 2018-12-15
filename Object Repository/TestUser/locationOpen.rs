@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>locationOpen</name>
+   <tag></tag>
+   <elementGuidId>d745ab60-179e-491a-87b8-00383ccf43b9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-popup&quot;]//div[div[contains(text(),&quot;Location(s)&quot;)]]/div/div/div[last()]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-popup&quot;]//div[div[contains(text(),&quot;Location(s)&quot;)]]/div/div/div[last()]</value>
+   </webElementProperties>
+</WebElementEntity>

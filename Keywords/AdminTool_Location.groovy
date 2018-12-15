@@ -455,11 +455,18 @@ class AdminTool_Location {
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String name = sheet.getRow(1).getCell(0).toString() + " > " +sheet.getRow(1).getCell(1).toString();
-			String location = "//td[span[contains(text(),'Locations > "+name+"')]]/input"
+			String lcn = "//td[span[contains(text(),'Locations > "+name+"')]]/input"
+			String lcnBlc = "//td[span[contains(text(),'Locations > "+name+"')]]"
+			WebElement location = driver.findElement(By.xpath(lcn));
+			WebElement locationBlock = driver.findElement(By.xpath(lcnBlc));
 
 			file.close();
 			println location
-			driver.findElement(By.xpath(location)).click()
+			Actions action = new Actions(driver)
+			action.moveToElement(locationBlock).build().perform()
+			Thread.sleep(2000)
+			action.click(location).build().perform()
+			//driver.findElement(By.xpath(location)).click()
 		} catch (WebElementNotFoundException e) {
 			KeywordUtil.markFailed("Element not found")
 		} catch (Exception e) {

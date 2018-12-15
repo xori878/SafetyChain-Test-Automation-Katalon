@@ -4,6 +4,7 @@
    <name>Admin_Tools</name>
    <tag></tag>
    <isRerun>false</isRerun>
+   <lastRun>2018-12-11T15:27:00</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>1200</pageLoadTimeout>
@@ -31,7 +32,7 @@
    <testCaseLink>
       <guid>22ed3b0b-55c4-41de-9ae4-471927c41065</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/AdminTools/NewInternalUser</testCaseId>
    </testCaseLink>
    <testCaseLink>

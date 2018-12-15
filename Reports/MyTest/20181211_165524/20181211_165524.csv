@@ -1,0 +1,344 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+MyTest,Chrome 71.0.3578.80,,2018-12-11 16:55:28,2018-12-11 17:31:11,35m - 43.170s,FAILED
+,,,,,,
+Test Cases/Forms/AuditForm/1_CreateForm,Chrome 71.0.3578.80,,2018-12-11 16:55:29,2018-12-11 16:57:50,2m - 20.974s,PASSED
+openBrowser(URL),Chrome 71.0.3578.80,,2018-12-11 16:55:30,2018-12-11 16:55:57,26.829s,PASSED
+maximizeWindow(),Chrome 71.0.3578.80,,2018-12-11 16:55:57,2018-12-11 16:55:58,1.218s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/login_Username""), UserName)",Chrome 71.0.3578.80,,2018-12-11 16:55:58,2018-12-11 16:56:02,4.400s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/login_Password""), Password)",Chrome 71.0.3578.80,,2018-12-11 16:56:02,2018-12-11 16:56:03,0.182s,PASSED
+FormName.setData(),Chrome 71.0.3578.80,,2018-12-11 16:56:03,2018-12-11 16:56:04,1.763s,PASSED
+"click(findTestObject(""Form_Selection_Creation/login_Button""))",Chrome 71.0.3578.80,,2018-12-11 16:56:04,2018-12-11 16:56:10,5.804s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 16:56:10,2018-12-11 16:56:13,3.008s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_Button""))",Chrome 71.0.3578.80,,2018-12-11 16:56:13,2018-12-11 16:56:19,6.073s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_AdminTools""))",Chrome 71.0.3578.80,,2018-12-11 16:56:19,2018-12-11 16:56:20,0.734s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_AdminTools_FormDesigner""))",Chrome 71.0.3578.80,,2018-12-11 16:56:20,2018-12-11 16:56:20,0.271s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:56:20,2018-12-11 16:56:22,2.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/selectAuditForm""))",Chrome 71.0.3578.80,,2018-12-11 16:56:22,2018-12-11 16:56:23,0.874s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 16:56:23,2018-12-11 16:56:26,3.003s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_selectResource""), findTestObject(""Form_Selection_Creation/Target_Res_Object""))",Chrome 71.0.3578.80,,2018-12-11 16:56:26,2018-12-11 16:56:29,3.014s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.80,,2018-12-11 16:56:29,2018-12-11 16:56:35,6.002s,PASSED
+"click(findTestObject(""Form_Selection_Creation/formCreation_NextToDesignForm""))",Chrome 71.0.3578.80,,2018-12-11 16:56:35,2018-12-11 16:56:36,0.820s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 16:56:36,2018-12-11 16:56:40,4.002s,PASSED
+"FormName.createForm(findTestObject(""Form_Selection_Creation/formDesign_FormName""))",Chrome 71.0.3578.80,,2018-12-11 16:56:40,2018-12-11 16:56:46,6.209s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:56:46,2018-12-11 16:56:48,2.002s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectSection""), findTestObject(""Form_Selection_Creation/default_area""))",Chrome 71.0.3578.80,,2018-12-11 16:56:48,2018-12-11 16:56:49,0.841s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_SectionName""), ""This is a Section"")",Chrome 71.0.3578.80,,2018-12-11 16:56:49,2018-12-11 16:56:49,0.300s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:56:49,2018-12-11 16:56:51,2.001s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectFieldgroup""), findTestObject(""Form_Selection_Creation/section_area""))",Chrome 71.0.3578.80,,2018-12-11 16:56:51,2018-12-11 16:56:52,0.819s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_questionGroupName_Text""), ""This is Field Group"")",Chrome 71.0.3578.80,,2018-12-11 16:56:52,2018-12-11 16:56:53,0.304s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:56:53,2018-12-11 16:56:55,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectFree Text""), findTestObject(""Form_Selection_Creation/questionGroupArea""))",Chrome 71.0.3578.80,,2018-12-11 16:56:55,2018-12-11 16:56:55,0.767s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_SingleLineName""), ""This is Free Text"")",Chrome 71.0.3578.80,,2018-12-11 16:56:55,2018-12-11 16:56:56,0.596s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:56:56,2018-12-11 16:56:58,2.001s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectParagraphText""), findTestObject(""Form_Selection_Creation/questionGroupArea""))",Chrome 71.0.3578.80,,2018-12-11 16:56:58,2018-12-11 16:56:59,0.853s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_ParagraphName""), ""This is Paragraph"")",Chrome 71.0.3578.80,,2018-12-11 16:56:59,2018-12-11 16:56:59,0.548s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:56:59,2018-12-11 16:57:01,2.005s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_Select_SelectOne""), findTestObject(""Form_Selection_Creation/questionGroupArea""))",Chrome 71.0.3578.80,,2018-12-11 16:57:01,2018-12-11 16:57:02,0.808s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_Select_OneName""), ""This is Select One"")",Chrome 71.0.3578.80,,2018-12-11 16:57:02,2018-12-11 16:57:03,0.506s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:57:03,2018-12-11 16:57:05,2.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_AddNew1""))",Chrome 71.0.3578.80,,2018-12-11 16:57:05,2018-12-11 16:57:05,0.135s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/add1singleValue1""), ""Single Option1"")",Chrome 71.0.3578.80,,2018-12-11 16:57:05,2018-12-11 16:57:05,0.308s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 16:57:05,2018-12-11 16:57:08,3.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_AddNew1""))",Chrome 71.0.3578.80,,2018-12-11 16:57:08,2018-12-11 16:57:08,0.103s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/add1singleValue2""), ""Single Option2"")",Chrome 71.0.3578.80,,2018-12-11 16:57:08,2018-12-11 16:57:08,0.283s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:57:08,2018-12-11 16:57:10,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_Select_SelectMultiple""), findTestObject(""Form_Selection_Creation/questionGroupArea""))",Chrome 71.0.3578.80,,2018-12-11 16:57:10,2018-12-11 16:57:11,0.866s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_Select_MultipleName""), ""This is Select Multiple"")",Chrome 71.0.3578.80,,2018-12-11 16:57:11,2018-12-11 16:57:12,0.560s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 16:57:12,2018-12-11 16:57:15,3.000s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_addNewMul1""))",Chrome 71.0.3578.80,,2018-12-11 16:57:15,2018-12-11 16:57:15,0.120s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/add1MultipleValue1""), ""Multiple Option1"")",Chrome 71.0.3578.80,,2018-12-11 16:57:15,2018-12-11 16:57:15,0.353s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:57:15,2018-12-11 16:57:17,2.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_addNewMul1""))",Chrome 71.0.3578.80,,2018-12-11 16:57:17,2018-12-11 16:57:17,0.078s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/add1MultipleValue2""), ""Multiple Option2"")",Chrome 71.0.3578.80,,2018-12-11 16:57:17,2018-12-11 16:57:18,0.313s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:57:18,2018-12-11 16:57:20,2.003s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectNumeric""), findTestObject(""Form_Selection_Creation/questionGroupArea""))",Chrome 71.0.3578.80,,2018-12-11 16:57:20,2018-12-11 16:57:21,0.926s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesignt_NumericName""), ""This is Numeric Field"")",Chrome 71.0.3578.80,,2018-12-11 16:57:21,2018-12-11 16:57:21,0.539s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:57:21,2018-12-11 16:57:23,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectDate""), findTestObject(""Form_Selection_Creation/questionGroupArea""))",Chrome 71.0.3578.80,,2018-12-11 16:57:23,2018-12-11 16:57:24,0.770s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_DateName""), ""This is Date"")",Chrome 71.0.3578.80,,2018-12-11 16:57:24,2018-12-11 16:57:24,0.447s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:57:24,2018-12-11 16:57:26,2.002s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectTime""), findTestObject(""Form_Selection_Creation/questionGroupArea""))",Chrome 71.0.3578.80,,2018-12-11 16:57:26,2018-12-11 16:57:27,0.804s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_TimeName""), ""This is Time"")",Chrome 71.0.3578.80,,2018-12-11 16:57:27,2018-12-11 16:57:28,0.446s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:57:28,2018-12-11 16:57:30,2.001s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectDateTime""), findTestObject(""Form_Selection_Creation/questionGroupArea""))",Chrome 71.0.3578.80,,2018-12-11 16:57:30,2018-12-11 16:57:30,0.838s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_DateTimeName""), ""This is Date-Time"")",Chrome 71.0.3578.80,,2018-12-11 16:57:31,2018-12-11 16:57:31,0.670s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:57:31,2018-12-11 16:57:33,2.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/formCreation_NextToDesignForm""))",Chrome 71.0.3578.80,,2018-12-11 16:57:33,2018-12-11 16:57:33,0.116s,PASSED
+Thread.sleep(7000),Chrome 71.0.3578.80,,2018-12-11 16:57:33,2018-12-11 16:57:40,7.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/div_Preview             Form1""))",Chrome 71.0.3578.80,,2018-12-11 16:57:40,2018-12-11 16:57:40,0.119s,PASSED
+Thread.sleep(5000),Chrome 71.0.3578.80,,2018-12-11 16:57:40,2018-12-11 16:57:45,5.002s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_Release""))",Chrome 71.0.3578.80,,2018-12-11 16:57:45,2018-12-11 16:57:46,0.197s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 16:57:46,2018-12-11 16:57:50,4.000s,PASSED
+,,,,,,
+Test Cases/Forms/AuditForm/2_FormSubmission,Chrome 71.0.3578.80,,2018-12-11 16:57:50,2018-12-11 17:06:25,8m - 34.886s,FAILED
+openBrowser(URL),Chrome 71.0.3578.80,,2018-12-11 16:57:50,2018-12-11 16:58:08,17.898s,PASSED
+maximizeWindow(),Chrome 71.0.3578.80,,2018-12-11 16:58:08,2018-12-11 16:58:09,1.160s,PASSED
+driver = getWebDriver(),Chrome 71.0.3578.80,,2018-12-11 16:58:09,2018-12-11 16:58:09,0.001s,PASSED
+"setText(findTestObject(""FormTab/login_Username""), UserName)",Chrome 71.0.3578.80,,2018-12-11 16:58:09,2018-12-11 16:58:13,4.199s,PASSED
+"setText(findTestObject(""FormTab/login_Password""), Password)",Chrome 71.0.3578.80,,2018-12-11 16:58:13,2018-12-11 16:58:13,0.143s,PASSED
+"click(findTestObject(""FormTab/login_Button""))",Chrome 71.0.3578.80,,2018-12-11 16:58:13,2018-12-11 16:58:18,4.486s,PASSED
+Thread.sleep(8000),Chrome 71.0.3578.80,,2018-12-11 16:58:18,2018-12-11 16:58:26,8.000s,PASSED
+"click(findTestObject(""FormTab/form_Tab""))",Chrome 71.0.3578.80,,2018-12-11 16:58:26,2018-12-11 16:58:26,0.105s,PASSED
+Thread.sleep(5000),Chrome 71.0.3578.80,,2018-12-11 16:58:26,2018-12-11 16:58:31,5.001s,PASSED
+"click(findTestObject(""FormTab/options""))",Chrome 71.0.3578.80,,2018-12-11 16:58:31,2018-12-11 16:58:31,0.214s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:58:31,2018-12-11 16:58:33,2.000s,PASSED
+"mouseOver(findTestObject(""FormTab/filterOption""))",Chrome 71.0.3578.80,,2018-12-11 16:58:33,2018-12-11 16:58:33,0.073s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:58:33,2018-12-11 16:58:35,2.001s,PASSED
+FormName.filterFormName(),Chrome 71.0.3578.80,,2018-12-11 16:58:35,2018-12-11 16:58:36,0.292s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:58:36,2018-12-11 16:58:38,2.000s,PASSED
+"click(findTestObject(""FormTab/filterButton""))",Chrome 71.0.3578.80,,2018-12-11 16:58:38,2018-12-11 16:58:38,0.187s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 16:58:38,2018-12-11 16:58:42,4.000s,PASSED
+"click(findTestObject(""FormTab/selectForm""))",Chrome 71.0.3578.80,,2018-12-11 16:58:42,2018-12-11 16:58:42,0.115s,PASSED
+"click(findTestObject(""FormTab/clickToViewMoreOption""))",Chrome 71.0.3578.80,,2018-12-11 16:58:42,2018-12-11 16:58:42,0.003s,NOT_RUN
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 16:58:42,2018-12-11 16:58:42,0.001s,NOT_RUN
+"waitForElementNotVisible(findTestObject(""FormTab/select500_Form""), 5)",Chrome 71.0.3578.80,,2018-12-11 16:58:42,2018-12-11 16:58:42,0.001s,NOT_RUN
+"click(findTestObject(""FormTab/select500_Form""), STOP_ON_FAILURE)",Chrome 71.0.3578.80,,2018-12-11 16:58:42,2018-12-11 16:58:42,0.001s,NOT_RUN
+Thread.sleep(7000),Chrome 71.0.3578.80,,2018-12-11 16:58:42,2018-12-11 16:58:42,0.001s,NOT_RUN
+FormName.fillFormName(),Chrome 71.0.3578.80,,2018-12-11 16:58:42,2018-12-11 16:58:42,0.002s,NOT_RUN
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 16:58:42,2018-12-11 16:58:46,4.000s,PASSED
+"click(findTestObject(""FormTab/fillForm_OpenLocationOption""))",Chrome 71.0.3578.80,,2018-12-11 16:58:46,2018-12-11 16:58:46,0.091s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 16:58:46,2018-12-11 16:58:48,2.000s,PASSED
+"click(findTestObject(""FormTab/fillForm_SelectLocation""))",Chrome 71.0.3578.80,,2018-12-11 16:58:48,2018-12-11 17:00:01,1m - 13.440s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:00:01,2018-12-11 17:00:05,4.000s,PASSED
+"click(findTestObject(""FormTab/fillForm_OpenResourceOption""))",Chrome 71.0.3578.80,,2018-12-11 17:00:05,2018-12-11 17:06:24,6m - 19.122s,FAILED
+,,,,,,
+Test Cases/Forms/AuditForm/3_VerifyingRecord,Chrome 71.0.3578.80,,2018-12-11 17:06:25,2018-12-11 17:12:41,6m - 16.473s,FAILED
+openBrowser(URL),Chrome 71.0.3578.80,,2018-12-11 17:06:25,2018-12-11 17:06:25,0.001s,NOT_RUN
+maximizeWindow(),Chrome 71.0.3578.80,,2018-12-11 17:06:25,2018-12-11 17:06:25,0.001s,NOT_RUN
+"setText(findTestObject(""Record/login_Username""), UserName)",Chrome 71.0.3578.80,,2018-12-11 17:06:25,2018-12-11 17:06:25,0.002s,NOT_RUN
+"setText(findTestObject(""Record/login_Password""), Password)",Chrome 71.0.3578.80,,2018-12-11 17:06:25,2018-12-11 17:06:25,0.002s,NOT_RUN
+"click(findTestObject(""Record/login_Button""))",Chrome 71.0.3578.80,,2018-12-11 17:06:25,2018-12-11 17:06:25,0.001s,NOT_RUN
+Thread.sleep(8000),Chrome 71.0.3578.80,,2018-12-11 17:06:25,2018-12-11 17:06:25,0.001s,NOT_RUN
+"click(findTestObject(""Record/record_Tab""))",Chrome 71.0.3578.80,,2018-12-11 17:06:25,2018-12-11 17:12:41,6m - 16.241s,FAILED
+,,,,,,
+Test Cases/Forms/CheckForm/1_CreateForm,Chrome 71.0.3578.80,,2018-12-11 17:12:41,2018-12-11 17:14:32,1m - 51.309s,PASSED
+openBrowser(URL),Chrome 71.0.3578.80,,2018-12-11 17:12:41,2018-12-11 17:12:59,17.340s,PASSED
+maximizeWindow(),Chrome 71.0.3578.80,,2018-12-11 17:12:59,2018-12-11 17:13:00,1.160s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/login_Username""), UserName)",Chrome 71.0.3578.80,,2018-12-11 17:13:00,2018-12-11 17:13:05,5.096s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/login_Password""), Password)",Chrome 71.0.3578.80,,2018-12-11 17:13:05,2018-12-11 17:13:05,0.148s,PASSED
+FormName.setData(),Chrome 71.0.3578.80,,2018-12-11 17:13:05,2018-12-11 17:13:05,0.047s,PASSED
+"click(findTestObject(""Form_Selection_Creation/login_Button""))",Chrome 71.0.3578.80,,2018-12-11 17:13:05,2018-12-11 17:13:09,4.482s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 17:13:09,2018-12-11 17:13:12,3.002s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_Button""))",Chrome 71.0.3578.80,,2018-12-11 17:13:12,2018-12-11 17:13:15,2.219s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_AdminTools""))",Chrome 71.0.3578.80,,2018-12-11 17:13:15,2018-12-11 17:13:15,0.152s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_AdminTools_FormDesigner""))",Chrome 71.0.3578.80,,2018-12-11 17:13:15,2018-12-11 17:13:15,0.156s,PASSED
+"click(findTestObject(""Form_Selection_Creation/selectCheckForm""))",Chrome 71.0.3578.80,,2018-12-11 17:13:15,2018-12-11 17:13:16,0.626s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 17:13:16,2018-12-11 17:13:19,3.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_selectResource""), findTestObject(""Form_Selection_Creation/Target_Res_Object""))",Chrome 71.0.3578.80,,2018-12-11 17:13:19,2018-12-11 17:13:19,0.699s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.80,,2018-12-11 17:13:19,2018-12-11 17:13:25,6.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/formCreation_NextToDesignForm""))",Chrome 71.0.3578.80,,2018-12-11 17:13:25,2018-12-11 17:13:25,0.091s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:13:25,2018-12-11 17:13:29,4.000s,PASSED
+"FormName.createForm(findTestObject(""Form_Selection_Creation/formDesign_FormName""))",Chrome 71.0.3578.80,,2018-12-11 17:13:29,2018-12-11 17:13:30,0.372s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:13:30,2018-12-11 17:13:32,2.002s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectSection""), findTestObject(""Form_Selection_Creation/default_area""))",Chrome 71.0.3578.80,,2018-12-11 17:13:32,2018-12-11 17:13:33,0.792s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_SectionName""), ""This is a Section"")",Chrome 71.0.3578.80,,2018-12-11 17:13:33,2018-12-11 17:13:33,0.310s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:13:33,2018-12-11 17:13:35,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectFieldgroup""), findTestObject(""Form_Selection_Creation/section_area""))",Chrome 71.0.3578.80,,2018-12-11 17:13:35,2018-12-11 17:13:36,0.763s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_FieldGroupName""), ""This is Field Group"")",Chrome 71.0.3578.80,,2018-12-11 17:13:36,2018-12-11 17:13:36,0.312s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:13:36,2018-12-11 17:13:38,2.001s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectFree Text""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:13:38,2018-12-11 17:13:39,0.737s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_FreetextName""), ""This is Free Text"")",Chrome 71.0.3578.80,,2018-12-11 17:13:39,2018-12-11 17:13:39,0.469s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:13:39,2018-12-11 17:13:41,2.001s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectParagraphText""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:13:41,2018-12-11 17:13:42,0.788s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_ParagraphName""), ""This is Paragraph"")",Chrome 71.0.3578.80,,2018-12-11 17:13:42,2018-12-11 17:13:42,0.318s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:13:42,2018-12-11 17:13:44,2.001s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_Select_SelectOne""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:13:44,2018-12-11 17:13:45,0.796s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_Select_OneName""), ""This is Select One"")",Chrome 71.0.3578.80,,2018-12-11 17:13:45,2018-12-11 17:13:46,0.469s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 17:13:46,2018-12-11 17:13:49,3.000s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_Add New""))",Chrome 71.0.3578.80,,2018-12-11 17:13:49,2018-12-11 17:13:49,0.135s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/addSingleValue1""), ""Select Option1"")",Chrome 71.0.3578.80,,2018-12-11 17:13:49,2018-12-11 17:13:49,0.312s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:13:49,2018-12-11 17:13:51,2.002s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_Add New""))",Chrome 71.0.3578.80,,2018-12-11 17:13:51,2018-12-11 17:13:51,0.075s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/addSingleValue2""), ""Select Option2"")",Chrome 71.0.3578.80,,2018-12-11 17:13:51,2018-12-11 17:13:51,0.284s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:13:51,2018-12-11 17:13:53,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_Select_SelectMultiple""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:13:53,2018-12-11 17:13:54,0.894s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_Select_MultipleName""), ""This is Select Multiple "")",Chrome 71.0.3578.80,,2018-12-11 17:13:54,2018-12-11 17:13:55,0.673s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 17:13:55,2018-12-11 17:13:58,3.000s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_AddNewMul""))",Chrome 71.0.3578.80,,2018-12-11 17:13:58,2018-12-11 17:13:58,0.116s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/addMultipleValue1""), ""Multiple Option1"")",Chrome 71.0.3578.80,,2018-12-11 17:13:58,2018-12-11 17:13:58,0.299s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:13:58,2018-12-11 17:14:00,2.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_AddNewMul""))",Chrome 71.0.3578.80,,2018-12-11 17:14:00,2018-12-11 17:14:00,0.075s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/addMultipleValue2""), ""Multiple Option2"")",Chrome 71.0.3578.80,,2018-12-11 17:14:00,2018-12-11 17:14:01,0.259s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:14:01,2018-12-11 17:14:03,2.001s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectNumeric""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:14:03,2018-12-11 17:14:04,0.858s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesignt_NumericName""), ""This is Numeric Field."")",Chrome 71.0.3578.80,,2018-12-11 17:14:04,2018-12-11 17:14:04,0.483s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:14:04,2018-12-11 17:14:06,2.001s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectDate""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:14:06,2018-12-11 17:14:07,0.800s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_DateName""), ""This is Date"")",Chrome 71.0.3578.80,,2018-12-11 17:14:07,2018-12-11 17:14:07,0.431s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:14:07,2018-12-11 17:14:09,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectTime""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:14:09,2018-12-11 17:14:10,0.850s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_TimeName""), ""This is Time"")",Chrome 71.0.3578.80,,2018-12-11 17:14:10,2018-12-11 17:14:11,0.398s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:14:11,2018-12-11 17:14:13,2.001s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectDateTime""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:14:13,2018-12-11 17:14:13,0.814s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_DateTimeName""), ""This is Date-Time"")",Chrome 71.0.3578.80,,2018-12-11 17:14:13,2018-12-11 17:14:14,0.602s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:14:14,2018-12-11 17:14:16,2.000s,PASSED
+"click(findTestObject(""Form_Selection_Creation/formCreation_NextToDesignForm""))",Chrome 71.0.3578.80,,2018-12-11 17:14:16,2018-12-11 17:14:16,0.130s,PASSED
+Thread.sleep(7000),Chrome 71.0.3578.80,,2018-12-11 17:14:16,2018-12-11 17:14:23,7.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/div_Preview             Form1""))",Chrome 71.0.3578.80,,2018-12-11 17:14:23,2018-12-11 17:14:23,0.110s,PASSED
+Thread.sleep(5000),Chrome 71.0.3578.80,,2018-12-11 17:14:23,2018-12-11 17:14:28,5.000s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_Release""))",Chrome 71.0.3578.80,,2018-12-11 17:14:28,2018-12-11 17:14:28,0.116s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:14:28,2018-12-11 17:14:32,4.001s,PASSED
+,,,,,,
+Test Cases/Forms/CheckForm/2_FormSubmission,Chrome 71.0.3578.80,,2018-12-11 17:14:32,2018-12-11 17:21:42,7m - 9.864s,FAILED
+openBrowser(URL),Chrome 71.0.3578.80,,2018-12-11 17:14:33,2018-12-11 17:14:51,18.078s,PASSED
+maximizeWindow(),Chrome 71.0.3578.80,,2018-12-11 17:14:51,2018-12-11 17:14:52,1.136s,PASSED
+driver = getWebDriver(),Chrome 71.0.3578.80,,2018-12-11 17:14:52,2018-12-11 17:14:52,0.001s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 17:14:52,2018-12-11 17:14:55,3.001s,PASSED
+"setText(findTestObject(""FormTab/login_Username""), UserName)",Chrome 71.0.3578.80,,2018-12-11 17:14:55,2018-12-11 17:14:55,0.151s,PASSED
+"setText(findTestObject(""FormTab/login_Password""), Password)",Chrome 71.0.3578.80,,2018-12-11 17:14:55,2018-12-11 17:14:55,0.125s,PASSED
+"click(findTestObject(""FormTab/login_Button""))",Chrome 71.0.3578.80,,2018-12-11 17:14:55,2018-12-11 17:14:59,3.876s,PASSED
+Thread.sleep(8000),Chrome 71.0.3578.80,,2018-12-11 17:14:59,2018-12-11 17:15:07,8.001s,PASSED
+"click(findTestObject(""FormTab/form_Tab""))",Chrome 71.0.3578.80,,2018-12-11 17:15:07,2018-12-11 17:15:07,0.096s,PASSED
+Thread.sleep(5000),Chrome 71.0.3578.80,,2018-12-11 17:15:07,2018-12-11 17:15:12,5.001s,PASSED
+"click(findTestObject(""FormTab/clickToViewMoreOption""))",Chrome 71.0.3578.80,,2018-12-11 17:15:12,2018-12-11 17:15:12,0.001s,NOT_RUN
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 17:15:12,2018-12-11 17:15:12,0.001s,NOT_RUN
+"waitForElementNotVisible(findTestObject(""FormTab/select500_Form""), 5)",Chrome 71.0.3578.80,,2018-12-11 17:15:12,2018-12-11 17:15:12,0.001s,NOT_RUN
+"click(findTestObject(""FormTab/select500_Form""))",Chrome 71.0.3578.80,,2018-12-11 17:15:12,2018-12-11 17:15:12,0.002s,NOT_RUN
+Thread.sleep(7000),Chrome 71.0.3578.80,,2018-12-11 17:15:12,2018-12-11 17:15:12,0.001s,NOT_RUN
+FormName.fillFormName(),Chrome 71.0.3578.80,,2018-12-11 17:15:12,2018-12-11 17:15:12,0.003s,NOT_RUN
+"click(findTestObject(""FormTab/options""))",Chrome 71.0.3578.80,,2018-12-11 17:15:12,2018-12-11 17:15:12,0.233s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:15:12,2018-12-11 17:15:14,2.001s,PASSED
+"mouseOver(findTestObject(""FormTab/filterOption""))",Chrome 71.0.3578.80,,2018-12-11 17:15:14,2018-12-11 17:15:14,0.064s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:15:14,2018-12-11 17:15:16,2.000s,PASSED
+FormName.filterFormName(),Chrome 71.0.3578.80,,2018-12-11 17:15:16,2018-12-11 17:15:17,0.349s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:15:17,2018-12-11 17:15:19,2.000s,PASSED
+"click(findTestObject(""FormTab/filterButton""))",Chrome 71.0.3578.80,,2018-12-11 17:15:19,2018-12-11 17:15:19,0.186s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:15:19,2018-12-11 17:15:23,4.002s,PASSED
+"click(findTestObject(""FormTab/selectForm""))",Chrome 71.0.3578.80,,2018-12-11 17:15:23,2018-12-11 17:15:23,0.114s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:15:23,2018-12-11 17:15:27,4.002s,PASSED
+"click(findTestObject(""FormTab/fillForm_OpenLocationOption""))",Chrome 71.0.3578.80,,2018-12-11 17:15:27,2018-12-11 17:15:27,0.118s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:15:27,2018-12-11 17:15:29,2.000s,PASSED
+"click(findTestObject(""FormTab/fillForm_SelectLocation""))",Chrome 71.0.3578.80,,2018-12-11 17:15:29,2018-12-11 17:21:42,6m - 13.037s,FAILED
+,,,,,,
+Test Cases/Forms/CheckForm/3_VerifyingRecord,Chrome 71.0.3578.80,,2018-12-11 17:21:42,2018-12-11 17:21:43,0.544s,FAILED
+openBrowser(URL),Chrome 71.0.3578.80,,2018-12-11 17:21:42,2018-12-11 17:21:42,0.002s,NOT_RUN
+maximizeWindow(),Chrome 71.0.3578.80,,2018-12-11 17:21:42,2018-12-11 17:21:42,0.001s,NOT_RUN
+"setText(findTestObject(""Record/login_Username""), UserName)",Chrome 71.0.3578.80,,2018-12-11 17:21:42,2018-12-11 17:21:42,0.001s,NOT_RUN
+"setText(findTestObject(""Record/login_Password""), Password)",Chrome 71.0.3578.80,,2018-12-11 17:21:42,2018-12-11 17:21:42,0.001s,NOT_RUN
+"click(findTestObject(""Record/login_Button""))",Chrome 71.0.3578.80,,2018-12-11 17:21:42,2018-12-11 17:21:42,0.001s,NOT_RUN
+Thread.sleep(8000),Chrome 71.0.3578.80,,2018-12-11 17:21:42,2018-12-11 17:21:42,0.002s,NOT_RUN
+"click(findTestObject(""Record/record_Tab""))",Chrome 71.0.3578.80,,2018-12-11 17:21:42,2018-12-11 17:21:43,0.356s,FAILED
+,,,,,,
+Test Cases/Forms/QuestionaitreForm/1_CreateForm,Chrome 71.0.3578.80,,2018-12-11 17:21:43,2018-12-11 17:23:34,1m - 50.866s,PASSED
+openBrowser(URL),Chrome 71.0.3578.80,,2018-12-11 17:21:43,2018-12-11 17:22:01,17.761s,PASSED
+maximizeWindow(),Chrome 71.0.3578.80,,2018-12-11 17:22:01,2018-12-11 17:22:02,1.143s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/login_Username""), UserName)",Chrome 71.0.3578.80,,2018-12-11 17:22:02,2018-12-11 17:22:05,3.218s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/login_Password""), Password)",Chrome 71.0.3578.80,,2018-12-11 17:22:05,2018-12-11 17:22:05,0.128s,PASSED
+FormName.setData(),Chrome 71.0.3578.80,,2018-12-11 17:22:05,2018-12-11 17:22:05,0.035s,PASSED
+"click(findTestObject(""Form_Selection_Creation/login_Button""))",Chrome 71.0.3578.80,,2018-12-11 17:22:05,2018-12-11 17:22:09,4.123s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 17:22:09,2018-12-11 17:22:12,3.000s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_Button""))",Chrome 71.0.3578.80,,2018-12-11 17:22:12,2018-12-11 17:22:15,2.253s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_AdminTools""))",Chrome 71.0.3578.80,,2018-12-11 17:22:15,2018-12-11 17:22:15,0.140s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_AdminTools_FormDesigner""))",Chrome 71.0.3578.80,,2018-12-11 17:22:15,2018-12-11 17:22:15,0.139s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:22:15,2018-12-11 17:22:17,2.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/selectQuestionaireForm""))",Chrome 71.0.3578.80,,2018-12-11 17:22:17,2018-12-11 17:22:17,0.110s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 17:22:17,2018-12-11 17:22:20,3.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_selectResource""), findTestObject(""Form_Selection_Creation/Target_Res_Object""))",Chrome 71.0.3578.80,,2018-12-11 17:22:20,2018-12-11 17:22:21,0.704s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.80,,2018-12-11 17:22:21,2018-12-11 17:22:27,6.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/formCreation_NextToDesignForm""))",Chrome 71.0.3578.80,,2018-12-11 17:22:27,2018-12-11 17:22:27,0.095s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:22:27,2018-12-11 17:22:31,4.000s,PASSED
+"FormName.createForm(findTestObject(""Form_Selection_Creation/formDesign_FormName""))",Chrome 71.0.3578.80,,2018-12-11 17:22:31,2018-12-11 17:22:31,0.342s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:22:31,2018-12-11 17:22:33,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectSection""), findTestObject(""Form_Selection_Creation/default_area""))",Chrome 71.0.3578.80,,2018-12-11 17:22:33,2018-12-11 17:22:34,0.838s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_SectionName_text""), ""This is Section "")",Chrome 71.0.3578.80,,2018-12-11 17:22:34,2018-12-11 17:22:34,0.294s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:22:34,2018-12-11 17:22:36,2.001s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectFieldgroup""), findTestObject(""Form_Selection_Creation/section_area""))",Chrome 71.0.3578.80,,2018-12-11 17:22:36,2018-12-11 17:22:37,0.752s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_FieldGroupName_text""), ""This is Field Group "")",Chrome 71.0.3578.80,,2018-12-11 17:22:37,2018-12-11 17:22:37,0.356s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:22:37,2018-12-11 17:22:39,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectFree Text""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:22:39,2018-12-11 17:22:40,0.744s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_SingleLineName_Text""), ""This is Single Line Text"")",Chrome 71.0.3578.80,,2018-12-11 17:22:40,2018-12-11 17:22:41,0.631s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:22:41,2018-12-11 17:22:43,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectParagraphText""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:22:43,2018-12-11 17:22:44,0.773s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_ParagraphName_Text""), ""This is Paragraph"")",Chrome 71.0.3578.80,,2018-12-11 17:22:44,2018-12-11 17:22:44,0.453s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:22:44,2018-12-11 17:22:46,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_Select_SelectOne""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:22:46,2018-12-11 17:22:47,0.755s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_Select_OneName_text""), ""This is Select One"")",Chrome 71.0.3578.80,,2018-12-11 17:22:47,2018-12-11 17:22:47,0.504s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 17:22:47,2018-12-11 17:22:50,3.000s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_AddNew1""))",Chrome 71.0.3578.80,,2018-12-11 17:22:50,2018-12-11 17:22:50,0.130s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/add1singleValue1""), ""SingleOption1"")",Chrome 71.0.3578.80,,2018-12-11 17:22:50,2018-12-11 17:22:51,0.257s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:22:51,2018-12-11 17:22:53,2.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_AddNew1""))",Chrome 71.0.3578.80,,2018-12-11 17:22:53,2018-12-11 17:22:53,0.075s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/add1singleValue2""), ""SingleOption2"")",Chrome 71.0.3578.80,,2018-12-11 17:22:53,2018-12-11 17:22:53,0.256s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:22:53,2018-12-11 17:22:55,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_Select_SelectMultiple""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:22:55,2018-12-11 17:22:56,0.774s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_Select_MultipleName_text""), ""This is Select Multiple"")",Chrome 71.0.3578.80,,2018-12-11 17:22:56,2018-12-11 17:22:56,0.499s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 17:22:56,2018-12-11 17:22:59,3.002s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_addNewMul1""))",Chrome 71.0.3578.80,,2018-12-11 17:22:59,2018-12-11 17:22:59,0.142s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/add1MultipleValue1""), ""MultipleOption1"")",Chrome 71.0.3578.80,,2018-12-11 17:22:59,2018-12-11 17:23:00,0.265s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:23:00,2018-12-11 17:23:02,2.000s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_addNewMul1""))",Chrome 71.0.3578.80,,2018-12-11 17:23:02,2018-12-11 17:23:02,0.088s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/add1MultipleValue2""), ""MultipleOption2"")",Chrome 71.0.3578.80,,2018-12-11 17:23:02,2018-12-11 17:23:02,0.269s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:23:02,2018-12-11 17:23:04,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectNumeric""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:23:04,2018-12-11 17:23:05,0.812s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_NumericName_Text""), ""This is a Number"")",Chrome 71.0.3578.80,,2018-12-11 17:23:05,2018-12-11 17:23:05,0.402s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:23:05,2018-12-11 17:23:07,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectDate""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:23:07,2018-12-11 17:23:08,0.804s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_DateName_Text""), ""This is a Date"")",Chrome 71.0.3578.80,,2018-12-11 17:23:08,2018-12-11 17:23:09,0.579s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:23:09,2018-12-11 17:23:11,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectTime""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:23:11,2018-12-11 17:23:11,0.787s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_TimeName_text""), ""This is a Time"")",Chrome 71.0.3578.80,,2018-12-11 17:23:11,2018-12-11 17:23:12,0.401s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:23:12,2018-12-11 17:23:14,2.000s,PASSED
+"dragAndDropToObject(findTestObject(""Form_Selection_Creation/formDesign_SelectDateTime""), findTestObject(""Form_Selection_Creation/group_area""))",Chrome 71.0.3578.80,,2018-12-11 17:23:14,2018-12-11 17:23:15,0.840s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/formDesign_DateTimeName_Text""), ""This is a Date-Time"")",Chrome 71.0.3578.80,,2018-12-11 17:23:15,2018-12-11 17:23:15,0.624s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:23:15,2018-12-11 17:23:17,2.000s,PASSED
+"click(findTestObject(""Form_Selection_Creation/formCreation_NextToDesignForm""))",Chrome 71.0.3578.80,,2018-12-11 17:23:17,2018-12-11 17:23:17,0.116s,PASSED
+Thread.sleep(7000),Chrome 71.0.3578.80,,2018-12-11 17:23:17,2018-12-11 17:23:24,7.001s,PASSED
+"click(findTestObject(""Form_Selection_Creation/div_Preview             Form1""))",Chrome 71.0.3578.80,,2018-12-11 17:23:24,2018-12-11 17:23:24,0.119s,PASSED
+Thread.sleep(5000),Chrome 71.0.3578.80,,2018-12-11 17:23:24,2018-12-11 17:23:29,5.000s,PASSED
+"click(findTestObject(""Form_Selection_Creation/button_Release""))",Chrome 71.0.3578.80,,2018-12-11 17:23:29,2018-12-11 17:23:30,0.111s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:23:30,2018-12-11 17:23:34,4.001s,PASSED
+,,,,,,
+Test Cases/Forms/QuestionaitreForm/2_FormSubmission,Chrome 71.0.3578.80,,2018-12-11 17:23:34,2018-12-11 17:30:45,7m - 11.476s,FAILED
+"openBrowser("""")",Chrome 71.0.3578.80,,2018-12-11 17:23:34,2018-12-11 17:23:37,3.052s,PASSED
+navigateToUrl(URL),Chrome 71.0.3578.80,,2018-12-11 17:23:37,2018-12-11 17:23:51,13.735s,PASSED
+maximizeWindow(),Chrome 71.0.3578.80,,2018-12-11 17:23:51,2018-12-11 17:23:52,1.130s,PASSED
+driver = getWebDriver(),Chrome 71.0.3578.80,,2018-12-11 17:23:52,2018-12-11 17:23:52,0.001s,PASSED
+"setText(findTestObject(""FormTab/login_Username""), UserName)",Chrome 71.0.3578.80,,2018-12-11 17:23:52,2018-12-11 17:23:56,4.142s,PASSED
+"setText(findTestObject(""FormTab/login_Password""), Password)",Chrome 71.0.3578.80,,2018-12-11 17:23:56,2018-12-11 17:23:56,0.120s,PASSED
+"click(findTestObject(""FormTab/login_Button""))",Chrome 71.0.3578.80,,2018-12-11 17:23:56,2018-12-11 17:24:00,3.919s,PASSED
+Thread.sleep(10000),Chrome 71.0.3578.80,,2018-12-11 17:24:00,2018-12-11 17:24:10,10.001s,PASSED
+"click(findTestObject(""FormTab/form_Tab""))",Chrome 71.0.3578.80,,2018-12-11 17:24:10,2018-12-11 17:24:10,0.095s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:24:10,2018-12-11 17:24:10,0.000s,NOT_RUN
+"click(findTestObject(""FormTab/clickToViewMoreOption""))",Chrome 71.0.3578.80,,2018-12-11 17:24:10,2018-12-11 17:24:10,0.001s,NOT_RUN
+"waitForElementNotVisible(findTestObject(""FormTab/select500_Form""), 5)",Chrome 71.0.3578.80,,2018-12-11 17:24:10,2018-12-11 17:24:10,0.001s,NOT_RUN
+"click(findTestObject(""FormTab/select500_Form""))",Chrome 71.0.3578.80,,2018-12-11 17:24:10,2018-12-11 17:24:10,0.001s,NOT_RUN
+Thread.sleep(3000),Chrome 71.0.3578.80,,2018-12-11 17:24:10,2018-12-11 17:24:13,3.000s,PASSED
+"click(findTestObject(""FormTab/options""))",Chrome 71.0.3578.80,,2018-12-11 17:24:13,2018-12-11 17:24:13,0.259s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:24:13,2018-12-11 17:24:15,2.000s,PASSED
+"mouseOver(findTestObject(""FormTab/filterOption""))",Chrome 71.0.3578.80,,2018-12-11 17:24:15,2018-12-11 17:24:15,0.064s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:24:15,2018-12-11 17:24:17,2.000s,PASSED
+FormName.filterFormName(),Chrome 71.0.3578.80,,2018-12-11 17:24:17,2018-12-11 17:24:18,0.285s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.80,,2018-12-11 17:24:18,2018-12-11 17:24:20,2.000s,PASSED
+"click(findTestObject(""FormTab/filterButton""))",Chrome 71.0.3578.80,,2018-12-11 17:24:20,2018-12-11 17:24:20,0.170s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:24:20,2018-12-11 17:24:24,4.000s,PASSED
+"click(findTestObject(""FormTab/selectForm""))",Chrome 71.0.3578.80,,2018-12-11 17:24:24,2018-12-11 17:24:24,0.109s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:24:24,2018-12-11 17:24:28,4.001s,PASSED
+FormName.fillFormName(),Chrome 71.0.3578.80,,2018-12-11 17:24:28,2018-12-11 17:24:28,0.001s,NOT_RUN
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:24:28,2018-12-11 17:24:28,0.001s,NOT_RUN
+"click(findTestObject(""FormTab/fillForm_OpenLocationOption""))",Chrome 71.0.3578.80,,2018-12-11 17:24:28,2018-12-11 17:24:28,0.093s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:24:28,2018-12-11 17:24:32,4.000s,PASSED
+delay(3000),Chrome 71.0.3578.80,,2018-12-11 17:24:32,2018-12-11 17:24:32,0.001s,NOT_RUN
+"waitForElementNotVisible(findTestObject(""FormTab/fillForm_SelectLocation""), 5)",Chrome 71.0.3578.80,,2018-12-11 17:24:32,2018-12-11 17:24:32,0.001s,NOT_RUN
+"click(findTestObject(""FormTab/fillForm_SelectLocation""))",Chrome 71.0.3578.80,,2018-12-11 17:24:32,2018-12-11 17:30:45,6m - 13.035s,FAILED
+,,,,,,
+Test Cases/Forms/QuestionaitreForm/3_VerifyingDocument,Chrome 71.0.3578.80,,2018-12-11 17:30:45,2018-12-11 17:30:54,8.521s,FAILED
+openBrowser(URL),Chrome 71.0.3578.80,,2018-12-11 17:30:45,2018-12-11 17:30:45,0.001s,NOT_RUN
+"setText(findTestObject(""DocumentTab/login_Username""), UserName)",Chrome 71.0.3578.80,,2018-12-11 17:30:45,2018-12-11 17:30:45,0.001s,NOT_RUN
+"setText(findTestObject(""DocumentTab/login_Password""), Password)",Chrome 71.0.3578.80,,2018-12-11 17:30:45,2018-12-11 17:30:45,0.000s,NOT_RUN
+"click(findTestObject(""DocumentTab/login_Button""))",Chrome 71.0.3578.80,,2018-12-11 17:30:45,2018-12-11 17:30:45,0.000s,NOT_RUN
+Thread.sleep(8000),Chrome 71.0.3578.80,,2018-12-11 17:30:45,2018-12-11 17:30:53,8.001s,PASSED
+"click(findTestObject(""DocumentTab/documentTab""))",Chrome 71.0.3578.80,,2018-12-11 17:30:53,2018-12-11 17:30:54,0.374s,FAILED
+,,,,,,
+Test Cases/Forms/QuestionaitreForm/4_VerifyingDMS,Chrome 71.0.3578.80,,2018-12-11 17:30:54,2018-12-11 17:31:10,16.704s,FAILED
+openBrowser(URL),Chrome 71.0.3578.80,,2018-12-11 17:30:54,2018-12-11 17:30:54,0.001s,NOT_RUN
+"setText(findTestObject(""DMS_Forms/login_Username""), UserName)",Chrome 71.0.3578.80,,2018-12-11 17:30:54,2018-12-11 17:30:54,0.001s,NOT_RUN
+"setText(findTestObject(""DMS_Forms/login_Password""), Password)",Chrome 71.0.3578.80,,2018-12-11 17:30:54,2018-12-11 17:30:54,0.001s,NOT_RUN
+"click(findTestObject(""DMS_Forms/login_Button""))",Chrome 71.0.3578.80,,2018-12-11 17:30:54,2018-12-11 17:30:54,0.001s,NOT_RUN
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:30:54,2018-12-11 17:30:58,4.000s,PASSED
+"click(findTestObject(""DMS_Forms/mainmenu_button""))",Chrome 71.0.3578.80,,2018-12-11 17:30:58,2018-12-11 17:30:58,0.157s,PASSED
+"click(findTestObject(""DMS_Forms/mainmenu_Document""))",Chrome 71.0.3578.80,,2018-12-11 17:30:58,2018-12-11 17:30:58,0.092s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:30:58,2018-12-11 17:31:02,4.000s,PASSED
+FormName.findinDMS(),Chrome 71.0.3578.80,,2018-12-11 17:31:02,2018-12-11 17:31:02,0.100s,FAILED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:31:02,2018-12-11 17:31:06,4.000s,PASSED
+"doubleClick(findTestObject(""DMS_Forms/openDocument""))",Chrome 71.0.3578.80,,2018-12-11 17:31:06,2018-12-11 17:31:06,0.171s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.80,,2018-12-11 17:31:06,2018-12-11 17:31:10,4.001s,FAILED

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>openTimeZone</name>
+   <tag></tag>
+   <elementGuidId>4e8ac8ea-e43b-4087-9af7-2a6450805a42</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-add-new-supplier-user-template-holder&quot;]/form/div[div[contains(text(),&quot;Timezone&quot;)]]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-add-new-supplier-user-template-holder&quot;]/form/div[div[contains(text(),&quot;Timezone&quot;)]]/span</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -6,12 +6,12 @@
    <elementGuidId>d03272cc-0afc-40ac-bdb9-aaa53281fb9c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='No data found.'])[3]/following::li[2]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>/html/body/div/div/div/ul/li[2]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='No data found.'])[3]/following::li[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -70,7 +70,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div/div/div/ul/li[2]</value>
+      <value>/html/body/div/div/div/ul/li[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

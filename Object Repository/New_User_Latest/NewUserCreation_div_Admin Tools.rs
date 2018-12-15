@@ -9,11 +9,15 @@
          <key>XPATH</key>
          <value>//div[@id='scs-main-navigation']/div[9]/div[2]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-main-navigation&quot;]/div/div[contains(text(),&quot;Admin Tools&quot;)][count(. | //*[@ng-show = 'navigationExpanded']) = count(//*[@ng-show = 'navigationExpanded'])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -27,25 +31,25 @@
       <value>scs-main-menu-item-title ng-binding</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-show</name>
       <type>Main</type>
       <value>navigationExpanded</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>Admin Tools</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;scs-main-navigation&quot;)/div[@class=&quot;scs-main-menu-item ng-scope&quot;]/div[@class=&quot;scs-main-menu-item-title ng-binding&quot;]</value>
+      <value>//*[@id=&quot;scs-main-navigation&quot;]/div/div[contains(text(),&quot;Admin Tools&quot;)]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

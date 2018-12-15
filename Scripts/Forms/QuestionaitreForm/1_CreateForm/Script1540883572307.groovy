@@ -82,15 +82,15 @@ WebUI.setText(findTestObject('Form_Selection_Creation/formDesign_Select_OneName_
 
 Thread.sleep(3000)
 
-WebUI.click(findTestObject('Form_Selection_Creation/button_Add New'))
+WebUI.click(findTestObject('Form_Selection_Creation/button_AddNew1'))
 
-WebUI.setText(findTestObject('Form_Selection_Creation/addSingleValue1'), 'SingleOption1')
+WebUI.setText(findTestObject('Form_Selection_Creation/add1singleValue1'), 'SingleOption1')
 
 Thread.sleep(2000)
 
-WebUI.click(findTestObject('Form_Selection_Creation/button_Add New'))
+WebUI.click(findTestObject('Form_Selection_Creation/button_AddNew1'))
 
-WebUI.setText(findTestObject('Form_Selection_Creation/addSingleValue2'), 'SingleOption2')
+WebUI.setText(findTestObject('Form_Selection_Creation/add1singleValue2'), 'SingleOption2')
 
 Thread.sleep(2000)
 
@@ -100,15 +100,15 @@ WebUI.setText(findTestObject('Form_Selection_Creation/formDesign_Select_Multiple
 
 Thread.sleep(3000)
 
-WebUI.click(findTestObject('Form_Selection_Creation/button_AddNewMul'))
+WebUI.click(findTestObject('Form_Selection_Creation/button_addNewMul1'))
 
-WebUI.setText(findTestObject('Form_Selection_Creation/addMultipleValue1'), 'MultipleOption1')
+WebUI.setText(findTestObject('Form_Selection_Creation/add1MultipleValue1'), 'MultipleOption1')
 
 Thread.sleep(2000)
 
-WebUI.click(findTestObject('Form_Selection_Creation/button_AddNewMul'))
+WebUI.click(findTestObject('Form_Selection_Creation/button_addNewMul1'))
 
-WebUI.setText(findTestObject('Form_Selection_Creation/addMultipleValue2'), 'MultipleOption2')
+WebUI.setText(findTestObject('Form_Selection_Creation/add1MultipleValue2'), 'MultipleOption2')
 
 Thread.sleep(2000)
 
@@ -147,6 +147,4 @@ Thread.sleep(5000)
 WebUI.click(findTestObject('Form_Selection_Creation/button_Release'))
 
 Thread.sleep(4000)
-
-//WebUI.click(findTestObject('Form_Selection_Creation/home'))
 

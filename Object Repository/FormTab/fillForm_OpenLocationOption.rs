@@ -11,13 +11,13 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;scs-header-level&quot;]/div[1]/div[2]/span/span/span[2]</value>
+         <value>//*[@id=&quot;scs-header-level&quot;]/div[div[contains(text(),&quot;Location&quot;)]]//span[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -35,7 +35,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;scs-header-level&quot;]/div[1]/div[2]/span/span/span[2]</value>
+      <value>//*[@id=&quot;scs-header-level&quot;]/div[div[contains(text(),&quot;Location&quot;)]]//span[2]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

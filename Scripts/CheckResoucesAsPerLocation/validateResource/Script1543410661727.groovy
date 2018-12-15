@@ -13,23 +13,23 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser(GlobalVariable.URL)
+not_run: WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.maximizeWindow()
+not_run: WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password)
+
+Thread.sleep(4000)
 
 CustomKeywords.'FormName.setData'()
 
-WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
-
-Thread.sleep(3000)
+not_run: WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
 
-WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
+not_run: WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools_FormDesigner'))
 
@@ -45,11 +45,11 @@ CustomKeywords.'AdminTool_Location.dragDropRes'()
 
 Thread.sleep(3000)
 
-not_run: WebUI.dragAndDropToObject(findTestObject('validateResources'), findTestObject('Form_Selection_Creation/Target_Res_Object'))
+not_run: WebUI.dragAndDropToObject(findTestObject('null'), findTestObject('Form_Selection_Creation/Target_Res_Object'))
 
 CustomKeywords.'AdminTool_Location.validate'()
 
-String s = WebUI.getText(findTestObject('Text'))
+String s = WebUI.getText(findTestObject('TestResource/testText'))
 
 println(s)
 

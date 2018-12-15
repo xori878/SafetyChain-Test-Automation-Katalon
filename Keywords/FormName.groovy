@@ -160,7 +160,7 @@ class FormName {
 		}
 	}
 	@Keyword
-	def recogniseFormForTask() {
+	def setTaskName() {
 		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);

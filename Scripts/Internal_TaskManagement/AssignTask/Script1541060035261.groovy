@@ -33,7 +33,7 @@ Thread.sleep(10000)
 
 WebUI.click(findTestObject('FormTab/form_Tab'))
 
-CustomKeywords.'FormName.recogniseFormForTask'()
+CustomKeywords.'FormName.setTaskName'()
 
 Thread.sleep(7000)
 
@@ -63,8 +63,8 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Assign Tasks'))
 
-WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Task Name_scs-assign-tas'), findTestData('FormData').getValue('TaskName',
-		1))
+WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Task Name_scs-assign-tas'), findTestData('FormData').getValue('TaskName', 
+        1))
 
 WebUI.click(findTestObject('mainmenu_Forms_Inbox/open_Location'))
 
@@ -164,7 +164,7 @@ WebUI.setText(findTestObject('FormTab/fillForm_SelectOneOption'), 'Select Option
 Thread.sleep(3000)
 
 driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(
-		Keys.ENTER)
+    Keys.ENTER)
 
 Thread.sleep(3000)
 
@@ -173,7 +173,7 @@ WebUI.setText(findTestObject('FormTab/fillForm_SelectMultipleOption'), 'Multiple
 Thread.sleep(3000)
 
 driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(
-		Keys.ENTER)
+    Keys.ENTER)
 
 Thread.sleep(3000)
 
@@ -182,7 +182,7 @@ WebUI.click(findTestObject('FormTab/fillForm_SelectMultipleOption'))
 Thread.sleep(4000)
 
 driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]')).sendKeys(
-		'9')
+    '9')
 
 WebUI.setText(findTestObject('FormTab/fillForm_DateText'), '10/18/2018')
 

@@ -53,6 +53,7 @@ WebUI.click(findTestObject('TestUserLocation/addPlusIcon'))
 
 WebUI.setText(findTestObject('TestUserLocation/setNewName'), findTestData('LocationData').getValue('CustomerName', 1))
 
+//String s1 = WebUI.getText(findTestData('LocationData').getValue('CustomerName', 1)).toString()
 Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestUserLocation/saveButton'))

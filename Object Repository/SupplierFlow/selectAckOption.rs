@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectAckOption</name>
+   <tag></tag>
+   <elementGuidId>4f4f6ca5-59e7-4dc1-85c3-4070b447d3da</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-product-dropdown_mn_active&quot;]/div/ul/li/span/span[contains(text(),&quot;Acknowledgement&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-product-dropdown_mn_active&quot;]/div/ul/li/span/span[contains(text(),&quot;Acknowledgement&quot;)]</value>
+   </webElementProperties>
+</WebElementEntity>

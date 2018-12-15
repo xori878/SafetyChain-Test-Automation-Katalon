@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>users</name>
+   <tag></tag>
+   <elementGuidId>fd3b407f-52af-4cb9-bcaa-65cf669b8bb1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-main-navigation&quot;]//div[contains(text(),&quot;Users&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-main-navigation&quot;]//div[contains(text(),&quot;Users&quot;)]</value>
+   </webElementProperties>
+</WebElementEntity>

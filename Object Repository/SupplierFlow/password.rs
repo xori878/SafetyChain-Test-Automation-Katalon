@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>password</name>
+   <tag></tag>
+   <elementGuidId>198138e9-ce75-46c4-8ca7-3934aa966900</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-add-new-supplier-user-template-holder&quot;]/form/div[div[contains(text(),&quot;Password&quot;)]]/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-add-new-supplier-user-template-holder&quot;]/form/div[div[contains(text(),&quot;Password&quot;)]]/input</value>
+   </webElementProperties>
+</WebElementEntity>

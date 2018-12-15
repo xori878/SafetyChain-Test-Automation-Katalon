@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;scs-designform-form-content-prop-area&quot;]/div[2]/div/div[3]/div/div/div/div[1]/button</value>
+         <value>//*[@id=&quot;scs-designform-form-content-prop-area&quot;]/div//button[contains(text(),&quot;Add New&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;scs-designform-form-content-prop-area&quot;]/div[2]/div/div[3]/div/div/div/div[1]/button</value>
+      <value>//*[@id=&quot;scs-designform-form-content-prop-area&quot;]/div//button[contains(text(),&quot;Add New&quot;)]</value>
    </webElementProperties>
 </WebElementEntity>

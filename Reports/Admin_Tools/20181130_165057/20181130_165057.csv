@@ -1,0 +1,90 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Admin_Tools,Chrome 70.0.3538.110,,2018-11-30 16:50:59,2018-11-30 16:56:26,5m - 26.799s,FAILED
+,,,,,,
+Test Cases/AdminTools/InternalUser,Chrome 70.0.3538.110,,2018-11-30 16:51:00,2018-11-30 16:52:17,1m - 17.133s,PASSED
+"sc.sc_customkeywords.UniqueName(""UserName"")",Chrome 70.0.3538.110,,2018-11-30 16:51:01,2018-11-30 16:51:02,1.323s,PASSED
+"openBrowser("""")",Chrome 70.0.3538.110,,2018-11-30 16:51:02,2018-11-30 16:51:07,4.589s,PASSED
+maximizeWindow(),Chrome 70.0.3538.110,,2018-11-30 16:51:07,2018-11-30 16:51:08,1.148s,PASSED
+navigateToUrl(URL),Chrome 70.0.3538.110,,2018-11-30 16:51:08,2018-11-30 16:51:34,25.825s,PASSED
+Thread.sleep(5000),Chrome 70.0.3538.110,,2018-11-30 16:51:34,2018-11-30 16:51:39,5.014s,PASSED
+"setText(findTestObject(""CommonObjects/Login_UserName""), UserName)",Chrome 70.0.3538.110,,2018-11-30 16:51:39,2018-11-30 16:51:39,0.290s,PASSED
+"setText(findTestObject(""CommonObjects/Login_Password""), Password)",Chrome 70.0.3538.110,,2018-11-30 16:51:39,2018-11-30 16:51:39,0.246s,PASSED
+"click(findTestObject(""CommonObjects/Login_LoginButton""))",Chrome 70.0.3538.110,,2018-11-30 16:51:39,2018-11-30 16:51:41,1.660s,PASSED
+"click(findTestObject(""CommonObjects/MainMenu_Icon""))",Chrome 70.0.3538.110,,2018-11-30 16:51:41,2018-11-30 16:51:46,5.180s,PASSED
+"click(findTestObject(""CommonObjects/MainMenu_AdminTools""))",Chrome 70.0.3538.110,,2018-11-30 16:51:46,2018-11-30 16:51:46,0.119s,PASSED
+"click(findTestObject(""InternalUser/MainMenu_Users""))",Chrome 70.0.3538.110,,2018-11-30 16:51:46,2018-11-30 16:51:46,0.303s,PASSED
+"click(findTestObject(""InternalUser/ManageUsers_AddNewButton""))",Chrome 70.0.3538.110,,2018-11-30 16:51:46,2018-11-30 16:51:50,3.251s,PASSED
+"setText(findTestObject(""InternalUser/ManageUser_NewUserPopUp_Username""), findTestData(""TestData"").getValue(""UserName"", 1))",Chrome 70.0.3538.110,,2018-11-30 16:51:50,2018-11-30 16:51:52,2.713s,PASSED
+"setText(findTestObject(""InternalUser/ManageUsers_NewUserPopUp_Password""), ""Test"")",Chrome 70.0.3538.110,,2018-11-30 16:51:52,2018-11-30 16:51:53,0.192s,PASSED
+"setText(findTestObject(""InternalUser/ManageUsers_NewUserPopUp_FirstName""), ""Katalon1"")",Chrome 70.0.3538.110,,2018-11-30 16:51:53,2018-11-30 16:51:53,0.176s,PASSED
+"setText(findTestObject(""InternalUser/ManageUsers_NewUserPopUp_LastName""), ""User"")",Chrome 70.0.3538.110,,2018-11-30 16:51:53,2018-11-30 16:51:53,0.206s,PASSED
+"setText(findTestObject(""InternalUser/ManageUsers_NewUserPopUp_Email""), ""test@xoriant.com"")",Chrome 70.0.3538.110,,2018-11-30 16:51:53,2018-11-30 16:51:53,0.215s,PASSED
+"click(findTestObject(""InternalUser/ManageUsers_NewUserPopUp_Roles""))",Chrome 70.0.3538.110,,2018-11-30 16:51:53,2018-11-30 16:51:53,0.300s,PASSED
+Thread.sleep(5000),Chrome 70.0.3538.110,,2018-11-30 16:51:53,2018-11-30 16:51:58,5.001s,PASSED
+"click(findTestObject(""InternalUser/ManageUsers_NewUserPopUp_RolesSuperadmin""))",Chrome 70.0.3538.110,,2018-11-30 16:51:58,2018-11-30 16:51:59,0.127s,PASSED
+"click(findTestObject(""InternalUser/ManageUsers_NewUserPopUp_Location""))",Chrome 70.0.3538.110,,2018-11-30 16:51:59,2018-11-30 16:51:59,0.383s,PASSED
+Thread.sleep(7000),Chrome 70.0.3538.110,,2018-11-30 16:51:59,2018-11-30 16:52:06,7.003s,PASSED
+"click(findTestObject(""InternalUser/ManageUsers_NewUserPopUp_AllLocation""))",Chrome 70.0.3538.110,,2018-11-30 16:52:06,2018-11-30 16:52:06,0.098s,PASSED
+Thread.sleep(2000),Chrome 70.0.3538.110,,2018-11-30 16:52:06,2018-11-30 16:52:08,2.001s,PASSED
+"click(findTestObject(""InternalUser/ManageUsers_NewUserPopUp_SaveButton""))",Chrome 70.0.3538.110,,2018-11-30 16:52:08,2018-11-30 16:52:08,0.155s,PASSED
+Thread.sleep(8000),Chrome 70.0.3538.110,,2018-11-30 16:52:08,2018-11-30 16:52:16,8.002s,PASSED
+closeBrowser(),Chrome 70.0.3538.110,,2018-11-30 16:52:16,2018-11-30 16:52:17,0.760s,PASSED
+,,,,,,
+Test Cases/AdminTools/NewInternalUser,Chrome 70.0.3538.110,,2018-11-30 16:52:17,2018-11-30 16:54:11,1m - 54.350s,FAILED
+"openBrowser("""")",Chrome 70.0.3538.110,,2018-11-30 16:52:17,2018-11-30 16:52:20,2.429s,PASSED
+navigateToUrl(URL),Chrome 70.0.3538.110,,2018-11-30 16:52:20,2018-11-30 16:52:36,16.717s,PASSED
+maximizeWindow(),Chrome 70.0.3538.110,,2018-11-30 16:52:36,2018-11-30 16:52:37,1.145s,PASSED
+"setText(findTestObject(""New_User_Latest/NewUserCreation_input_USER NAME_Username""), UserName)",Chrome 70.0.3538.110,,2018-11-30 16:52:37,2018-11-30 16:52:41,3.740s,PASSED
+"setText(findTestObject(""New_User_Latest/NewUserCreation_input_PASSWORD_Password""), Password)",Chrome 70.0.3538.110,,2018-11-30 16:52:41,2018-11-30 16:52:41,0.162s,PASSED
+"click(findTestObject(""New_User_Latest/NewUserCreation_button_LOGIN""))",Chrome 70.0.3538.110,,2018-11-30 16:52:41,2018-11-30 16:52:43,1.846s,PASSED
+"click(findTestObject(""New_User_Latest/NewUserCreation_use""))",Chrome 70.0.3538.110,,2018-11-30 16:52:43,2018-11-30 16:52:48,4.626s,PASSED
+"click(findTestObject(""New_User_Latest/NewUserCreation_div_Admin Tools""))",Chrome 70.0.3538.110,,2018-11-30 16:52:48,2018-11-30 16:52:48,0.588s,PASSED
+"click(findTestObject(""New_User_Latest/NewUserCreation_div_Users""))",Chrome 70.0.3538.110,,2018-11-30 16:52:48,2018-11-30 16:54:11,1m - 22.885s,FAILED
+,,,,,,
+Test Cases/AdminTools/Roles,Chrome 70.0.3538.110,,2018-11-30 16:54:11,2018-11-30 16:55:34,1m - 22.838s,PASSED
+"openBrowser("""")",Chrome 70.0.3538.110,,2018-11-30 16:54:12,2018-11-30 16:54:15,3.531s,PASSED
+navigateToUrl(URL),Chrome 70.0.3538.110,,2018-11-30 16:54:15,2018-11-30 16:54:39,24.086s,PASSED
+maximizeWindow(),Chrome 70.0.3538.110,,2018-11-30 16:54:39,2018-11-30 16:54:40,1.281s,PASSED
+"setText(findTestObject(""Role-Latest/ManageRoles_input_USER NAME_Username""), UserName)",Chrome 70.0.3538.110,,2018-11-30 16:54:40,2018-11-30 16:54:46,5.312s,PASSED
+"setText(findTestObject(""Role-Latest/ManageRoles_input_PASSWORD_Password""), Password)",Chrome 70.0.3538.110,,2018-11-30 16:54:46,2018-11-30 16:54:46,0.146s,PASSED
+"click(findTestObject(""Role-Latest/ManageRoles_button_LOGIN""))",Chrome 70.0.3538.110,,2018-11-30 16:54:46,2018-11-30 16:54:48,1.828s,PASSED
+"click(findTestObject(""Role-Latest/ManageRoles_svg_STAGE_scsIcon scs-hamburge""))",Chrome 70.0.3538.110,,2018-11-30 16:54:48,2018-11-30 16:54:52,4.531s,PASSED
+"click(findTestObject(""Role-Latest/ManageRoles_div_Admin Tools""))",Chrome 70.0.3538.110,,2018-11-30 16:54:52,2018-11-30 16:54:52,0.083s,PASSED
+"click(findTestObject(""Role-Latest/ManageRoles_div_Roles""))",Chrome 70.0.3538.110,,2018-11-30 16:54:52,2018-11-30 16:54:53,0.292s,PASSED
+"click(findTestObject(""Role-Latest/ManageRoles_i_UserAdmin_fa fa-plus-circle""))",Chrome 70.0.3538.110,,2018-11-30 16:54:53,2018-11-30 16:54:53,0.763s,PASSED
+"RandomRoles.clickElement(findTestObject(""Role-Latest/ManageRoles_input_UserAdmin_scs-list-view-""))",Chrome 70.0.3538.110,,2018-11-30 16:54:53,2018-11-30 16:54:54,0.192s,PASSED
+"click(findTestObject(""Role-Latest/ManageRoles_div_SAVE""))",Chrome 70.0.3538.110,,2018-11-30 16:54:54,2018-11-30 16:54:57,2.933s,PASSED
+Thread.sleep(6000),Chrome 70.0.3538.110,,2018-11-30 16:54:57,2018-11-30 16:55:03,6.001s,PASSED
+"click(findTestObject(""User_role Attachment-Latest/UserRoleLink_span_Users""))",Chrome 70.0.3538.110,,2018-11-30 16:55:03,2018-11-30 16:55:03,0.160s,PASSED
+Thread.sleep(4000),Chrome 70.0.3538.110,,2018-11-30 16:55:03,2018-11-30 16:55:07,4.001s,PASSED
+"setText(findTestObject(""User_role Attachment-Latest/UserRoleLink_input_SAVE_scs-manage-roles-se""), ""Superadmin"")",Chrome 70.0.3538.110,,2018-11-30 16:55:07,2018-11-30 16:55:07,0.284s,PASSED
+Thread.sleep(4000),Chrome 70.0.3538.110,,2018-11-30 16:55:07,2018-11-30 16:55:11,4.000s,PASSED
+"click(findTestObject(""User_role Attachment-Latest/UserRoleLink_span_SAVE_fa fa-search""))",Chrome 70.0.3538.110,,2018-11-30 16:55:11,2018-11-30 16:55:11,0.184s,PASSED
+Thread.sleep(4000),Chrome 70.0.3538.110,,2018-11-30 16:55:11,2018-11-30 16:55:15,4.002s,PASSED
+"click(findTestObject(""User_role Attachment-Latest/UserRoleLink_input_select_scs-grid-row-chec""))",Chrome 70.0.3538.110,,2018-11-30 16:55:15,2018-11-30 16:55:15,0.098s,PASSED
+Thread.sleep(4000),Chrome 70.0.3538.110,,2018-11-30 16:55:15,2018-11-30 16:55:19,4.001s,PASSED
+"click(findTestObject(""User_role Attachment-Latest/UserRoleLink_div_SAVE""))",Chrome 70.0.3538.110,,2018-11-30 16:55:19,2018-11-30 16:55:19,0.160s,PASSED
+Thread.sleep(4000),Chrome 70.0.3538.110,,2018-11-30 16:55:19,2018-11-30 16:55:23,4.002s,PASSED
+"click(findTestObject(""Role-Latest/ManageRoles_div_adit s_scs-user-icon""))",Chrome 70.0.3538.110,,2018-11-30 16:55:23,2018-11-30 16:55:24,0.117s,PASSED
+Thread.sleep(5000),Chrome 70.0.3538.110,,2018-11-30 16:55:24,2018-11-30 16:55:29,5.001s,PASSED
+"verifyElementChecked(findTestObject(""User_role Attachment-Latest/Page_SafetyChain/Page_SafetyChain/ToCheckElementIsTicked""), 5)",Chrome 70.0.3538.110,,2018-11-30 16:55:29,2018-11-30 16:55:29,0.070s,PASSED
+"click(findTestObject(""Role-Latest/ManageRoles_li_Logout""))",Chrome 70.0.3538.110,,2018-11-30 16:55:29,2018-11-30 16:55:33,4.739s,PASSED
+closeBrowser(),Chrome 70.0.3538.110,,2018-11-30 16:55:33,2018-11-30 16:55:34,0.764s,PASSED
+,,,,,,
+Test Cases/AdminTools/WorkGroup,Chrome 70.0.3538.110,,2018-11-30 16:55:34,2018-11-30 16:56:26,52.081s,PASSED
+"sc.sc_customkeywords.UniqueName(""WorkGroup"")",Chrome 70.0.3538.110,,2018-11-30 16:55:34,2018-11-30 16:55:34,0.057s,PASSED
+"openBrowser("""")",Chrome 70.0.3538.110,,2018-11-30 16:55:34,2018-11-30 16:55:37,2.325s,PASSED
+maximizeWindow(),Chrome 70.0.3538.110,,2018-11-30 16:55:37,2018-11-30 16:55:38,1.119s,PASSED
+navigateToUrl(URL),Chrome 70.0.3538.110,,2018-11-30 16:55:38,2018-11-30 16:56:00,22.471s,PASSED
+"setText(findTestObject(""CommonObjects/Login_UserName""), UserName)",Chrome 70.0.3538.110,,2018-11-30 16:56:00,2018-11-30 16:56:06,5.660s,PASSED
+"setText(findTestObject(""CommonObjects/Login_Password""), Password)",Chrome 70.0.3538.110,,2018-11-30 16:56:06,2018-11-30 16:56:06,0.149s,PASSED
+"click(findTestObject(""CommonObjects/Login_LoginButton""))",Chrome 70.0.3538.110,,2018-11-30 16:56:06,2018-11-30 16:56:08,2.053s,PASSED
+"click(findTestObject(""CommonObjects/FSQA_MainMenu""))",Chrome 70.0.3538.110,,2018-11-30 16:56:08,2018-11-30 16:56:15,6.368s,PASSED
+"click(findTestObject(""CommonObjects/MainMenu_AdminTools""))",Chrome 70.0.3538.110,,2018-11-30 16:56:15,2018-11-30 16:56:15,0.078s,PASSED
+"click(findTestObject(""CommonObjects/MainMenu_WorkGroups""))",Chrome 70.0.3538.110,,2018-11-30 16:56:15,2018-11-30 16:56:15,0.267s,PASSED
+"click(findTestObject(""WorkGroup/WorkGroup_PlusIcon""))",Chrome 70.0.3538.110,,2018-11-30 16:56:15,2018-11-30 16:56:17,2.262s,PASSED
+"setText(findTestObject(""WorkGroup/WorkGroup_AddingNewTextField""), findTestData(""TestData"").getValue(""WorkGroup"", 1))",Chrome 70.0.3538.110,,2018-11-30 16:56:17,2018-11-30 16:56:18,0.319s,PASSED
+"click(findTestObject(""WorkGroup/WorkGroup_SaveButton""))",Chrome 70.0.3538.110,,2018-11-30 16:56:18,2018-11-30 16:56:21,3.335s,PASSED
+Thread.sleep(3000),Chrome 70.0.3538.110,,2018-11-30 16:56:21,2018-11-30 16:56:24,3.002s,PASSED
+"verifyTextPresent(findTestData(""TestData"").getValue(""WorkGroup"", 1), false)",Chrome 70.0.3538.110,,2018-11-30 16:56:24,2018-11-30 16:56:25,1.089s,PASSED
+closeBrowser(),Chrome 70.0.3538.110,,2018-11-30 16:56:25,2018-11-30 16:56:26,1.300s,PASSED

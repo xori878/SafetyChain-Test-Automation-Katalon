@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;scs-header-level&quot;]/div[2]/div[2]/span/span/span[1]</value>
+         <value>//*[@id=&quot;scs-header-level&quot;]/div[div[contains(text(),&quot;Select Resource&quot;)]]//span/span[1]/span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -49,7 +49,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;scs-header-level&quot;]/div[2]/div[2]/span/span/span[1]</value>
+      <value>//*[@id=&quot;scs-header-level&quot;]/div[div[contains(text(),&quot;Select Resource&quot;)]]//span/span[1]/span[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

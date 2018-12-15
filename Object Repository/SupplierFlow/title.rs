@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>title</name>
+   <tag></tag>
+   <elementGuidId>0223623a-357d-47ab-96c2-c7fc9973be93</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-add-new-supplier-user-template-holder&quot;]/form/div[div[contains(text(),&quot;Title&quot;)]]/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-add-new-supplier-user-template-holder&quot;]/form/div[div[contains(text(),&quot;Title&quot;)]]/input</value>
+   </webElementProperties>
+</WebElementEntity>

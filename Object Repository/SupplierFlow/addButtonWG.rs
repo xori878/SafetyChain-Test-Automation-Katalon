@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>addButtonWG</name>
+   <tag></tag>
+   <elementGuidId>22229a64-c7ed-408d-9dfd-f9d9e493be5a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-mwg-list-view-data&quot;]/div/div/div[1]/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-mwg-list-view-data&quot;]/div/div/div[1]/i</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -7,7 +7,7 @@
    <lastRun>2018-12-11T15:18:38</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
-   <pageLoadTimeout>540</pageLoadTimeout>
+   <pageLoadTimeout>9999</pageLoadTimeout>
    <pageLoadTimeoutDefault>false</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>62522f93-2925-4da6-8084-8d11fcfdf9ff</testSuiteGuid>

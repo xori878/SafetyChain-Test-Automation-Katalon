@@ -4,10 +4,10 @@
    <name>MyTest</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-12-11T16:55:24</lastRun>
+   <lastRun>2018-12-18T10:58:54</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
-   <pageLoadTimeout>360</pageLoadTimeout>
+   <pageLoadTimeout>9999</pageLoadTimeout>
    <pageLoadTimeoutDefault>false</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>68306382-1d08-4d04-8a2d-ceb25474075a</testSuiteGuid>

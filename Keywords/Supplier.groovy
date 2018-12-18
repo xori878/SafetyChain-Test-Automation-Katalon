@@ -81,15 +81,18 @@ import java.awt.*;
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import java.util.concurrent.TimeUnit ;
 import org.openqa.selenium.JavascriptExecutor;
+import java.util.List;
 
 class Supplier {
 
 	WebDriver driver =  DriverFactory.getWebDriver();
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yy-HH:mm");
 	LocalDateTime now = LocalDateTime.now();
-	public String user_name = "User_On_"+dtf.format(now);
+	public String supplier_name = "Req_Supplier_On_"+dtf.format(now);
+	public String user_name = "Supplier_On_"+dtf.format(now);
 	public String password = "password"
 	public String newPassword = "password@123#"
+	public String wgName = "WorkGroup_On_"+dtf.format(now);
 	@Keyword
 	def refreshBrowser() {
 		KeywordUtil.logInfo("Refreshing")
@@ -158,13 +161,157 @@ class Supplier {
 
 	@Keyword
 	def selectNewSupplier(){
+		Actions action = new Actions(driver);
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		String s = sheet.getRow(1).getCell(13).toString()
+		println "Y-"+s
 		String namePath = "//*[@id='scs-add-supplier-grid-container']/div[3]/table/tbody/tr/td";
 		String selectPath = "//*[@id='scs-add-supplier-grid-container']/div[2]/table/tbody/tr/td/input";
 		List<WebElement> elements = driver.findElements(By.xpath(namePath));
-		String s;
-		for(int i=0;i<elements.getSize();i++){
-		//	s = elements.get(i).getText().toString();
-			//if()
+		String s1;
+		int t=0
+		for(int i=1;i<elements.size();i++){
+
+			s1=driver.findElement(By.xpath("//*[@id='scs-add-supplier-grid-container']/div[3]/table/tbody/tr["+i+"]/td")).getAttribute("innerHTML");
+			//println "Z2-"+s1
+			if(s1.equals(s)){
+				t=i+1;
+				//	println "Z-"+s1
+				selectPath = "//*[@id='scs-add-supplier-grid-container']/div[2]/table/tbody/tr["+i+"]/td/input";
+				WebElement element = driver.findElement(By.xpath(selectPath));
+				Thread.sleep(2000)
+				action.moveToElement(element).click().build().perform()
+				Thread.sleep(2000)
+				break;
+			}
 		}
+
 	}
+	@Keyword
+	def setSupplier(){
+		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		file.close();
+		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		sheet.getRow(1).createCell(0).setCellValue(user_name);
+		sheet.getRow(1).createCell(1).setCellValue(password);
+		sheet.getRow(1).createCell(2).setCellValue(newPassword);
+		sheet.getRow(1).createCell(4).setCellValue(wgName);
+		workbook.write(outFile);
+		outFile.close();
+
+	}
+	@Keyword
+	def setSupplierName(){
+		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		file.close();
+		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		sheet.getRow(1).createCell(3).setCellValue(supplier_name);
+		workbook.write(outFile);
+		outFile.close();
+
+	}
+	@Keyword
+	def selectSupplierTask(){
+		Actions action = new Actions(driver);
+		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		String tskName= sheet.getRow(1).getCell(1).toString()
+		file.close();
+		String tsknmPath = "//*[@id='supplier-inbox-grid']/div[2]/div[1]/table/tbody/tr/td[3]/span/strong[contains(text(),'"+tskName+"')]"
+		WebElement ele = driver.findElement(By.xpath(tsknmPath))
+		action.moveToElement(ele).doubleClick().build().perform()
+	}
+
+	@Keyword
+	def selectWG(){
+		Actions action = new Actions(driver);
+		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		String s = sheet.getRow(1).getCell(4).toString()
+		file.close();
+		println s
+		String path = "//div/div[@id='scs-add-requirement-step3-approver-dropdown-list']/div//ul/li[contains(text(),'"+s+"')]"
+		println path
+		WebElement ele  = driver.findElement(By.xpath(path));
+		action.moveToElement(ele).click().build().perform()
+
+	}
+	@Keyword
+	def selectTaskInInbox(){
+		Actions action = new Actions(driver);
+		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		String s = sheet.getRow(1).getCell(1).toString()
+		file.close();
+		String path = "//*[@id='scs-inbox-grid-container']//b[contains(text(),'"+s+"')]"
+		WebElement ele  = driver.findElement(By.xpath(path));
+		action.moveToElement(ele).doubleClick().build().perform()
+
+	}
+	@Keyword
+	def searchDocument(){
+		Actions action = new Actions(driver);
+		String supplierList = "//*[@id='scs-selected-partner_listbox']/li"
+		String iconPath = "//*[@id='supplier-inbox-grid']//tr/td[2]/div/i[@class='fa fa-upload']";
+		String listOption = "//*[@id='partnerportalheader']//single-select-dropdown-list/div/span"
+		String openperPageOption = "//*[@id='supplier-inbox-grid']/div[3]/span[1]/span/span/span[1]"
+		String select500 = "/html/body/div/div/div/ul/li[contains(text(),'500')]";
+		String selectFile = "//*[@id='scs-upload-new-doc-dms-body-popup']//div[1]/input"
+		String date = "//*[@id='expirationDatePicker']"
+		String comment = "//*[@id='scs-upload-new-doc-dms-body-popup']//textarea"
+		String upload ="//button[contains(text(),'UPLOAD')]";
+		List<WebElement> listSupp = driver.findElements(By.xpath(supplierList));
+
+		println listSupp.size()
+		WebElement e;
+		for(int i=1;i<listSupp.size()+1;i++){
+			driver.findElement(By.xpath(listOption)).click()
+			Thread.sleep(2000)
+			e= driver.findElement(By.xpath("//*[@id='scs-selected-partner_listbox']/li["+i+"]"))
+			action.moveToElement(e).click().build().perform()
+			Thread.sleep(5000)
+			List<WebElement> element = driver.findElements(By.xpath(iconPath));
+			//println elements.size()
+			for(int j=0;j<element.size();j++){
+				List<WebElement> elements = driver.findElements(By.xpath(iconPath));
+				Thread.sleep(2000)
+				action.moveToElement(elements.get(0)).doubleClick().build().perform()
+				Thread.sleep(3000)
+				driver.findElement(By.xpath(selectFile)).sendKeys("D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\SCTestData\\Tulips.jpg")
+				Thread.sleep(2000)
+				driver.findElement(By.xpath(comment)).sendKeys("Task is to upload file.")
+				driver.findElement(By.xpath(date)).sendKeys("12/18/2018")
+				Thread.sleep(2000)
+				driver.findElement(By.xpath(upload)).click()
+				Thread.sleep(10000)
+			}
+			//			driver.findElement(By.xpath(openperPageOption)).click()
+			//			Thread.sleep(2000)
+			//			driver.findElement(By.xpath(select500)).click()
+		//	Thread.sleep(6000)
+		}
+		//	driver.findElement(By.xpath(listOption)).click()
+
+//		List<WebElement> elements = driver.findElements(By.xpath(iconPath));
+//		println elements.size()
+//		for(int i=0;i<elements.size();i++){
+//			action.moveToElement(elements.get(i)).click().build().perform()
+//			Thread.sleep(2000)
+//		}
+	}
+
 }

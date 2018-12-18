@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>clickOnSuppReject</name>
+   <tag></tag>
+   <elementGuidId>76670033-dcdc-4968-bcdc-cfb71a8c39ad</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;supplier-inbox-grid&quot;]//strong[contains(text(),&quot;Rejected&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;supplier-inbox-grid&quot;]//strong[contains(text(),&quot;Rejected&quot;)]</value>
+   </webElementProperties>
+</WebElementEntity>

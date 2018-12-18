@@ -1,0 +1,71 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Second_SupplierFlow,Chrome 71.0.3578.98,,2018-12-17 19:14:52,2018-12-17 19:17:56,3m - 4.324s,PASSED
+,,,,,,
+Test Cases/SupplierFlow/8_RejectFromInbox,Chrome 71.0.3578.98,,2018-12-17 19:14:52,2018-12-17 19:15:53,1m - 1.023s,PASSED
+openBrowser(URL),Chrome 71.0.3578.98,,2018-12-17 19:14:53,2018-12-17 19:15:12,18.843s,PASSED
+maximizeWindow(),Chrome 71.0.3578.98,,2018-12-17 19:15:12,2018-12-17 19:15:13,1.191s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/login_Username""), UserName)",Chrome 71.0.3578.98,,2018-12-17 19:15:13,2018-12-17 19:15:17,3.662s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/login_Password""), Password)",Chrome 71.0.3578.98,,2018-12-17 19:15:17,2018-12-17 19:15:17,0.160s,PASSED
+"click(findTestObject(""Form_Selection_Creation/login_Button""))",Chrome 71.0.3578.98,,2018-12-17 19:15:17,2018-12-17 19:15:19,2.283s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.98,,2018-12-17 19:15:19,2018-12-17 19:15:22,3.041s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_Button""))",Chrome 71.0.3578.98,,2018-12-17 19:15:22,2018-12-17 19:15:24,2.268s,PASSED
+"click(findTestObject(""SupplierFlow/inbox""))",Chrome 71.0.3578.98,,2018-12-17 19:15:24,2018-12-17 19:15:25,0.259s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2018-12-17 19:15:25,2018-12-17 19:15:31,6.001s,PASSED
+"setText(findTestObject(""SupplierFlow/searchTaskInInbox""), findTestData(""FormData"").getValue(""TaskName"", 1))",Chrome 71.0.3578.98,,2018-12-17 19:15:31,2018-12-17 19:15:32,1.607s,PASSED
+"sendKeys(findTestObject(""SupplierFlow/searchTaskInInbox""), Keys.chord(ENTER))",Chrome 71.0.3578.98,,2018-12-17 19:15:32,2018-12-17 19:15:32,0.250s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.98,,2018-12-17 19:15:32,2018-12-17 19:15:35,3.002s,PASSED
+Supplier.selectTaskInInbox(),Chrome 71.0.3578.98,,2018-12-17 19:15:35,2018-12-17 19:15:36,0.476s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2018-12-17 19:15:36,2018-12-17 19:15:42,6.001s,PASSED
+"click(findTestObject(""SupplierFlow/rejectButton""))",Chrome 71.0.3578.98,,2018-12-17 19:15:42,2018-12-17 19:15:42,0.132s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.98,,2018-12-17 19:15:42,2018-12-17 19:15:45,3.002s,PASSED
+"setText(findTestObject(""SupplierFlow/rejectionNote""), ""This Task is rejected"")",Chrome 71.0.3578.98,,2018-12-17 19:15:45,2018-12-17 19:15:45,0.234s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2018-12-17 19:15:45,2018-12-17 19:15:47,2.001s,PASSED
+"click(findTestObject(""SupplierFlow/sendTask""))",Chrome 71.0.3578.98,,2018-12-17 19:15:47,2018-12-17 19:15:47,0.100s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2018-12-17 19:15:47,2018-12-17 19:15:53,6.000s,PASSED
+,,,,,,
+Test Cases/SupplierFlow/9_Resubmission_Supplier,Chrome 71.0.3578.98,,2018-12-17 19:15:53,2018-12-17 19:16:46,53.003s,PASSED
+openBrowser(URL),Chrome 71.0.3578.98,,2018-12-17 19:15:54,2018-12-17 19:16:15,20.704s,PASSED
+maximizeWindow(),Chrome 71.0.3578.98,,2018-12-17 19:16:15,2018-12-17 19:16:16,1.162s,PASSED
+driver = getWebDriver(),Chrome 71.0.3578.98,,2018-12-17 19:16:16,2018-12-17 19:16:16,0.001s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2018-12-17 19:16:16,2018-12-17 19:16:18,2.001s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Username""), findTestData(""SupplierData"").getValue(""UserName"", 1))",Chrome 71.0.3578.98,,2018-12-17 19:16:18,2018-12-17 19:16:20,2.215s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Password""), findTestData(""SupplierData"").getValue(""NewPassword"", 1))",Chrome 71.0.3578.98,,2018-12-17 19:16:20,2018-12-17 19:16:20,0.154s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2018-12-17 19:16:20,2018-12-17 19:16:22,2.001s,PASSED
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2018-12-17 19:16:22,2018-12-17 19:16:24,1.598s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2018-12-17 19:16:24,2018-12-17 19:16:30,6.000s,PASSED
+"click(findTestObject(""SupplierFlow/clickOnSuppReject""))",Chrome 71.0.3578.98,,2018-12-17 19:16:30,2018-12-17 19:16:30,0.111s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2018-12-17 19:16:30,2018-12-17 19:16:32,2.002s,PASSED
+Supplier.selectSupplierTask(),Chrome 71.0.3578.98,,2018-12-17 19:16:32,2018-12-17 19:16:32,0.091s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2018-12-17 19:16:32,2018-12-17 19:16:36,4.002s,PASSED
+"xpath(""//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]"")).sendKeys(""12"")",Chrome 71.0.3578.98,,2018-12-17 19:16:36,2018-12-17 19:16:36,0.125s,PASSED
+"click(findTestObject(""FormTab/fillForm_SubmitButton""))",Chrome 71.0.3578.98,,2018-12-17 19:16:36,2018-12-17 19:16:36,0.110s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2018-12-17 19:16:36,2018-12-17 19:16:38,2.000s,PASSED
+"setText(findTestObject(""SupplierFlow/formSubmissionNote""), ""Form is Finally submitted Correctly."")",Chrome 71.0.3578.98,,2018-12-17 19:16:38,2018-12-17 19:16:38,0.256s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2018-12-17 19:16:38,2018-12-17 19:16:40,2.000s,PASSED
+"click(findTestObject(""FormTab/fillForm_SubmissionOkButton""))",Chrome 71.0.3578.98,,2018-12-17 19:16:40,2018-12-17 19:16:40,0.106s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2018-12-17 19:16:40,2018-12-17 19:16:46,6.000s,PASSED
+,,,,,,
+Test Cases/SupplierFlow/10_ApprovedFromInbox,Chrome 71.0.3578.98,,2018-12-17 19:16:46,2018-12-17 19:17:56,1m - 9.252s,PASSED
+openBrowser(URL),Chrome 71.0.3578.98,,2018-12-17 19:16:47,2018-12-17 19:17:08,21.332s,PASSED
+maximizeWindow(),Chrome 71.0.3578.98,,2018-12-17 19:17:08,2018-12-17 19:17:09,1.140s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/login_Username""), UserName)",Chrome 71.0.3578.98,,2018-12-17 19:17:09,2018-12-17 19:17:13,3.447s,PASSED
+"setText(findTestObject(""Form_Selection_Creation/login_Password""), Password)",Chrome 71.0.3578.98,,2018-12-17 19:17:13,2018-12-17 19:17:13,0.134s,PASSED
+"click(findTestObject(""Form_Selection_Creation/login_Button""))",Chrome 71.0.3578.98,,2018-12-17 19:17:13,2018-12-17 19:17:15,2.566s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.98,,2018-12-17 19:17:15,2018-12-17 19:17:18,3.002s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_Button""))",Chrome 71.0.3578.98,,2018-12-17 19:17:18,2018-12-17 19:17:21,2.697s,PASSED
+"click(findTestObject(""SupplierFlow/inbox""))",Chrome 71.0.3578.98,,2018-12-17 19:17:21,2018-12-17 19:17:21,0.242s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2018-12-17 19:17:21,2018-12-17 19:17:27,6.005s,PASSED
+"setText(findTestObject(""SupplierFlow/searchTaskInInbox""), findTestData(""FormData"").getValue(""TaskName"", 1))",Chrome 71.0.3578.98,,2018-12-17 19:17:27,2018-12-17 19:17:28,0.694s,PASSED
+"sendKeys(findTestObject(""SupplierFlow/searchTaskInInbox""), Keys.chord(ENTER))",Chrome 71.0.3578.98,,2018-12-17 19:17:28,2018-12-17 19:17:28,0.235s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.98,,2018-12-17 19:17:28,2018-12-17 19:17:31,3.000s,PASSED
+Supplier.selectTaskInInbox(),Chrome 71.0.3578.98,,2018-12-17 19:17:31,2018-12-17 19:17:31,0.103s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2018-12-17 19:17:31,2018-12-17 19:17:37,6.000s,PASSED
+"click(findTestObject(""SupplierFlow/approveButton""))",Chrome 71.0.3578.98,,2018-12-17 19:17:37,2018-12-17 19:17:37,0.177s,PASSED
+Thread.sleep(3000),Chrome 71.0.3578.98,,2018-12-17 19:17:37,2018-12-17 19:17:40,3.000s,PASSED
+"setText(findTestObject(""SupplierFlow/expirtionDate_ApproveTask""), ""12/17/2018"")",Chrome 71.0.3578.98,,2018-12-17 19:17:40,2018-12-17 19:17:41,0.156s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2018-12-17 19:17:41,2018-12-17 19:17:43,2.000s,PASSED
+"click(findTestObject(""SupplierFlow/approveYesButton""))",Chrome 71.0.3578.98,,2018-12-17 19:17:43,2018-12-17 19:17:43,0.099s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2018-12-17 19:17:43,2018-12-17 19:17:49,6.000s,PASSED
+"setText(findTestObject(""SupplierFlow/searchTaskInInbox""), findTestData(""FormData"").getValue(""TaskName"", 1))",Chrome 71.0.3578.98,,2018-12-17 19:17:49,2018-12-17 19:17:49,0.764s,PASSED
+"sendKeys(findTestObject(""SupplierFlow/searchTaskInInbox""), Keys.chord(ENTER))",Chrome 71.0.3578.98,,2018-12-17 19:17:49,2018-12-17 19:17:50,0.229s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2018-12-17 19:17:50,2018-12-17 19:17:56,6.000s,PASSED

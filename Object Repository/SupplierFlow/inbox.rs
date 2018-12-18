@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>inbox</name>
+   <tag></tag>
+   <elementGuidId>2e5ed621-7041-4145-ab44-0c2042275f3d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-main-navigation&quot;]//div[contains(text(),&quot;Inbox&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-main-navigation&quot;]//div[contains(text(),&quot;Inbox&quot;)]</value>
+   </webElementProperties>
+</WebElementEntity>

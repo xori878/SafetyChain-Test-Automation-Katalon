@@ -16,6 +16,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.By as By
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
@@ -24,6 +28,9 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 WebUI.maximizeWindow()
 
 WebDriver driver = DriverFactory.getWebDriver()
+
+Thread.sleep(3000)
+
 
 WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName)
 
@@ -109,8 +116,7 @@ WebUI.setText(findTestObject('FormTab/fillForm_SelectOneOption'), 'SingleOption1
 
 Thread.sleep(3000)
 
-driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(
-		Keys.ENTER)
+driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(Keys.chord(Keys.ENTER))
 
 Thread.sleep(3000)
 
@@ -118,8 +124,7 @@ WebUI.setText(findTestObject('FormTab/fillForm_SelectMultipleOption'), 'Multiple
 
 Thread.sleep(3000)
 
-driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(
-		Keys.ENTER)
+driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('FormTab/fillForm_SelectMultipleOption'))
 

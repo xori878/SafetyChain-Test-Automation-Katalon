@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+SubmitDocumentSupplier,Chrome 71.0.3578.98,,2018-12-18 17:01:56,2018-12-18 17:20:09,18m - 12.869s,ERROR
+,,,,,,
+Test Cases/SupplierFlow/11_DocumentUpload,Chrome 71.0.3578.98,,2018-12-18 17:01:57,2018-12-18 17:20:08,18m - 10.573s,ERROR
+openBrowser(URL),Chrome 71.0.3578.98,,2018-12-18 17:01:59,2018-12-18 17:02:35,36.770s,PASSED
+maximizeWindow(),Chrome 71.0.3578.98,,2018-12-18 17:02:35,2018-12-18 17:02:37,1.271s,PASSED
+driver = getWebDriver(),Chrome 71.0.3578.98,,2018-12-18 17:02:37,2018-12-18 17:02:37,0.024s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2018-12-18 17:02:37,2018-12-18 17:02:41,4.009s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Username""), UserName)",Chrome 71.0.3578.98,,2018-12-18 17:02:41,2018-12-18 17:02:41,0.596s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Password""), Password)",Chrome 71.0.3578.98,,2018-12-18 17:02:41,2018-12-18 17:02:42,0.185s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2018-12-18 17:02:42,2018-12-18 17:02:44,2.001s,PASSED
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2018-12-18 17:02:44,2018-12-18 17:02:48,4.935s,PASSED
+Thread.sleep(10000),Chrome 71.0.3578.98,,2018-12-18 17:02:48,2018-12-18 17:02:58,10.002s,PASSED
+Supplier.searchDocument(),Chrome 71.0.3578.98,,2018-12-18 17:02:58,2018-12-18 17:20:08,17m - 9.425s,ERROR

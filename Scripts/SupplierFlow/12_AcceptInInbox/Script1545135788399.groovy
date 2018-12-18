@@ -13,27 +13,26 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.WebDriver as WebDriver
-import org.openqa.selenium.By as By
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-WebDriver driver = DriverFactory.getWebDriver()
+WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
 
-Thread.sleep(4000)
+WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password)
 
-WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
+WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
 
-WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
+Thread.sleep(3000)
 
-Thread.sleep(2000)
+WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
 
-WebUI.click(findTestObject('TestUserLocation/login_Button'))
+WebUI.click(findTestObject('SupplierFlow/inbox'))
 
-Thread.sleep(10000)
+Thread.sleep(6000)
 
-CustomKeywords.'Supplier.searchDocument'()
+CustomKeywords.'Supplier.approveTaskDocumentInInbox'()
+
+Thread.sleep(6000)
 

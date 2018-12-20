@@ -21,7 +21,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Role-Latest/ManageRoles_input_USER NAME_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('Role-Latest/ManageRoles_input_PASSWORD_Password'), GlobalVariable.Password)
+WebUI.setText(findTestObject('Role-Latest/ManageRoles_input_PASSWORD_Password'), GlobalVariable.Password11)
 
 WebUI.click(findTestObject('Role-Latest/ManageRoles_button_LOGIN'))
 

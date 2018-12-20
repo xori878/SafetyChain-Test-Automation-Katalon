@@ -17,7 +17,7 @@ not_run: WebUI.openBrowser(GlobalVariable.URL)
 
 not_run: WebUI.setText(findTestObject('DocumentTab/login_Username'), GlobalVariable.UserName)
 
-not_run: WebUI.setText(findTestObject('DocumentTab/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('DocumentTab/login_Password'), GlobalVariable.Password11)
 
 not_run: WebUI.click(findTestObject('DocumentTab/login_Button'))
 

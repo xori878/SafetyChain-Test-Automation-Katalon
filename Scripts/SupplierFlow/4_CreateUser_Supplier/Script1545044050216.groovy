@@ -19,7 +19,7 @@ not_run: WebUI.maximizeWindow()
 
 not_run: WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
 
-not_run: WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password11)
 
 Thread.sleep(2000)
 

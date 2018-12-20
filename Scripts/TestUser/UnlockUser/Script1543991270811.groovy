@@ -20,7 +20,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
+WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password11)
 
 not_run: CustomKeywords.'User.setNamePass'()
 

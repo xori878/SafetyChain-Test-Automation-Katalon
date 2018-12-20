@@ -23,7 +23,7 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.setText(findTestObject('CommonObjects/Login_UserName'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('CommonObjects/Login_Password'), GlobalVariable.Password)
+WebUI.setText(findTestObject('CommonObjects/Login_Password'), GlobalVariable.Password11)
 
 WebUI.click(findTestObject('CommonObjects/Login_LoginButton'))
 

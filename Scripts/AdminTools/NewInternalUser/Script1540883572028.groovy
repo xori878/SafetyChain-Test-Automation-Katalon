@@ -21,7 +21,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('New_User_Latest/NewUserCreation_input_USER NAME_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('New_User_Latest/NewUserCreation_input_PASSWORD_Password'), GlobalVariable.Password)
+WebUI.setText(findTestObject('New_User_Latest/NewUserCreation_input_PASSWORD_Password'), GlobalVariable.Password11)
 
 WebUI.click(findTestObject('New_User_Latest/NewUserCreation_button_LOGIN'))
 

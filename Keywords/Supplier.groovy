@@ -101,6 +101,14 @@ class Supplier {
 		KeywordUtil.markPassed("Refresh successfully")
 	}
 
+	public static void click(WebDriver driver, By by) {
+		(new WebDriverWait(driver,30)).until(ExpectedConditions.elementToBeClickable(by));
+		driver.findElement(by).click();
+	}
+	public static void waits(WebDriver driver, By by) {
+		(new WebDriverWait(driver,30)).until(ExpectedConditions.visibilityOfElementLocated(by));
+	}
+
 	@Keyword
 	def getSupplierName(){
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
@@ -275,16 +283,22 @@ class Supplier {
 		String date = "//*[@id='expirationDatePicker']"
 		String comment = "//*[@id='scs-upload-new-doc-dms-body-popup']//textarea"
 		String upload ="//button[contains(text(),'UPLOAD')]";
-		List<WebElement> listSupp = driver.findElements(By.xpath(supplierList));
-
-		println "Supplier Size"+listSupp.size()
+		String supplierName = null;
 		WebElement e;
-		for(int i=1;i<listSupp.size()+1;i++){
-			driver.findElement(By.xpath(listOption)).click()
+		Thread.sleep(2000)
+		//waits(driver,By.xpath(supplierList))
+		List<WebElement> listSupp = driver.findElements(By.xpath(supplierList));
+		println "Supplier Size - "+listSupp.size()
+		for(int i=164;i<listSupp.size()+1;i++){ // CAN CHANGE
+			click(driver,By.xpath(listOption))
+			//	driver.findElement(By.xpath(listOption)).click()
 			Thread.sleep(4000)
+	//		waits(driver,By.xpath("//*[@id='scs-selected-partner_listbox']/li["+i+"]"))
 			e= driver.findElement(By.xpath("//*[@id='scs-selected-partner_listbox']/li["+i+"]"))
+			supplierName = driver.findElement(By.xpath("//*[@id='scs-selected-partner_listbox']/li["+i+"]/div/div[1]")).getText()
+			println "Supplier "+i+" Name - "+supplierName
 			action.moveToElement(e).click().build().perform()
-			Thread.sleep(9000)
+			Thread.sleep(7000)
 			List<WebElement> element = driver.findElements(By.xpath(iconPath));
 			//println elements.size()
 			for(int j=0;j<element.size();j++){
@@ -294,7 +308,8 @@ class Supplier {
 				Thread.sleep(2000)
 				println "Current Task - "+name.get(0).getText()
 				action.moveToElement(elements.get(0)).doubleClick().build().perform()
-				Thread.sleep(7000)
+				Thread.sleep(6000)
+				//waits(driver, By.xpath(selectFile))
 				driver.findElement(By.xpath(selectFile)).sendKeys("D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\SCTestData\\Tulips.jpg")
 				Thread.sleep(2000)
 				driver.findElement(By.xpath(comment)).sendKeys("Task is to upload file.")
@@ -317,6 +332,7 @@ class Supplier {
 		//			Thread.sleep(2000)
 		//		}
 	}
+
 	@Keyword
 	def approveTaskDocumentInInbox(){
 		Actions action = new Actions(driver);
@@ -330,28 +346,34 @@ class Supplier {
 		String selectFirstTask = "//*[@id='scs-inbox-grid-container']//tr[1]/td[3]"
 		String approveButton = "//*[@id='scs-doc-view-approve-button']"
 		String yesButton = "//div/button[contains(text(),'YES')]"
-		driver.findElement(By.xpath(approvaltick)).click()
+
+		click(driver,By.xpath(approvaltick))
 		Thread.sleep(2000)
-		driver.findElement(By.xpath(filterButton)).click()
+		click(driver,By.xpath(filterButton))
 		Thread.sleep(8000)
-		driver.findElement(By.xpath(openEnOption)).click()
+		click(driver,By.xpath(openEnOption))
 		Thread.sleep(2000)
-		driver.findElement(By.xpath(select500Record)).click()
-		Thread.sleep(10000)
+		click(driver,By.xpath(select500Record))
+		Thread.sleep(8000)
+		waits(driver,By.xpath(total))
 		List<WebElement> element = driver.findElements(By.xpath(total));
 		//println element.size()
 		WebElement el;
 		String taskName = null;
 		for(int j=0;j<element.size()-1;j++){
+			waits(driver, By.xpath(selectFirstTask))
 			el = driver.findElement(By.xpath(selectFirstTask))
+			waits(driver, By.xpath(currentTask))
 			taskName = driver.findElement(By.xpath(currentTask)).getText()
 			println "Current Task - "+taskName
 			action.moveToElement(el).doubleClick().build().perform()
-			Thread.sleep(9000)
-			driver.findElement(By.xpath(approveButton)).click()
+			Thread.sleep(6000)
+			click(driver, By.xpath(approveButton))
+			//	driver.findElement(By.xpath(approveButton)).click()
 			Thread.sleep(2000)
-			driver.findElement(By.xpath(yesButton)).click()
-			Thread.sleep(8000)
+			click(driver,By.xpath(yesButton))
+			//	driver.findElement(By.xpath(yesButton)).click()
+			Thread.sleep(7000)
 		}
 
 	}

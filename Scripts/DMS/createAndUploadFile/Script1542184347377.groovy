@@ -21,7 +21,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('DMS_Forms/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('DMS_Forms/login_Password'), GlobalVariable.Password)
+WebUI.setText(findTestObject('DMS_Forms/login_Password'), GlobalVariable.Password11)
 
 CustomKeywords.'FormName.setDocumentName'()
 

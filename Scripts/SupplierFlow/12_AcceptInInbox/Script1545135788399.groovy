@@ -18,9 +18,9 @@ WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
+WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName1)
 
-WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password)
+WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password1)
 
 WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
 
@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
 
 WebUI.click(findTestObject('SupplierFlow/inbox'))
 
-Thread.sleep(6000)
+Thread.sleep(9000)
 
 CustomKeywords.'Supplier.approveTaskDocumentInInbox'()
 

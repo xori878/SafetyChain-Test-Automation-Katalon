@@ -19,7 +19,7 @@ not_run: WebUI.maximizeWindow()
 
 not_run: WebUI.setText(findTestObject('Record/login_Username'), GlobalVariable.UserName)
 
-not_run: WebUI.setText(findTestObject('Record/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('Record/login_Password'), GlobalVariable.Password11)
 
 not_run: WebUI.click(findTestObject('Record/login_Button'))
 

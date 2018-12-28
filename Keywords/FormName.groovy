@@ -145,6 +145,18 @@ class FormName {
 		}
 	}
 	@Keyword
+	def filterFormName1() {
+		try {
+			String s = "ssss"
+			//	String s = "AUTO_TEST_FORM_ON_22/11/2018-15:24:40"
+			driver.findElement(By.xpath("/html/body/div/div/ul/li[6]/div/ul/li/div/form/div/input")).sendKeys(s);
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
 	def findinDMS() {
 		try {
 			String s = findTestData('FormData').getValue('FormName',1)

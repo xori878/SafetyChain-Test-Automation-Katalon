@@ -23,7 +23,7 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.setText(findTestObject('CommonObjects/Login_UserName'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('CommonObjects/Login_Password'), GlobalVariable.Password11)
+WebUI.setText(findTestObject('CommonObjects/Login_Password'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('CommonObjects/Login_LoginButton'))
 
@@ -35,14 +35,13 @@ WebUI.click(findTestObject('CommonObjects/MainMenu_WorkGroups'))
 
 WebUI.click(findTestObject('WorkGroup/WorkGroup_PlusIcon'))
 
-WebUI.setText(findTestObject('WorkGroup/WorkGroup_AddingNewTextField'), findTestData('TestData').getValue('WorkGroup', 
-        1))
+WebUI.setText(findTestObject('WorkGroup/WorkGroup_AddingNewTextField'), findTestData('TestData').getValue('WorkGroup', 1))
 
 WebUI.click(findTestObject('WorkGroup/WorkGroup_SaveButton'))
 
 Thread.sleep(3000)
 
-WebUI.verifyTextPresent(findTestData('TestData').getValue("WorkGroup", 1), false)
+WebUI.verifyTextPresent(findTestData('TestData').getValue('WorkGroup', 1), false)
 
 WebUI.closeBrowser()
 

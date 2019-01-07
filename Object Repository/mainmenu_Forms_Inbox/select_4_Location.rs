@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;scs-task-assign-location_listbox&quot;]/li[4]</value>
+         <value>//*[@id=&quot;scs-task-assign-location_listbox&quot;]/li[1][count(. | //*[(text() = 'AK' or . = 'AK')]) = count(//*[(text() = 'AK' or . = 'AK')])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -59,7 +59,7 @@
       <value>1</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -70,7 +70,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;scs-task-assign-location_listbox&quot;]/li[4]</value>
+      <value>//*[@id=&quot;scs-task-assign-location_listbox&quot;]/li[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

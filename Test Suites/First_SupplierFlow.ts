@@ -4,7 +4,6 @@
    <name>First_SupplierFlow</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-12-17T18:57:27</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>6000</pageLoadTimeout>

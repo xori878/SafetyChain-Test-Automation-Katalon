@@ -4,7 +4,6 @@
    <name>UserCheck</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-12-11T15:18:38</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>9999</pageLoadTimeout>

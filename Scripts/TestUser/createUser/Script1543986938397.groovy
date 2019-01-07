@@ -12,20 +12,31 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.By as By
+import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.interactions.Actions as Actions
 
 WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
+
+WebUI.waitForElementVisible(findTestObject('TestUserLocation/login_Username'), 70)
+
 WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password11)
+WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
 
 CustomKeywords.'User.setNamePass'()
 
 WebUI.click(findTestObject('TestUserLocation/login_Button'))
 
 Thread.sleep(6000)
+
+WebUI.waitForElementClickable(findTestObject('TestUserLocation/mainmenu_button'), 70)
 
 WebUI.click(findTestObject('TestUserLocation/mainmenu_button'))
 
@@ -86,3 +97,12 @@ Thread.sleep(2000)
 WebUI.click(findTestObject('TestUser/saveUser'))
 
 Thread.sleep(6000)
+
+WebUI.click(findTestObject('TestUser/clickToCheck'))
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('TestUser/logoutUser'))
+
+Thread.sleep(2000)
+

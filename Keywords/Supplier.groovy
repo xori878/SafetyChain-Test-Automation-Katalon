@@ -128,7 +128,7 @@ class Supplier {
 		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
-		String s = sheet.getRow(1).getCell(0).toString()
+		String s = sheet.getRow(1).getCell(8).toString()
 		println s
 		Actions action = new Actions(driver);
 		String path = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']/div/table/tbody/tr[td[contains(text(),'"+s+"')]]/td[1]/input/following-sibling::label"
@@ -166,6 +166,42 @@ class Supplier {
 		//	WebElement element=driver.findElement(By.xpath("//span[@class='radio_state']"));
 
 	}
+	@Keyword
+	def selectDocument(){
+
+		String path = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[1]/input/following-sibling::label"
+		String namePath = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[2]"
+		WebElement element = driver.findElement(By.xpath(path))
+		String docName = driver.findElement(By.xpath(namePath)).getText().toString()
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		file.close();
+		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		sheet.getRow(1).createCell(6).setCellValue(docName);
+		workbook.write(outFile);
+		outFile.close();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", element);
+	}
+
+	@Keyword
+	def selectACK(){
+		String path = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[1]/input/following-sibling::label"
+		String namePath = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[3]"
+		WebElement element = driver.findElement(By.xpath(path))
+		String taskName = driver.findElement(By.xpath(namePath)).getText().toString()
+		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		file.close();
+		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		sheet.getRow(1).createCell(7).setCellValue(taskName);
+		workbook.write(outFile);
+		outFile.close();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", element);
+	}
 
 	@Keyword
 	def selectNewSupplier(){
@@ -199,6 +235,7 @@ class Supplier {
 	}
 	@Keyword
 	def setSupplier(){
+		////*[@id="scs-pp-acknowledgment-container"]/div[2]/div[2]/div[2]/span
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
 		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -332,7 +369,16 @@ class Supplier {
 		//	Thread.sleep(2000)
 		//	}
 	}
+	public String getFieldType(String fieldId){
+		String type= driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']")).getAttribute("data-fieldtype").toString()
+		return type;
 
+	}
+	public boolean right(String fieldId){
+		boolean status = driver.findElements(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//i[@class='fa fa-circle-o']")).isEmpty()
+		return !status;
+
+	}
 	public boolean check(String path){
 		boolean status = false;
 		boolean elements = driver.findElements(By.xpath(path)).isEmpty()
@@ -350,6 +396,7 @@ class Supplier {
 		return status;
 
 	}
+
 	@Keyword
 	def searchDocument1(){
 		Actions action = new Actions(driver);
@@ -441,6 +488,12 @@ class Supplier {
 						 Thread.sleep(2000)
 						 }
 						 */
+						while(!st){
+							c++;
+							st = check("//div["+c+"]//ul/li[@data-offset-index='0']")
+							println "//div["+c+"]//ul/li[@data-offset-index='0']"
+						}
+						driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).click()
 
 					}
 					if(check("//*[@id='scs-form-level']/div["+m+"]//div[@class='k-multiselect-wrap k-floatwrap']")){
@@ -463,6 +516,13 @@ class Supplier {
 						 driver.findElement(By.xpath("//*[@id='field-{{field.Id}}_listbox' and @aria-live='polite']/li[1]")).click()
 						 Thread.sleep(2000)
 						 } */
+
+						while(!st){
+							c++;
+							st = check("//div["+c+"]//ul/li[@data-offset-index='0']")
+							println "//div["+c+"]//ul/li[@data-offset-index='0']"
+						}
+						driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).click()
 					}
 					if(check("//*[@id='scs-form-level']/div["+m+"]//field-template//span[@class='k-widget k-datepicker k-header actualInput scs-date-time-fields']//input")){
 						driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//span[@class='k-widget k-datepicker k-header actualInput scs-date-time-fields']//input")).sendKeys("12/28/2018")
@@ -485,6 +545,127 @@ class Supplier {
 		}
 	}
 
+	@Keyword
+	def formSubmission(){
+
+		Actions action = new Actions(driver);
+		String supplierList = "//*[@id='scs-selected-partner_listbox']/li"
+		String iconPath = "//*[@id='supplier-inbox-grid']//i[@class='fa fa-file-text-o']";
+		String taskName = "//*[@id='supplier-inbox-grid']//tr[td//i[@class='fa fa-file-text-o']]/td[3]/span";
+		String listOption = "//*[@id='partnerportalheader']//single-select-dropdown-list/div/span"
+		String openperPageOption = "//*[@id='supplier-inbox-grid']/div[3]/span[1]/span/span/span[1]"
+		String select500 = "/html/body/div/div/div/ul/li[contains(text(),'500')]";
+		String selectFile = "//*[@id='scs-upload-new-doc-dms-body-popup']//div[1]/input"
+		String supplierName = null;
+		WebElement e;
+		boolean status = true;
+		Thread.sleep(2000)
+		WebElement ele,e1;
+		String s = null;
+		List<WebElement> listSupp = driver.findElements(By.xpath(supplierList));
+		println "Supplier Size - "+listSupp.size()
+		for(int i1=1;i1<listSupp.size()+1;i1++){ // CAN CHANGE
+			click(driver,By.xpath(listOption))
+			Thread.sleep(2000)
+			e= driver.findElement(By.xpath("//*[@id='scs-selected-partner_listbox']/li["+i1+"]"))
+			supplierName = driver.findElement(By.xpath("//*[@id='scs-selected-partner_listbox']/li["+i1+"]/div/div[1]")).getText()
+			println "Supplier "+i1+" Name - "+supplierName
+			action.moveToElement(e).click().build().perform()
+			Thread.sleep(7000)
+			List<WebElement> element = driver.findElements(By.xpath(iconPath));
+			for(int j=0;j<element.size();j++){
+				Thread.sleep(2000)
+				List<WebElement> elements = driver.findElements(By.xpath(iconPath));
+				List<WebElement> name = driver.findElements(By.xpath(taskName));
+				Thread.sleep(2000)
+				println "Current Task - "+name.get(0).getText()
+				action.moveToElement(elements.get(0)).doubleClick().build().perform()
+				Thread.sleep(6000)
+
+				String fieldId = null,fieldPath = "//field-template/div[@data-field]",fileFieldPath="//input[@type='file']";
+				String type = null;
+				int c=0;
+				boolean st = false;
+				List<WebElement> total = driver.findElements(By.xpath(fieldPath))
+				List<WebElement> totalFileIn = driver.findElements(By.xpath(fileFieldPath))
+				println total.size()
+				for(int i=0;i<total.size();i++){
+					fieldId = total.get(i).getAttribute("data-field").toString()
+					status = right(fieldId)
+					type = getFieldType(fieldId)
+					println type
+					if(total.get(i).isDisplayed() && status){
+						if(type=="FreeText" || type=="SingleLineText"){
+							driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("This is Text")
+							Thread.sleep(2000)
+						}
+						if(type=="Paragraph"){
+							driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//textarea")).sendKeys("This is Paragraph")
+							Thread.sleep(2000)
+						}
+						if(type=="SelectOne"){
+							st = false;
+							driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//span[input]/span[last()]")).click()
+							Thread.sleep(2000)
+							while(!st){
+								c++;
+								st = check("//div["+c+"]//ul/li[@data-offset-index='0']")
+								println "//div["+c+"]//ul/li[@data-offset-index='0']"
+							}
+							driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).click()
+							Thread.sleep(2000)
+						}
+						if(type=="SelectMultiple"){
+							st = false;
+							driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//div[@class='k-multiselect-wrap k-floatwrap']")).click()
+							Thread.sleep(2000)
+							while(!st){
+								c++;
+								st = check("//div["+c+"]//ul/li[@data-offset-index='0']")
+								println "//div["+c+"]//ul/li[@data-offset-index='0']"
+							}
+							driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).click()
+							Thread.sleep(2000)
+						}
+						if(type=="Numeric"){
+							driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("9")
+							Thread.sleep(2000)
+						}
+						if(type=="Date"){
+							driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("12/31/2018")
+							Thread.sleep(2000)
+						}
+						if(type=="Time"){
+							driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("4:30 AM")
+							Thread.sleep(2000)
+						}
+						if(type=="DateTime"){
+							driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("12/31/2018 10:30 AM")
+
+						}
+					}
+
+				}
+				for(int i=0;i<totalFileIn.size();i++){
+					fieldId = totalFileIn.get(i).getAttribute("id").toString()
+					if(driver.findElement(By.xpath("//div[input[@id='"+fieldId+"']]")).isDisplayed()){
+						totalFileIn.get(i).sendKeys("D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\SCTestData\\Tulips.jpg")
+						Thread.sleep(6000)
+					}
+				}
+				Thread.sleep(3000)
+				driver.findElement(By.xpath("//*[@id='scs-submit-form-button']")).click()
+				Thread.sleep(3000)
+				if(!driver.findElements(By.xpath("//*[@id='scs-form-resubmission-note']")).isEmpty()){
+					driver.findElement(By.xpath("//*[@id='scs-form-resubmission-note']")).sendKeys("Automatic Form Submission")
+					Thread.sleep(2000)
+					driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click()
+				}
+				Thread.sleep(6000)
+			}
+			Thread.sleep(2000)
+		}
+	}
 	@Keyword
 	def approveTaskDocumentInInbox(){
 		Actions action = new Actions(driver);

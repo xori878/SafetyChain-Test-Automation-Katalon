@@ -23,17 +23,21 @@ WebUI.maximizeWindow()
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName)
+WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName1)
 
-Thread.sleep(5000)
+not_run: Thread.sleep(5000)
 
-WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password)
+WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password1)
 
 WebUI.click(findTestObject('FormTab/login_Button'))
 
 Thread.sleep(8000)
 
 WebUI.click(findTestObject('FormTab/form_Tab'))
+
+WebUI.waitForElementClickable(findTestObject('FormTab/options'), 30)
+
+Thread.sleep(2000)
 
 WebUI.click(findTestObject('FormTab/options'))
 
@@ -44,6 +48,8 @@ WebUI.mouseOver(findTestObject('FormTab/filterOption'))
 Thread.sleep(2000)
 
 CustomKeywords.'FormName.filterFormName1'()
+
+WebUI.waitForElementClickable(findTestObject('FormTab/filterButton'), 30)
 
 Thread.sleep(2000)
 
@@ -84,7 +90,9 @@ WebUI.click(findTestObject('FormTab/fillForm_SelectResource'))
 
 Thread.sleep(4000)
 
-CustomKeywords.'AnyForm.searchDocument1'()
+not_run: CustomKeywords.'AnyForm.searchDocument1'()
+
+CustomKeywords.'AnyForm.formSubmission'()
 
 WebUI.click(findTestObject('FormTab/fillForm_SubmitButton'))
 

@@ -4,7 +4,6 @@
    <name>SmokeSuite</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-11-22T15:55:03</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -44,7 +43,7 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>19aef567-a213-4098-9a04-97f6f16169e7</variableId>
+         <variableId>ebf73899-71c8-4ef0-a2cb-f8473b2dec75</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>

@@ -19,7 +19,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password11)
+WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
 
 CustomKeywords.'AdminTool_Location.setLocationName'()
 

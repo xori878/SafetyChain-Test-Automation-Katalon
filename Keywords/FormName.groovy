@@ -83,7 +83,25 @@ class FormName {
 			KeywordUtil.markFailed("Fail to click on element")
 		}
 	}
-
+	@Keyword
+	def setData1() {
+		try {
+			println "Hi"
+			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			sheet.getRow(1).createCell(0).setCellValue(form_name);
+			sheet.getRow(1).createCell(8).setCellValue(form_name);
+			println "Hi"
+			print form_name
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
+			workbook.write(outFile);
+			outFile.close();
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
 	@Keyword
 	def createForm(TestObject to) {
 		String s = findTestData('FormData').getValue('FormName',1)
@@ -147,8 +165,8 @@ class FormName {
 	@Keyword
 	def filterFormName1() {
 		try {
-			String s = "ssss"
-			//	String s = "AUTO_TEST_FORM_ON_22/11/2018-15:24:40"
+			//	String s = "Auto_Test_Form_15/12-15:06"
+			String s = "AUTO_TOOL_KAT_FORM_06/11/2018-13:45:24"
 			driver.findElement(By.xpath("/html/body/div/div/ul/li[6]/div/ul/li/div/form/div/input")).sendKeys(s);
 		} catch (WebElementNotFoundException e) {
 			KeywordUtil.markFailed("Element not found")

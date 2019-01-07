@@ -19,7 +19,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password11)
+WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
 
 CustomKeywords.'AdminTool_Location.setItemName'()
 
@@ -38,6 +38,8 @@ Thread.sleep(4000)
 WebUI.click(findTestObject('TestResource/items'))
 
 Thread.sleep(4000)
+
+WebUI.waitForElementClickable(findTestObject('TestUserLocation/categories'), 45)
 
 WebUI.click(findTestObject('TestUserLocation/categories'))
 
@@ -74,6 +76,8 @@ Thread.sleep(4000)
 CustomKeywords.'AdminTool_Location.selectItem'()
 
 Thread.sleep(4000)
+
+WebUI.waitForElementClickable(findTestObject('TestUserLocation/addPlusIcon'), 45)
 
 WebUI.click(findTestObject('TestUserLocation/addPlusIcon'))
 
@@ -142,6 +146,8 @@ Thread.sleep(4000)
 CustomKeywords.'AdminTool_Location.selectItem'()
 
 Thread.sleep(4000)
+
+WebUI.waitForElementClickable(findTestObject('TestUserLocation/addPlusIcon'), 45)
 
 WebUI.click(findTestObject('TestUserLocation/addPlusIcon'))
 

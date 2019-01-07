@@ -63,16 +63,20 @@ import org.openqa.selenium.support.ui.ExpectedConditions
 
 class AnyForm {
 	WebDriver driver =  DriverFactory.getWebDriver();
-	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yy-HH:mm");
+	DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+	DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("hh:mm a");
+	DateTimeFormatter dtf3 = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a");
 	LocalDateTime now = LocalDateTime.now();
-	public String location_name = "LOCATION_ON_"+dtf.format(now);
+	public String date = dtf1.format(now);
+	public String time = dtf2.format(now);
+	public String dateTime = dtf3.format(now);
 
 
-	public  setValue(WebElement element,String value){
+	public void  setValue(WebElement element,String value){
 		Actions action = new Actions(driver);
 		action.moveToElement(element).sendKeys(value).build.perform()
 	}
-	public  click(WebElement element){
+	public void click(WebElement element){
 		Actions action = new Actions(driver);
 		action.moveToElement(element).click().build.perform()
 	}
@@ -178,12 +182,103 @@ class AnyForm {
 		return status;
 
 	}
+	public String getFieldType(String fieldId){
+		String type= driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']")).getAttribute("data-fieldtype").toString()
+		return type;
+
+	}
+
+
+	@Keyword
+	def formSubmission(){
+		String fieldId = null,fieldPath = "//field-template/div[@data-field]",fileFieldPath="//input[@type='file']",commentPath = "//*[@ng-model='field.Comment']";;
+		String type = null;
+		WebElement ele;
+		int c=0;
+		boolean st = false;
+		List<WebElement> total = driver.findElements(By.xpath(fieldPath))
+		List<WebElement> totalFileIn = driver.findElements(By.xpath(fileFieldPath))
+		List<WebElement> totalComment = driver.findElements(By.xpath(commentPath))
+		println total.size()
+		for(int i=0;i<total.size();i++){
+			fieldId = total.get(i).getAttribute("data-field").toString()
+			type = getFieldType(fieldId)
+			println type
+			if(total.get(i).isDisplayed()){
+				if(type=="FreeText" || type=="SingleLineText"){
+					driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("This is Text")
+					Thread.sleep(2000)
+				}
+				if(type=="Paragraph"){
+					driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//textarea")).sendKeys("This is Paragraph")
+					Thread.sleep(2000)
+				}
+				if(type=="SelectOne"){
+					st = false;
+					driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//span[input]/span[last()]")).click()
+					Thread.sleep(2000)
+					while(!st){
+						c++;
+						st = check("//div["+c+"]//ul/li[@data-offset-index='0']")
+						println "//div["+c+"]//ul/li[@data-offset-index='0']"
+					}
+					driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).click()
+					Thread.sleep(2000)
+				}
+				if(type=="SelectMultiple"){
+					st = false;
+					driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//div[@class='k-multiselect-wrap k-floatwrap']")).click()
+					Thread.sleep(2000)
+					while(!st){
+						c++;
+						st = check("//div["+c+"]//ul/li[@data-offset-index='0']")
+						println "//div["+c+"]//ul/li[@data-offset-index='0']"
+					}
+					driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).click()
+					Thread.sleep(2000)
+				}
+				if(type=="Numeric"){
+					driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("9")
+					Thread.sleep(2000)
+				}
+				if(type=="Date"){
+					driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys(date)
+					Thread.sleep(2000)
+				}
+				if(type=="Time"){
+					driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys(time)
+					Thread.sleep(2000)
+				}
+				if(type=="DateTime"){
+					driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys(dateTime)
+
+				}
+			}
+
+		}
+		for(int i=0;i<totalFileIn.size();i++){
+			fieldId = totalFileIn.get(i).getAttribute("id").toString()
+			if(driver.findElement(By.xpath("//div[input[@id='"+fieldId+"']]")).isDisplayed()){
+				totalFileIn.get(i).sendKeys("D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\SCTestData\\Tulips.jpg")
+				Thread.sleep(6000)
+			}
+		}
+		for(int i=0;i<totalComment.size();i++){
+			if(totalComment.get(i).isDisplayed()){
+				totalComment.get(i).sendKeys("This is automatic comment")
+				Thread.sleep(1000)
+			}
+		}
+		Thread.sleep(3000)
+	}
 
 	@Keyword
 	def searchDocument1(){
 		List<WebElement> total = driver.findElements(By.xpath("//*[@id='scs-form-level']/div"))
 		WebElement ele,e1;
 		String s = null;
+		int c=0;
+		boolean st = false;
 		Actions actions = new Actions(driver);
 		int cnt=0,cnt1=0;
 		for(int m=1;m<total.size()+1;m++){
@@ -191,9 +286,15 @@ class AnyForm {
 				driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//input")).sendKeys("This is Text")
 				Thread.sleep(2000)
 			}
+			/*	if(check("//*[@id='scs-form-level']/div["+m+"]//field-template//input[@type='file']")){
+			 driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//input[@type='file']")).sendKeys("D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\SCTestData\\Tulips.jpg")
+			 Thread.sleep(8000)
+			 } */
 			if(!driver.findElements(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//input[@type='file']")).isEmpty()){
-				driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//input[@type='file']")).sendKeys("D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\SCTestData\\Tulips.jpg")
-				Thread.sleep(8000)
+				if(driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//div[@class='k-button k-upload-button']")).isDisplayed()){
+					driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//input[@type='file']")).sendKeys("D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\SCTestData\\Tulips.jpg")
+					Thread.sleep(8000)
+				}
 			}
 			if(check("//*[@id='scs-form-level']/div["+m+"]//field-template//textarea[@class='actualInput paratextfield ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required']")){
 				driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//textarea")).sendKeys("Paragraph")
@@ -204,33 +305,58 @@ class AnyForm {
 				Thread.sleep(2000)
 			}
 			if(check("//*[@id='scs-form-level']/div["+m+"]//field-template//span[@aria-controls='field-{{field.Id}}_listbox']")){
+				c=0;
+				st = false;
 				driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//span[@aria-controls='field-{{field.Id}}_listbox']")).click()
 				Thread.sleep(2000)
-				e1 = driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//input"))
-				s = e1.getAttribute("aria-activedescendant")
-				println s
-				if(check("//ul//li[@id='"+s+"']")){
-
-					driver.findElement(By.xpath("//ul//li[@id='"+s+"']")).click()
-					Thread.sleep(2000)
-
-
+				/*		 e1 = driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//input"))
+				 s = e1.getAttribute("aria-activedescendant")
+				 println s
+				 if(check("//ul//li[@id='"+s+"']")){
+				 driver.findElement(By.xpath("//ul//li[@id='"+s+"']")).click()
+				 Thread.sleep(2000)
+				 }
+				 */
+				/*	driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//span[@aria-controls='field-{{field.Id}}_listbox']")).click()
+				 Thread.sleep(2000)
+				 if(check("//*[@id='field-{{field.Id}}_listbox' and @aria-live='off']//li[1]")){
+				 driver.findElement(By.xpath("//*[@id='field-{{field.Id}}_listbox' and @aria-live='off']//li[1]")).click()
+				 Thread.sleep(2000)
+				 }
+				 */
+				while(!st){
+					c++;
+					st = check("//div["+c+"]//ul/li[@data-offset-index='0']")
+					println "//div["+c+"]//ul/li[@data-offset-index='0']"
 				}
+				driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).click()
 
 			}
 			if(check("//*[@id='scs-form-level']/div["+m+"]//div[@class='k-multiselect-wrap k-floatwrap']")){
+				c=0;
+				st = false;
 				driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//div[@class='k-multiselect-wrap k-floatwrap']")).click()
 				Thread.sleep(2000)
-				e1 = driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//input"))
-				s = e1.getAttribute("aria-activedescendant")
-				println s
-				if(check("//ul//li[@id='"+s+"']")){
-
-					driver.findElement(By.xpath("//ul//li[@id='"+s+"']")).click()
-					Thread.sleep(2000)
-
-
+				/*			 e1 = driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//input"))
+				 s = e1.getAttribute("aria-activedescendant")
+				 println s
+				 if(check("//ul//li[@id='"+s+"']")){
+				 driver.findElement(By.xpath("//ul//li[@id='"+s+"']")).click()
+				 Thread.sleep(2000)
+				 }
+				 */
+				/*	driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//div[@class='k-multiselect-wrap k-floatwrap']")).click()
+				 Thread.sleep(2000)
+				 if(check("//*[@id='field-{{field.Id}}_listbox' and @aria-live='polite']/li[1]")){
+				 driver.findElement(By.xpath("//*[@id='field-{{field.Id}}_listbox' and @aria-live='polite']/li[1]")).click()
+				 Thread.sleep(2000)
+				 } */
+				while(!st){
+					c++;
+					st = check("//div["+c+"]//ul/li[@data-offset-index='0']")
+					println "//div["+c+"]//ul/li[@data-offset-index='0']"
 				}
+				driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).click()
 			}
 			if(check("//*[@id='scs-form-level']/div["+m+"]//field-template//span[@class='k-widget k-datepicker k-header actualInput scs-date-time-fields']//input")){
 				driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//span[@class='k-widget k-datepicker k-header actualInput scs-date-time-fields']//input")).sendKeys("12/28/2018")
@@ -244,6 +370,8 @@ class AnyForm {
 				driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//span[@class='k-widget k-datetimepicker k-header actualInput scs-date-time-fields']//input")).sendKeys("12/28/2018 10:30 AM")
 				Thread.sleep(2000)
 			}
+
+
 
 		}
 	}

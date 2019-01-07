@@ -4,7 +4,6 @@
    <name>Check_Form</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-12-12T19:26:29</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>360</pageLoadTimeout>

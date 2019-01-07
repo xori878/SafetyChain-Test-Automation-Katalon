@@ -25,9 +25,9 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 Thread.sleep(4000)
 
-WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
+WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName1)
 
-WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
+WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password1)
 
 Thread.sleep(2000)
 
@@ -35,5 +35,5 @@ WebUI.click(findTestObject('TestUserLocation/login_Button'))
 
 Thread.sleep(10000)
 
-CustomKeywords.'Supplier.searchDocument1'()
+CustomKeywords.'Submission.supplierPortalSubmission'()
 

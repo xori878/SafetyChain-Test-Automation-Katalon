@@ -19,7 +19,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password11)
+WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password)
 
 CustomKeywords.'FormName.setData'()
 
@@ -146,6 +146,4 @@ Thread.sleep(5000)
 WebUI.click(findTestObject('Form_Selection_Creation/button_Release'))
 
 Thread.sleep(4000)
-
-//WebUI.click(findTestObject('Form_Selection_Creation/home'))
 

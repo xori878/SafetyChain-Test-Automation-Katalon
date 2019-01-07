@@ -14,13 +14,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+not_run: WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.maximizeWindow()
+not_run: WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password11)
+WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
 
 not_run: CustomKeywords.'User.setNamePass'()
 
@@ -61,4 +61,12 @@ Thread.sleep(2000)
 WebUI.click(findTestObject('TestUser/confirmUserYes'))
 
 Thread.sleep(7000)
+
+WebUI.click(findTestObject('TestUser/clickToCheck'))
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('TestUser/logoutUser'))
+
+Thread.sleep(2000)
 

@@ -17,9 +17,9 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.By as By
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-WebUI.openBrowser(GlobalVariable.URL)
+not_run: WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.maximizeWindow()
+not_run: WebUI.maximizeWindow()
 
 WebDriver driver = DriverFactory.getWebDriver()
 
@@ -110,4 +110,12 @@ Thread.sleep(2000)
 WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
 
 Thread.sleep(4000)
+
+WebUI.click(findTestObject('TestUser/clickToCheck'))
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('TestUser/logoutUser'))
+
+Thread.sleep(2000)
 

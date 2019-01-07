@@ -13,9 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser(GlobalVariable.URL)
+not_run: WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.maximizeWindow()
+not_run: WebUI.maximizeWindow()
 
 for (def index : (0..10)) {
     WebUI.setText(findTestObject('TestUserLocation/login_Username'), findTestData('UserData').getValue('UserName', 1))
@@ -23,13 +23,19 @@ for (def index : (0..10)) {
     WebUI.setText(findTestObject('TestUserLocation/login_Password'), findTestData('UserData').getValue('Password', 1))
 
     WebUI.click(findTestObject('TestUserLocation/login_Button'))
-	
-	Thread.sleep(2000)
+
+    Thread.sleep(2000)
 }
 
 WebUI.click(findTestObject('TestUser/lockedAccount'))
 
 Thread.sleep(6000)
+
+not_run: WebUI.click(findTestObject('TestUser/clickToCheck'))
+
+not_run: Thread.sleep(2000)
+
+not_run: WebUI.click(findTestObject('TestUser/logoutUser'))
 
 not_run: WebUI.setText(findTestObject('TestUserLocation/login_Username'), findTestData('UserData').getValue('UserName', 
         1))

@@ -77,74 +77,74 @@ CustomKeywords.'AdminTool_Location.selectSupplier'()
 
 Thread.sleep(4000)
 
-WebUI.click(findTestObject('TestUserLocation/addPlusIcon'))
+not_run: WebUI.click(findTestObject('TestUserLocation/addPlusIcon'))
 
-Thread.sleep(2000)
+not_run: Thread.sleep(2000)
 
-WebUI.setText(findTestObject('TestUserLocation/setNewName'), findTestData('LocationData').getValue('SubSuppliersName1', 
+not_run: WebUI.setText(findTestObject('TestUserLocation/setNewName'), findTestData('LocationData').getValue('SubSuppliersName1', 
         1))
 
 not_run: WebUI.setText(findTestObject('TestResource/setPhoneNumber'), '912378456')
 
-Thread.sleep(2000)
+not_run: Thread.sleep(2000)
 
-WebUI.click(findTestObject('TestResource/saveDetailButton'))
+not_run: WebUI.click(findTestObject('TestResource/saveDetailButton'))
 
-Thread.sleep(7000)
+not_run: Thread.sleep(7000)
 
-WebUI.click(findTestObject('TestResource/disableResource'))
+not_run: WebUI.click(findTestObject('TestResource/disableResource'))
 
-Thread.sleep(2000)
+not_run: Thread.sleep(2000)
 
-WebUI.click(findTestObject('TestResource/button2Yes'))
+not_run: WebUI.click(findTestObject('TestResource/button2Yes'))
 
-Thread.sleep(2000)
+not_run: Thread.sleep(2000)
 
-WebUI.click(findTestObject('TestResource/saveDetailButton'))
+not_run: WebUI.click(findTestObject('TestResource/saveDetailButton'))
 
-Thread.sleep(7000)
+not_run: Thread.sleep(7000)
 
-WebUI.click(findTestObject('TestResource/linksTab'))
+not_run: WebUI.click(findTestObject('TestResource/linksTab'))
 
-Thread.sleep(2000)
+not_run: Thread.sleep(2000)
 
-WebUI.click(findTestObject('TestResource/addLink'))
+not_run: WebUI.click(findTestObject('TestResource/addLink'))
 
-Thread.sleep(5000)
+not_run: Thread.sleep(5000)
 
-WebUI.check(findTestObject('TestResource/selectSecondResourceToLink'))
+not_run: WebUI.check(findTestObject('TestResource/selectSecondResourceToLink'))
 
-CustomKeywords.'AdminTool_Location.resourceLinkName'()
+not_run: CustomKeywords.'AdminTool_Location.resourceLinkName'()
 
-Thread.sleep(2000)
+not_run: Thread.sleep(2000)
 
-WebUI.click(findTestObject('TestResource/button2Save'))
+not_run: WebUI.click(findTestObject('TestResource/button2Save'))
 
-Thread.sleep(4000)
+not_run: Thread.sleep(4000)
 
-WebUI.click(findTestObject('TestResource/locationTab'))
+not_run: WebUI.click(findTestObject('TestResource/locationTab'))
 
-Thread.sleep(5000)
+not_run: Thread.sleep(5000)
 
-CustomKeywords.'AdminTool_Location.checkLocation'()
+not_run: CustomKeywords.'AdminTool_Location.checkLocation'()
 
-Thread.sleep(4000)
+not_run: Thread.sleep(4000)
 
-WebUI.click(findTestObject('TestResource/saveLocation'))
+not_run: WebUI.click(findTestObject('TestResource/saveLocation'))
 
-WebUI.click(findTestObject('TestUserLocation/mainmenu_button'))
+not_run: WebUI.click(findTestObject('TestUserLocation/mainmenu_button'))
 
-WebUI.click(findTestObject('TestResource/mainMenu_resources'))
+not_run: WebUI.click(findTestObject('TestResource/mainMenu_resources'))
 
-Thread.sleep(4000)
+not_run: Thread.sleep(4000)
 
-WebUI.click(findTestObject('TestResource/suppliers'))
+not_run: WebUI.click(findTestObject('TestResource/suppliers'))
 
-Thread.sleep(4000)
+not_run: Thread.sleep(4000)
 
-CustomKeywords.'AdminTool_Location.selectSupplier'()
+not_run: CustomKeywords.'AdminTool_Location.selectSupplier'()
 
-Thread.sleep(4000)
+not_run: Thread.sleep(4000)
 
 WebUI.click(findTestObject('TestUserLocation/addPlusIcon'))
 

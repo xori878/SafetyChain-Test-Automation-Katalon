@@ -20,7 +20,7 @@ not_run: WebUI.maximizeWindow()
 
 not_run: WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
 
-not_run: WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password11)
+not_run: WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
 
 Thread.sleep(2000)
 
@@ -57,6 +57,48 @@ WebUI.click(findTestObject('SupplierFlow/optionToSelectNewRequirement'))
 
 Thread.sleep(2000)
 
+WebUI.click(findTestObject('SupplierFlow/selectAckOption'))
+
+Thread.sleep(10000)
+
+CustomKeywords.'Supplier.selectACK'()
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/nextButtonReqForm'))
+
+not_run: Thread.sleep(3000)
+
+not_run: WebUI.click(findTestObject('SupplierFlow/bold'))
+
+not_run: Thread.sleep(2000)
+
+not_run: WebUI.sendKeys(findTestObject('SupplierFlow/ackMessage'), 'This is automatic acknowledment message.')
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/nextButtonReqForm'))
+
+Thread.sleep(4000)
+
+WebUI.setText(findTestObject('SupplierFlow/setTaskName'), findTestData('FormData').getValue('TaskName', 1))
+
+WebUI.click(findTestObject('SupplierFlow/approvedBy'))
+
+Thread.sleep(2000)
+
+CustomKeywords.'Supplier.selectWG'()
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/saveButtonTask'))
+
+Thread.sleep(6000)
+
+WebUI.click(findTestObject('SupplierFlow/optionToSelectNewRequirement'))
+
+Thread.sleep(2000)
+
 WebUI.click(findTestObject('SupplierFlow/selectCompleteForm'))
 
 Thread.sleep(10000)
@@ -72,6 +114,40 @@ WebUI.click(findTestObject('SupplierFlow/nextButtonReqForm'))
 Thread.sleep(4000)
 
 WebUI.setText(findTestObject('SupplierFlow/setTaskName'), findTestData('FormData').getValue('TaskName', 1))
+
+CustomKeywords.'FormName.setTaskName'()
+
+WebUI.click(findTestObject('SupplierFlow/approvedBy'))
+
+Thread.sleep(2000)
+
+CustomKeywords.'Supplier.selectWG'()
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/saveButtonTask'))
+
+Thread.sleep(6000)
+
+WebUI.click(findTestObject('SupplierFlow/optionToSelectNewRequirement'))
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/selectDocumentUploadOption'))
+
+Thread.sleep(10000)
+
+CustomKeywords.'Supplier.selectDocument'()
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/nextButtonReqForm'))
+
+Thread.sleep(4000)
+
+WebUI.setText(findTestObject('SupplierFlow/setTaskName'), findTestData('FormData').getValue('TaskName', 1))
+
+CustomKeywords.'FormName.setTaskName'()
 
 WebUI.click(findTestObject('SupplierFlow/approvedBy'))
 
@@ -100,4 +176,12 @@ Thread.sleep(2000)
 WebUI.click(findTestObject('SupplierFlow/saveSupplierSelection'))
 
 Thread.sleep(6000)
+
+WebUI.click(findTestObject('TestUser/clickToCheck'))
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('TestUser/logoutUser'))
+
+Thread.sleep(2000)
 

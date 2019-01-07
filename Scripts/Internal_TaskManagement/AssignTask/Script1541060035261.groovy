@@ -25,7 +25,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password11)
+WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('FormTab/login_Button'))
 
@@ -66,13 +66,13 @@ WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Assign Tasks'))
 WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Task Name_scs-assign-tas'), findTestData('FormData').getValue('TaskName', 
         1))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/open_Location'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/open_Location'))
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/select_4_Location'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/select_4_Location'))
 
-Thread.sleep(4000)
+not_run: Thread.sleep(4000)
 
 not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_NWG79956'))
 

@@ -43,7 +43,7 @@ CustomKeywords.'AdminTool_Location.selectResType'()
 
 CustomKeywords.'AdminTool_Location.dragDropRes'()
 
-Thread.sleep(3000)
+Thread.sleep(5000)
 
 not_run: WebUI.dragAndDropToObject(findTestObject('null'), findTestObject('Form_Selection_Creation/Target_Res_Object'))
 

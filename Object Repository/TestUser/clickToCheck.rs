@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;scs-user-settings&quot;]/div[1]</value>
+         <value>//*[@class=&quot;scs-user-name ng-binding&quot; or @id=&quot;scs-user-settings&quot;/div]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;scs-user-settings&quot;]/div[1]</value>
+      <value>//*[@class=&quot;scs-user-name ng-binding&quot; or @id=&quot;scs-user-settings&quot;/div]</value>
    </webElementProperties>
 </WebElementEntity>

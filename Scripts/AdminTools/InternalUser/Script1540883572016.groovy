@@ -26,7 +26,7 @@ Thread.sleep(5000)
 
 WebUI.setText(findTestObject('CommonObjects/Login_UserName'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('CommonObjects/Login_Password'), GlobalVariable.Password11)
+WebUI.setText(findTestObject('CommonObjects/Login_Password'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('CommonObjects/Login_LoginButton'))
 

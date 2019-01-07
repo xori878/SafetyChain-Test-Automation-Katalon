@@ -16,10 +16,6 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.By as By
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.WebDriver as WebDriver
-import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
@@ -31,10 +27,9 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 Thread.sleep(3000)
 
-
 WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password11)
+WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('FormTab/login_Button'))
 
@@ -116,7 +111,8 @@ WebUI.setText(findTestObject('FormTab/fillForm_SelectOneOption'), 'SingleOption1
 
 Thread.sleep(3000)
 
-driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(Keys.chord(Keys.ENTER))
+driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(
+    Keys.chord(Keys.ENTER))
 
 Thread.sleep(3000)
 
@@ -124,14 +120,15 @@ WebUI.setText(findTestObject('FormTab/fillForm_SelectMultipleOption'), 'Multiple
 
 Thread.sleep(3000)
 
-driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(Keys.chord(Keys.ENTER))
+driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(
+    Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('FormTab/fillForm_SelectMultipleOption'))
 
 Thread.sleep(4000)
 
 driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]')).sendKeys(
-		'9')
+    '9')
 
 WebUI.setText(findTestObject('FormTab/fillForm_DateText'), '10/18/2018')
 

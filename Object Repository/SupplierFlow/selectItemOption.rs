@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectItemOption</name>
+   <tag></tag>
+   <elementGuidId>885ac01d-0a50-488f-904d-6ddedd94d790</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;supplier-items-dropdown_listbox&quot;]/li[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;supplier-items-dropdown_listbox&quot;]/li[2]</value>
+   </webElementProperties>
+</WebElementEntity>

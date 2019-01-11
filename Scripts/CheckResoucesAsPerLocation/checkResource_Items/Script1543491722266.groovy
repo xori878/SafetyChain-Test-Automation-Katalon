@@ -13,25 +13,31 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser(GlobalVariable.URL)
+not_run: WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.maximizeWindow()
+not_run: WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
 
 CustomKeywords.'AdminTool_Location.setItemName'()
 
-WebUI.click(findTestObject('TestUserLocation/login_Button'))
+not_run: WebUI.click(findTestObject('TestUserLocation/login_Button'))
 
-Thread.sleep(4000)
+not_run: Thread.sleep(4000)
 
 WebUI.click(findTestObject('TestUserLocation/mainmenu_button'))
 
-WebUI.click(findTestObject('TestUserLocation/adminTool'))
+Thread.sleep(2000)
+
+not_run: WebUI.click(findTestObject('TestUserLocation/adminTool'))
 
 WebUI.click(findTestObject('TestUserLocation/mainMenuResourceDesigner'))
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('TestUserLocation/yesDelete'))
 
 Thread.sleep(4000)
 
@@ -64,6 +70,8 @@ Thread.sleep(4000)
 Thread.sleep(4000)
 
 WebUI.click(findTestObject('TestUserLocation/mainmenu_button'))
+
+Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestResource/mainMenu_resources'))
 
@@ -125,6 +133,10 @@ Thread.sleep(4000)
 
 WebUI.click(findTestObject('TestResource/locationTab'))
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 Thread.sleep(5000)
 
 CustomKeywords.'AdminTool_Location.checkLocation'()
@@ -134,6 +146,8 @@ Thread.sleep(4000)
 WebUI.click(findTestObject('TestResource/saveLocation'))
 
 WebUI.click(findTestObject('TestUserLocation/mainmenu_button'))
+
+Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestResource/mainMenu_resources'))
 

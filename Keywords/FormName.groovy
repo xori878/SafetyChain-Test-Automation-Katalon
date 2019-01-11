@@ -50,6 +50,9 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.awt.*;
+import org.openqa.selenium.support.ui.WebDriverWait
+import org.openqa.selenium.support.ui.ExpectedConditions
+
 
 class FormName {
 	WebDriver driver =  DriverFactory.getWebDriver();
@@ -57,14 +60,21 @@ class FormName {
 	//public String form_name = "AUTOQUESTIONAIREFORMTEST7";
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy-HH:mm:ss");
 	LocalDateTime now = LocalDateTime.now();
-	public String form_name = "AUTO_TEST_FORM_ON_"+dtf.format(now);
-	public String task_name = "AUTO_TEST_TASK_ON_"+dtf.format(now);
-	public String document_name = "AUTO_TEST_DOCUMENT_ON_"+dtf.format(now);
-	public String new_document_name = "AUTO_TEST_RESTORE_DOCUMENT_ON_"+dtf.format(now);
-	public String task_document_name_DMS =  "AUTO_TEST_ASSIGN_TASK_DOCUMENT_ON_"+dtf.format(now);
-	public String task_name_DMS = "AUTO_TEST_DMS_TASK_ON_"+dtf.format(now);
-	public String location_name = "AUTO_TEST_LOCATION_ON_"+dtf.format(now);
+	public String form_name = "TestForm_"+dtf.format(now);
+	public String task_name = "TestTask_"+dtf.format(now);
+	public String document_name = "TestDocument_"+dtf.format(now);
+	public String new_document_name = "TestRSTDocument_"+dtf.format(now);
+	public String task_document_name_DMS =  "TestAssignTaskDocument"+dtf.format(now);
+	public String task_name_DMS = "TestDMSTask_"+dtf.format(now);
+	public String location_name = "TestLocation_"+dtf.format(now);
 
+	public void click(WebDriver driver, By by) {
+		WebElement element = driver.findElement(by);
+		Actions action = new Actions(driver);
+		(new WebDriverWait(driver,120)).until(ExpectedConditions.elementToBeClickable(by));
+		Thread.sleep(1000)
+		action.moveToElement(element).click().build().perform()
+	}
 	@Keyword
 	def setData() {
 		try {
@@ -117,7 +127,7 @@ class FormName {
 	def fillFormName() {
 		try {
 			String s = findTestData('FormData').getValue('FormName',1)
-			driver.findElement(By.xpath("//*[@id='scs-forms-grid']/div[2]/table/tbody/tr/td[contains(text(),'"+s+"')]")).click()
+			click(driver,By.xpath("//*[@id='scs-forms-grid']/div[2]/table/tbody/tr/td[contains(text(),'"+s+"')]"))
 		} catch (WebElementNotFoundException e) {
 			KeywordUtil.markFailed("Element not found")
 		} catch (Exception e) {
@@ -143,6 +153,7 @@ class FormName {
 		try {
 			String s = findTestData('FormData').getValue('FormName',1)
 			Actions action = new Actions(driver);
+			click(driver, By.xpath("//*[@id='scs-resources-document-grid']/div[2]/div[1]/table/tbody/tr/td[3 and contains(text(),'"+s+"')]"))
 			WebElement element = 	driver.findElement(By.xpath("//*[@id='scs-resources-document-grid']/div[2]/div[1]/table/tbody/tr/td[3 and contains(text(),'"+s+"')]"))
 			action.doubleClick(element).perform();
 		} catch (WebElementNotFoundException e) {
@@ -235,7 +246,7 @@ class FormName {
 		String documentName = sheet.getRow(1).getCell(2);
 		file.close();
 
-		driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]")).click()
+		click(driver,By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]"))
 
 	}
 
@@ -247,7 +258,7 @@ class FormName {
 		String documentName = sheet.getRow(1).getCell(3);
 		file.close();
 
-		driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]")).click()
+		click(driver,By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]"))
 
 	}
 	@Keyword
@@ -258,7 +269,7 @@ class FormName {
 		String documentName = sheet.getRow(1).getCell(4);
 		file.close();
 
-		driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]")).click()
+		click(driver,By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]"))
 
 	}
 	@Keyword
@@ -269,7 +280,7 @@ class FormName {
 		String documentName = sheet.getRow(1).getCell(5);
 		file.close();
 
-		driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]")).click()
+		click(driver,By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr/td[contains(text(),'"+documentName+"')]"))
 
 	}
 	@Keyword

@@ -29,6 +29,10 @@ WebUI.click(findTestObject('DMS_Forms/mainmenu_Document'))
 
 Thread.sleep(4000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 CustomKeywords.'FormName.findinDMS'()
 
 Thread.sleep(4000)

@@ -29,6 +29,10 @@ WebUI.click(findTestObject('DMS_Forms/login_Button'))
 
 Thread.sleep(4000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 WebUI.click(findTestObject('DMS_Forms/mainmenu_button'))
 
 WebUI.click(findTestObject('DMS_Forms/mainmenu_Document'))
@@ -262,6 +266,10 @@ WebUI.setText(findTestObject('DMS/searchDocument'), GlobalVariable.DocumentName)
 Thread.sleep(2000)
 
 WebUI.sendKeys(findTestObject('DMS/searchDocument'), Keys.chord(Keys.DOWN))
+
+Thread.sleep(2000)
+
+CustomKeywords.'AdminTool_Location.moveCursor'()
 
 Thread.sleep(2000)
 

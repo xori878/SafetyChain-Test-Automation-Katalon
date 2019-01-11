@@ -17,6 +17,8 @@ import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.By as By
 
+
+
 WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
@@ -29,6 +31,8 @@ WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('FormTab/login_Button'))
 
+
+
 Thread.sleep(10000)
 
 WebUI.click(findTestObject('FormTab/form_Tab'))
@@ -36,6 +40,10 @@ WebUI.click(findTestObject('FormTab/form_Tab'))
 CustomKeywords.'FormName.setTaskName'()
 
 Thread.sleep(7000)
+
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
 
 WebUI.click(findTestObject('FormTab/options'))
 
@@ -63,8 +71,8 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Assign Tasks'))
 
-WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Task Name_scs-assign-tas'), findTestData('FormData').getValue('TaskName', 
-        1))
+WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Task Name_scs-assign-tas'), findTestData('FormData').getValue('TaskName',
+		1))
 
 not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/open_Location'))
 
@@ -96,11 +104,11 @@ not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_WorkGroup24322'))
 
 not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_NWG79956'))
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/open_Resource'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/open_Resource'))
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-WebUI.click(findTestObject('mainmenu_Forms_Inbox/select_1 Resource'))
+not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/select_1 Resource'))
 
 not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/Inbox'))
 
@@ -113,6 +121,8 @@ not_run: WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Due By_scs-ass
 not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/span_Due By_k-icon k-i-clock'))
 
 not_run: WebUI.click(findTestObject('mainmenu_Forms_Inbox/li_0030'))
+
+CustomKeywords.'TaskMGMT.setData'()
 
 WebUI.setText(findTestObject('mainmenu_Forms_Inbox/input_Due By_scs-assigntask-da'), '11/01/2018 06:30')
 
@@ -148,53 +158,55 @@ WebUI.doubleClick(findTestObject('mainmenu_Forms_Inbox/selectTask'))
 
 Thread.sleep(4000)
 
+CustomKeywords.'Submission.formSubmission'()
+
 //WebUI.click(findTestObject('Object Repository/FormTab/Page_SafetyChain/selectRes'))
 //WebUI.setText(findTestObject('Form_Selection_Creation/sendResourceName'), 'rest1')
 //driver.findElement(By.xpath('//*[@id=\'resrcDrpdown-list\']/span/input')).sendKeys(Keys.ENTER)
 //WebUI.click(findTestObject('Form_Selection_Creation/sendResourceName'),Keys.ENTER)
 //Thread.sleep(4000)
-WebUI.setText(findTestObject('FormTab/fillForm_FreeSingleText'), 'MyText')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_FreeSingleText'), 'MyText')
 
-WebUI.setText(findTestObject('FormTab/fillForm_ParagraphText'), 'MyParagraph')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_ParagraphText'), 'MyParagraph')
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-WebUI.setText(findTestObject('FormTab/fillForm_SelectOneOption'), 'Select Option1')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_SelectOneOption'), 'Select Option1')
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(
-    Keys.ENTER)
+not_run: driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(
+Keys.ENTER)
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-WebUI.setText(findTestObject('FormTab/fillForm_SelectMultipleOption'), 'Multiple Option1')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_SelectMultipleOption'), 'Multiple Option1')
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(
-    Keys.ENTER)
+not_run: driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(
+Keys.ENTER)
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-WebUI.click(findTestObject('FormTab/fillForm_SelectMultipleOption'))
+not_run: WebUI.click(findTestObject('FormTab/fillForm_SelectMultipleOption'))
 
-Thread.sleep(4000)
+not_run: Thread.sleep(4000)
 
-driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]')).sendKeys(
-    '9')
+not_run: driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]')).sendKeys(
+'9')
 
-WebUI.setText(findTestObject('FormTab/fillForm_DateText'), '10/18/2018')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_DateText'), '10/18/2018')
 
-WebUI.setText(findTestObject('FormTab/fillForm_TimeText'), '9:00 AM')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_TimeText'), '9:00 AM')
 
-WebUI.setText(findTestObject('FormTab/fillForm_DateTimeText'), '10/18/2018 9:00 AM')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_DateTimeText'), '10/18/2018 9:00 AM')
 
-WebUI.click(findTestObject('FormTab/fillForm_SubmitButton'))
+not_run: WebUI.click(findTestObject('FormTab/fillForm_SubmitButton'))
 
-Thread.sleep(2000)
+not_run: Thread.sleep(2000)
 
-WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
+not_run: WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
 
 Thread.sleep(12000)
 

@@ -39,22 +39,23 @@ WebUI.click(findTestObject('SupplierFlow/clickOnSuppReject'))
 
 Thread.sleep(2000)
 
-CustomKeywords.'Supplier.selectSupplierTask'()
+CustomKeywords.'Submission.supplierPortalSubmission'()
 
-Thread.sleep(4000)
+not_run: CustomKeywords.'Supplier.selectSupplierTask'()
 
-driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]')).sendKeys(
-    '12')
+not_run: Thread.sleep(4000)
 
-WebUI.click(findTestObject('FormTab/fillForm_SubmitButton'))
+//driver.findElement(By.xpath('//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]')).sendKeys(
+//   '12')
+not_run: WebUI.click(findTestObject('FormTab/fillForm_SubmitButton'))
 
-Thread.sleep(2000)
+not_run: Thread.sleep(2000)
 
-WebUI.setText(findTestObject('SupplierFlow/formSubmissionNote'), 'Form is Finally submitted Correctly.')
+not_run: WebUI.setText(findTestObject('SupplierFlow/formSubmissionNote'), 'Form is Finally submitted Correctly.')
 
-Thread.sleep(2000)
+not_run: Thread.sleep(2000)
 
-WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
+not_run: WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
 
 //Thread.sleep(4000)
 Thread.sleep(6000)

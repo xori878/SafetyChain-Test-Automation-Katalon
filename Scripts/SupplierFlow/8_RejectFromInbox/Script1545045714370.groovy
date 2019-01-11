@@ -24,7 +24,7 @@ WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVa
 
 WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
 
@@ -32,7 +32,7 @@ WebUI.click(findTestObject('SupplierFlow/inbox'))
 
 Thread.sleep(6000)
 
-WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('FormData').getValue('TaskName', 1))
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('FormTask', 1))
 
 WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
 
@@ -53,6 +53,78 @@ Thread.sleep(2000)
 WebUI.click(findTestObject('SupplierFlow/sendTask'))
 
 Thread.sleep(6000)
+
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('FormTask1', 1))
+
+WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
+
+Thread.sleep(3000)
+
+CustomKeywords.'Supplier.selectTaskInInbox'()
+
+Thread.sleep(6000)
+
+WebUI.click(findTestObject('SupplierFlow/rejectButton'))
+
+Thread.sleep(3000)
+
+WebUI.setText(findTestObject('SupplierFlow/rejectionNote'), 'This Task is rejected')
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/sendTask'))
+
+Thread.sleep(6000)
+
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('DocTask', 1))
+
+WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
+
+Thread.sleep(3000)
+
+CustomKeywords.'Supplier.selectTaskInInbox'()
+
+Thread.sleep(6000)
+
+WebUI.click(findTestObject('SupplierFlow/rejectButton'))
+
+Thread.sleep(3000)
+
+WebUI.setText(findTestObject('SupplierFlow/rejectionNote'), 'This Task is rejected')
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/sendTask'))
+
+Thread.sleep(6000)
+
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('DocTask1', 1))
+
+WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
+
+Thread.sleep(3000)
+
+CustomKeywords.'Supplier.selectTaskInInbox'()
+
+Thread.sleep(6000)
+
+WebUI.click(findTestObject('SupplierFlow/rejectButton'))
+
+Thread.sleep(3000)
+
+WebUI.setText(findTestObject('SupplierFlow/rejectionNote'), 'This Task is rejected')
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/sendTask'))
+
+Thread.sleep(9000)
+
+WebUI.waitForElementClickable(findTestObject('TestUser/clickToCheck'), 45)
 
 WebUI.click(findTestObject('TestUser/clickToCheck'))
 

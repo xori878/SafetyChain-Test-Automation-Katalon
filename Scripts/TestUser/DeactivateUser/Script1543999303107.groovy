@@ -46,6 +46,10 @@ WebUI.sendKeys(findTestObject('TestUser/filterUser'), Keys.chord(Keys.ENTER))
 
 Thread.sleep(4000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 WebUI.click(findTestObject('TestUser/moveToUser'))
 
 Thread.sleep(2000)

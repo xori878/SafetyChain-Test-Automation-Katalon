@@ -23,7 +23,6 @@ WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-
 WebUI.waitForElementVisible(findTestObject('TestUserLocation/login_Username'), 70)
 
 WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
@@ -87,6 +86,10 @@ WebUI.click(findTestObject('TestUser/roleOpen'))
 Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestUser/selectRole'))
+
+Thread.sleep(2000)
+
+CustomKeywords.'AdminTool_Location.moveCursor'()
 
 Thread.sleep(2000)
 

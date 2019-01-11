@@ -27,7 +27,7 @@ CustomKeywords.'AdminTool_Location.setLocationName'()
 
 not_run: WebUI.click(findTestObject('TestUserLocation/login_Button'))
 
-Thread.sleep(2000)
+Thread.sleep(4000)
 
 CustomKeywords.'AdminTool_Location.setLocationNameInLocation'()
 
@@ -42,6 +42,10 @@ Thread.sleep(4000)
 WebUI.click(findTestObject('TestUserLocation/locations'))
 
 Thread.sleep(4000)
+
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
 
 not_run: WebUI.refresh()
 

@@ -26,7 +26,7 @@ not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'),
 
 not_run: WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
 
-Thread.sleep(3000)
+Thread.sleep(4000)
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
 
@@ -43,6 +43,10 @@ WebUI.setText(findTestObject('SupplierFlow/setWGText'), findTestData('SupplierDa
 WebUI.sendKeys(findTestObject('SupplierFlow/setWGText'), Keys.chord(Keys.ENTER))
 
 Thread.sleep(6000)
+
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
 
 WebUI.setText(findTestObject('SupplierFlow/searchUserInWG'), 'Superadmin')
 

@@ -335,7 +335,7 @@ class AnyForm {
 			if(check("//*[@id='scs-form-level']/div["+m+"]//div[@class='k-multiselect-wrap k-floatwrap']")){
 				c=0;
 				st = false;
-				driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//div[@class='k-multiselect-wrap k-floatwrap']")).click()
+				click(driver,By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//div[@class='k-multiselect-wrap k-floatwrap']"))
 				Thread.sleep(2000)
 				/*			 e1 = driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//input"))
 				 s = e1.getAttribute("aria-activedescendant")
@@ -356,7 +356,7 @@ class AnyForm {
 					st = check("//div["+c+"]//ul/li[@data-offset-index='0']")
 					println "//div["+c+"]//ul/li[@data-offset-index='0']"
 				}
-				driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).click()
+				click(driver,By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']"))
 			}
 			if(check("//*[@id='scs-form-level']/div["+m+"]//field-template//span[@class='k-widget k-datepicker k-header actualInput scs-date-time-fields']//input")){
 				driver.findElement(By.xpath("//*[@id='scs-form-level']/div["+m+"]//field-template//span[@class='k-widget k-datepicker k-header actualInput scs-date-time-fields']//input")).sendKeys("12/28/2018")

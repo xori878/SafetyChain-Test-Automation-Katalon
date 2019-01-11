@@ -29,6 +29,10 @@ WebUI.click(findTestObject('TestUserLocation/login_Button'))
 
 Thread.sleep(6000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 WebUI.click(findTestObject('TestUser/deactivateTest'))
 
 Thread.sleep(6000)

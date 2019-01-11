@@ -33,6 +33,10 @@ WebUI.click(findTestObject('TestUser/securitySettings'))
 
 Thread.sleep(2000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 not_run: WebUI.setMaskedText(findTestObject('TestUser/minimumPasswordLength'), '1')
 
 not_run: Thread.sleep(2000)

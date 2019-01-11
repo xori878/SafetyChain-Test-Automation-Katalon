@@ -21,7 +21,7 @@ WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVa
 
 WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password)
 
-CustomKeywords.'FormName.setData'()
+CustomKeywords.'FormName.setData1'()
 
 WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
 
@@ -30,6 +30,10 @@ Thread.sleep(3000)
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
+
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools_FormDesigner'))
 

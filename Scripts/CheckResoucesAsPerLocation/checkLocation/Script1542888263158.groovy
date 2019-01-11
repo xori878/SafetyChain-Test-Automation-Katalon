@@ -31,7 +31,11 @@ CustomKeywords.'AdminTool_Location.setLocationNameInLocation'()
 
 WebUI.click(findTestObject('TestUserLocation/mainmenu_button'))
 
+Thread.sleep(2000)
+
 WebUI.click(findTestObject('TestUserLocation/adminTool'))
+
+Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestUserLocation/mainMenuResourceDesigner'))
 
@@ -62,6 +66,10 @@ Thread.sleep(2000)
 WebUI.click(findTestObject('TestUserLocation/saveButton'))
 
 Thread.sleep(4000)
+
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestUserLocation/mainmenu_button'))
 

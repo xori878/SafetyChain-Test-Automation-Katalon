@@ -29,6 +29,8 @@ not_run: WebUI.click(findTestObject('TestUserLocation/login_Button'))
 
 not_run: Thread.sleep(6000)
 
+Thread.sleep(4000)
+
 WebUI.click(findTestObject('TestUserLocation/mainmenu_button'))
 
 not_run: WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
@@ -40,6 +42,10 @@ WebUI.click(findTestObject('TestUser/users'))
 Thread.sleep(6000)
 
 WebUI.click(findTestObject('SupplierFlow/selectSupplierTab'))
+
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
 
 Thread.sleep(6000)
 

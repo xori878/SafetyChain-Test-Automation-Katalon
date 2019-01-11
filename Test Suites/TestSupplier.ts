@@ -11,61 +11,73 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>5d1f7edb-a918-48d4-bda7-725fe0c82d5e</testSuiteGuid>
    <testCaseLink>
-      <guid>f4995f19-826b-452e-9446-e4c58c89ac31</guid>
+      <guid>49fd6c06-0061-4f35-9d6a-589b3102fddf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SupplierFlow/1_CreateForm</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8adfd8a4-b47c-4f7d-8f4e-14c9af15c1d6</guid>
+      <guid>e6625017-419a-43a7-8d6e-74c906b587bd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SupplierFlow/2_CreateLocation</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>04595fc4-138a-4551-adeb-c65db3c1042f</guid>
+      <guid>5f745542-19d3-43a2-a2e0-bd617b989cbe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SupplierFlow/3_CreateResource_Supplier</testCaseId>
+      <testCaseId>Test Cases/SupplierFlow/3_1_CreateResource_Supplier</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>bb72fc28-52f8-4d8d-a24e-4ef33fe99d50</guid>
+      <guid>4b749e15-60fa-4237-9ca1-51cfa0b545b0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SupplierFlow/3_2_CreateResource_Items</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>76075783-449f-4406-8319-044499f27eb4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SupplierFlow/4_CreateUser_Supplier</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f963bd0e-b1c8-4ba3-9938-84e37a9c5239</guid>
+      <guid>edbeb848-e59e-4b0f-a0ea-a3a1d0062b6e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SupplierFlow/5_CreateWG</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>560c00a1-7a41-4411-a732-6857a4c5e323</guid>
+      <guid>1e6510f2-2fb4-4875-878e-4edb3b2f3bde</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SupplierFlow/6_CreateRequirement</testCaseId>
+      <testCaseId>Test Cases/SupplierFlow/6_1_CreateRequirement_Supplier</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b3cae981-6ff7-467f-b99f-3a78ec6689b8</guid>
+      <guid>3fbe8e6c-ffc7-4c87-af0c-863f841fc635</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SupplierFlow/6_2_CreateRequirement_Items</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>19a93ab0-6d7b-457f-954d-c3ea9fd93d70</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SupplierFlow/7_SupplierFirstLogin</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a837b3ba-29cc-471f-ae8b-76fff146db10</guid>
+      <guid>11e05f11-c515-4cec-a9de-983ae3a1fe0d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SupplierFlow/8_RejectFromInbox</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ca9bfb41-888f-4ecf-8b3b-2d80ccd408a8</guid>
+      <guid>1a70ce1c-d069-4307-b572-4ed708b0a114</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SupplierFlow/9_Resubmission_Supplier</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b5fdecfc-54c6-4dcb-9473-aa25f35b67b8</guid>
+      <guid>fc6e21de-c5ee-461b-9cfa-33d61b693ae3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SupplierFlow/10_ApprovedFromInbox</testCaseId>

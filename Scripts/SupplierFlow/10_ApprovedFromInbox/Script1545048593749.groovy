@@ -32,7 +32,7 @@ WebUI.click(findTestObject('SupplierFlow/inbox'))
 
 Thread.sleep(6000)
 
-WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('FormData').getValue('TaskName', 1))
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('FormTask', 1))
 
 WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
 
@@ -54,9 +54,91 @@ WebUI.click(findTestObject('SupplierFlow/approveYesButton'))
 
 Thread.sleep(6000)
 
-WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('FormData').getValue('TaskName', 1))
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('FormTask', 1))
 
 WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
 
+Thread.sleep(3000)
+
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('FormTask1', 1))
+
+WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
+
+Thread.sleep(3000)
+
+CustomKeywords.'Supplier.selectTaskInInbox'()
+
 Thread.sleep(6000)
+
+WebUI.click(findTestObject('SupplierFlow/approveButton'))
+
+Thread.sleep(3000)
+
+WebUI.setText(findTestObject('SupplierFlow/expirtionDate_ApproveTask'), '12/17/2018')
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/approveYesButton'))
+
+Thread.sleep(6000)
+
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('FormTask1', 1))
+
+WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
+
+Thread.sleep(3000)
+
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('DocTask', 1))
+
+WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
+
+Thread.sleep(3000)
+
+CustomKeywords.'Supplier.selectTaskInInbox'()
+
+Thread.sleep(6000)
+
+WebUI.click(findTestObject('SupplierFlow/approveButton'))
+
+Thread.sleep(3000)
+
+WebUI.setText(findTestObject('SupplierFlow/expirtionDate_ApproveTask'), '12/17/2018')
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/approveYesButton'))
+
+Thread.sleep(6000)
+
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('DocTask', 1))
+
+WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
+
+Thread.sleep(3000)
+
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('DocTask1', 1))
+
+WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
+
+Thread.sleep(3000)
+
+CustomKeywords.'Supplier.selectTaskInInbox'()
+
+Thread.sleep(6000)
+
+WebUI.click(findTestObject('SupplierFlow/approveButton'))
+
+Thread.sleep(3000)
+
+WebUI.setText(findTestObject('SupplierFlow/expirtionDate_ApproveTask'), '12/17/2018')
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('SupplierFlow/approveYesButton'))
+
+Thread.sleep(6000)
+
+WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('DocTask1', 1))
+
+WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
 

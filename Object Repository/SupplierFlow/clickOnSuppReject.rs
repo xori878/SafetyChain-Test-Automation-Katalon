@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;supplier-inbox-grid&quot;]//strong[contains(text(),&quot;Rejected&quot;)]</value>
+         <value>//*[@id='supplier-inbox-grid']//tr[1]/td[3]/strong[contains(text(),'Rejected')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;supplier-inbox-grid&quot;]//strong[contains(text(),&quot;Rejected&quot;)]</value>
+      <value>//*[@id='supplier-inbox-grid']//tr[1]/td[3]/strong[contains(text(),'Rejected')]</value>
    </webElementProperties>
 </WebElementEntity>

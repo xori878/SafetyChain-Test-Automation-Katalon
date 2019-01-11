@@ -13,23 +13,27 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser(GlobalVariable.URL)
+not_run: WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.maximizeWindow()
+not_run: WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password)
 
 CustomKeywords.'FormName.setData'()
 
-WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
+not_run: WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
 
 Thread.sleep(3000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
 
-WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
+not_run: WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools_FormDesigner'))
 

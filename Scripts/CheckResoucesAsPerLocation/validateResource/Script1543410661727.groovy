@@ -29,6 +29,8 @@ not_run: WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
 
+Thread.sleep(2000)
+
 not_run: WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools_FormDesigner'))
@@ -38,6 +40,10 @@ WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools_FormDesi
 WebUI.click(findTestObject('Form_Selection_Creation/selectCheckForm'))
 
 Thread.sleep(5000)
+
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
 
 CustomKeywords.'AdminTool_Location.selectResType'()
 

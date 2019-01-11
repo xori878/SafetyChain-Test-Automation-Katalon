@@ -52,7 +52,8 @@ import org.apache.poi.ss.usermodel.Row
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.util.Calendar;
-
+import org.openqa.selenium.support.ui.WebDriverWait
+import org.openqa.selenium.support.ui.ExpectedConditions
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -62,21 +63,31 @@ class AdminTool_Location {
 	WebDriver driver =  DriverFactory.getWebDriver();
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yy-HH:mm");
 	LocalDateTime now = LocalDateTime.now();
-	public String location_name = "LOCATION_ON_"+dtf.format(now);
-	public String location_name1 = "SUBLOCATION_ON_"+dtf.format(now);
-	public String customer_name = "CUSTOMER_ON_"+dtf.format(now);
-	public String customer_name1 = "SUBCUSTOMER1_ON_"+dtf.format(now);
-	public String customer_name2 = "SUBCUSTOMER2_ON_"+dtf.format(now);
-	public String equipment_name = "EQUIPMENT_ON_"+dtf.format(now);
-	public String equipment_name1 = "SUBEQUIPMENT1_ON_"+dtf.format(now);
-	public String equipment_name2 = "SUBEQUIPMENT2_ON_"+dtf.format(now);
-	public String item_name = "ITEM_ON_"+dtf.format(now);
-	public String item_name1 = "SUBITEM1_ON_"+dtf.format(now);
-	public String item_name2 = "SUBITEM2_ON_"+dtf.format(now);
-	public String supplier_name = "SUPPLIER_ON_"+dtf.format(now);
-	public String supplier_name1 = "SUBSUPPLIER1_ON_"+dtf.format(now);
-	public String supplier_name2 = "SUBSUPPLIER2_ON_"+dtf.format(now);
+	public String location_name = "Location_"+dtf.format(now);
+	public String location_name1 = "SubLocation_"+dtf.format(now);
+	public String customer_name = "Customer_"+dtf.format(now);
+	public String customer_name1 = "SubCustomer1_"+dtf.format(now);
+	public String customer_name2 = "SubCustomer2_"+dtf.format(now);
+	public String equipment_name = "Equipment_"+dtf.format(now);
+	public String equipment_name1 = "SubEquipment1_"+dtf.format(now);
+	public String equipment_name2 = "SubEquipment2_"+dtf.format(now);
+	public String item_name = "Item_"+dtf.format(now);
+	public String item_name1 = "SubItem1_"+dtf.format(now);
+	public String item_name2 = "SubItem2_"+dtf.format(now);
+	public String supplier_name = "Supplier_"+dtf.format(now);
+	public String supplier_name1 = "SubSupplier1_"+dtf.format(now);
+	public String supplier_name2 = "SubSupplier2_"+dtf.format(now);
 	String resource_name_link;
+
+
+	public void click(WebDriver driver, By by) {
+		WebElement element = driver.findElement(by);
+		Actions action = new Actions(driver);
+		(new WebDriverWait(driver,120)).until(ExpectedConditions.elementToBeClickable(by));
+		Thread.sleep(1000)
+		action.moveToElement(element).click().build().perform()
+	}
+
 	@Keyword
 	def selectLocation() {
 		try {
@@ -296,10 +307,23 @@ class AdminTool_Location {
 			String resType = sheet.getRow(1).getCell(15).toString();
 			file.close();
 			String selectresource = "//*[@id='scs-product-dropdown_listbox']/li[contains(text(),'"+resType+"')]"
-			driver.findElement(By.xpath("//*[@id='scs-form-designer-selectresource-container']/div/div/div[1]/span")).click()
+			click(driver,By.xpath("//*[@id='scs-form-designer-selectresource-container']/div/div/div[1]/span"))
 			Thread.sleep(4000)
-			driver.findElement(By.xpath(selectresource)).click()
+			click(driver,By.xpath(selectresource))
 			Thread.sleep(4000)
+		}catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def moveCursor(){
+		try{
+			Robot hal = new Robot();
+			Random random = new Random();
+			//	hal.delay(1000 * 60);
+			int x = random.nextInt() % 640;
+			int y = random.nextInt() % 480;
+			hal.mouseMove(x,y);
 		}catch (Exception e) {
 			KeywordUtil.markFailed("Fail to click on element")
 		}

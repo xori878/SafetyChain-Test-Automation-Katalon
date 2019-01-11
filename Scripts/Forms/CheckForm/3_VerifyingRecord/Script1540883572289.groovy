@@ -33,6 +33,10 @@ WebUI.click(findTestObject('FormTab/clickToViewMoreOption'))
 
 Thread.sleep(4000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 WebUI.waitForElementNotVisible(findTestObject('FormTab/select500_Form'), 5)
 
 WebUI.click(findTestObject('FormTab/select500_Form'))

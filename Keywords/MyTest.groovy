@@ -92,9 +92,9 @@ class MyTest {
 		Actions action = new Actions(driver)
 
 		action.moveByOffset(1070, 170).click()
-		
+
 		//action.click(driver.findElement(By.xpath("//*[@id='scs-rule-builder-right-header-container']/div[13]")))
-		
+
 		Thread.sleep(3000)
 	}
 	/**

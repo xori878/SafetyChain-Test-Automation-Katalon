@@ -25,6 +25,10 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 Thread.sleep(4000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
 
 WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)

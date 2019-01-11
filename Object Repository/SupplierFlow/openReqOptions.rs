@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>openReqOptions</name>
+   <tag></tag>
+   <elementGuidId>b68e007b-d4a8-43ae-82ba-61f247eb598a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-partner-portal&quot;]/div/div/div/span/span/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-partner-portal&quot;]/div/div/div/span/span/span[2]</value>
+   </webElementProperties>
+</WebElementEntity>

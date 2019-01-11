@@ -48,6 +48,10 @@ WebUI.click(findTestObject('Form_Selection_Creation/formCreation_NextToDesignFor
 
 Thread.sleep(4000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 CustomKeywords.'FormName.createForm'(findTestObject('Form_Selection_Creation/formDesign_FormName'))
 
 Thread.sleep(2000)

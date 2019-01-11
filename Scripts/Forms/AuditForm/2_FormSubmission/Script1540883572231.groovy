@@ -29,6 +29,10 @@ WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('FormTab/login_Button'))
 
+not_run: Thread.sleep(2000)
+
+not_run: WebUI.click(findTestObject('Form_Selection_Creation/home'))
+
 Thread.sleep(8000)
 
 WebUI.click(findTestObject('FormTab/form_Tab'))
@@ -43,6 +47,10 @@ WebUI.mouseOver(findTestObject('FormTab/filterOption'))
 
 Thread.sleep(2000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 CustomKeywords.'FormName.filterFormName'()
 
 Thread.sleep(2000)
@@ -50,6 +58,8 @@ Thread.sleep(2000)
 WebUI.click(findTestObject('FormTab/filterButton'))
 
 Thread.sleep(4000)
+
+WebUI.waitForElementClickable(findTestObject('FormTab/selectForm'), 45)
 
 WebUI.click(findTestObject('FormTab/selectForm'))
 
@@ -68,69 +78,71 @@ not_run: CustomKeywords.'FormName.fillFormName'()
 
 Thread.sleep(4000)
 
-WebUI.click(findTestObject('FormTab/fillForm_OpenLocationOption'))
+CustomKeywords.'Submission.formSubmission'()
 
-Thread.sleep(2000)
+not_run: WebUI.click(findTestObject('FormTab/fillForm_OpenLocationOption'))
 
-WebUI.click(findTestObject('FormTab/fillForm_SelectLocation'))
+not_run: Thread.sleep(2000)
 
-Thread.sleep(4000)
+not_run: WebUI.click(findTestObject('FormTab/fillForm_SelectLocation'))
 
-WebUI.click(findTestObject('FormTab/fillForm_OpenResourceOption'))
+not_run: Thread.sleep(4000)
 
-Thread.sleep(4000)
+not_run: WebUI.click(findTestObject('FormTab/fillForm_OpenResourceOption'))
 
-WebUI.click(findTestObject('FormTab/fillForm_SelectResource'))
+not_run: Thread.sleep(4000)
 
-Thread.sleep(4000)
+not_run: WebUI.click(findTestObject('FormTab/fillForm_SelectResource'))
+
+not_run: Thread.sleep(4000)
 
 //WebUI.click(findTestObject('Object Repository/FormTab/Page_SafetyChain/selectRes'))
 //WebUI.setText(findTestObject('Form_Selection_Creation/sendResourceName'), 'rest1')
 //driver.findElement(By.xpath('//*[@id=\'resrcDrpdown-list\']/span/input')).sendKeys(Keys.ENTER)
 //WebUI.click(findTestObject('Form_Selection_Creation/sendResourceName'),Keys.ENTER)
 //Thread.sleep(4000)
-WebUI.setText(findTestObject('FormTab/fillForm_FreeSingleText'), 'MyText')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_FreeSingleText'), 'MyText')
 
-WebUI.setText(findTestObject('FormTab/fillForm_ParagraphText'), 'MyParagraph')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_ParagraphText'), 'MyParagraph')
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-WebUI.setText(findTestObject('FormTab/fillForm_SelectOneOption'), 'Single Option1')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_SelectOneOption'), 'Single Option1')
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(
+not_run: driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(
     Keys.ENTER)
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-WebUI.setText(findTestObject('FormTab/fillForm_SelectMultipleOption'), 'Multiple Option1')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_SelectMultipleOption'), 'Multiple Option1')
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(
+not_run: driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(
     Keys.ENTER)
 
-Thread.sleep(3000)
+not_run: Thread.sleep(3000)
 
-WebUI.click(findTestObject('FormTab/fillForm_SelectMultipleOption'))
+not_run: WebUI.click(findTestObject('FormTab/fillForm_SelectMultipleOption'))
 
-Thread.sleep(4000)
+not_run: Thread.sleep(4000)
 
-driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]')).sendKeys(
+not_run: driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]')).sendKeys(
     '9')
 
-WebUI.setText(findTestObject('FormTab/fillForm_DateText'), '10/29/2018')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_DateText'), '10/29/2018')
 
-WebUI.setText(findTestObject('FormTab/fillForm_TimeText'), '4:00 PM')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_TimeText'), '4:00 PM')
 
-WebUI.setText(findTestObject('FormTab/fillForm_DateTimeText'), '10/29/2018 4:00 PM')
+not_run: WebUI.setText(findTestObject('FormTab/fillForm_DateTimeText'), '10/29/2018 4:00 PM')
 
-WebUI.click(findTestObject('FormTab/fillForm_SubmitButton'))
+not_run: WebUI.click(findTestObject('FormTab/fillForm_SubmitButton'))
 
-Thread.sleep(4000)
+not_run: Thread.sleep(4000)
 
-WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
+not_run: WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
 
 Thread.sleep(6000)
 

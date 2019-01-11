@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>saveButton</name>
+   <tag></tag>
+   <elementGuidId>edd40a10-f765-4a09-a290-a2ef95f37309</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[3]/div/button[contains(text(),&quot;SAVE&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[3]/div/button[contains(text(),&quot;SAVE&quot;)]</value>
+   </webElementProperties>
+</WebElementEntity>

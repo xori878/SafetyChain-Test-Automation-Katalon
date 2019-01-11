@@ -26,7 +26,7 @@
       <guid>05d6a5bc-81fe-4895-84cd-581767bd3037</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SupplierFlow/3_CreateResource_Supplier</testCaseId>
+      <testCaseId>Test Cases/SupplierFlow/3_1_CreateResource_Supplier</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>3759043a-80ec-44e2-a939-122d880d7bd0</guid>
@@ -44,6 +44,6 @@
       <guid>d46bef18-8856-4f4f-8c2c-81c12002c615</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SupplierFlow/6_CreateRequirement</testCaseId>
+      <testCaseId>Test Cases/SupplierFlow/6_1_CreateRequirement_Supplier</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

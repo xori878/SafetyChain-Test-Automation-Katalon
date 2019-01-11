@@ -39,6 +39,10 @@ WebUI.click(findTestObject('FormTab/select500_Form'))
 
 Thread.sleep(7000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 CustomKeywords.'FormName.recordFormName'()
 
 Thread.sleep(4000)

@@ -127,12 +127,12 @@ Actions actions = new Actions(driver)
 //actions.clickAndHold(driver.findElement(By.xpath("//*[@id='scs-rule-builder-right-header-container']/div[13]"))).pause(1000).moveToElement(driver.findElement(By.xpath("//*[@id='scs-rule-builder-container']/div/div/div[1]/div[2]")),300, 1).click().build().perform()
 //-actions.clickAndHold(driver.findElement(By.xpath("//*[@id='scs-rule-builder-right-header-container']/div[13]"))).moveToElement(driver.findElement(By.xpath("//*[@id='scs-rule-builder-container']/div/div/div[1]/div[2]")),300, 1).release().build().perform()
 //WebElement e = actions.moveToElement(driver.findElement(By.xpath('//*[@id=\'scs-rule-builder-container\']/div/div/div[1]/div[2]')), 
-  //  300, 1)
-
+//  300, 1)
 //actions.clickAndHold(driver.findElement(By.xpath('//*[@id=\'scs-rule-builder-right-header-container\']/div[13]'))).pause(
-    //1000).moveByOffset(730, 230).click(e).build().perform()
+//1000).moveByOffset(730, 230).click(e).build().perform()
+actions.dragAndDropBy(driver.findElement(By.xpath('//*[@id=\'scs-rule-builder-right-header-container\']/div[13]')), 1000, 
+    240).build().perform()
 
-actions.dragAndDropBy(driver.findElement(By.xpath("//*[@id='scs-rule-builder-right-header-container']/div[13]")), 1000, 240).build().perform()
 //Thread.sleep(2000)
 //Actions.moveByOffset(730, 230)
 //

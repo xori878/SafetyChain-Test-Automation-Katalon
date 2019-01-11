@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),&quot;Resource Designer&quot;)]</value>
+         <value>//*[@id=&quot;scs-main-navigation&quot;]//div[contains(text(),&quot;Resource Designer&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),&quot;Resource Designer&quot;)]</value>
+      <value>//*[@id=&quot;scs-main-navigation&quot;]//div[contains(text(),&quot;Resource Designer&quot;)]</value>
    </webElementProperties>
 </WebElementEntity>

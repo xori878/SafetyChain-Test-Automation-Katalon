@@ -49,6 +49,10 @@ WebUI.setText(findTestObject('TestUser/confirmPassword'), 'a')
 
 Thread.sleep(2000)
 
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
+
 WebUI.click(findTestObject('TestUser/createPasswordButton'))
 
 Thread.sleep(4000)

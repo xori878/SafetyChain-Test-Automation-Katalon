@@ -21,11 +21,17 @@ not_run: WebUI.setText(findTestObject('DocumentTab/login_Password'), GlobalVaria
 
 not_run: WebUI.click(findTestObject('DocumentTab/login_Button'))
 
-Thread.sleep(8000)
+WebUI.waitForElementClickable(findTestObject('DocumentTab/documentTab'), 0)
+
+Thread.sleep(2000)
 
 WebUI.click(findTestObject('DocumentTab/documentTab'))
 
 Thread.sleep(7000)
+
+CustomKeywords.'AdminTool_Location.moveCursor'()
+
+Thread.sleep(2000)
 
 CustomKeywords.'FormName.documentFormName'()
 

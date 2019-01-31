@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//div[contains(text(),'Admin Tools')]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'Admin Tools' or . = 'Admin Tools')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

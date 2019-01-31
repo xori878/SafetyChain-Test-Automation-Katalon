@@ -52,6 +52,8 @@ CustomKeywords.'AdminTool_Location.moveCursor'()
 
 Thread.sleep(2000)
 
+WebUI.waitForElementPresent(findTestObject('TestUser/moveToUser'), 30)
+
 WebUI.click(findTestObject('TestUser/moveToUser'))
 
 Thread.sleep(2000)
@@ -65,6 +67,8 @@ WebUI.click(findTestObject('TestUser/unlockUserOption'))
 Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestUser/confirmUserYes'))
+
+WebUI.waitForElementClickable(findTestObject('TestUser/clickToCheck'), 30)
 
 Thread.sleep(7000)
 

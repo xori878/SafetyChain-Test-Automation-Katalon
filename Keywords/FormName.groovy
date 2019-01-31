@@ -2,7 +2,8 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
+import com.kms.katalon.core.util.internal.PathUtil as PathUtil
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
@@ -16,7 +17,7 @@ import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
-
+import org.openqa.selenium.Keys as Keys
 import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.Row
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -67,7 +68,7 @@ class FormName {
 	public String task_document_name_DMS =  "TestAssignTaskDocument"+dtf.format(now);
 	public String task_name_DMS = "TestDMSTask_"+dtf.format(now);
 	public String location_name = "TestLocation_"+dtf.format(now);
-
+	static String path = PathUtil.relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", RunConfiguration.getProjectDir())
 	public void click(WebDriver driver, By by) {
 		WebElement element = driver.findElement(by);
 		Actions action = new Actions(driver);
@@ -79,14 +80,14 @@ class FormName {
 	def setData() {
 		try {
 			println "Hi"
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			sheet.getRow(1).createCell(0).setCellValue(form_name);
 			println "Hi"
 			print form_name
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/data.xlsx"));
 			workbook.write(outFile);
 			outFile.close();
 		} catch (Exception e) {
@@ -97,7 +98,7 @@ class FormName {
 	def setData1() {
 		try {
 			println "Hi"
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			sheet.getRow(1).createCell(0).setCellValue(form_name);
@@ -105,7 +106,7 @@ class FormName {
 			println "Hi"
 			print form_name
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/data.xlsx"));
 			workbook.write(outFile);
 			outFile.close();
 		} catch (Exception e) {
@@ -166,7 +167,22 @@ class FormName {
 	def filterFormName() {
 		try {
 			String s = findTestData('FormData').getValue('FormName',1)
-			driver.findElement(By.xpath("/html/body/div/div/ul/li[6]/div/ul/li/div/form/div/input")).sendKeys(s);
+			driver.findElement(By.xpath("//div/form/div/input")).clear()
+			Thread.sleep(2000)
+			driver.findElement(By.xpath("//div/form/div/input")).sendKeys(s);
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def filterDocumentName() {
+		try {
+			String s = findTestData('FormData').getValue('FormName',1)
+			driver.findElement(By.xpath("//div/form/div/input")).clear()
+			Thread.sleep(2000)
+			driver.findElement(By.xpath("//div/form/div/input")).sendKeys(s);
 		} catch (WebElementNotFoundException e) {
 			KeywordUtil.markFailed("Element not found")
 		} catch (Exception e) {
@@ -190,8 +206,13 @@ class FormName {
 		try {
 			String s = findTestData('FormData').getValue('FormName',1)
 			Actions action = new Actions(driver);
-			WebElement element = driver.findElement(By.xpath("//*[@id='scs-left-panel-treeview']/ul/li/div/span/span/span[contains(text(),'"+s+"')]"));
-			action.doubleClick(element).perform();
+			driver.findElement(By.xpath("//*[@id='scs-dms-tree-search-input']")).sendKeys(s)
+			Thread.sleep(2000)
+			driver.findElement(By.xpath("//*[@id='scs-dms-tree-search-input']")).sendKeys(Keys.DOWN)
+			Thread.sleep(2000)
+			driver.findElement(By.xpath("//*[@id='scs-dms-tree-search-input']")).sendKeys(Keys.ENTER)
+			//	WebElement element = driver.findElement(By.xpath("//*[@id='scs-left-panel-treeview']/ul/li/div/span/span/span[contains(text(),'"+s+"')]"));
+			//	action.doubleClick(element).perform();
 			//element = driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div[2]/table/tbody/tr/td[3 and contains(text(),'"+form_name+"')]"));
 			//action.doubleClick(driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div[2]/table/tbody/tr/td[3]"))).perform();
 		} catch (WebElementNotFoundException e) {
@@ -202,19 +223,19 @@ class FormName {
 	}
 	@Keyword
 	def setTaskName() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		sheet.getRow(1).createCell(1).setCellValue(task_name);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/data.xlsx"));
 		workbook.write(outFile);
 		outFile.close();
 	}
 
 	@Keyword
 	def setDocumentName() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		sheet.getRow(1).createCell(2).setCellValue(document_name);
@@ -222,25 +243,25 @@ class FormName {
 		sheet.getRow(1).createCell(4).setCellValue(task_document_name_DMS);
 		sheet.getRow(1).createCell(5).setCellValue(task_name_DMS);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/data.xlsx"));
 		workbook.write(outFile);
 		outFile.close();
 	}
 
 	@Keyword
 	def setNewDocumentName() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		sheet.getRow(1).createCell(3).setCellValue(new_document_name);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/data.xlsx"));
 		workbook.write(outFile);
 		outFile.close();
 	}
 	@Keyword
 	def getDocumentName() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		String documentName = sheet.getRow(1).getCell(2);
@@ -252,7 +273,7 @@ class FormName {
 
 	@Keyword
 	def getDocumentName1() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		String documentName = sheet.getRow(1).getCell(3);
@@ -263,7 +284,7 @@ class FormName {
 	}
 	@Keyword
 	def getDocumentName3() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		String documentName = sheet.getRow(1).getCell(4);
@@ -274,7 +295,7 @@ class FormName {
 	}
 	@Keyword
 	def getTaskName() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		String documentName = sheet.getRow(1).getCell(5);
@@ -330,18 +351,18 @@ class FormName {
 	}
 	@Keyword
 	def upload() {
-		driver.findElement(By.xpath("//*[@id='scs-document-file-upload-input']")).sendKeys("../SafetyChain-Test-Automation-Katalon/SCTestData/Desert.jpg");
+		driver.findElement(By.xpath("//*[@id='scs-document-file-upload-input']")).sendKeys(path+"/Desert.jpg");
 
 	}
 	@Keyword
 	def setLocationName() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			sheet.getRow(1).createCell(0).setCellValue(location_name);
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			workbook.write(outFile);
 			outFile.close();
 		} catch (WebElementNotFoundException e) {

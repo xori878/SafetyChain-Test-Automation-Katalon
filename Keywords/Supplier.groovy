@@ -2,7 +2,8 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
+import com.kms.katalon.core.util.internal.PathUtil as PathUtil
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
@@ -97,6 +98,8 @@ class Supplier {
 	public String formTaskName = "TestFormTask_"+dtf.format(now);
 	public String documentTaskName = "TestDocTask_"+dtf.format(now);
 	public String ackTaskName = "TestACKTask_"+dtf.format(now);
+	static String path = PathUtil.relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", RunConfiguration.getProjectDir())
+
 	@Keyword
 	def refreshBrowser() {
 		KeywordUtil.logInfo("Refreshing")
@@ -116,27 +119,28 @@ class Supplier {
 	@Keyword
 	def getSupplierName(){
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		String suppName = sheet.getRow(1).getCell(13).toString();
 		println suppName;
-		String path = "//*[@id='scs-add-new-user-supplier-dropdown_listbox']/li/span[contains(text(),'"+suppName+"')]"
-		click(driver,By.xpath(path))
+		String path1 = "//*[@id='scs-add-new-user-supplier-dropdown_listbox']/li/span[contains(text(),'"+suppName+"')]"
+		click(driver,By.xpath(path1))
 		file.close();
 
 	}
 	@Keyword
 	def selectForm(){
+		Thread.sleep(4000)
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		String s = sheet.getRow(1).getCell(8).toString()
 		println s
 		Actions action = new Actions(driver);
-		String path = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']/div/table/tbody/tr[td[contains(text(),'"+s+"')]]/td[1]/input/following-sibling::label"
-		WebElement element = driver.findElement(By.xpath(path))
+		String path1 = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']/div/table/tbody/tr[td[contains(text(),'"+s+"')]]/td[1]/input/following-sibling::label"
+		WebElement element = driver.findElement(By.xpath(path1))
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", element);
 		/*	String path = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']/div/table/tbody/tr[td[contains(text(),'"+s+"')]]/td[1]/input/following-sibling::label"
@@ -172,37 +176,40 @@ class Supplier {
 	}
 	@Keyword
 	def selectDocument(){
-
-		String path = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[1]/input/following-sibling::label"
+		Thread.sleep(4000)
+		String path1 = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[1]/input/following-sibling::label"
 		String namePath = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[2]"
-		WebElement element = driver.findElement(By.xpath(path))
+		WebElement element = driver.findElement(By.xpath(path1))
 		String docName = driver.findElement(By.xpath(namePath)).getText().toString()
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+	/*	FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
 		sheet.getRow(1).createCell(6).setCellValue(docName);
 		workbook.write(outFile);
 		outFile.close();
+		*/
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", element);
 	}
 
 	@Keyword
 	def selectACK(){
-		String path = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[1]/input/following-sibling::label"
+		Thread.sleep(4000)
+		String path1 = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[1]/input/following-sibling::label"
 		String namePath = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[3]"
-		WebElement element = driver.findElement(By.xpath(path))
+		WebElement element = driver.findElement(By.xpath(path1))
 		String taskName = driver.findElement(By.xpath(namePath)).getText().toString()
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+	/*	FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
 		sheet.getRow(1).createCell(7).setCellValue(taskName);
 		workbook.write(outFile);
 		outFile.close();
+		*/
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", element);
 	}
@@ -210,7 +217,7 @@ class Supplier {
 	@Keyword
 	def selectNewSupplier(){
 		Actions action = new Actions(driver);
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		String s = sheet.getRow(1).getCell(13).toString()
@@ -240,7 +247,7 @@ class Supplier {
 	@Keyword
 	def selectNewItem(){
 		Actions action = new Actions(driver);
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		String s = sheet.getRow(1).getCell(10).toString()
@@ -271,11 +278,11 @@ class Supplier {
 	def setSupplier(){
 		////*[@id="scs-pp-acknowledgment-container"]/div[2]/div[2]/div[2]/span
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
 		sheet.getRow(1).createCell(0).setCellValue(user_name);
 		sheet.getRow(1).createCell(1).setCellValue(password);
 		sheet.getRow(1).createCell(2).setCellValue(newPassword);
@@ -285,13 +292,28 @@ class Supplier {
 
 	}
 	@Keyword
-	def setSupplierName(){
+	def setWG(){
+		////*[@id="scs-pp-acknowledgment-container"]/div[2]/div[2]/div[2]/span
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
+		sheet.getRow(1).createCell(4).setCellValue(wgName);
+		workbook.write(outFile);
+		outFile.close();
+
+	}
+
+	@Keyword
+	def setSupplierName(){
+		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
+		FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		file.close();
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
 		sheet.getRow(1).createCell(3).setCellValue(supplier_name);
 		workbook.write(outFile);
 		outFile.close();
@@ -300,11 +322,11 @@ class Supplier {
 	@Keyword
 	def setItemName(){
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
 		sheet.getRow(1).createCell(8).setCellValue(item_name);
 		workbook.write(outFile);
 		outFile.close();
@@ -314,7 +336,7 @@ class Supplier {
 	def selectSupplierTask(){
 		Actions action = new Actions(driver);
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		String tskName= sheet.getRow(1).getCell(1).toString()
@@ -336,18 +358,18 @@ class Supplier {
 	def selectWG(){
 		Actions action = new Actions(driver);
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		String s = sheet.getRow(1).getCell(4).toString()
 		file.close();
 		println s
-		String path = "//li[contains(text(),'"+s+"')]"
-		println path
+		String path1 = "//li[contains(text(),'"+s+"')]"
+		println path1
 		Thread.sleep(2000)
 		//waits(driver, By.xpath(path))
 		//		WebElement ele = driver.findElement(By.xpath(path));
-		List<WebElement> allWG = driver.findElements(By.xpath(path));
+		List<WebElement> allWG = driver.findElements(By.xpath(path1));
 		for(int i=0;i<allWG.size();i++){
 			if(isClickable(driver,allWG.get(i))){
 				action.moveToElement(allWG.get(i)).click().build().perform()
@@ -361,13 +383,14 @@ class Supplier {
 	def selectTaskInInbox(){
 		Actions action = new Actions(driver);
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
-		/*	FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/data.xlsx"))
+		/*	FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 		 XSSFWorkbook workbook = new XSSFWorkbook(file);
 		 XSSFSheet sheet = workbook.getSheetAt(0);
 		 String s = sheet.getRow(1).getCell(1).toString()
 		 file.close(); */
-		String path = "//*[@id='scs-inbox-grid-container']//tr/td[3]"
-		WebElement ele = driver.findElement(By.xpath(path));
+		Thread.sleep(2000)
+		String path1 = "//*[@id='scs-inbox-grid-container']//tr[1]/td[3]"
+		WebElement ele = driver.findElement(By.xpath(path1));
 		action.moveToElement(ele).doubleClick().build().perform()
 
 	}
@@ -443,17 +466,17 @@ class Supplier {
 		return !status;
 
 	}
-	public boolean check(String path){
+	public boolean check(String path1){
 		boolean status = false;
-		boolean elements = driver.findElements(By.xpath(path)).isEmpty()
+		boolean elements = driver.findElements(By.xpath(path1)).isEmpty()
 		boolean element;
 		boolean element1;
 		if(!elements){
 			//	println "AP"
-			element = driver.findElement(By.xpath(path)).isDisplayed()
-			element1 = driver.findElement(By.xpath(path)).isEnabled()
+			element = driver.findElement(By.xpath(path1)).isDisplayed()
+			element1 = driver.findElement(By.xpath(path1)).isEnabled()
 			if(element && element1){
-				println path
+				println path1
 				status = true;
 			}
 		}
@@ -777,81 +800,92 @@ class Supplier {
 	}
 	@Keyword
 	def setFormTaskName() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		XSSFSheet sheet;
+		FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		XSSFSheet sheet = workbook.getSheetAt(0);
-		sheet.getRow(1).createCell(5).setCellValue(formTaskName);
+		sheet = workbook.getSheetAt(0);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		Thread.sleep(2000)
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
+		sheet.getRow(1).createCell(5).setCellValue(formTaskName);
 		workbook.write(outFile);
 		outFile.close();
+	
 	}
 	@Keyword
 	def setDocTaskName() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		XSSFSheet sheet;
+		FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		XSSFSheet sheet = workbook.getSheetAt(0);
-		sheet.getRow(1).createCell(6).setCellValue(documentTaskName);
+		sheet = workbook.getSheetAt(0);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		Thread.sleep(2000)
+		FileOutputStream outFile = new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
+		sheet.getRow(1).createCell(6).setCellValue(documentTaskName);
 		workbook.write(outFile);
 		outFile.close();
 	}
 	@Keyword
 	def setACKTaskName() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		XSSFSheet sheet;
+		FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		XSSFSheet sheet = workbook.getSheetAt(0);
-		sheet.getRow(1).createCell(7).setCellValue(ackTaskName);
+		sheet = workbook.getSheetAt(0);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		Thread.sleep(2000)
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
+		sheet.getRow(1).createCell(7).setCellValue(ackTaskName);
 		workbook.write(outFile);
 		outFile.close();
+		
 	}
 	@Keyword
 	def setFormTaskName1() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
-		sheet.getRow(1).createCell(9).setCellValue(formTaskName);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		Thread.sleep(2000)
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
+		sheet.getRow(1).createCell(9).setCellValue(formTaskName);
 		workbook.write(outFile);
 		outFile.close();
 	}
 	@Keyword
 	def setDocTaskName1() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
-		sheet.getRow(1).createCell(10).setCellValue(documentTaskName);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		Thread.sleep(2000)
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
+		sheet.getRow(1).createCell(10).setCellValue(documentTaskName);
 		workbook.write(outFile);
 		outFile.close();
 	}
 	@Keyword
 	def setACKTaskName1() {
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
-		sheet.getRow(1).createCell(11).setCellValue(ackTaskName);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/SupplierCred.xlsx"));
+		Thread.sleep(2000)
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
+		sheet.getRow(1).createCell(11).setCellValue(ackTaskName);
 		workbook.write(outFile);
 		outFile.close();
 	}
 	@Keyword
 	def selectSupplierInItem(){
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		String suppName = sheet.getRow(1).getCell(13).toString();
 		println suppName;
-		String path = "//*[@id='scs-supp-item-link-grid']//tr[td[contains(text(),'"+suppName+"')]]/td[1]/input"
+		String path1 = "//*[@id='scs-supp-item-link-grid']//tr[td[contains(text(),'"+suppName+"')]]/td[1]/input"
 		//	driver.findElement(By.xpath(path)).click();
-		click(driver, By.xpath(path))
+		click(driver, By.xpath(path1))
 		file.close();
 
 	}

@@ -2,12 +2,14 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
+import com.kms.katalon.core.util.internal.PathUtil as PathUtil
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords
 import com.kms.katalon.core.model.FailureHandling
+import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory
 import com.kms.katalon.core.testdata.TestData
@@ -69,6 +71,8 @@ class Submission{
 	DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
 	DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("hh:mm a");
 	DateTimeFormatter dtf3 = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a");
+	static String path = PathUtil.relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", RunConfiguration.getProjectDir())
+
 	static int flag1=0
 
 
@@ -82,6 +86,19 @@ class Submission{
 		(new WebDriverWait(driver,120)).until(ExpectedConditions.elementToBeClickable(by));
 		Thread.sleep(1000)
 		action.moveToElement(element).click().build().perform()
+	}
+	public void click(WebElement element) {
+		Actions action = new Actions(driver);
+		(new WebDriverWait(driver,120)).until(ExpectedConditions.elementToBeClickable(element));
+		Thread.sleep(1000)
+		action.moveToElement(element).click().build().perform()
+	}
+	public void doubleClick(WebDriver driver, By by) {
+		WebElement element = driver.findElement(by);
+		Actions action = new Actions(driver);
+		(new WebDriverWait(driver,120)).until(ExpectedConditions.elementToBeClickable(by));
+		Thread.sleep(1000)
+		action.moveToElement(element).doubleClick().build().perform()
 	}
 	public void waitToClick(WebDriver driver, By by) {
 		(new WebDriverWait(driver,121)).until(ExpectedConditions.elementToBeClickable(by));
@@ -138,12 +155,12 @@ class Submission{
 		waitToClick(driver, By.xpath("//*[@id='scs-upload-new-doc-dms-body-popup']/div/div/div/div/div/span"))
 
 		if(flag1==1){
-			driver.findElement(By.xpath(selectFile)).sendKeys("D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\SCTestData\\Lighthouse.jpg")
+			driver.findElement(By.xpath(selectFile)).sendKeys(path+"/Lighthouse.jpg")
 			Thread.sleep(2000)
 			driver.findElement(By.xpath(comment)).sendKeys("Task is to upload Right file.")
 			flag1 = 0;
 		}else{
-			driver.findElement(By.xpath(selectFile)).sendKeys("D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\SCTestData\\Tulips.jpg")
+			driver.findElement(By.xpath(selectFile)).sendKeys(path+"/Tulips.jpg")
 			Thread.sleep(2000)
 			driver.findElement(By.xpath(comment)).sendKeys("Task is to upload file.")
 		}
@@ -248,6 +265,8 @@ class Submission{
 					if(type=="Numeric"){
 						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("9")
 						Thread.sleep(2000)
+						driver.findElement(By.xpath("//*[@data-fieldtype='Numeric']//span[@title='Increase value']")).click()
+						Thread.sleep(2000)
 					}
 					if(type=="Date"){
 						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys(date)
@@ -268,7 +287,7 @@ class Submission{
 			for(int i=0;i<totalFileIn.size();i++){
 				fieldId = totalFileIn.get(i).getAttribute("id").toString()
 				if(driver.findElement(By.xpath("//div[input[@id='"+fieldId+"']]")).isDisplayed()){
-					totalFileIn.get(i).sendKeys("D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\SCTestData\\Tulips.jpg")
+					totalFileIn.get(i).sendKeys(path+"/Tulips.jpg")
 					Thread.sleep(6000)
 				}
 			}
@@ -290,11 +309,14 @@ class Submission{
 				click(driver, By.xpath("//i[@class='fa fa-paperclip']"))
 				Thread.sleep(2000)
 				waitToClick(driver,By.xpath("//*[@id='scs-formlevelfiles-container']/div/div/div/span"))
-				driver.findElement(By.xpath("//*[@id='formlevelfiles']")).sendKeys("D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\SCTestData\\Lighthouse.jpg")
+				driver.findElement(By.xpath("//*[@id='formlevelfiles']")).sendKeys(path+"/Lighthouse.jpg")
 				Thread.sleep(9000)
 				click(driver, By.xpath("//button[contains(text(),'CLOSE')]"))
 			}
 			Thread.sleep(3000)
+			//	if(!driver.findElements(By.xpath("//*[@id='scs-save-form-button']")).isEmpty()){
+			//		click(driver,By.xpath("//*[@id='scs-save-form-button']"))
+			//	}
 			click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
 			Thread.sleep(3000)
 			if(!driver.findElements(By.xpath("//*[@id='scs-form-resubmission-note']")).isEmpty()){
@@ -308,6 +330,7 @@ class Submission{
 				}
 			}
 			driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click()
+
 		}
 		Thread.sleep(12000)
 	}
@@ -382,5 +405,124 @@ class Submission{
 			}
 			Thread.sleep(4000)
 		}
+	}
+	@Keyword
+	def createResource(){
+		List<WebElement> allInput = driver.findElements(By.xpath("//input[@class='field-prop-value scs-fieldcontainer-input scs-manage-res-text-input ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength ng-valid-required' or @class='field-prop-value scs-fieldcontainer-input scs-manage-res-text-input ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength requiredFields']"))
+		List<WebElement> allNum = driver.findElements(By.xpath("//*[@class='k-numeric-wrap k-state-default']//input"))
+		List<WebElement> allSelectOne = driver.findElements(By.xpath("//span[@aria-label='select']"))
+		List<WebElement> selectLastOption = driver.findElements(By.xpath("//body/div/div/div/ul/li[last()]"))
+		List<WebElement> selectFirstOption =driver.findElements(By.xpath("//form[@id='scsResourceDetails']//input[@placeholder='Select...']"))
+		//*[@class='k-numeric-wrap k-state-default']//span[@title='Increase value']
+		boolean st = false;
+		for(int i=0;i<allInput.size();i++){
+			allInput.get(i).sendKeys("Automatic Test Text")
+			Thread.sleep(2000);
+		}
+		for(int i=0;i<allNum.size();i++){
+			if(allNum.get(i).isDisplayed()){
+				allNum.get(i).sendKeys("8")
+				//allNum.get(i).click()
+				Thread.sleep(2000);
+			}
+		}
+		for(int i=0;i<allSelectOne.size();i++){
+			allSelectOne.get(i).click()
+			Thread.sleep(2000);
+			selectFirstOption.get(i).sendKeys(Keys.ARROW_DOWN)
+			Thread.sleep(2000);
+			selectFirstOption.get(i).sendKeys(Keys.ENTER)
+			Thread.sleep(2000);
+		}
+		/*	for(int i=0;i<allSelectOne.size();i++){
+		 allSelectOne.get(i).click()
+		 Thread.sleep(2000);
+		 for(int j=0;i<selectLastOption.size();j++){
+		 if(selectLastOption.get(j).isDisplayed()){
+		 selectLastOption.get(j).click()
+		 Thread.sleep(2000);
+		 break;
+		 }
+		 }
+		 } 	*/
+	}
+	@Keyword
+	def testDS(){
+		int c=8;
+		String s = null;
+		String openLoc = "//*[@id='scs-header-level']/div[1]/div/span/span/span[2]";
+		String openRes = "//*[@id='scs-header-level']/div[2]/div/span/span/span[2]"
+		click(driver,By.xpath(openLoc))
+		Thread.sleep(2000)
+		List<WebElement> locations = driver.findElements(By.xpath("/html/body/div/div/div/ul/li"))
+		click(driver,By.xpath(openLoc))
+		for(int i=0;i<locations.size();i++){
+			click(driver,By.xpath(openLoc))
+			Thread.sleep(2000)
+			println locations.get(i).getText()
+			s = findTestData('LocationData').getValue('SubLocationName',1+i).toString()
+			println s
+			if(s==locations.get(i).getText()){
+				println "Correct Location "+(i+1)
+			}else{
+				throw new com.kms.katalon.core.exception.StepFailedException()
+			}
+			click(locations.get(i))
+			Thread.sleep(2000)
+			click(driver,By.xpath(openRes))
+			Thread.sleep(2000)
+			List<WebElement> resources = driver.findElements(By.xpath("//*[@id='resrcDrpdown_listbox']/li"))
+			click(driver,By.xpath(openRes))
+			for(int j=0;j<resources.size();j++){
+				click(driver,By.xpath(openRes))
+				Thread.sleep(2000)
+				println resources.get(j).getText()
+				s = findTestData('LocationData').getValue(c, 1)
+				println s
+
+				if(s==resources.get(j).getText()){
+					println "Correct Resource "+(j+1)
+				}else{
+					throw new com.kms.katalon.core.exception.StepFailedException()
+				}
+				click(resources.get(j))
+				Thread.sleep(2000)
+				c = c+ 4;
+			}
+			c = 10
+			Thread.sleep(2000)
+		}
+	}
+
+	@Keyword
+	def docUploadAdmin(){
+		String resCat = findTestData('LocationData').getValue(3,1).toString()
+		String res = findTestData('LocationData').getValue(8,1).toString()
+
+		click(driver, By.xpath("//*[@id='scs-documentmgmt-left-panel']/div/span/span/span[2]"))
+		Thread.sleep(2000)
+		click(driver,By.xpath("//*[@id='scs-product-dropdown_listbox']/li[2]/span"))
+		Thread.sleep(8000)
+		/*	click(driver, By.xpath("//*[@id='scs-left-panel-treeview']/ul/li/ul/li//div[span/span/span[contains(text(),'"+resCat+"')]]/span[1]"))
+		 Thread.sleep(4000)
+		 click(driver,By.xpath("//*[@id='scs-left-panel-treeview']/ul/li/ul/li/ul/li//span[contains(text(),'"+res+"')]"))
+		 Thread.sleep(4000)
+		 driver.findElement(By.xpath("//*[@id='scs-document-file-upload-input']")).sendKeys(path+"/Tulips.jpg") */
+	}
+	@Keyword
+	def verifyDocInUSer(){
+		String fileName = "Lighthouse.jpg";
+		waitToClick(driver, By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr[1]/td[3]"))
+		String text = driver.findElement(By.xpath("//*[@id='scs-documents-grid']/div/table/tbody/tr[1]/td[3]")).getText().toString()
+		if(text==fileName){
+			println "Verified"
+		}	else{
+			throw new com.kms.katalon.core.exception.StepFailedException()
+		}
+		/*	click(driver, By.xpath("//*[@id='scs-left-panel-treeview']/ul/li/ul/li//div[span/span/span[contains(text(),'"+resCat+"')]]/span[1]"))
+		 Thread.sleep(4000)
+		 click(driver,By.xpath("//*[@id='scs-left-panel-treeview']/ul/li/ul/li/ul/li//span[contains(text(),'"+res+"')]"))
+		 Thread.sleep(4000)
+		 driver.findElement(By.xpath("//*[@id='scs-document-file-upload-input']")).sendKeys(path+"/Tulips.jpg") */
 	}
 }

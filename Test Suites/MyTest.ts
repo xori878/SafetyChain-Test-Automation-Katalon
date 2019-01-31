@@ -61,7 +61,7 @@
    <testCaseLink>
       <guid>3e680329-2332-4562-b20f-c301779105a1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Forms/QuestionaitreForm/3_VerifyingDocument</testCaseId>
    </testCaseLink>
    <testCaseLink>

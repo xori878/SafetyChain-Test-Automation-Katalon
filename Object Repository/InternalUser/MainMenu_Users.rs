@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//div[contains(text(),'Users')]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[(text() = 'Users' or . = 'Users')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

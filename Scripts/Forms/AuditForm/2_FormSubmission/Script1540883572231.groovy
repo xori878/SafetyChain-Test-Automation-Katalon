@@ -17,27 +17,37 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.By as By
 
-WebUI.openBrowser(GlobalVariable.URL)
+not_run: WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.maximizeWindow()
+WebUI.waitForElementClickable(findTestObject('FormTab/selectForm'), 45)
+
+Thread.sleep(2000)
+
+WebUI.refresh()
+
+not_run: WebUI.maximizeWindow()
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password)
 
-WebUI.click(findTestObject('FormTab/login_Button'))
+not_run: WebUI.click(findTestObject('FormTab/login_Button'))
 
 not_run: Thread.sleep(2000)
 
 not_run: WebUI.click(findTestObject('Form_Selection_Creation/home'))
 
-Thread.sleep(8000)
+WebUI.waitForElementClickable(findTestObject('FormTab/form_Tab'), 45)
+
+Thread.sleep(6000)
 
 WebUI.click(findTestObject('FormTab/form_Tab'))
 
-Thread.sleep(5000)
+WebUI.waitForElementClickable(findTestObject('FormTab/selectForm'), 45)
+
+Thread.sleep(6000)
 
 WebUI.click(findTestObject('FormTab/options'))
 
@@ -144,5 +154,5 @@ not_run: Thread.sleep(4000)
 
 not_run: WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
 
-Thread.sleep(6000)
+Thread.sleep(2000)
 

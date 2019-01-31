@@ -38,7 +38,13 @@ WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys
 
 Thread.sleep(3000)
 
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(3000)
+
 CustomKeywords.'Supplier.selectTaskInInbox'()
+
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/rejectButton'), 45)
 
 Thread.sleep(6000)
 
@@ -52,7 +58,18 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('SupplierFlow/sendTask'))
 
-Thread.sleep(6000)
+Thread.sleep(2000)
+
+WebUI.waitForElementVisible(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(2000)
+
+not_run: WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('FormTask', 
+        1))
+
+not_run: WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys.ENTER))
+
+not_run: Thread.sleep(3000)
 
 WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('FormTask1', 1))
 
@@ -60,7 +77,13 @@ WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys
 
 Thread.sleep(3000)
 
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(3000)
+
 CustomKeywords.'Supplier.selectTaskInInbox'()
+
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/rejectButton'), 45)
 
 Thread.sleep(6000)
 
@@ -74,11 +97,13 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('SupplierFlow/sendTask'))
 
-Thread.sleep(6000)
+Thread.sleep(2000)
 
 CustomKeywords.'AdminTool_Location.moveCursor'()
 
 Thread.sleep(2000)
+
+WebUI.waitForElementVisible(findTestObject('SupplierFlow/firstEntry'), 45)
 
 WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('DocTask', 1))
 
@@ -86,7 +111,13 @@ WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys
 
 Thread.sleep(3000)
 
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(3000)
+
 CustomKeywords.'Supplier.selectTaskInInbox'()
+
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/rejectButton'), 45)
 
 Thread.sleep(6000)
 
@@ -100,7 +131,11 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('SupplierFlow/sendTask'))
 
-Thread.sleep(6000)
+Thread.sleep(2000)
+
+WebUI.waitForElementVisible(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(2000)
 
 WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('DocTask1', 1))
 
@@ -108,7 +143,13 @@ WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys
 
 Thread.sleep(3000)
 
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(3000)
+
 CustomKeywords.'Supplier.selectTaskInInbox'()
+
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/rejectButton'), 45)
 
 Thread.sleep(6000)
 
@@ -122,9 +163,15 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('SupplierFlow/sendTask'))
 
-Thread.sleep(9000)
+Thread.sleep(4000)
+
+WebUI.waitForElementVisible(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(3000)
 
 WebUI.waitForElementClickable(findTestObject('TestUser/clickToCheck'), 45)
+
+Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestUser/clickToCheck'))
 

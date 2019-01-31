@@ -21,7 +21,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('New_User_Latest/NewUserCreation_input_USER NAME_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('New_User_Latest/NewUserCreation_input_PASSWORD_Password'), GlobalVariable.Password11)
+WebUI.setText(findTestObject('New_User_Latest/NewUserCreation_input_PASSWORD_Password'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('New_User_Latest/NewUserCreation_button_LOGIN'))
 
@@ -37,8 +37,7 @@ CustomKeywords.'RandomRoles.clickName'(findTestObject('New_User_Latest/NewUserCr
 
 not_run: WebUI.setText(findTestObject('New_User_Latest/NewUserCreation_input_User Name_txtUserName'), 'anan')
 
-WebUI.setEncryptedText(findTestObject('New_User_Latest/NewUserCreation_input_Password_txtUserPassword'), 
-    '8SQVv/p9jVQJB1dwUUG01g==')
+WebUI.setEncryptedText(findTestObject('New_User_Latest/NewUserCreation_input_Password_txtUserPassword'), '8SQVv/p9jVQJB1dwUUG01g==')
 
 WebUI.setText(findTestObject('New_User_Latest/NewUserCreation_input_First Name_ng-untouched'), 'anan')
 

@@ -17,23 +17,51 @@ not_run: WebUI.openBrowser(GlobalVariable.URL)
 
 not_run: WebUI.setText(findTestObject('DocumentTab/login_Username'), GlobalVariable.UserName)
 
-not_run: WebUI.setText(findTestObject('DocumentTab/login_Password'), GlobalVariable.Password11)
+not_run: WebUI.setText(findTestObject('DocumentTab/login_Password'), GlobalVariable.Password)
 
 not_run: WebUI.click(findTestObject('DocumentTab/login_Button'))
 
-WebUI.waitForElementClickable(findTestObject('DocumentTab/documentTab'), 0)
+WebUI.refresh()
 
 Thread.sleep(2000)
 
+WebUI.waitForElementClickable(findTestObject('DocumentTab/documentTab'), 45)
+
+Thread.sleep(6000)
+
 WebUI.click(findTestObject('DocumentTab/documentTab'))
 
-Thread.sleep(7000)
+WebUI.waitForElementClickable(findTestObject('DocumentTab/selectDocument'), 45)
+
+Thread.sleep(4000)
 
 CustomKeywords.'AdminTool_Location.moveCursor'()
 
 Thread.sleep(2000)
 
-CustomKeywords.'FormName.documentFormName'()
+WebUI.click(findTestObject('DocumentTab/options'))
+
+Thread.sleep(2000)
+
+WebUI.mouseOver(findTestObject('FormTab/filterOption'))
+
+not_run: WebUI.click(findTestObject('FormTab/filterOption'))
+
+Thread.sleep(2000)
+
+CustomKeywords.'FormName.filterDocumentName'()
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('FormTab/filterButton'))
+
+Thread.sleep(4000)
+
+WebUI.waitForElementClickable(findTestObject('DocumentTab/selectDocument'), 45)
+
+WebUI.doubleClick(findTestObject('DocumentTab/selectDocument'))
+
+not_run: CustomKeywords.'FormName.documentFormName'()
 
 Thread.sleep(4000)
 

@@ -1,0 +1,105 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Data Security,Chrome 71.0.3578.98,,2019-01-24 08:51:18,2019-01-24 08:54:24,3m - 6.145s,ERROR
+,,,,,,
+Test Cases/Data-Security/CreateRes_Customer,Chrome 71.0.3578.98,,2019-01-24 08:51:19,2019-01-24 08:54:07,2m - 48.416s,ERROR
+openBrowser(URL),Chrome 71.0.3578.98,,2019-01-24 08:51:19,2019-01-24 08:51:49,29.990s,PASSED
+maximizeWindow(),Chrome 71.0.3578.98,,2019-01-24 08:51:49,2019-01-24 08:51:50,1.254s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Username""), UserName)",Chrome 71.0.3578.98,,2019-01-24 08:51:50,2019-01-24 08:51:55,4.833s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Password""), Password)",Chrome 71.0.3578.98,,2019-01-24 08:51:55,2019-01-24 08:51:55,0.154s,PASSED
+AdminTool_Location.setCustomerName(),Chrome 71.0.3578.98,,2019-01-24 08:51:55,2019-01-24 08:51:57,1.439s,PASSED
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-01-24 08:51:57,2019-01-24 08:51:59,2.551s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:51:59,2019-01-24 08:52:03,4.007s,PASSED
+"click(findTestObject(""TestUserLocation/mainmenu_button""))",Chrome 71.0.3578.98,,2019-01-24 08:52:03,2019-01-24 08:52:03,0.218s,PASSED
+"click(findTestObject(""TestUserLocation/adminTool""))",Chrome 71.0.3578.98,,2019-01-24 08:52:03,2019-01-24 08:52:04,0.120s,PASSED
+"click(findTestObject(""TestUserLocation/mainMenuResourceDesigner""))",Chrome 71.0.3578.98,,2019-01-24 08:52:04,2019-01-24 08:52:04,0.258s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:52:04,2019-01-24 08:52:08,4.002s,PASSED
+"click(findTestObject(""TestResource/customers""))",Chrome 71.0.3578.98,,2019-01-24 08:52:08,2019-01-24 08:52:08,0.096s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:52:08,2019-01-24 08:52:12,4.002s,PASSED
+"waitForElementClickable(findTestObject(""TestUserLocation/categories""), 45)",Chrome 71.0.3578.98,,2019-01-24 08:52:12,2019-01-24 08:52:12,0.115s,PASSED
+"click(findTestObject(""TestUserLocation/categories""))",Chrome 71.0.3578.98,,2019-01-24 08:52:12,2019-01-24 08:52:12,0.155s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:52:12,2019-01-24 08:52:14,2.001s,PASSED
+"click(findTestObject(""TestUserLocation/defaultArea""))",Chrome 71.0.3578.98,,2019-01-24 08:52:14,2019-01-24 08:52:14,0.108s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:52:14,2019-01-24 08:52:16,2.000s,PASSED
+"waitForElementClickable(findTestObject(""TestUserLocation/hoverHeading""), 45)",Chrome 71.0.3578.98,,2019-01-24 08:52:16,2019-01-24 08:52:16,0.058s,PASSED
+"click(findTestObject(""TestUserLocation/hoverHeading""))",Chrome 71.0.3578.98,,2019-01-24 08:52:16,2019-01-24 08:52:17,0.094s,PASSED
+"click(findTestObject(""TestUserLocation/addPlusIcon""))",Chrome 71.0.3578.98,,2019-01-24 08:52:17,2019-01-24 08:52:17,0.135s,PASSED
+"setText(findTestObject(""TestUserLocation/setNewName""), findTestData(""LocationData"").getValue(""CustomerName"", 1))",Chrome 71.0.3578.98,,2019-01-24 08:52:17,2019-01-24 08:52:17,0.449s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:52:17,2019-01-24 08:52:19,2.002s,PASSED
+"click(findTestObject(""TestUserLocation/saveButton""))",Chrome 71.0.3578.98,,2019-01-24 08:52:19,2019-01-24 08:52:19,0.124s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:52:19,2019-01-24 08:52:23,4.000s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:52:23,2019-01-24 08:52:27,4.002s,PASSED
+"click(findTestObject(""TestUserLocation/mainmenu_button""))",Chrome 71.0.3578.98,,2019-01-24 08:52:27,2019-01-24 08:52:27,0.114s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:52:27,2019-01-24 08:52:29,2.004s,PASSED
+"click(findTestObject(""TestResource/mainMenu_resources""))",Chrome 71.0.3578.98,,2019-01-24 08:52:29,2019-01-24 08:52:30,0.182s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:52:30,2019-01-24 08:52:34,4.001s,PASSED
+"click(findTestObject(""TestResource/customers""))",Chrome 71.0.3578.98,,2019-01-24 08:52:34,2019-01-24 08:52:34,0.087s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:52:34,2019-01-24 08:52:38,4.001s,PASSED
+AdminTool_Location.selectCustomer(),Chrome 71.0.3578.98,,2019-01-24 08:52:38,2019-01-24 08:52:42,4.294s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:52:42,2019-01-24 08:52:46,4.000s,PASSED
+"waitForElementClickable(findTestObject(""TestUserLocation/addPlusIcon""), 45)",Chrome 71.0.3578.98,,2019-01-24 08:52:46,2019-01-24 08:52:46,0.050s,PASSED
+"click(findTestObject(""TestUserLocation/addPlusIcon""))",Chrome 71.0.3578.98,,2019-01-24 08:52:46,2019-01-24 08:52:46,0.189s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:52:46,2019-01-24 08:52:48,2.002s,PASSED
+"setText(findTestObject(""TestUserLocation/setNewName""), findTestData(""LocationData"").getValue(""SubCustomerName1"", 1))",Chrome 71.0.3578.98,,2019-01-24 08:52:48,2019-01-24 08:52:49,0.455s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:52:49,2019-01-24 08:52:51,2.001s,PASSED
+Submission.createResource(),Chrome 71.0.3578.98,,2019-01-24 08:52:51,2019-01-24 08:53:08,17.254s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:53:08,2019-01-24 08:53:10,2.001s,PASSED
+"click(findTestObject(""TestResource/saveDetailButton""))",Chrome 71.0.3578.98,,2019-01-24 08:53:10,2019-01-24 08:53:10,0.156s,PASSED
+Thread.sleep(7000),Chrome 71.0.3578.98,,2019-01-24 08:53:10,2019-01-24 08:53:17,7.000s,PASSED
+"click(findTestObject(""TestResource/disableResource""))",Chrome 71.0.3578.98,,2019-01-24 08:53:17,2019-01-24 08:53:17,0.165s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:53:17,2019-01-24 08:53:19,2.001s,PASSED
+"click(findTestObject(""TestResource/button2Yes""))",Chrome 71.0.3578.98,,2019-01-24 08:53:19,2019-01-24 08:53:19,0.122s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:53:19,2019-01-24 08:53:21,2.000s,PASSED
+"click(findTestObject(""TestResource/saveDetailButton""))",Chrome 71.0.3578.98,,2019-01-24 08:53:21,2019-01-24 08:53:21,0.105s,PASSED
+Thread.sleep(7000),Chrome 71.0.3578.98,,2019-01-24 08:53:21,2019-01-24 08:53:28,7.000s,PASSED
+"click(findTestObject(""TestUserLocation/mainmenu_button""))",Chrome 71.0.3578.98,,2019-01-24 08:53:28,2019-01-24 08:53:29,0.115s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:53:29,2019-01-24 08:53:31,2.001s,PASSED
+"click(findTestObject(""TestResource/mainMenu_resources""))",Chrome 71.0.3578.98,,2019-01-24 08:53:31,2019-01-24 08:53:31,0.094s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:53:31,2019-01-24 08:53:35,4.000s,PASSED
+"click(findTestObject(""TestResource/customers""))",Chrome 71.0.3578.98,,2019-01-24 08:53:35,2019-01-24 08:53:35,0.088s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:53:35,2019-01-24 08:53:39,4.000s,PASSED
+AdminTool_Location.selectCustomer(),Chrome 71.0.3578.98,,2019-01-24 08:53:39,2019-01-24 08:53:43,4.354s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:53:43,2019-01-24 08:53:47,4.000s,PASSED
+"waitForElementClickable(findTestObject(""TestUserLocation/addPlusIcon""), 45)",Chrome 71.0.3578.98,,2019-01-24 08:53:47,2019-01-24 08:53:47,0.075s,PASSED
+"click(findTestObject(""TestUserLocation/addPlusIcon""))",Chrome 71.0.3578.98,,2019-01-24 08:53:47,2019-01-24 08:53:47,0.181s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:53:47,2019-01-24 08:53:49,2.002s,PASSED
+"setText(findTestObject(""TestUserLocation/setNewName""), findTestData(""LocationData"").getValue(""SubCustomerName2"", 1))",Chrome 71.0.3578.98,,2019-01-24 08:53:49,2019-01-24 08:53:50,0.518s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:53:50,2019-01-24 08:53:52,2.000s,PASSED
+Submission.createResource(),Chrome 71.0.3578.98,,2019-01-24 08:53:52,2019-01-24 08:54:07,15.076s,ERROR
+,,,,,,
+Test Cases/Data-Security/CreateRes_Equipment,Chrome 71.0.3578.98,,2019-01-24 08:54:07,2019-01-24 08:54:14,7.197s,FAILED
+openBrowser(URL),Chrome 71.0.3578.98,,2019-01-24 08:54:07,2019-01-24 08:54:07,0.009s,NOT_RUN
+maximizeWindow(),Chrome 71.0.3578.98,,2019-01-24 08:54:07,2019-01-24 08:54:07,0.002s,NOT_RUN
+"setText(findTestObject(""TestUserLocation/login_Username""), UserName1)",Chrome 71.0.3578.98,,2019-01-24 08:54:07,2019-01-24 08:54:07,0.001s,NOT_RUN
+"setText(findTestObject(""TestUserLocation/login_Password""), Password1)",Chrome 71.0.3578.98,,2019-01-24 08:54:07,2019-01-24 08:54:07,0.001s,NOT_RUN
+AdminTool_Location.setEquipmentName(),Chrome 71.0.3578.98,,2019-01-24 08:54:07,2019-01-24 08:54:07,0.062s,PASSED
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-01-24 08:54:07,2019-01-24 08:54:07,0.001s,NOT_RUN
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:54:07,2019-01-24 08:54:11,4.000s,PASSED
+"click(findTestObject(""TestUserLocation/mainmenu_button""))",Chrome 71.0.3578.98,,2019-01-24 08:54:11,2019-01-24 08:54:11,0.112s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:54:11,2019-01-24 08:54:13,2.000s,PASSED
+"click(findTestObject(""TestUserLocation/adminTool""))",Chrome 71.0.3578.98,,2019-01-24 08:54:13,2019-01-24 08:54:13,0.001s,NOT_RUN
+"click(findTestObject(""TestUserLocation/mainMenuResourceDesigner""))",Chrome 71.0.3578.98,,2019-01-24 08:54:13,2019-01-24 08:54:14,0.467s,FAILED
+,,,,,,
+Test Cases/Data-Security/CreateRes_Items,Chrome 71.0.3578.98,,2019-01-24 08:54:14,2019-01-24 08:54:16,2.296s,FAILED
+openBrowser(URL),Chrome 71.0.3578.98,,2019-01-24 08:54:14,2019-01-24 08:54:14,0.001s,NOT_RUN
+maximizeWindow(),Chrome 71.0.3578.98,,2019-01-24 08:54:14,2019-01-24 08:54:14,0.001s,NOT_RUN
+"setText(findTestObject(""TestUserLocation/login_Username""), UserName1)",Chrome 71.0.3578.98,,2019-01-24 08:54:14,2019-01-24 08:54:14,0.001s,NOT_RUN
+"setText(findTestObject(""TestUserLocation/login_Password""), Password1)",Chrome 71.0.3578.98,,2019-01-24 08:54:14,2019-01-24 08:54:14,0.003s,NOT_RUN
+AdminTool_Location.setItemName(),Chrome 71.0.3578.98,,2019-01-24 08:54:14,2019-01-24 08:54:15,0.129s,PASSED
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-01-24 08:54:15,2019-01-24 08:54:15,0.001s,NOT_RUN
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:54:15,2019-01-24 08:54:15,0.001s,NOT_RUN
+"click(findTestObject(""TestUserLocation/mainmenu_button""))",Chrome 71.0.3578.98,,2019-01-24 08:54:15,2019-01-24 08:54:15,0.142s,PASSED
+"click(findTestObject(""TestUserLocation/adminTool""))",Chrome 71.0.3578.98,,2019-01-24 08:54:15,2019-01-24 08:54:15,0.002s,NOT_RUN
+"click(findTestObject(""TestUserLocation/mainMenuResourceDesigner""))",Chrome 71.0.3578.98,,2019-01-24 08:54:15,2019-01-24 08:54:16,1.608s,FAILED
+,,,,,,
+Test Cases/Data-Security/CreateRes_Supplier,Chrome 71.0.3578.98,,2019-01-24 08:54:16,2019-01-24 08:54:23,6.951s,FAILED
+openBrowser(URL),Chrome 71.0.3578.98,,2019-01-24 08:54:17,2019-01-24 08:54:17,0.002s,NOT_RUN
+maximizeWindow(),Chrome 71.0.3578.98,,2019-01-24 08:54:17,2019-01-24 08:54:17,0.001s,NOT_RUN
+"setText(findTestObject(""TestUserLocation/login_Username""), UserName1)",Chrome 71.0.3578.98,,2019-01-24 08:54:17,2019-01-24 08:54:17,0.001s,NOT_RUN
+"setText(findTestObject(""TestUserLocation/login_Password""), Password1)",Chrome 71.0.3578.98,,2019-01-24 08:54:17,2019-01-24 08:54:17,0.001s,NOT_RUN
+AdminTool_Location.setSupplierName(),Chrome 71.0.3578.98,,2019-01-24 08:54:17,2019-01-24 08:54:17,0.076s,PASSED
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-01-24 08:54:17,2019-01-24 08:54:17,0.001s,NOT_RUN
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-01-24 08:54:17,2019-01-24 08:54:21,4.002s,PASSED
+"click(findTestObject(""TestUserLocation/mainmenu_button""))",Chrome 71.0.3578.98,,2019-01-24 08:54:21,2019-01-24 08:54:21,0.185s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-01-24 08:54:21,2019-01-24 08:54:23,2.000s,PASSED
+"click(findTestObject(""TestUserLocation/adminTool""))",Chrome 71.0.3578.98,,2019-01-24 08:54:23,2019-01-24 08:54:23,0.002s,NOT_RUN
+"click(findTestObject(""TestUserLocation/mainMenuResourceDesigner""))",Chrome 71.0.3578.98,,2019-01-24 08:54:23,2019-01-24 08:54:23,0.445s,FAILED

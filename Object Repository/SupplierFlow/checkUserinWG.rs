@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;scs-mwg-grid-container-id&quot;]//tr/td[1]</value>
+         <value>//*[@id=&quot;scs-mwg-grid-container-id&quot;]//tr/td[1]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;scs-mwg-grid-container-id&quot;]//tr/td[1]</value>
+      <value>//*[@id=&quot;scs-mwg-grid-container-id&quot;]//tr/td[1]/input</value>
    </webElementProperties>
 </WebElementEntity>

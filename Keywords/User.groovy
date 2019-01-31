@@ -2,7 +2,8 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
+import com.kms.katalon.core.util.internal.PathUtil as PathUtil
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
@@ -84,6 +85,8 @@ class User {
 	public String user_name = "User_On_"+dtf.format(now);
 	public String password = "password"
 	public String newPassword = "password@123#"
+	static String path = PathUtil.relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", RunConfiguration.getProjectDir())
+
 	@Keyword
 	def refreshBrowser() {
 		KeywordUtil.logInfo("Refreshing")
@@ -95,11 +98,11 @@ class User {
 	@Keyword
 	def setNamePass(){
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/User.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/User.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/User.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/User.xlsx"));
 		sheet.getRow(1).createCell(0).setCellValue(user_name);
 		sheet.getRow(1).createCell(1).setCellValue(password);
 		workbook.write(outFile);
@@ -109,11 +112,11 @@ class User {
 	@Keyword
 	def setNewPass(){
 		//driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'User Name')]]//div[2]/input"))
-		FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/User.xlsx"))
+		FileInputStream file = new FileInputStream (new File(path+"/User.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/User.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File(path+"/User.xlsx"));
 		sheet.getRow(1).createCell(2).setCellValue(newPassword);
 		workbook.write(outFile);
 		outFile.close();

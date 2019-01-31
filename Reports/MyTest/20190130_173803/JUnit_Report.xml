@@ -1,0 +1,2081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="MyTest" time="1108" tests="10" failures="0" errors="0">
+   <testsuite name="MyTest" tests="10" failures="0" errors="0" time="1108" timestamp="2019-01-30 17:38:06" hostname="pashine_a - Abhishek-Pashine.India.XoriantCorp.com" id="Test Suites/MyTest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\MyTest\\20190130_173803"/>
+         <property name="logFiles" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\MyTest\\20190130_173803\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="pashine_a - Abhishek-Pashine.India.XoriantCorp.com"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.10.1.1"/>
+         <property name="browser" value="Chrome 71.0.3578.98"/>
+         <property name="hostAddress" value="10.21.7.147"/>
+         <property name="sessionId" value="815318d179e10a198088b12b13825562"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Forms/AuditForm/1_CreateForm" classname="Test Cases/Forms/AuditForm/1_CreateForm" status="PASSED">
+         <system-out><![CDATA[2019-01-30 17:38:06 - [TEST_CASE][PASSED] - Test Cases/Forms/AuditForm/1_CreateForm: Test Cases/Forms/AuditForm/1_CreateForm
+
+2019-01-30 17:38:07 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://test1.safetychain.com'
+
+2019-01-30 17:38:07 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-01-30 17:38:07 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-01-30 17:38:29 - [MESSAGE][PASSED] - Browser is opened with url: 'https://test1.safetychain.com'
+
+2019-01-30 17:38:29 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-01-30 17:38:30 - [MESSAGE][PASSED] - Current window maximized
+
+2019-01-30 17:38:30 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/login_Username"), UserName): Text 'tester' is set on object 'Object Repository/Form_Selection_Creation/login_Username'
+
+2019-01-30 17:38:33 - [MESSAGE][PASSED] - Text 'tester' is set on object 'Object Repository/Form_Selection_Creation/login_Username'
+
+2019-01-30 17:38:33 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/login_Password"), Password): Text 'TestLi^e' is set on object 'Object Repository/Form_Selection_Creation/login_Password'
+
+2019-01-30 17:38:33 - [MESSAGE][PASSED] - Text 'TestLi^e' is set on object 'Object Repository/Form_Selection_Creation/login_Password'
+
+2019-01-30 17:38:33 - [TEST_STEP][PASSED] - FormName.setData(): FormName.setData is PASSED
+
+2019-01-30 17:38:34 - [MESSAGE][PASSED] - FormName.setData is PASSED
+
+2019-01-30 17:38:34 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/login_Button")): Object: 'Object Repository/Form_Selection_Creation/login_Button' is clicked on
+
+2019-01-30 17:38:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/login_Button' is clicked on
+
+2019-01-30 17:38:36 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:38:39 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-01-30 17:38:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-01-30 17:38:41 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2019-01-30 17:38:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2019-01-30 17:38:42 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools_FormDesigner")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2019-01-30 17:38:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2019-01-30 17:38:42 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:38:44 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/selectAuditForm")): Object: 'Object Repository/Form_Selection_Creation/selectAuditForm' is clicked on
+
+2019-01-30 17:38:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/selectAuditForm' is clicked on
+
+2019-01-30 17:38:44 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:38:47 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:38:48 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:38:48 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/select1Res"), 45): Object 'Object Repository/Form_Selection_Creation/select1Res' is clickable
+
+2019-01-30 17:38:48 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/select1Res' is clickable
+
+2019-01-30 17:38:48 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/select1Res"), findTestObject("Form_Selection_Creation/Target_Res_Object")): Dragged object with id 'Object Repository/Form_Selection_Creation/select1Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:38:49 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/select1Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:38:49 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/select2Res"), 45): Object 'Object Repository/Form_Selection_Creation/select2Res' is clickable
+
+2019-01-30 17:38:49 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/select2Res' is clickable
+
+2019-01-30 17:38:49 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/select2Res"), findTestObject("Form_Selection_Creation/Target_Res_Object")): Dragged object with id 'Object Repository/Form_Selection_Creation/select2Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:38:50 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/select2Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:38:50 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-01-30 17:38:56 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/formCreation_NextToDesignForm")): Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:38:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:38:56 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:39:00 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:39:00 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:39:00 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:39:02 - [TEST_STEP][PASSED] - FormName.createForm(findTestObject("Form_Selection_Creation/formDesign_FormName")): FormName.createForm is PASSED
+
+2019-01-30 17:39:02 - [MESSAGE][PASSED] - FormName.createForm is PASSED
+
+2019-01-30 17:39:02 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:39:04 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectSection"), findTestObject("Form_Selection_Creation/default_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2019-01-30 17:39:05 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2019-01-30 17:39:05 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_SectionName"), "This is a Section"): Text 'This is a Section' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName'
+
+2019-01-30 17:39:06 - [MESSAGE][PASSED] - Text 'This is a Section' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName'
+
+2019-01-30 17:39:06 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:39:08 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectFieldgroup"), findTestObject("Form_Selection_Creation/section_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2019-01-30 17:39:08 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2019-01-30 17:39:08 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_questionGroupName_Text"), "This is Field Group"): Text 'This is Field Group' is set on object 'Object Repository/Form_Selection_Creation/formDesign_questionGroupName_Text'
+
+2019-01-30 17:39:09 - [MESSAGE][PASSED] - Text 'This is Field Group' is set on object 'Object Repository/Form_Selection_Creation/formDesign_questionGroupName_Text'
+
+2019-01-30 17:39:09 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:39:11 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectFree Text"), findTestObject("Form_Selection_Creation/questionGroupArea")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:39:12 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:39:12 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_SingleLineName"), "This is Free Text"): Text 'This is Free Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SingleLineName'
+
+2019-01-30 17:39:12 - [MESSAGE][PASSED] - Text 'This is Free Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SingleLineName'
+
+2019-01-30 17:39:12 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:39:14 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectParagraphText"), findTestObject("Form_Selection_Creation/questionGroupArea")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:39:15 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:39:15 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_ParagraphName"), "This is Paragraph"): Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName'
+
+2019-01-30 17:39:15 - [MESSAGE][PASSED] - Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName'
+
+2019-01-30 17:39:15 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:39:17 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_Select_SelectOne"), findTestObject("Form_Selection_Creation/questionGroupArea")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:39:43 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:39:43 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_Select_OneName"), "This is Select One"): Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName'
+
+2019-01-30 17:39:44 - [MESSAGE][PASSED] - Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName'
+
+2019-01-30 17:39:44 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:39:46 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/button_AddNew1"), 30): Object 'Object Repository/Form_Selection_Creation/button_AddNew1' is clickable
+
+2019-01-30 17:39:46 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/button_AddNew1' is clickable
+
+2019-01-30 17:39:46 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_AddNew1")): Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2019-01-30 17:39:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2019-01-30 17:39:51 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/add1singleValue1"), "Single Option1"): Text 'Single Option1' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue1'
+
+2019-01-30 17:39:51 - [MESSAGE][PASSED] - Text 'Single Option1' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue1'
+
+2019-01-30 17:39:51 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:39:54 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_AddNew1")): Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2019-01-30 17:39:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2019-01-30 17:39:59 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/add1singleValue2"), "Single Option2"): Text 'Single Option2' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue2'
+
+2019-01-30 17:40:00 - [MESSAGE][PASSED] - Text 'Single Option2' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue2'
+
+2019-01-30 17:40:00 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:40:02 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_Select_SelectMultiple"), findTestObject("Form_Selection_Creation/questionGroupArea")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:40:28 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:40:28 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_Select_MultipleName"), "This is Select Multiple"): Text 'This is Select Multiple' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName'
+
+2019-01-30 17:40:28 - [MESSAGE][PASSED] - Text 'This is Select Multiple' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName'
+
+2019-01-30 17:40:28 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:40:31 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_addNewMul1")): Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2019-01-30 17:40:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2019-01-30 17:40:36 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/add1MultipleValue1"), "Multiple Option1"): Text 'Multiple Option1' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue1'
+
+2019-01-30 17:40:37 - [MESSAGE][PASSED] - Text 'Multiple Option1' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue1'
+
+2019-01-30 17:40:37 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:40:39 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_addNewMul1")): Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2019-01-30 17:40:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2019-01-30 17:40:44 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/add1MultipleValue2"), "Multiple Option2"): Text 'Multiple Option2' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue2'
+
+2019-01-30 17:40:44 - [MESSAGE][PASSED] - Text 'Multiple Option2' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue2'
+
+2019-01-30 17:40:44 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:40:46 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectNumeric"), findTestObject("Form_Selection_Creation/questionGroupArea")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:41:12 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:41:12 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesignt_NumericName"), "This is Numeric Field"): Text 'This is Numeric Field' is set on object 'Object Repository/Form_Selection_Creation/formDesignt_NumericName'
+
+2019-01-30 17:41:13 - [MESSAGE][PASSED] - Text 'This is Numeric Field' is set on object 'Object Repository/Form_Selection_Creation/formDesignt_NumericName'
+
+2019-01-30 17:41:13 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:41:15 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectDate"), findTestObject("Form_Selection_Creation/questionGroupArea")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:41:40 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:41:40 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_DateName"), "This is Date"): Text 'This is Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName'
+
+2019-01-30 17:41:41 - [MESSAGE][PASSED] - Text 'This is Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName'
+
+2019-01-30 17:41:41 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:41:43 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectTime"), findTestObject("Form_Selection_Creation/questionGroupArea")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:42:17 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:42:17 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_TimeName"), "This is Time"): Text 'This is Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName'
+
+2019-01-30 17:42:17 - [MESSAGE][PASSED] - Text 'This is Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName'
+
+2019-01-30 17:42:17 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:42:19 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectDateTime"), findTestObject("Form_Selection_Creation/questionGroupArea")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:42:42 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/questionGroupArea'' successfully
+
+2019-01-30 17:42:42 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_DateTimeName"), "This is Date-Time"): Text 'This is Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName'
+
+2019-01-30 17:42:43 - [MESSAGE][PASSED] - Text 'This is Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName'
+
+2019-01-30 17:42:43 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:42:45 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/formCreation_NextToDesignForm")): Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:42:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:42:45 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-01-30 17:42:52 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/div_Preview             Form1")): Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2019-01-30 17:42:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2019-01-30 17:42:52 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-01-30 17:42:57 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_Release")): Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2019-01-30 17:42:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2019-01-30 17:42:58 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:43:02 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/home")): Object: 'Object Repository/Form_Selection_Creation/home' is clicked on
+
+2019-01-30 17:43:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/home' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/AuditForm/2_FormSubmission" classname="Test Cases/Forms/AuditForm/2_FormSubmission" status="PASSED">
+         <system-out><![CDATA[2019-01-30 17:43:02 - [TEST_CASE][PASSED] - Test Cases/Forms/AuditForm/2_FormSubmission: Test Cases/Forms/AuditForm/2_FormSubmission
+
+2019-01-30 17:43:02 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:43:02 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:43:02 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //tr[1]/td[3]' not found
+
+2019-01-30 17:43:49 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //tr[1]/td[3]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-01-30 17:43:49 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //tr[1]/td[3]' not found
+
+2019-01-30 17:43:49 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:43:51 - [TEST_STEP][PASSED] - refresh(): Refresh successfully
+
+2019-01-30 17:43:52 - [MESSAGE][PASSED] - Refresh successfully
+
+2019-01-30 17:43:52 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-01-30 17:43:52 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-01-30 17:43:52 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-01-30 17:43:52 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/login_Username"), UserName): NOT_RUN: setText(findTestObject("FormTab/login_Username"), UserName)
+
+2019-01-30 17:43:52 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/login_Username"), UserName)
+
+2019-01-30 17:43:52 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/login_Password"), Password): NOT_RUN: setText(findTestObject("FormTab/login_Password"), Password)
+
+2019-01-30 17:43:52 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/login_Password"), Password)
+
+2019-01-30 17:43:52 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/login_Button")): NOT_RUN: click(findTestObject("FormTab/login_Button"))
+
+2019-01-30 17:43:52 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/login_Button"))
+
+2019-01-30 17:43:52 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:43:52 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:43:52 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/home")): NOT_RUN: click(findTestObject("Form_Selection_Creation/home"))
+
+2019-01-30 17:43:52 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/home"))
+
+2019-01-30 17:43:52 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/form_Tab"), 45): Object 'Object Repository/FormTab/form_Tab' is clickable
+
+2019-01-30 17:43:52 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/form_Tab' is clickable
+
+2019-01-30 17:43:52 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-01-30 17:43:58 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/form_Tab")): Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2019-01-30 17:43:58 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2019-01-30 17:43:58 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:44:00 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:44:00 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-01-30 17:44:06 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/options")): Object: 'Object Repository/FormTab/options' is clicked on
+
+2019-01-30 17:44:06 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/options' is clicked on
+
+2019-01-30 17:44:06 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:44:08 - [TEST_STEP][PASSED] - mouseOver(findTestObject("FormTab/filterOption")): Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:44:08 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:44:08 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:44:10 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:44:10 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:44:10 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:44:12 - [TEST_STEP][PASSED] - FormName.filterFormName(): FormName.filterFormName is PASSED
+
+2019-01-30 17:44:15 - [MESSAGE][PASSED] - FormName.filterFormName is PASSED
+
+2019-01-30 17:44:15 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:44:17 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/filterButton")): Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:44:17 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:44:17 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:44:21 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:44:21 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:44:21 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/selectForm")): Object: 'Object Repository/FormTab/selectForm' is clicked on
+
+2019-01-30 17:44:21 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/selectForm' is clicked on
+
+2019-01-30 17:44:21 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/clickToViewMoreOption")): NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:44:21 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:44:21 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:44:21 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:44:21 - [TEST_STEP][NOT_RUN] - waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5): NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:44:21 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:44:21 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/select500_Form"), STOP_ON_FAILURE): NOT_RUN: click(findTestObject("FormTab/select500_Form"), STOP_ON_FAILURE)
+
+2019-01-30 17:44:21 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/select500_Form"), STOP_ON_FAILURE)
+
+2019-01-30 17:44:21 - [TEST_STEP][NOT_RUN] - Thread.sleep(7000): NOT_RUN: Thread.sleep(7000)
+
+2019-01-30 17:44:21 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(7000)
+
+2019-01-30 17:44:21 - [TEST_STEP][NOT_RUN] - FormName.fillFormName(): NOT_RUN: FormName.fillFormName()
+
+2019-01-30 17:44:21 - [MESSAGE][NOT_RUN] - NOT_RUN: FormName.fillFormName()
+
+2019-01-30 17:44:21 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:44:25 - [TEST_STEP][PASSED] - Submission.formSubmission(): Submission.formSubmission is PASSED
+
+2019-01-30 17:45:30 - [MESSAGE][PASSED] - Submission.formSubmission is PASSED
+
+2019-01-30 17:45:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_OpenLocationOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_OpenLocationOption"))
+
+2019-01-30 17:45:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_OpenLocationOption"))
+
+2019-01-30 17:45:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:45:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:45:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectLocation")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectLocation"))
+
+2019-01-30 17:45:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectLocation"))
+
+2019-01-30 17:45:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_OpenResourceOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_OpenResourceOption"))
+
+2019-01-30 17:45:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_OpenResourceOption"))
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectResource")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectResource"))
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectResource"))
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText"): NOT_RUN: setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText")
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText")
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph"): NOT_RUN: setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph")
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph")
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_SelectOneOption"), "Single Option1"): NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectOneOption"), "Single Option1")
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectOneOption"), "Single Option1")
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(ENTER): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(ENTER)
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(ENTER)
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "Multiple Option1"): NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "Multiple Option1")
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "Multiple Option1")
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(ENTER): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(ENTER)
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(ENTER)
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectMultipleOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectMultipleOption"))
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectMultipleOption"))
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9"): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9")
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9")
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_DateText"), "10/29/2018"): NOT_RUN: setText(findTestObject("FormTab/fillForm_DateText"), "10/29/2018")
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_DateText"), "10/29/2018")
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_TimeText"), "4:00 PM"): NOT_RUN: setText(findTestObject("FormTab/fillForm_TimeText"), "4:00 PM")
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_TimeText"), "4:00 PM")
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/29/2018 4:00 PM"): NOT_RUN: setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/29/2018 4:00 PM")
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/29/2018 4:00 PM")
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SubmitButton")): NOT_RUN: click(findTestObject("FormTab/fillForm_SubmitButton"))
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SubmitButton"))
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:31 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SubmissionOkButton")): NOT_RUN: click(findTestObject("FormTab/fillForm_SubmissionOkButton"))
+
+2019-01-30 17:45:31 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SubmissionOkButton"))
+
+2019-01-30 17:45:31 - [TEST_STEP][PASSED] - Thread.sleep(2000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/AuditForm/3_VerifyingRecord" classname="Test Cases/Forms/AuditForm/3_VerifyingRecord" status="PASSED">
+         <system-out><![CDATA[2019-01-30 17:45:33 - [TEST_CASE][PASSED] - Test Cases/Forms/AuditForm/3_VerifyingRecord: Test Cases/Forms/AuditForm/3_VerifyingRecord
+
+2019-01-30 17:45:33 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:45:33 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:45:33 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-01-30 17:45:33 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-01-30 17:45:33 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Record/login_Username"), UserName): NOT_RUN: setText(findTestObject("Record/login_Username"), UserName)
+
+2019-01-30 17:45:33 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Record/login_Username"), UserName)
+
+2019-01-30 17:45:33 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Record/login_Password"), Password): NOT_RUN: setText(findTestObject("Record/login_Password"), Password)
+
+2019-01-30 17:45:33 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Record/login_Password"), Password)
+
+2019-01-30 17:45:33 - [TEST_STEP][NOT_RUN] - click(findTestObject("Record/login_Button")): NOT_RUN: click(findTestObject("Record/login_Button"))
+
+2019-01-30 17:45:33 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Record/login_Button"))
+
+2019-01-30 17:45:33 - [TEST_STEP][PASSED] - refresh(): Refresh successfully
+
+2019-01-30 17:45:35 - [MESSAGE][PASSED] - Refresh successfully
+
+2019-01-30 17:45:35 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Record/record_Tab"), 45): Object 'Object Repository/Record/record_Tab' is clickable
+
+2019-01-30 17:45:35 - [MESSAGE][PASSED] - Object 'Object Repository/Record/record_Tab' is clickable
+
+2019-01-30 17:45:35 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:45:39 - [TEST_STEP][PASSED] - click(findTestObject("Record/record_Tab")): Object: 'Object Repository/Record/record_Tab' is clicked on
+
+2019-01-30 17:45:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/record_Tab' is clicked on
+
+2019-01-30 17:45:39 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:45:41 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:45:41 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-01-30 17:45:46 - [TEST_STEP][PASSED] - click(findTestObject("Record/formNameOptions")): Object: 'Object Repository/Record/formNameOptions' is clicked on
+
+2019-01-30 17:45:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/formNameOptions' is clicked on
+
+2019-01-30 17:45:46 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:45:48 - [TEST_STEP][PASSED] - mouseOver(findTestObject("FormTab/filterOption")): Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:45:48 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:45:48 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:45:50 - [TEST_STEP][PASSED] - FormName.filterDocumentName(): FormName.filterDocumentName is PASSED
+
+2019-01-30 17:45:53 - [MESSAGE][PASSED] - FormName.filterDocumentName is PASSED
+
+2019-01-30 17:45:53 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/filterButton")): Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:45:53 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:45:53 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:45:57 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:45:57 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:45:57 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:45:59 - [TEST_STEP][PASSED] - doubleClick(findTestObject("FormTab/selectForm")): Object: 'Object Repository/FormTab/selectForm' is double clicked on
+
+2019-01-30 17:45:59 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/selectForm' is double clicked on
+
+2019-01-30 17:45:59 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/clickToViewMoreOption")): NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:45:59 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:45:59 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:59 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:45:59 - [TEST_STEP][NOT_RUN] - waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5): NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:45:59 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:45:59 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/select500_Form")): NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-01-30 17:45:59 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-01-30 17:45:59 - [TEST_STEP][NOT_RUN] - Thread.sleep(7000): NOT_RUN: Thread.sleep(7000)
+
+2019-01-30 17:45:59 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(7000)
+
+2019-01-30 17:45:59 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:45:59 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:45:59 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:45:59 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:45:59 - [TEST_STEP][NOT_RUN] - FormName.recordFormName(): NOT_RUN: FormName.recordFormName()
+
+2019-01-30 17:45:59 - [MESSAGE][NOT_RUN] - NOT_RUN: FormName.recordFormName()
+
+2019-01-30 17:45:59 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:46:03 - [TEST_STEP][PASSED] - click(findTestObject("Record/editForm")): Object: 'Object Repository/Record/editForm' is clicked on
+
+2019-01-30 17:46:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/editForm' is clicked on
+
+2019-01-30 17:46:03 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:46:06 - [TEST_STEP][PASSED] - setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyTextEdited"): Text 'MyTextEdited' is set on object 'Object Repository/FormTab/fillForm_FreeSingleText'
+
+2019-01-30 17:46:06 - [MESSAGE][PASSED] - Text 'MyTextEdited' is set on object 'Object Repository/FormTab/fillForm_FreeSingleText'
+
+2019-01-30 17:46:06 - [TEST_STEP][PASSED] - setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraphEdited"): Text 'MyParagraphEdited' is set on object 'Object Repository/FormTab/fillForm_ParagraphText'
+
+2019-01-30 17:46:07 - [MESSAGE][PASSED] - Text 'MyParagraphEdited' is set on object 'Object Repository/FormTab/fillForm_ParagraphText'
+
+2019-01-30 17:46:07 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:46:09 - [TEST_STEP][PASSED] - click(findTestObject("Record/submitButton")): Object: 'Object Repository/Record/submitButton' is clicked on
+
+2019-01-30 17:46:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/submitButton' is clicked on
+
+2019-01-30 17:46:09 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:46:13 - [TEST_STEP][PASSED] - setText(findTestObject("Record/commentText"), "This form is edited in record."): Text 'This form is edited in record.' is set on object 'Object Repository/Record/commentText'
+
+2019-01-30 17:46:13 - [MESSAGE][PASSED] - Text 'This form is edited in record.' is set on object 'Object Repository/Record/commentText'
+
+2019-01-30 17:46:13 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:46:15 - [TEST_STEP][PASSED] - click(findTestObject("Record/acceptSubmitButton")): Object: 'Object Repository/Record/acceptSubmitButton' is clicked on
+
+2019-01-30 17:46:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/acceptSubmitButton' is clicked on
+
+2019-01-30 17:46:15 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-01-30 17:46:21 - [TEST_STEP][PASSED] - click(findTestObject("Record/okButton")): Object: 'Object Repository/Record/okButton' is clicked on
+
+2019-01-30 17:46:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/okButton' is clicked on
+
+2019-01-30 17:46:21 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:46:25 - [TEST_STEP][PASSED] - click(findTestObject("Record/record")): Object: 'Object Repository/Record/record' is clicked on
+
+2019-01-30 17:46:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/record' is clicked on
+
+2019-01-30 17:46:25 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:46:27 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:46:27 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:46:29 - [TEST_STEP][PASSED] - doubleClick(findTestObject("FormTab/selectForm")): Object: 'Object Repository/FormTab/selectForm' is double clicked on
+
+2019-01-30 17:46:29 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/selectForm' is double clicked on
+
+2019-01-30 17:46:29 - [TEST_STEP][NOT_RUN] - Thread.sleep(5000): NOT_RUN: Thread.sleep(5000)
+
+2019-01-30 17:46:29 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(5000)
+
+2019-01-30 17:46:29 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/clickToViewMoreOption")): NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:46:29 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:46:29 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:46:29 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:46:29 - [TEST_STEP][NOT_RUN] - waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5): NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:46:29 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:46:29 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/select500_Form")): NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-01-30 17:46:29 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-01-30 17:46:29 - [TEST_STEP][NOT_RUN] - Thread.sleep(7000): NOT_RUN: Thread.sleep(7000)
+
+2019-01-30 17:46:29 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(7000)
+
+2019-01-30 17:46:29 - [TEST_STEP][NOT_RUN] - FormName.recordFormName(): NOT_RUN: FormName.recordFormName()
+
+2019-01-30 17:46:29 - [MESSAGE][NOT_RUN] - NOT_RUN: FormName.recordFormName()
+
+2019-01-30 17:46:29 - [TEST_STEP][PASSED] - Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/CheckForm/1_CreateForm" classname="Test Cases/Forms/CheckForm/1_CreateForm" status="PASSED">
+         <system-out><![CDATA[2019-01-30 17:46:33 - [TEST_CASE][PASSED] - Test Cases/Forms/CheckForm/1_CreateForm: Test Cases/Forms/CheckForm/1_CreateForm
+
+2019-01-30 17:46:33 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:46:33 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:46:33 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-01-30 17:46:33 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-01-30 17:46:33 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Form_Selection_Creation/login_Username"), UserName1): NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Username"), UserName1)
+
+2019-01-30 17:46:33 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Username"), UserName1)
+
+2019-01-30 17:46:33 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Form_Selection_Creation/login_Password"), Password1): NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Password"), Password1)
+
+2019-01-30 17:46:33 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Password"), Password1)
+
+2019-01-30 17:46:33 - [TEST_STEP][PASSED] - FormName.setData(): FormName.setData is PASSED
+
+2019-01-30 17:46:33 - [MESSAGE][PASSED] - FormName.setData is PASSED
+
+2019-01-30 17:46:33 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/login_Button")): NOT_RUN: click(findTestObject("Form_Selection_Creation/login_Button"))
+
+2019-01-30 17:46:33 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/login_Button"))
+
+2019-01-30 17:46:33 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:46:36 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:46:36 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:46:36 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:46:38 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-01-30 17:46:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-01-30 17:46:38 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2019-01-30 17:46:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2019-01-30 17:46:38 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Form_Selection_Creation/mainMenu_AdminTools_FormDesigner"), 45): Object 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is visible
+
+2019-01-30 17:46:39 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is visible
+
+2019-01-30 17:46:39 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools_FormDesigner")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2019-01-30 17:46:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2019-01-30 17:46:39 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/selectCheckForm")): Object: 'Object Repository/Form_Selection_Creation/selectCheckForm' is clicked on
+
+2019-01-30 17:46:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/selectCheckForm' is clicked on
+
+2019-01-30 17:46:39 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:46:42 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:46:43 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:46:43 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/select1Res"), 45): Object 'Object Repository/Form_Selection_Creation/select1Res' is clickable
+
+2019-01-30 17:46:43 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/select1Res' is clickable
+
+2019-01-30 17:46:43 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/select1Res"), findTestObject("Form_Selection_Creation/Target_Res_Object")): Dragged object with id 'Object Repository/Form_Selection_Creation/select1Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:46:43 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/select1Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:46:43 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/select2Res"), 45): Object 'Object Repository/Form_Selection_Creation/select2Res' is clickable
+
+2019-01-30 17:46:43 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/select2Res' is clickable
+
+2019-01-30 17:46:43 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/select2Res"), findTestObject("Form_Selection_Creation/Target_Res_Object")): Dragged object with id 'Object Repository/Form_Selection_Creation/select2Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:46:44 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/select2Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:46:44 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-01-30 17:46:50 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/formCreation_NextToDesignForm")): Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:46:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:46:50 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:46:54 - [TEST_STEP][PASSED] - FormName.createForm(findTestObject("Form_Selection_Creation/formDesign_FormName")): FormName.createForm is PASSED
+
+2019-01-30 17:46:55 - [MESSAGE][PASSED] - FormName.createForm is PASSED
+
+2019-01-30 17:46:55 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:46:57 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectSection"), findTestObject("Form_Selection_Creation/default_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2019-01-30 17:46:58 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2019-01-30 17:46:58 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_SectionName"), "This is a Section"): Text 'This is a Section' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName'
+
+2019-01-30 17:46:58 - [MESSAGE][PASSED] - Text 'This is a Section' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName'
+
+2019-01-30 17:46:58 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:00 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectFieldgroup"), findTestObject("Form_Selection_Creation/section_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2019-01-30 17:47:01 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2019-01-30 17:47:01 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_FieldGroupName"), "This is Field Group"): Text 'This is Field Group' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FieldGroupName'
+
+2019-01-30 17:47:01 - [MESSAGE][PASSED] - Text 'This is Field Group' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FieldGroupName'
+
+2019-01-30 17:47:01 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:03 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectFree Text"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:04 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:04 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_FreetextName"), "This is Free Text"): Text 'This is Free Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FreetextName'
+
+2019-01-30 17:47:05 - [MESSAGE][PASSED] - Text 'This is Free Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FreetextName'
+
+2019-01-30 17:47:05 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:07 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectParagraphText"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:07 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:07 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_ParagraphName"), "This is Paragraph"): Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName'
+
+2019-01-30 17:47:08 - [MESSAGE][PASSED] - Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName'
+
+2019-01-30 17:47:08 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:10 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_Select_SelectOne"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:11 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:11 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_Select_OneName"), "This is Select One"): Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName'
+
+2019-01-30 17:47:11 - [MESSAGE][PASSED] - Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName'
+
+2019-01-30 17:47:11 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:47:14 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/button_Add New"), 30): Object 'Object Repository/Form_Selection_Creation/button_Add New' is clickable
+
+2019-01-30 17:47:14 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/button_Add New' is clickable
+
+2019-01-30 17:47:14 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_Add New")): Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2019-01-30 17:47:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2019-01-30 17:47:15 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/addSingleValue1"), "Select Option1"): Text 'Select Option1' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue1'
+
+2019-01-30 17:47:15 - [MESSAGE][PASSED] - Text 'Select Option1' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue1'
+
+2019-01-30 17:47:15 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:17 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_Add New")): Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2019-01-30 17:47:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2019-01-30 17:47:17 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/addSingleValue2"), "Select Option2"): Text 'Select Option2' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue2'
+
+2019-01-30 17:47:17 - [MESSAGE][PASSED] - Text 'Select Option2' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue2'
+
+2019-01-30 17:47:17 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:19 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_Select_SelectMultiple"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:20 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:20 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_Select_MultipleName"), "This is Select Multiple "): Text 'This is Select Multiple ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName'
+
+2019-01-30 17:47:21 - [MESSAGE][PASSED] - Text 'This is Select Multiple ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName'
+
+2019-01-30 17:47:21 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:47:24 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_AddNewMul")): Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2019-01-30 17:47:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2019-01-30 17:47:24 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/addMultipleValue1"), "Multiple Option1"): Text 'Multiple Option1' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue1'
+
+2019-01-30 17:47:24 - [MESSAGE][PASSED] - Text 'Multiple Option1' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue1'
+
+2019-01-30 17:47:24 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:26 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_AddNewMul")): Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2019-01-30 17:47:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2019-01-30 17:47:26 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/addMultipleValue2"), "Multiple Option2"): Text 'Multiple Option2' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue2'
+
+2019-01-30 17:47:27 - [MESSAGE][PASSED] - Text 'Multiple Option2' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue2'
+
+2019-01-30 17:47:27 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:29 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectNumeric"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:29 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:29 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesignt_NumericName"), "This is Numeric Field."): Text 'This is Numeric Field.' is set on object 'Object Repository/Form_Selection_Creation/formDesignt_NumericName'
+
+2019-01-30 17:47:30 - [MESSAGE][PASSED] - Text 'This is Numeric Field.' is set on object 'Object Repository/Form_Selection_Creation/formDesignt_NumericName'
+
+2019-01-30 17:47:30 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:32 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectDate"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:33 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:33 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_DateName"), "This is Date"): Text 'This is Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName'
+
+2019-01-30 17:47:33 - [MESSAGE][PASSED] - Text 'This is Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName'
+
+2019-01-30 17:47:33 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:35 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectTime"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:36 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:36 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_TimeName"), "This is Time"): Text 'This is Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName'
+
+2019-01-30 17:47:37 - [MESSAGE][PASSED] - Text 'This is Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName'
+
+2019-01-30 17:47:37 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:39 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectDateTime"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:40 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:47:40 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_DateTimeName"), "This is Date-Time"): Text 'This is Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName'
+
+2019-01-30 17:47:40 - [MESSAGE][PASSED] - Text 'This is Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName'
+
+2019-01-30 17:47:40 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:47:42 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/formCreation_NextToDesignForm")): Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:47:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:47:42 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-01-30 17:47:49 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/div_Preview             Form1")): Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2019-01-30 17:47:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2019-01-30 17:47:49 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-01-30 17:47:54 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_Release")): Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2019-01-30 17:47:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2019-01-30 17:47:55 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:47:59 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/home")): Object: 'Object Repository/Form_Selection_Creation/home' is clicked on
+
+2019-01-30 17:47:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/home' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/CheckForm/2_FormSubmission" classname="Test Cases/Forms/CheckForm/2_FormSubmission" status="PASSED">
+         <system-out><![CDATA[2019-01-30 17:47:59 - [TEST_CASE][PASSED] - Test Cases/Forms/CheckForm/2_FormSubmission: Test Cases/Forms/CheckForm/2_FormSubmission
+
+2019-01-30 17:47:59 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:47:59 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:47:59 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //tr[1]/td[3]' not found
+
+2019-01-30 17:48:46 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //tr[1]/td[3]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-01-30 17:48:46 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //tr[1]/td[3]' not found
+
+2019-01-30 17:48:46 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:48:48 - [TEST_STEP][PASSED] - refresh(): Refresh successfully
+
+2019-01-30 17:48:49 - [MESSAGE][PASSED] - Refresh successfully
+
+2019-01-30 17:48:49 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-01-30 17:48:49 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-01-30 17:48:49 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:48:52 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-01-30 17:48:52 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/login_Username"), UserName): NOT_RUN: setText(findTestObject("FormTab/login_Username"), UserName)
+
+2019-01-30 17:48:52 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/login_Username"), UserName)
+
+2019-01-30 17:48:52 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/login_Password"), Password): NOT_RUN: setText(findTestObject("FormTab/login_Password"), Password)
+
+2019-01-30 17:48:52 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/login_Password"), Password)
+
+2019-01-30 17:48:52 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/login_Button")): NOT_RUN: click(findTestObject("FormTab/login_Button"))
+
+2019-01-30 17:48:52 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/login_Button"))
+
+2019-01-30 17:48:52 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:48:52 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:48:52 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/home")): NOT_RUN: click(findTestObject("Form_Selection_Creation/home"))
+
+2019-01-30 17:48:52 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/home"))
+
+2019-01-30 17:48:52 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-01-30 17:48:58 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/form_Tab")): Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2019-01-30 17:48:58 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2019-01-30 17:48:58 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:49:00 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:49:00 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-01-30 17:49:06 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/clickToViewMoreOption")): NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:49:06 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:49:06 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:49:06 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:49:06 - [TEST_STEP][NOT_RUN] - waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5): NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:49:06 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:49:06 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/select500_Form")): NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-01-30 17:49:06 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-01-30 17:49:06 - [TEST_STEP][NOT_RUN] - Thread.sleep(7000): NOT_RUN: Thread.sleep(7000)
+
+2019-01-30 17:49:06 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(7000)
+
+2019-01-30 17:49:06 - [TEST_STEP][NOT_RUN] - FormName.fillFormName(): NOT_RUN: FormName.fillFormName()
+
+2019-01-30 17:49:06 - [MESSAGE][NOT_RUN] - NOT_RUN: FormName.fillFormName()
+
+2019-01-30 17:49:06 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/options")): Object: 'Object Repository/FormTab/options' is clicked on
+
+2019-01-30 17:49:06 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/options' is clicked on
+
+2019-01-30 17:49:06 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:49:08 - [TEST_STEP][PASSED] - mouseOver(findTestObject("FormTab/filterOption")): Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:49:08 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:49:08 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:49:10 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:49:10 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:49:10 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:49:12 - [TEST_STEP][PASSED] - FormName.filterFormName(): FormName.filterFormName is PASSED
+
+2019-01-30 17:49:14 - [MESSAGE][PASSED] - FormName.filterFormName is PASSED
+
+2019-01-30 17:49:14 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:49:16 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/filterButton")): Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:49:16 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:49:16 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:49:20 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:49:20 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:49:20 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/selectForm")): Object: 'Object Repository/FormTab/selectForm' is clicked on
+
+2019-01-30 17:49:20 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/selectForm' is clicked on
+
+2019-01-30 17:49:20 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:49:24 - [TEST_STEP][PASSED] - Submission.formSubmission(): Submission.formSubmission is PASSED
+
+2019-01-30 17:50:30 - [MESSAGE][PASSED] - Submission.formSubmission is PASSED
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_OpenLocationOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_OpenLocationOption"))
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_OpenLocationOption"))
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectLocation")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectLocation"))
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectLocation"))
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_OpenResourceOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_OpenResourceOption"))
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_OpenResourceOption"))
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectResource")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectResource"))
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectResource"))
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText"): NOT_RUN: setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText")
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText")
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph"): NOT_RUN: setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph")
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph")
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_SelectOneOption"), "Select Option1"): NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectOneOption"), "Select Option1")
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectOneOption"), "Select Option1")
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(ENTER): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(ENTER)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(ENTER)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "Multiple Option1"): NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "Multiple Option1")
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "Multiple Option1")
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(ENTER): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(ENTER)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(ENTER)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectMultipleOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectMultipleOption"))
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectMultipleOption"))
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9"): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9")
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9")
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_DateText"), "10/18/2018"): NOT_RUN: setText(findTestObject("FormTab/fillForm_DateText"), "10/18/2018")
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_DateText"), "10/18/2018")
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_TimeText"), "9:00 AM"): NOT_RUN: setText(findTestObject("FormTab/fillForm_TimeText"), "9:00 AM")
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_TimeText"), "9:00 AM")
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/18/2018 9:00 AM"): NOT_RUN: setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/18/2018 9:00 AM")
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/18/2018 9:00 AM")
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SubmitButton")): NOT_RUN: click(findTestObject("FormTab/fillForm_SubmitButton"))
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SubmitButton"))
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SubmissionOkButton")): NOT_RUN: click(findTestObject("FormTab/fillForm_SubmissionOkButton"))
+
+2019-01-30 17:50:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SubmissionOkButton"))
+
+2019-01-30 17:50:30 - [TEST_STEP][PASSED] - Thread.sleep(2000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/CheckForm/3_VerifyingRecord" classname="Test Cases/Forms/CheckForm/3_VerifyingRecord" status="PASSED">
+         <system-out><![CDATA[2019-01-30 17:50:32 - [TEST_CASE][PASSED] - Test Cases/Forms/CheckForm/3_VerifyingRecord: Test Cases/Forms/CheckForm/3_VerifyingRecord
+
+2019-01-30 17:50:32 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:50:32 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:50:32 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-01-30 17:50:32 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-01-30 17:50:32 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Record/login_Username"), UserName): NOT_RUN: setText(findTestObject("Record/login_Username"), UserName)
+
+2019-01-30 17:50:32 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Record/login_Username"), UserName)
+
+2019-01-30 17:50:32 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Record/login_Password"), Password): NOT_RUN: setText(findTestObject("Record/login_Password"), Password)
+
+2019-01-30 17:50:32 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Record/login_Password"), Password)
+
+2019-01-30 17:50:32 - [TEST_STEP][NOT_RUN] - click(findTestObject("Record/login_Button")): NOT_RUN: click(findTestObject("Record/login_Button"))
+
+2019-01-30 17:50:32 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Record/login_Button"))
+
+2019-01-30 17:50:32 - [TEST_STEP][PASSED] - refresh(): Refresh successfully
+
+2019-01-30 17:50:33 - [MESSAGE][PASSED] - Refresh successfully
+
+2019-01-30 17:50:33 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Record/record_Tab"), 45): Object 'Object Repository/Record/record_Tab' is clickable
+
+2019-01-30 17:50:34 - [MESSAGE][PASSED] - Object 'Object Repository/Record/record_Tab' is clickable
+
+2019-01-30 17:50:34 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:50:38 - [TEST_STEP][PASSED] - click(findTestObject("Record/record_Tab")): Object: 'Object Repository/Record/record_Tab' is clicked on
+
+2019-01-30 17:50:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/record_Tab' is clicked on
+
+2019-01-30 17:50:38 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:50:39 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:50:39 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-01-30 17:50:44 - [TEST_STEP][PASSED] - click(findTestObject("Record/formNameOptions")): Object: 'Object Repository/Record/formNameOptions' is clicked on
+
+2019-01-30 17:50:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/formNameOptions' is clicked on
+
+2019-01-30 17:50:44 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:50:46 - [TEST_STEP][PASSED] - mouseOver(findTestObject("FormTab/filterOption")): Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:50:46 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:50:46 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:50:48 - [TEST_STEP][PASSED] - FormName.filterDocumentName(): FormName.filterDocumentName is PASSED
+
+2019-01-30 17:50:50 - [MESSAGE][PASSED] - FormName.filterDocumentName is PASSED
+
+2019-01-30 17:50:50 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/filterButton")): Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:50:51 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:50:51 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:50:55 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:50:55 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:50:55 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:50:57 - [TEST_STEP][PASSED] - doubleClick(findTestObject("FormTab/selectForm")): Object: 'Object Repository/FormTab/selectForm' is double clicked on
+
+2019-01-30 17:50:57 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/selectForm' is double clicked on
+
+2019-01-30 17:50:57 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:50:57 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - waitForElementClickable(findTestObject("Record/record_Tab"), 45): NOT_RUN: waitForElementClickable(findTestObject("Record/record_Tab"), 45)
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementClickable(findTestObject("Record/record_Tab"), 45)
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - Thread.sleep(6000): NOT_RUN: Thread.sleep(6000)
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(6000)
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - click(findTestObject("Record/record_Tab")): NOT_RUN: click(findTestObject("Record/record_Tab"))
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Record/record_Tab"))
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - Thread.sleep(5000): NOT_RUN: Thread.sleep(5000)
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(5000)
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/clickToViewMoreOption")): NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - AdminTool_Location.moveCursor(): NOT_RUN: AdminTool_Location.moveCursor()
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: AdminTool_Location.moveCursor()
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5): NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/select500_Form")): NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - Thread.sleep(7000): NOT_RUN: Thread.sleep(7000)
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(7000)
+
+2019-01-30 17:50:57 - [TEST_STEP][NOT_RUN] - FormName.recordFormName(): NOT_RUN: FormName.recordFormName()
+
+2019-01-30 17:50:57 - [MESSAGE][NOT_RUN] - NOT_RUN: FormName.recordFormName()
+
+2019-01-30 17:50:57 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:51:01 - [TEST_STEP][PASSED] - click(findTestObject("Record/editForm")): Object: 'Object Repository/Record/editForm' is clicked on
+
+2019-01-30 17:51:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/editForm' is clicked on
+
+2019-01-30 17:51:01 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:51:03 - [TEST_STEP][PASSED] - setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyTextEdited"): Text 'MyTextEdited' is set on object 'Object Repository/FormTab/fillForm_FreeSingleText'
+
+2019-01-30 17:51:03 - [MESSAGE][PASSED] - Text 'MyTextEdited' is set on object 'Object Repository/FormTab/fillForm_FreeSingleText'
+
+2019-01-30 17:51:03 - [TEST_STEP][PASSED] - setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraphEdited"): Text 'MyParagraphEdited' is set on object 'Object Repository/FormTab/fillForm_ParagraphText'
+
+2019-01-30 17:51:03 - [MESSAGE][PASSED] - Text 'MyParagraphEdited' is set on object 'Object Repository/FormTab/fillForm_ParagraphText'
+
+2019-01-30 17:51:03 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:51:05 - [TEST_STEP][PASSED] - click(findTestObject("Record/submitButton")): Object: 'Object Repository/Record/submitButton' is clicked on
+
+2019-01-30 17:51:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/submitButton' is clicked on
+
+2019-01-30 17:51:06 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:51:10 - [TEST_STEP][PASSED] - setText(findTestObject("Record/commentText"), "This form is edited in record."): Text 'This form is edited in record.' is set on object 'Object Repository/Record/commentText'
+
+2019-01-30 17:51:10 - [MESSAGE][PASSED] - Text 'This form is edited in record.' is set on object 'Object Repository/Record/commentText'
+
+2019-01-30 17:51:10 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:51:12 - [TEST_STEP][PASSED] - click(findTestObject("Record/acceptSubmitButton")): Object: 'Object Repository/Record/acceptSubmitButton' is clicked on
+
+2019-01-30 17:51:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/acceptSubmitButton' is clicked on
+
+2019-01-30 17:51:12 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-01-30 17:51:18 - [TEST_STEP][PASSED] - click(findTestObject("Record/okButton")): Object: 'Object Repository/Record/okButton' is clicked on
+
+2019-01-30 17:51:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/okButton' is clicked on
+
+2019-01-30 17:51:18 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:51:22 - [TEST_STEP][PASSED] - click(findTestObject("Record/record")): Object: 'Object Repository/Record/record' is clicked on
+
+2019-01-30 17:51:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Record/record' is clicked on
+
+2019-01-30 17:51:22 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:51:23 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:51:23 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:51:25 - [TEST_STEP][PASSED] - doubleClick(findTestObject("FormTab/selectForm")): Object: 'Object Repository/FormTab/selectForm' is double clicked on
+
+2019-01-30 17:51:25 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/selectForm' is double clicked on
+
+2019-01-30 17:51:25 - [TEST_STEP][NOT_RUN] - Thread.sleep(5000): NOT_RUN: Thread.sleep(5000)
+
+2019-01-30 17:51:25 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(5000)
+
+2019-01-30 17:51:25 - [TEST_STEP][NOT_RUN] - FormName.recordFormName(): NOT_RUN: FormName.recordFormName()
+
+2019-01-30 17:51:25 - [MESSAGE][NOT_RUN] - NOT_RUN: FormName.recordFormName()
+
+2019-01-30 17:51:25 - [TEST_STEP][PASSED] - Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/QuestionaitreForm/1_CreateForm" classname="Test Cases/Forms/QuestionaitreForm/1_CreateForm" status="PASSED">
+         <system-out><![CDATA[2019-01-30 17:51:29 - [TEST_CASE][PASSED] - Test Cases/Forms/QuestionaitreForm/1_CreateForm: Test Cases/Forms/QuestionaitreForm/1_CreateForm
+
+2019-01-30 17:51:30 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:51:30 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:51:30 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-01-30 17:51:30 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-01-30 17:51:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Form_Selection_Creation/login_Username"), UserName): NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Username"), UserName)
+
+2019-01-30 17:51:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Username"), UserName)
+
+2019-01-30 17:51:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Form_Selection_Creation/login_Password"), Password): NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Password"), Password)
+
+2019-01-30 17:51:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Password"), Password)
+
+2019-01-30 17:51:30 - [TEST_STEP][PASSED] - FormName.setData(): FormName.setData is PASSED
+
+2019-01-30 17:51:30 - [MESSAGE][PASSED] - FormName.setData is PASSED
+
+2019-01-30 17:51:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/login_Button")): NOT_RUN: click(findTestObject("Form_Selection_Creation/login_Button"))
+
+2019-01-30 17:51:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/login_Button"))
+
+2019-01-30 17:51:30 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:51:33 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-01-30 17:51:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-01-30 17:51:33 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2019-01-30 17:51:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools' is clicked on
+
+2019-01-30 17:51:33 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Form_Selection_Creation/mainMenu_AdminTools_FormDesigner"), 45): Object 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is visible
+
+2019-01-30 17:51:33 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is visible
+
+2019-01-30 17:51:33 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools_FormDesigner")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2019-01-30 17:51:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2019-01-30 17:51:33 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:51:35 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:51:35 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:51:35 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:51:37 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/selectQuestionaireForm")): Object: 'Object Repository/Form_Selection_Creation/selectQuestionaireForm' is clicked on
+
+2019-01-30 17:51:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/selectQuestionaireForm' is clicked on
+
+2019-01-30 17:51:37 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:51:40 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:51:41 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_selectResource' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:51:41 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/select1Res"), 45): Object 'Object Repository/Form_Selection_Creation/select1Res' is clickable
+
+2019-01-30 17:51:41 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/select1Res' is clickable
+
+2019-01-30 17:51:41 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/select1Res"), findTestObject("Form_Selection_Creation/Target_Res_Object")): Dragged object with id 'Object Repository/Form_Selection_Creation/select1Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:51:42 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/select1Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:51:42 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/select2Res"), 45): Object 'Object Repository/Form_Selection_Creation/select2Res' is clickable
+
+2019-01-30 17:51:42 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/select2Res' is clickable
+
+2019-01-30 17:51:42 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/select2Res"), findTestObject("Form_Selection_Creation/Target_Res_Object")): Dragged object with id 'Object Repository/Form_Selection_Creation/select2Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:51:43 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/select2Res' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/Target_Res_Object'' successfully
+
+2019-01-30 17:51:43 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-01-30 17:51:49 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/formCreation_NextToDesignForm")): Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:51:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:51:49 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:51:53 - [TEST_STEP][PASSED] - FormName.createForm(findTestObject("Form_Selection_Creation/formDesign_FormName")): FormName.createForm is PASSED
+
+2019-01-30 17:51:53 - [MESSAGE][PASSED] - FormName.createForm is PASSED
+
+2019-01-30 17:51:53 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:51:55 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectSection"), findTestObject("Form_Selection_Creation/default_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2019-01-30 17:51:56 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2019-01-30 17:51:56 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_SectionName_text"), "This is Section "): Text 'This is Section ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName_text'
+
+2019-01-30 17:51:57 - [MESSAGE][PASSED] - Text 'This is Section ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName_text'
+
+2019-01-30 17:51:57 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:51:59 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectFieldgroup"), findTestObject("Form_Selection_Creation/section_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2019-01-30 17:51:59 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2019-01-30 17:51:59 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_FieldGroupName_text"), "This is Field Group "): Text 'This is Field Group ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FieldGroupName_text'
+
+2019-01-30 17:52:00 - [MESSAGE][PASSED] - Text 'This is Field Group ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FieldGroupName_text'
+
+2019-01-30 17:52:00 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:52:02 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectFree Text"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:03 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:03 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_SingleLineName_Text"), "This is Single Line Text"): Text 'This is Single Line Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SingleLineName_Text'
+
+2019-01-30 17:52:03 - [MESSAGE][PASSED] - Text 'This is Single Line Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SingleLineName_Text'
+
+2019-01-30 17:52:03 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:52:05 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectParagraphText"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:06 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:06 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_ParagraphName_Text"), "This is Paragraph"): Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName_Text'
+
+2019-01-30 17:52:06 - [MESSAGE][PASSED] - Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName_Text'
+
+2019-01-30 17:52:06 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:52:08 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_Select_SelectOne"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:09 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:09 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_Select_OneName_text"), "This is Select One"): Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName_text'
+
+2019-01-30 17:52:10 - [MESSAGE][PASSED] - Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName_text'
+
+2019-01-30 17:52:10 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:52:13 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/button_AddNew1"), 30): Object 'Object Repository/Form_Selection_Creation/button_AddNew1' is clickable
+
+2019-01-30 17:52:13 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/button_AddNew1' is clickable
+
+2019-01-30 17:52:13 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_AddNew1")): Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2019-01-30 17:52:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2019-01-30 17:52:13 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/add1singleValue1"), "SingleOption1"): Text 'SingleOption1' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue1'
+
+2019-01-30 17:52:13 - [MESSAGE][PASSED] - Text 'SingleOption1' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue1'
+
+2019-01-30 17:52:13 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:52:15 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_AddNew1")): Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2019-01-30 17:52:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNew1' is clicked on
+
+2019-01-30 17:52:15 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/add1singleValue2"), "SingleOption2"): Text 'SingleOption2' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue2'
+
+2019-01-30 17:52:16 - [MESSAGE][PASSED] - Text 'SingleOption2' is set on object 'Object Repository/Form_Selection_Creation/add1singleValue2'
+
+2019-01-30 17:52:16 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:52:18 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_Select_SelectMultiple"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:18 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:18 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_Select_MultipleName_text"), "This is Select Multiple"): Text 'This is Select Multiple' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName_text'
+
+2019-01-30 17:52:19 - [MESSAGE][PASSED] - Text 'This is Select Multiple' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName_text'
+
+2019-01-30 17:52:19 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-01-30 17:52:22 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_addNewMul1")): Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2019-01-30 17:52:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2019-01-30 17:52:22 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/add1MultipleValue1"), "MultipleOption1"): Text 'MultipleOption1' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue1'
+
+2019-01-30 17:52:23 - [MESSAGE][PASSED] - Text 'MultipleOption1' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue1'
+
+2019-01-30 17:52:23 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:52:25 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_addNewMul1")): Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2019-01-30 17:52:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_addNewMul1' is clicked on
+
+2019-01-30 17:52:25 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/add1MultipleValue2"), "MultipleOption2"): Text 'MultipleOption2' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue2'
+
+2019-01-30 17:52:25 - [MESSAGE][PASSED] - Text 'MultipleOption2' is set on object 'Object Repository/Form_Selection_Creation/add1MultipleValue2'
+
+2019-01-30 17:52:25 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:52:27 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectNumeric"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:28 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:28 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_NumericName_Text"), "This is a Number"): Text 'This is a Number' is set on object 'Object Repository/Form_Selection_Creation/formDesign_NumericName_Text'
+
+2019-01-30 17:52:28 - [MESSAGE][PASSED] - Text 'This is a Number' is set on object 'Object Repository/Form_Selection_Creation/formDesign_NumericName_Text'
+
+2019-01-30 17:52:28 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:52:30 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectDate"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:31 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:31 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_DateName_Text"), "This is a Date"): Text 'This is a Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName_Text'
+
+2019-01-30 17:52:32 - [MESSAGE][PASSED] - Text 'This is a Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName_Text'
+
+2019-01-30 17:52:32 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:52:34 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectTime"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:34 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:34 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_TimeName_text"), "This is a Time"): Text 'This is a Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName_text'
+
+2019-01-30 17:52:35 - [MESSAGE][PASSED] - Text 'This is a Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName_text'
+
+2019-01-30 17:52:35 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:52:37 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectDateTime"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:38 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-01-30 17:52:38 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_DateTimeName_Text"), "This is a Date-Time"): Text 'This is a Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName_Text'
+
+2019-01-30 17:52:39 - [MESSAGE][PASSED] - Text 'This is a Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName_Text'
+
+2019-01-30 17:52:39 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:52:41 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/formCreation_NextToDesignForm")): Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:52:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-01-30 17:52:41 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-01-30 17:52:48 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/div_Preview             Form1")): Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2019-01-30 17:52:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2019-01-30 17:52:48 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-01-30 17:52:53 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_Release")): Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2019-01-30 17:52:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2019-01-30 17:52:53 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:52:57 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/home")): Object: 'Object Repository/Form_Selection_Creation/home' is clicked on
+
+2019-01-30 17:52:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/home' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/QuestionaitreForm/2_FormSubmission" classname="Test Cases/Forms/QuestionaitreForm/2_FormSubmission" status="PASSED">
+         <system-out><![CDATA[2019-01-30 17:52:57 - [TEST_CASE][PASSED] - Test Cases/Forms/QuestionaitreForm/2_FormSubmission: Test Cases/Forms/QuestionaitreForm/2_FormSubmission
+
+2019-01-30 17:52:57 - [TEST_STEP][NOT_RUN] - openBrowser(""): NOT_RUN: openBrowser("")
+
+2019-01-30 17:52:57 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser("")
+
+2019-01-30 17:52:57 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //tr[1]/td[3]' not found
+
+2019-01-30 17:53:44 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //tr[1]/td[3]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-01-30 17:53:44 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/FormTab/selectForm' located by 'By.xpath: //tr[1]/td[3]' not found
+
+2019-01-30 17:53:44 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:53:46 - [TEST_STEP][PASSED] - refresh(): Refresh successfully
+
+2019-01-30 17:53:48 - [MESSAGE][PASSED] - Refresh successfully
+
+2019-01-30 17:53:48 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:53:50 - [TEST_STEP][NOT_RUN] - navigateToUrl(URL): NOT_RUN: navigateToUrl(URL)
+
+2019-01-30 17:53:50 - [MESSAGE][NOT_RUN] - NOT_RUN: navigateToUrl(URL)
+
+2019-01-30 17:53:50 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-01-30 17:53:50 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-01-30 17:53:50 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-01-30 17:53:50 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:53:50 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:53:50 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/login_Username"), UserName): NOT_RUN: setText(findTestObject("FormTab/login_Username"), UserName)
+
+2019-01-30 17:53:50 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/login_Username"), UserName)
+
+2019-01-30 17:53:50 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/login_Password"), Password): NOT_RUN: setText(findTestObject("FormTab/login_Password"), Password)
+
+2019-01-30 17:53:50 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/login_Password"), Password)
+
+2019-01-30 17:53:50 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/login_Button")): NOT_RUN: click(findTestObject("FormTab/login_Button"))
+
+2019-01-30 17:53:50 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/login_Button"))
+
+2019-01-30 17:53:50 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:53:50 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:53:50 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/home")): NOT_RUN: click(findTestObject("Form_Selection_Creation/home"))
+
+2019-01-30 17:53:50 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/home"))
+
+2019-01-30 17:53:50 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/form_Tab"), 45): Object 'Object Repository/FormTab/form_Tab' is clickable
+
+2019-01-30 17:53:50 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/form_Tab' is clickable
+
+2019-01-30 17:53:50 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-01-30 17:53:56 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/form_Tab")): Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2019-01-30 17:53:56 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2019-01-30 17:53:56 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:53:57 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:53:57 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:53:57 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:53:57 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/clickToViewMoreOption")): NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:53:57 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-01-30 17:53:57 - [TEST_STEP][NOT_RUN] - waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5): NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:53:57 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-01-30 17:53:57 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/select500_Form")): NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-01-30 17:53:57 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-01-30 17:53:57 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:53:59 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/options")): Object: 'Object Repository/FormTab/options' is clicked on
+
+2019-01-30 17:53:59 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/options' is clicked on
+
+2019-01-30 17:53:59 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:54:01 - [TEST_STEP][PASSED] - mouseOver(findTestObject("FormTab/filterOption")): Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:54:01 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:54:01 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:54:03 - [TEST_STEP][PASSED] - FormName.filterFormName(): FormName.filterFormName is PASSED
+
+2019-01-30 17:54:06 - [MESSAGE][PASSED] - FormName.filterFormName is PASSED
+
+2019-01-30 17:54:06 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:54:10 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/filterButton")): Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:54:10 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:54:10 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:54:14 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:54:14 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-01-30 17:54:14 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/selectForm")): Object: 'Object Repository/FormTab/selectForm' is clicked on
+
+2019-01-30 17:54:14 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/selectForm' is clicked on
+
+2019-01-30 17:54:14 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:54:18 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:54:18 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:54:18 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:54:20 - [TEST_STEP][PASSED] - Submission.formSubmission(): Submission.formSubmission is PASSED
+
+2019-01-30 17:55:30 - [MESSAGE][PASSED] - Submission.formSubmission is PASSED
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - FormName.fillFormName(): NOT_RUN: FormName.fillFormName()
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: FormName.fillFormName()
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_OpenLocationOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_OpenLocationOption"))
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_OpenLocationOption"))
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - delay(3000): NOT_RUN: delay(3000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: delay(3000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - waitForElementNotVisible(findTestObject("FormTab/fillForm_SelectLocation"), 5): NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/fillForm_SelectLocation"), 5)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/fillForm_SelectLocation"), 5)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectLocation")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectLocation"))
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectLocation"))
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_OpenResourceOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_OpenResourceOption"))
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_OpenResourceOption"))
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - delay(4000): NOT_RUN: delay(4000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: delay(4000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - waitForElementNotVisible(findTestObject("FormTab/fillForm_SelectResource"), 5): NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/fillForm_SelectResource"), 5)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/fillForm_SelectResource"), 5)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectResource")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectResource"))
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectResource"))
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText"): NOT_RUN: setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText")
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText")
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph"): NOT_RUN: setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph")
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph")
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_SelectOneOption"), "SingleOption1"): NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectOneOption"), "SingleOption1")
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectOneOption"), "SingleOption1")
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(Keys.chord(ENTER)): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(Keys.chord(ENTER))
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(Keys.chord(ENTER))
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "MultipleOption1"): NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "MultipleOption1")
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "MultipleOption1")
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(Keys.chord(ENTER)): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(Keys.chord(ENTER))
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(Keys.chord(ENTER))
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectMultipleOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectMultipleOption"))
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectMultipleOption"))
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9"): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9")
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9")
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_DateText"), "10/18/2018"): NOT_RUN: setText(findTestObject("FormTab/fillForm_DateText"), "10/18/2018")
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_DateText"), "10/18/2018")
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_TimeText"), "9:00 AM"): NOT_RUN: setText(findTestObject("FormTab/fillForm_TimeText"), "9:00 AM")
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_TimeText"), "9:00 AM")
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/18/2018 9:00 AM"): NOT_RUN: setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/18/2018 9:00 AM")
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/18/2018 9:00 AM")
+
+2019-01-30 17:55:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SubmitButton")): NOT_RUN: click(findTestObject("FormTab/fillForm_SubmitButton"))
+
+2019-01-30 17:55:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SubmitButton"))
+
+2019-01-30 17:55:31 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:55:31 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-01-30 17:55:31 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SubmissionOkButton")): NOT_RUN: click(findTestObject("FormTab/fillForm_SubmissionOkButton"))
+
+2019-01-30 17:55:31 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SubmissionOkButton"))
+
+2019-01-30 17:55:31 - [TEST_STEP][PASSED] - Thread.sleep(2000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/QuestionaitreForm/3_VerifyingDocument" classname="Test Cases/Forms/QuestionaitreForm/3_VerifyingDocument" status="PASSED">
+         <system-out><![CDATA[2019-01-30 17:55:33 - [TEST_CASE][PASSED] - Test Cases/Forms/QuestionaitreForm/3_VerifyingDocument: Test Cases/Forms/QuestionaitreForm/3_VerifyingDocument
+
+2019-01-30 17:55:33 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:55:33 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:55:33 - [TEST_STEP][NOT_RUN] - setText(findTestObject("DocumentTab/login_Username"), UserName): NOT_RUN: setText(findTestObject("DocumentTab/login_Username"), UserName)
+
+2019-01-30 17:55:33 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("DocumentTab/login_Username"), UserName)
+
+2019-01-30 17:55:33 - [TEST_STEP][NOT_RUN] - setText(findTestObject("DocumentTab/login_Password"), Password): NOT_RUN: setText(findTestObject("DocumentTab/login_Password"), Password)
+
+2019-01-30 17:55:33 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("DocumentTab/login_Password"), Password)
+
+2019-01-30 17:55:33 - [TEST_STEP][NOT_RUN] - click(findTestObject("DocumentTab/login_Button")): NOT_RUN: click(findTestObject("DocumentTab/login_Button"))
+
+2019-01-30 17:55:33 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("DocumentTab/login_Button"))
+
+2019-01-30 17:55:33 - [TEST_STEP][PASSED] - refresh(): Refresh successfully
+
+2019-01-30 17:55:34 - [MESSAGE][PASSED] - Refresh successfully
+
+2019-01-30 17:55:34 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:55:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("DocumentTab/documentTab"), 45): Object 'Object Repository/DocumentTab/documentTab' is clickable
+
+2019-01-30 17:55:36 - [MESSAGE][PASSED] - Object 'Object Repository/DocumentTab/documentTab' is clickable
+
+2019-01-30 17:55:36 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-01-30 17:55:42 - [TEST_STEP][PASSED] - click(findTestObject("DocumentTab/documentTab")): Object: 'Object Repository/DocumentTab/documentTab' is clicked on
+
+2019-01-30 17:55:43 - [MESSAGE][PASSED] - Object: 'Object Repository/DocumentTab/documentTab' is clicked on
+
+2019-01-30 17:55:43 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("DocumentTab/selectDocument"), 45): Object 'Object Repository/DocumentTab/selectDocument' is clickable
+
+2019-01-30 17:55:48 - [MESSAGE][PASSED] - Object 'Object Repository/DocumentTab/selectDocument' is clickable
+
+2019-01-30 17:55:48 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:55:52 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:55:52 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:55:52 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:55:54 - [TEST_STEP][PASSED] - click(findTestObject("DocumentTab/options")): Object: 'Object Repository/DocumentTab/options' is clicked on
+
+2019-01-30 17:55:54 - [MESSAGE][PASSED] - Object: 'Object Repository/DocumentTab/options' is clicked on
+
+2019-01-30 17:55:54 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:55:56 - [TEST_STEP][PASSED] - mouseOver(findTestObject("FormTab/filterOption")): Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:55:56 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-01-30 17:55:56 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/filterOption")): NOT_RUN: click(findTestObject("FormTab/filterOption"))
+
+2019-01-30 17:55:56 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/filterOption"))
+
+2019-01-30 17:55:56 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:55:58 - [TEST_STEP][PASSED] - FormName.filterDocumentName(): FormName.filterDocumentName is PASSED
+
+2019-01-30 17:56:01 - [MESSAGE][PASSED] - FormName.filterDocumentName is PASSED
+
+2019-01-30 17:56:01 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:56:03 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/filterButton")): Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:56:03 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-01-30 17:56:03 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:56:07 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("DocumentTab/selectDocument"), 45): Object 'Object Repository/DocumentTab/selectDocument' is clickable
+
+2019-01-30 17:56:07 - [MESSAGE][PASSED] - Object 'Object Repository/DocumentTab/selectDocument' is clickable
+
+2019-01-30 17:56:07 - [TEST_STEP][PASSED] - doubleClick(findTestObject("DocumentTab/selectDocument")): Object: 'Object Repository/DocumentTab/selectDocument' is double clicked on
+
+2019-01-30 17:56:07 - [MESSAGE][PASSED] - Object: 'Object Repository/DocumentTab/selectDocument' is double clicked on
+
+2019-01-30 17:56:07 - [TEST_STEP][NOT_RUN] - FormName.documentFormName(): NOT_RUN: FormName.documentFormName()
+
+2019-01-30 17:56:07 - [MESSAGE][NOT_RUN] - NOT_RUN: FormName.documentFormName()
+
+2019-01-30 17:56:07 - [TEST_STEP][PASSED] - Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Forms/QuestionaitreForm/4_VerifyingDMS" classname="Test Cases/Forms/QuestionaitreForm/4_VerifyingDMS" status="PASSED">
+         <system-out><![CDATA[2019-01-30 17:56:11 - [TEST_CASE][PASSED] - Test Cases/Forms/QuestionaitreForm/4_VerifyingDMS: Test Cases/Forms/QuestionaitreForm/4_VerifyingDMS
+
+2019-01-30 17:56:11 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:56:11 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-01-30 17:56:11 - [TEST_STEP][NOT_RUN] - setText(findTestObject("DMS_Forms/login_Username"), UserName1): NOT_RUN: setText(findTestObject("DMS_Forms/login_Username"), UserName1)
+
+2019-01-30 17:56:11 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("DMS_Forms/login_Username"), UserName1)
+
+2019-01-30 17:56:11 - [TEST_STEP][NOT_RUN] - setText(findTestObject("DMS_Forms/login_Password"), Password111): NOT_RUN: setText(findTestObject("DMS_Forms/login_Password"), Password111)
+
+2019-01-30 17:56:11 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("DMS_Forms/login_Password"), Password111)
+
+2019-01-30 17:56:11 - [TEST_STEP][NOT_RUN] - click(findTestObject("DMS_Forms/login_Button")): NOT_RUN: click(findTestObject("DMS_Forms/login_Button"))
+
+2019-01-30 17:56:11 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("DMS_Forms/login_Button"))
+
+2019-01-30 17:56:11 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:56:15 - [TEST_STEP][PASSED] - click(findTestObject("DMS_Forms/mainmenu_button")): Object: 'Object Repository/DMS_Forms/mainmenu_button' is clicked on
+
+2019-01-30 17:56:15 - [MESSAGE][PASSED] - Object: 'Object Repository/DMS_Forms/mainmenu_button' is clicked on
+
+2019-01-30 17:56:15 - [TEST_STEP][PASSED] - click(findTestObject("DMS_Forms/mainmenu_Document")): Object: 'Object Repository/DMS_Forms/mainmenu_Document' is clicked on
+
+2019-01-30 17:56:15 - [MESSAGE][PASSED] - Object: 'Object Repository/DMS_Forms/mainmenu_Document' is clicked on
+
+2019-01-30 17:56:15 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:56:19 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:56:19 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-01-30 17:56:19 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-01-30 17:56:21 - [TEST_STEP][PASSED] - FormName.findinDMS(): FormName.findinDMS is PASSED
+
+2019-01-30 17:56:26 - [MESSAGE][PASSED] - FormName.findinDMS is PASSED
+
+2019-01-30 17:56:26 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-01-30 17:56:30 - [TEST_STEP][PASSED] - doubleClick(findTestObject("DMS_Forms/openDocument")): Object: 'Object Repository/DMS_Forms/openDocument' is double clicked on
+
+2019-01-30 17:56:30 - [MESSAGE][PASSED] - Object: 'Object Repository/DMS_Forms/openDocument' is double clicked on
+
+2019-01-30 17:56:30 - [TEST_STEP][PASSED] - Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-01-30 17:38:06 - [TEST_SUITE][PASSED] - MyTest: Test Cases/Forms/QuestionaitreForm/4_VerifyingDMS]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

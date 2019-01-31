@@ -14,6 +14,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword as WebUIAbstractKeyword
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.internal.PathUtil as PathUtil
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+
+
+
 
 WebUI.openBrowser(GlobalVariable.URL)
 
@@ -22,6 +27,8 @@ WebUI.maximizeWindow()
 WebUI.setText(findTestObject('DMS_Forms/login_Username'), GlobalVariable.UserName)
 
 WebUI.setText(findTestObject('DMS_Forms/login_Password'), GlobalVariable.Password)
+
+String path = PathUtil.relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", RunConfiguration.getProjectDir())
 
 CustomKeywords.'FormName.setDocumentName'()
 
@@ -47,15 +54,15 @@ WebUI.sendKeys(findTestObject('DMS/searchDocument'), Keys.chord(Keys.ENTER))
 
 Thread.sleep(4000)
 
-WebUI.sendKeys(findTestObject('DMS/uploadFile'), 'C:\\Users\\pashine_a\\Desert.jpg')
+WebUI.sendKeys(findTestObject('DMS/uploadFile'), path+'/Desert.jpg')
 
 Thread.sleep(21000)
 
-WebUI.sendKeys(findTestObject('DMS/uploadFile'), 'C:\\Users\\pashine_a\\Lighthouse.jpg')
+WebUI.sendKeys(findTestObject('DMS/uploadFile'), path+'/Lighthouse.jpg')
 
 Thread.sleep(18000)
 
-WebUI.sendKeys(findTestObject('DMS/uploadFile'), 'C:\\Users\\pashine_a\\Penguins.jpg')
+WebUI.sendKeys(findTestObject('DMS/uploadFile'), path+'/Penguins.jpg')
 
 Thread.sleep(24000)
 
@@ -145,7 +152,7 @@ WebUI.click(findTestObject('DMS/uploadNew'))
 
 Thread.sleep(2000)
 
-WebUI.sendKeys(findTestObject('DMS/browsePath'), 'C:\\Users\\pashine_a\\Tulips.jpg')
+WebUI.sendKeys(findTestObject('DMS/browsePath'), path+'/Tulips.jpg')
 
 WebUI.setText(findTestObject('DMS/commentBox'), 'This is uploaded Document')
 
@@ -275,7 +282,7 @@ WebUI.doubleClick(findTestObject('DMS/selectTask'))
 
 Thread.sleep(2000)
 
-WebUI.sendKeys(findTestObject('DMS/browsePath'), 'C:\\Users\\pashine_a\\Chrysanthemum.jpg')
+WebUI.sendKeys(findTestObject('DMS/browsePath'), path+'/Chrysanthemum.jpg')
 
 WebUI.setText(findTestObject('DMS/commentBox'), 'This is uploaded Document after assigning task')
 

@@ -19,11 +19,11 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 not_run: WebUI.openBrowser(GlobalVariable.URL)
 
-Thread.sleep(2000)
+not_run: Thread.sleep(2000)
 
 not_run: WebUI.maximizeWindow()
 
-not_run: Thread.sleep(2000)
+Thread.sleep(2000)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
@@ -64,60 +64,6 @@ Thread.sleep(2000)
 CustomKeywords.'Submission.supplierPortalSubmission'()
 
 not_run: CustomKeywords.'Supplier.selectSupplierTask'()
-
-not_run: Thread.sleep(4000)
-
-//WebUI.click(findTestObject('Object Repository/FormTab/Page_SafetyChain/selectRes'))
-//WebUI.setText(findTestObject('Form_Selection_Creation/sendResourceName'), 'rest1')
-//driver.findElement(By.xpath('//*[@id=\'resrcDrpdown-list\']/span/input')).sendKeys(Keys.ENTER)
-//WebUI.click(findTestObject('Form_Selection_Creation/sendResourceName'),Keys.ENTER)
-//Thread.sleep(4000)
-not_run: WebUI.setText(findTestObject('FormTab/fillForm_FreeSingleText'), 'MyText')
-
-not_run: WebUI.setText(findTestObject('FormTab/fillForm_ParagraphText'), 'MyParagraph')
-
-not_run: Thread.sleep(3000)
-
-not_run: WebUI.setText(findTestObject('FormTab/fillForm_SelectOneOption'), 'SingleOption1')
-
-not_run: Thread.sleep(3000)
-
-not_run: driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input')).sendKeys(
-    Keys.chord(Keys.ENTER))
-
-not_run: Thread.sleep(3000)
-
-not_run: WebUI.setText(findTestObject('FormTab/fillForm_SelectMultipleOption'), 'MultipleOption1')
-
-not_run: Thread.sleep(3000)
-
-not_run: driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input')).sendKeys(
-    Keys.chord(Keys.ENTER))
-
-not_run: WebUI.click(findTestObject('FormTab/fillForm_SelectMultipleOption'))
-
-not_run: Thread.sleep(4000)
-
-not_run: driver.findElement(By.xpath('//*[@id=\'scs-form-level\']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]')).sendKeys(
-    '9')
-
-not_run: WebUI.setText(findTestObject('FormTab/fillForm_DateText'), '10/18/2018')
-
-not_run: WebUI.setText(findTestObject('FormTab/fillForm_TimeText'), '9:00 AM')
-
-not_run: WebUI.setText(findTestObject('FormTab/fillForm_DateTimeText'), '10/18/2018 9:00 AM')
-
-not_run: WebUI.click(findTestObject('FormTab/fillForm_SubmitButton'))
-
-not_run: Thread.sleep(2000)
-
-not_run: WebUI.setText(findTestObject('SupplierFlow/formSubmissionNote'), 'Form may require correction.')
-
-not_run: Thread.sleep(2000)
-
-not_run: WebUI.click(findTestObject('FormTab/fillForm_SubmissionOkButton'))
-
-not_run: Thread.sleep(4000)
 
 WebUI.waitForElementClickable(findTestObject('TestUser/clickToCheck'), 45)
 

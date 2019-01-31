@@ -2,7 +2,7 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
+import com.kms.katalon.core.util.internal.PathUtil as PathUtil
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
@@ -12,11 +12,10 @@ import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testdata.TestDataFactory
-import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
-
+import org.openqa.selenium.Keys as Keys
 import internal.GlobalVariable
 
 import MobileBuiltInKeywords as Mobile
@@ -42,13 +41,14 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.By
-
+import java.util.List;
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.interactions.Actions
-
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.ss.usermodel.WorkbookFactory
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.util.Calendar;
@@ -60,11 +60,13 @@ import java.time.format.DateTimeFormatter;
 import java.awt.*;
 
 class AdminTool_Location {
+
 	WebDriver driver =  DriverFactory.getWebDriver();
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yy-HH:mm");
 	LocalDateTime now = LocalDateTime.now();
 	public String location_name = "Location_"+dtf.format(now);
-	public String location_name1 = "SubLocation_"+dtf.format(now);
+	public String location_name1 = "SubLocation1_"+dtf.format(now);
+	public String location_name2 = "SubLocation2_"+dtf.format(now);
 	public String customer_name = "Customer_"+dtf.format(now);
 	public String customer_name1 = "SubCustomer1_"+dtf.format(now);
 	public String customer_name2 = "SubCustomer2_"+dtf.format(now);
@@ -78,7 +80,7 @@ class AdminTool_Location {
 	public String supplier_name1 = "SubSupplier1_"+dtf.format(now);
 	public String supplier_name2 = "SubSupplier2_"+dtf.format(now);
 	String resource_name_link;
-
+	static String path = PathUtil.relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", RunConfiguration.getProjectDir())
 
 	public void click(WebDriver driver, By by) {
 		WebElement element = driver.findElement(by);
@@ -91,7 +93,7 @@ class AdminTool_Location {
 	@Keyword
 	def selectLocation() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String locationName = sheet.getRow(1).getCell(0).toString();
@@ -110,14 +112,76 @@ class AdminTool_Location {
 		}
 	}
 	@Keyword
+	def selectLocation2() {
+		try {
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String locationName = sheet.getRow(1).getCell(0).toString();
+			file.close();
+			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+locationName+"')]"))
+			Actions action = new Actions(driver)
+			action.moveToElement(element).build().perform()
+
+			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def selectLocations() {
+		try {
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String locationName1 = sheet.getRow(1).getCell(1).toString();
+			String locationName2 = sheet.getRow(2).getCell(1).toString();
+			file.close();
+			driver.findElement(By.xpath("//div[ul[@id='locMultiSelect_taglist']]/input")).sendKeys(locationName1)
+			Thread.sleep(2000)
+			driver.findElement(By.xpath("//div[ul[@id='locMultiSelect_taglist']]/input")).sendKeys(Keys.ENTER)
+			//			Thread.sleep(2000)
+			//			WebElement element = driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'Location(s)')]]/div/div/div[last()]"))
+			//			element.click()
+			Thread.sleep(2000)
+			driver.findElement(By.xpath("//div[ul[@id='locMultiSelect_taglist']]/input")).sendKeys(locationName2)
+			Thread.sleep(2000)
+			driver.findElement(By.xpath("//div[ul[@id='locMultiSelect_taglist']]/input")).sendKeys(Keys.ENTER)
+			/*List<WebElement> lcn = driver.findElements(By.xpath("//*[@id='locMultiSelect_listbox']/li[contains(text(),'"+locationName1+"')]"))
+			 for(int i=0;i<lcn.size();i++){
+			 if(lcn.get(i).is){
+			 lcn.get(i).click()
+			 }
+			 }
+			 Thread.sleep(2000)
+			 WebElement element = driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'Location(s)')]]/div/div/div[last()]"))
+			 element.click()
+			 Thread.sleep(2000)
+			 lcn = driver.findElements(By.xpath("//*[@id='locMultiSelect_listbox']/li[contains(text(),'"+locationName2+"')]"))
+			 for(int i=0;i<lcn.size();i++){
+			 if(lcn.get(i).isDisplayed()){
+			 lcn.get(i).click()
+			 }
+			 }
+			 */
+			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
 	def selectCustomer() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String resourceName = sheet.getRow(1).getCell(2).toString();
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			sheet.getRow(1).createCell(15).setCellValue("Customers");
 			workbook.write(outFile);
 			outFile.close();
@@ -137,7 +201,7 @@ class AdminTool_Location {
 	@Keyword
 	def hoverCustomer() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String resourceName = sheet.getRow(1).getCell(2).toString();
@@ -157,12 +221,12 @@ class AdminTool_Location {
 	@Keyword
 	def selectEquipment() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String resourceName = sheet.getRow(1).getCell(3).toString();
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			sheet.getRow(1).createCell(15).setCellValue("Equipment");
 			workbook.write(outFile);
 			outFile.close();
@@ -183,12 +247,12 @@ class AdminTool_Location {
 	@Keyword
 	def selectItem() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String resourceName = sheet.getRow(1).getCell(4).toString();
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			sheet.getRow(1).createCell(15).setCellValue("Items");
 			workbook.write(outFile);
 			outFile.close();
@@ -208,12 +272,12 @@ class AdminTool_Location {
 	@Keyword
 	def selectSupplier() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String resourceName = sheet.getRow(1).getCell(5).toString();
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			sheet.getRow(1).createCell(15).setCellValue("Suppliers");
 			workbook.write(outFile);
 			outFile.close();
@@ -234,11 +298,11 @@ class AdminTool_Location {
 	def resourceLinkName() {
 		try {
 			resource_name_link = driver.findElement(By.xpath("//*[@id='grid-Customers']//tr[2]/td[2]")).getText().toString();
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			sheet.getRow(1).createCell(14).setCellValue(resource_name_link);
 			workbook.write(outFile);
 			outFile.close();
@@ -255,7 +319,7 @@ class AdminTool_Location {
 	@Keyword
 	def sup() {
 		try {
-			//			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			//			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			//			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			//			XSSFSheet sheet = workbook.getSheetAt(0);
 			//			String resourceName = sheet.getRow(1).getCell(5).toString();
@@ -277,7 +341,7 @@ class AdminTool_Location {
 	@Keyword
 	def dragDropRes() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String resName= sheet.getRow(1).getCell(16).toString();
@@ -298,10 +362,39 @@ class AdminTool_Location {
 		}
 	}
 	@Keyword
+	def dragDropCust(int col) {
+		try {
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+
+			String resName= sheet.getRow(1).getCell(col).toString();
+			Actions action = new Actions(driver)
+
+			WebElement element = driver.findElement(By.xpath("//*[@id='scs-left-panel-treeview']/ul/li/ul/li/div/span[contains(text(),'"+resName+"')]"))
+			WebElement target = driver.findElement(By.xpath("//*[@id='scs-formdesigner-select-resource-grid']"))
+			Thread.sleep(2000)
+			action.moveToElement(element).build().perform()
+			Thread.sleep(2000)
+			action.dragAndDrop(element, target).build().perform()
+
+			file.close();
+
+
+
+			KeywordUtil.markPassed("Element has been clicked")
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+
+	@Keyword
 	def selectResType(){
 		try{
 
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String resType = sheet.getRow(1).getCell(15).toString();
@@ -332,7 +425,7 @@ class AdminTool_Location {
 	def validate(){
 		try{
 
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String resType = sheet.getRow(1).getCell(15).toString();
@@ -351,46 +444,55 @@ class AdminTool_Location {
 	@Keyword
 	def setLocationName() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
-			XSSFWorkbook workbook = new XSSFWorkbook(file);
-			XSSFSheet sheet = workbook.getSheetAt(0);
+			println path;
+			XSSFSheet sheet;
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
+			XSSFWorkbook workbook =  WorkbookFactory.create(file);
+			//	 new XSSFWorkbook(file);
+			sheet = workbook.getSheetAt(0);
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			Thread.sleep(4000)
+			println "Test"
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			sheet.getRow(1).createCell(0).setCellValue(location_name);
+			println "Test1"
 			workbook.write(outFile);
 			outFile.close();
 		} catch (WebElementNotFoundException e) {
 			KeywordUtil.markFailed("Element not found")
 		} catch (Exception e) {
-			KeywordUtil.markFailed("Fail to click on element")
+			KeywordUtil.markFailed(e+"Fail to click on element")
 		}
 	}
 
 	@Keyword
 	def setLocationNameInLocation() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			XSSFSheet sheet
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
-			XSSFSheet sheet = workbook.getSheetAt(0);
+			sheet = workbook.getSheetAt(0);
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			Thread.sleep(4000)
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			sheet.getRow(1).createCell(1).setCellValue(location_name1);
+			sheet.getRow(2).createCell(1).setCellValue(location_name2);
 			workbook.write(outFile);
 			outFile.close();
 		} catch (WebElementNotFoundException e) {
 			KeywordUtil.markFailed("Element not found")
 		} catch (Exception e) {
-			KeywordUtil.markFailed("Fail to click on element")
+			KeywordUtil.markFailed(e+"Fail to click on element")
 		}
 	}
 	@Keyword
 	def setCustomerName() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			sheet.getRow(1).createCell(2).setCellValue(customer_name);
 			sheet.getRow(1).createCell(6).setCellValue(customer_name1);
 			sheet.getRow(1).createCell(7).setCellValue(customer_name2);
@@ -408,11 +510,11 @@ class AdminTool_Location {
 	@Keyword
 	def setEquipmentName() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			sheet.getRow(1).createCell(3).setCellValue(equipment_name);
 			sheet.getRow(1).createCell(8).setCellValue(equipment_name1);
 			sheet.getRow(1).createCell(9).setCellValue(equipment_name2);
@@ -430,11 +532,11 @@ class AdminTool_Location {
 	@Keyword
 	def setItemName() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			sheet.getRow(1).createCell(4).setCellValue(item_name);
 			sheet.getRow(1).createCell(10).setCellValue(item_name1);
 			sheet.getRow(1).createCell(11).setCellValue(item_name2);
@@ -453,11 +555,11 @@ class AdminTool_Location {
 	@Keyword
 	def setSupplierName() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			file.close();
-			FileOutputStream outFile =new FileOutputStream(new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"));
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/location.xlsx"));
 			sheet.getRow(1).createCell(5).setCellValue(supplier_name);
 			sheet.getRow(1).createCell(12).setCellValue(supplier_name1);
 			sheet.getRow(1).createCell(13).setCellValue(supplier_name2);
@@ -475,10 +577,35 @@ class AdminTool_Location {
 	@Keyword
 	def checkLocation() {
 		try {
-			FileInputStream file = new FileInputStream (new File("../SafetyChain-Test-Automation-Katalon/SCTestData/location.xlsx"))
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String name = sheet.getRow(1).getCell(0).toString() + " > " +sheet.getRow(1).getCell(1).toString();
+			String lcn = "//td[span[contains(text(),'Locations > "+name+"')]]/input"
+			String lcnBlc = "//td[span[contains(text(),'Locations > "+name+"')]]"
+			WebElement location = driver.findElement(By.xpath(lcn));
+			WebElement locationBlock = driver.findElement(By.xpath(lcnBlc));
+
+			file.close();
+			println location
+			Actions action = new Actions(driver)
+			action.moveToElement(locationBlock).build().perform()
+			Thread.sleep(2000)
+			action.click(location).build().perform()
+			//driver.findElement(By.xpath(location)).click()
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+	@Keyword
+	def checkLocation2() {
+		try {
+			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String name = sheet.getRow(1).getCell(0).toString() + " > " +sheet.getRow(2).getCell(1).toString();
 			String lcn = "//td[span[contains(text(),'Locations > "+name+"')]]/input"
 			String lcnBlc = "//td[span[contains(text(),'Locations > "+name+"')]]"
 			WebElement location = driver.findElement(By.xpath(lcn));

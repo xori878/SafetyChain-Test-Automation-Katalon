@@ -6,11 +6,11 @@
    <elementGuidId>1afc3925-d6db-4323-bb7d-97171d3cb327</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
+         <value>//tr[1]/td[3]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id=&quot;scs-forms-grid&quot;]/div/table/tbody/tr/td[1]</value>
+         <key>XPATH</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;scs-forms-grid&quot;]/div/table/tbody/tr/td[1]</value>
+      <value>//tr[1]/td[3]</value>
    </webElementProperties>
 </WebElementEntity>

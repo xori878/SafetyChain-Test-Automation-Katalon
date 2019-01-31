@@ -14,6 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.By as By
+import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
@@ -85,7 +86,11 @@ WebUI.click(findTestObject('TestUser/roleOpen'))
 
 Thread.sleep(2000)
 
-WebUI.click(findTestObject('TestUser/selectRole'))
+WebUI.setText(findTestObject('TestUser/selectRole'), 'Superadmin')
+
+Thread.sleep(2000)
+
+WebUI.sendKeys(findTestObject('TestUser/selectRole'), Keys.chord(Keys.ENTER))
 
 Thread.sleep(2000)
 
@@ -98,6 +103,10 @@ WebUI.click(findTestObject('TestUser/clickOutside'))
 Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestUser/saveUser'))
+
+Thread.sleep(2000)
+
+WebUI.waitForElementClickable(findTestObject('TestUser/clickToCheck'), 30)
 
 Thread.sleep(6000)
 

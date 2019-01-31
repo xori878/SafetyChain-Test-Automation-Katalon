@@ -17,9 +17,9 @@ not_run: WebUI.openBrowser(GlobalVariable.URL)
 
 not_run: WebUI.maximizeWindow()
 
-not_run: WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName1)
 
-not_run: WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password1)
 
 CustomKeywords.'AdminTool_Location.setEquipmentName'()
 
@@ -94,7 +94,11 @@ Thread.sleep(2000)
 WebUI.setText(findTestObject('TestUserLocation/setNewName'), findTestData('LocationData').getValue('SubEquipmentName1', 
         1))
 
-WebUI.setText(findTestObject('TestResource/setPhoneNumber'), '912378456')
+Thread.sleep(2000)
+
+CustomKeywords.'Submission.createResource'()
+
+not_run: WebUI.setText(findTestObject('TestResource/setPhoneNumber'), '912378456')
 
 Thread.sleep(2000)
 
@@ -171,7 +175,11 @@ Thread.sleep(2000)
 WebUI.setText(findTestObject('TestUserLocation/setNewName'), findTestData('LocationData').getValue('SubEquipmentName2', 
         1))
 
-WebUI.setText(findTestObject('TestResource/setPhoneNumber'), '912378456')
+Thread.sleep(2000)
+
+CustomKeywords.'Submission.createResource'()
+
+not_run: WebUI.setText(findTestObject('TestResource/setPhoneNumber'), '912378456')
 
 Thread.sleep(2000)
 

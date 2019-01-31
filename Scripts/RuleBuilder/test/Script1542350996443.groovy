@@ -23,9 +23,9 @@ WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
+WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName1)
 
-WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password11)
+WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password111)
 
 CustomKeywords.'FormName.setData'()
 

@@ -27,9 +27,9 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 not_run: Thread.sleep(3000)
 
-not_run: WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName1)
 
-not_run: WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password1)
 
 not_run: WebUI.click(findTestObject('FormTab/login_Button'))
 

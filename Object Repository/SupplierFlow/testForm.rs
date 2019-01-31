@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>testForm</name>
+   <tag></tag>
+   <elementGuidId>0b9b9764-45a9-4ccd-b349-faf47659b31f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-pp-acknowledgement-step-1-grid-container&quot;]//tr[1]/td[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-pp-acknowledgement-step-1-grid-container&quot;]//tr[1]/td[2]</value>
+   </webElementProperties>
+</WebElementEntity>

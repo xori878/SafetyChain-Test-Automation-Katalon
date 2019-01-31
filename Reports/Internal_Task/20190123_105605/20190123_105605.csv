@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Internal_Task,,,2019-01-23 10:56:12,2019-01-23 10:56:15,2.367s,ERROR
+,,,,,,
+Test Cases/Internal_TaskManagement/1_CreateForm,,,2019-01-23 10:56:13,2019-01-23 10:56:14,1.113s,ERROR
+openBrowser(URL),,,2019-01-23 10:56:14,2019-01-23 10:56:14,0.004s,NOT_RUN
+maximizeWindow(),,,2019-01-23 10:56:14,2019-01-23 10:56:14,0.002s,NOT_RUN
+"setText(findTestObject(""Form_Selection_Creation/login_Username""), UserName)",,,2019-01-23 10:56:14,2019-01-23 10:56:14,0.002s,NOT_RUN
+"setText(findTestObject(""Form_Selection_Creation/login_Password""), Password)",,,2019-01-23 10:56:14,2019-01-23 10:56:14,0.002s,NOT_RUN
+FormName.setData(),,,2019-01-23 10:56:14,2019-01-23 10:56:14,0.182s,ERROR
+,,,,,,
+Test Cases/Internal_TaskManagement/2_AssignTask,,,2019-01-23 10:56:14,2019-01-23 10:56:15,0.865s,ERROR
+openBrowser(URL),,,2019-01-23 10:56:15,2019-01-23 10:56:15,0.003s,NOT_RUN
+maximizeWindow(),,,2019-01-23 10:56:15,2019-01-23 10:56:15,0.003s,NOT_RUN
+driver = getWebDriver(),,,2019-01-23 10:56:15,2019-01-23 10:56:15,0.029s,ERROR

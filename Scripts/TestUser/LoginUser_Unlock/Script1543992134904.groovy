@@ -29,6 +29,8 @@ Thread.sleep(10000)
 
 CustomKeywords.'AdminTool_Location.moveCursor'()
 
+WebUI.waitForElementClickable(findTestObject('TestUser/clickToCheck'), 30)
+
 Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestUser/clickToCheck'))

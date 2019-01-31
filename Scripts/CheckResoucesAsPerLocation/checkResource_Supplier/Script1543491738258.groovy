@@ -17,9 +17,9 @@ not_run: WebUI.openBrowser(GlobalVariable.URL)
 
 not_run: WebUI.maximizeWindow()
 
-not_run: WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName1)
 
-not_run: WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password1)
 
 CustomKeywords.'AdminTool_Location.setSupplierName'()
 
@@ -98,6 +98,10 @@ not_run: WebUI.setText(findTestObject('TestResource/setPhoneNumber'), '912378456
 
 Thread.sleep(2000)
 
+CustomKeywords.'Submission.createResource'()
+
+Thread.sleep(2000)
+
 WebUI.click(findTestObject('TestResource/saveDetailButton'))
 
 Thread.sleep(7000)
@@ -170,6 +174,10 @@ Thread.sleep(2000)
 
 WebUI.setText(findTestObject('TestUserLocation/setNewName'), findTestData('LocationData').getValue('SubSuppliersName2', 
         1))
+
+Thread.sleep(2000)
+
+CustomKeywords.'Submission.createResource'()
 
 not_run: WebUI.setText(findTestObject('TestResource/setPhoneNumber'), '912378456')
 

@@ -27,7 +27,8 @@ import internal.GlobalVariable
 import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
-
+import com.kms.katalon.core.util.internal.PathUtil as PathUtil
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.By
@@ -55,10 +56,11 @@ import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.support.ui.ExpectedConditions
 
 class TaskMGMT {
-	
-	WebDriver driver =  DriverFactory.getWebDriver();;
 
-	
+	WebDriver driver =  DriverFactory.getWebDriver();;
+	static String path = PathUtil.relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", RunConfiguration.getProjectDir())
+
+
 	public void click(WebDriver driver, By by) {
 		WebElement element = driver.findElement(by);
 		Actions action = new Actions(driver);
@@ -66,7 +68,7 @@ class TaskMGMT {
 		Thread.sleep(1000)
 		action.moveToElement(element).click().build().perform()
 	}
-	
+
 	@Keyword
 	def setData() {
 		try {
@@ -78,10 +80,17 @@ class TaskMGMT {
 			String locationId = driver.findElement(By.xpath("//*[@id='scs-popup']/div/div/div/div[2]/div/span")).getAttribute("aria-activedescendant").toString()
 			List<WebElement> locations = driver.findElements(By.xpath("//ul[li[@id='"+locationId+"']]//li"))
 			click(driver,By.xpath(openLocation))
-						Thread.sleep(2000)
+			Thread.sleep(2000)
 			int i=0,j=0,flag=0;
+			String s = findTestData('SupplierData').getValue("WorkGroupName", 1)
+			println s
+			String selectWG = "//div/div/div/ul/li[contains(text(),'"+s+"')]"
+			click(driver, By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'Assign To')]]//span[2]"))
+			Thread.sleep(2000)
+			click(driver, By.xpath(selectWG))
+
 			while(i<locations.size()){
-			click(driver,By.xpath(openLocation))
+				click(driver,By.xpath(openLocation))
 				Thread.sleep(2000)
 				locations.get(i).click()
 				Thread.sleep(2000)

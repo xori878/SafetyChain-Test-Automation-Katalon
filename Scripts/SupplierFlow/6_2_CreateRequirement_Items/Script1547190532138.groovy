@@ -18,9 +18,9 @@ not_run: WebUI.openBrowser(GlobalVariable.URL)
 
 not_run: WebUI.maximizeWindow()
 
-not_run: WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('TestUserLocation/login_Username'), GlobalVariable.UserName1)
 
-not_run: WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('TestUserLocation/login_Password'), GlobalVariable.Password1)
 
 Thread.sleep(2000)
 
@@ -67,7 +67,9 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('SupplierFlow/selectAckOption'))
 
-Thread.sleep(10000)
+WebUI.waitForElementNotPresent(findTestObject('SupplierFlow/testACK'), 45)
+
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/testACK'), 45)
 
 CustomKeywords.'Supplier.selectACK'()
 
@@ -111,7 +113,9 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('SupplierFlow/selectCompleteForm'))
 
-Thread.sleep(10000)
+WebUI.waitForElementNotPresent(findTestObject('SupplierFlow/testForm'), 45)
+
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/testForm'), 45)
 
 not_run: WebUI.check(findTestObject('SupplierFlow/selectForm'))
 
@@ -149,7 +153,9 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('SupplierFlow/selectDocumentUploadOption'))
 
-Thread.sleep(10000)
+WebUI.waitForElementNotPresent(findTestObject('SupplierFlow/testDoc'), 45)
+
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/testDoc'), 45)
 
 CustomKeywords.'Supplier.selectDocument'()
 

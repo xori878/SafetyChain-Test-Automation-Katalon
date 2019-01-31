@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSupplier,,,2019-01-15 10:25:13,2019-01-15 10:25:21,8.049s,ERROR
+,,,,,,
+Test Cases/SupplierFlow/7_SupplierFirstLogin,,,2019-01-15 10:25:13,2019-01-15 10:25:16,2.807s,ERROR
+openBrowser(URL),,,2019-01-15 10:25:14,2019-01-15 10:25:14,0.004s,NOT_RUN
+Thread.sleep(2000),,,2019-01-15 10:25:14,2019-01-15 10:25:16,2.008s,PASSED
+maximizeWindow(),,,2019-01-15 10:25:16,2019-01-15 10:25:16,0.002s,NOT_RUN
+Thread.sleep(2000),,,2019-01-15 10:25:16,2019-01-15 10:25:16,0.002s,NOT_RUN
+driver = getWebDriver(),,,2019-01-15 10:25:16,2019-01-15 10:25:16,0.127s,ERROR
+,,,,,,
+Test Cases/SupplierFlow/8_RejectFromInbox,,,2019-01-15 10:25:16,2019-01-15 10:25:17,1.051s,FAILED
+openBrowser(URL),,,2019-01-15 10:25:17,2019-01-15 10:25:17,0.004s,NOT_RUN
+maximizeWindow(),,,2019-01-15 10:25:17,2019-01-15 10:25:17,0.011s,NOT_RUN
+"setText(findTestObject(""Form_Selection_Creation/login_Username""), UserName)",,,2019-01-15 10:25:17,2019-01-15 10:25:17,0.499s,FAILED
+,,,,,,
+Test Cases/SupplierFlow/9_Resubmission_Supplier,,,2019-01-15 10:25:17,2019-01-15 10:25:18,0.911s,ERROR
+openBrowser(URL),,,2019-01-15 10:25:17,2019-01-15 10:25:18,0.573s,NOT_RUN
+maximizeWindow(),,,2019-01-15 10:25:18,2019-01-15 10:25:18,0.002s,NOT_RUN
+driver = getWebDriver(),,,2019-01-15 10:25:18,2019-01-15 10:25:18,0.005s,ERROR
+,,,,,,
+Test Cases/SupplierFlow/10_ApprovedFromInbox,,,2019-01-15 10:25:18,2019-01-15 10:25:19,0.790s,FAILED
+openBrowser(URL),,,2019-01-15 10:25:18,2019-01-15 10:25:18,0.003s,NOT_RUN
+maximizeWindow(),,,2019-01-15 10:25:18,2019-01-15 10:25:18,0.004s,NOT_RUN
+"setText(findTestObject(""Form_Selection_Creation/login_Username""), UserName)",,,2019-01-15 10:25:18,2019-01-15 10:25:19,0.381s,FAILED

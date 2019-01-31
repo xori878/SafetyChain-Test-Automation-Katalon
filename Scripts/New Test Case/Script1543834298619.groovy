@@ -23,11 +23,11 @@ WebUI.maximizeWindow()
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName1)
+WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName11)
 
 not_run: Thread.sleep(5000)
 
-WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password1)
+WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password11)
 
 WebUI.click(findTestObject('FormTab/login_Button'))
 
@@ -64,6 +64,8 @@ not_run: WebUI.click(findTestObject('FormTab/clickToViewMoreOption'))
 not_run: Thread.sleep(4000)
 
 not_run: WebUI.waitForElementNotVisible(findTestObject('FormTab/select500_Form'), 5)
+
+WebUI.clickOffset(findTestObject(null), 0, 0)
 
 not_run: WebUI.click(findTestObject('FormTab/select500_Form'), FailureHandling.STOP_ON_FAILURE)
 

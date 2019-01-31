@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;roleMultiSelect_listbox&quot;]/li[2]</value>
+         <value>//div[ul[@id=&quot;roleMultiSelect_taglist&quot;]]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;roleMultiSelect_listbox&quot;]/li[2]</value>
+      <value>//div[ul[@id=&quot;roleMultiSelect_taglist&quot;]]/input</value>
    </webElementProperties>
 </WebElementEntity>

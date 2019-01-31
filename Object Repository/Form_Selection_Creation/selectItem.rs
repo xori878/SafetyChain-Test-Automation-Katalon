@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectItem</name>
+   <tag></tag>
+   <elementGuidId>6c8fda5c-33e6-4987-a979-bc2f57dbfa5d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='scs-product-dropdown_listbox']/li[contains(text(),'Item')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='scs-product-dropdown_listbox']/li[contains(text(),'Item')]</value>
+   </webElementProperties>
+</WebElementEntity>

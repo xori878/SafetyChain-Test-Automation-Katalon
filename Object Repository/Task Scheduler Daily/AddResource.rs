@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AddResource</name>
+   <tag></tag>
+   <elementGuidId>42fae9a1-4b3b-4555-a5e4-ed3254ed26ae</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-ts-step2&quot;]/div[3]//div/span/span/span[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-ts-step2&quot;]/div[3]//div/span/span/span[1]</value>
+   </webElementProperties>
+</WebElementEntity>

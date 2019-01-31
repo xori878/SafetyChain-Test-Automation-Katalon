@@ -64,6 +64,8 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestUser/confirmUserYes'))
 
+WebUI.waitForElementClickable(findTestObject('TestUser/clickToCheck'), 30)
+
 Thread.sleep(7000)
 
 WebUI.click(findTestObject('TestUser/clickToCheck'))

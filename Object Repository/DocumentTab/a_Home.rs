@@ -6,11 +6,15 @@
    <elementGuidId>5db02dc4-d482-4a61-a3fa-3435b129d565</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//a[(text() = 'Home' or . = 'Home')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='breadCrumb']/span/span/a</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

@@ -17,9 +17,9 @@ not_run: WebUI.openBrowser(GlobalVariable.URL)
 
 not_run: WebUI.maximizeWindow()
 
-not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName1)
 
-not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password11)
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password111)
 
 Thread.sleep(4000)
 

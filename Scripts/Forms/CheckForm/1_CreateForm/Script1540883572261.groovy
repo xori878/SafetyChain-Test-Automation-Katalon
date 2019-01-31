@@ -17,9 +17,9 @@ not_run: WebUI.openBrowser(GlobalVariable.URL)
 
 not_run: WebUI.maximizeWindow()
 
-not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName1)
 
-not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password1)
 
 CustomKeywords.'FormName.setData'()
 
@@ -33,7 +33,9 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
 
-not_run: WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
+WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
+
+WebUI.waitForElementVisible(findTestObject('Form_Selection_Creation/mainMenu_AdminTools_FormDesigner'), 45)
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools_FormDesigner'))
 
@@ -44,6 +46,14 @@ WebUI.click(findTestObject('Form_Selection_Creation/selectCheckForm'))
 Thread.sleep(3000)
 
 WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/formDesign_selectResource'), findTestObject('Form_Selection_Creation/Target_Res_Object'))
+
+WebUI.waitForElementClickable(findTestObject('Form_Selection_Creation/select1Res'), 45)
+
+WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/select1Res'), findTestObject('Form_Selection_Creation/Target_Res_Object'))
+
+WebUI.waitForElementClickable(findTestObject('Form_Selection_Creation/select2Res'), 45)
+
+WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/select2Res'), findTestObject('Form_Selection_Creation/Target_Res_Object'))
 
 Thread.sleep(6000)
 
@@ -84,6 +94,8 @@ WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/formDesign_Sel
 WebUI.setText(findTestObject('Form_Selection_Creation/formDesign_Select_OneName'), 'This is Select One')
 
 Thread.sleep(3000)
+
+WebUI.waitForElementClickable(findTestObject('Form_Selection_Creation/button_Add New'), 30)
 
 WebUI.click(findTestObject('Form_Selection_Creation/button_Add New'))
 
@@ -150,4 +162,6 @@ Thread.sleep(5000)
 WebUI.click(findTestObject('Form_Selection_Creation/button_Release'))
 
 Thread.sleep(4000)
+
+WebUI.click(findTestObject('Form_Selection_Creation/home'))
 

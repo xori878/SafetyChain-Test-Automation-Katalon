@@ -38,7 +38,13 @@ WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys
 
 Thread.sleep(3000)
 
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(3000)
+
 CustomKeywords.'Supplier.selectTaskInInbox'()
+
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/approveButton'), 45)
 
 Thread.sleep(6000)
 
@@ -52,7 +58,11 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('SupplierFlow/approveYesButton'))
 
-Thread.sleep(6000)
+Thread.sleep(2000)
+
+WebUI.waitForElementVisible(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(2000)
 
 WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('FormTask', 1))
 
@@ -66,7 +76,13 @@ WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys
 
 Thread.sleep(3000)
 
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(3000)
+
 CustomKeywords.'Supplier.selectTaskInInbox'()
+
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/approveButton'), 45)
 
 Thread.sleep(6000)
 
@@ -94,7 +110,13 @@ WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys
 
 Thread.sleep(3000)
 
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(3000)
+
 CustomKeywords.'Supplier.selectTaskInInbox'()
+
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/approveButton'), 45)
 
 Thread.sleep(6000)
 
@@ -108,7 +130,11 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('SupplierFlow/approveYesButton'))
 
-Thread.sleep(6000)
+Thread.sleep(2000)
+
+WebUI.waitForElementVisible(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(2000)
 
 WebUI.setText(findTestObject('SupplierFlow/searchTaskInInbox'), findTestData('SupplierData').getValue('DocTask', 1))
 
@@ -122,7 +148,13 @@ WebUI.sendKeys(findTestObject('SupplierFlow/searchTaskInInbox'), Keys.chord(Keys
 
 Thread.sleep(3000)
 
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/firstEntry'), 45)
+
+Thread.sleep(3000)
+
 CustomKeywords.'Supplier.selectTaskInInbox'()
+
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/approveButton'), 45)
 
 Thread.sleep(6000)
 

@@ -89,9 +89,9 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('TestUserLocation/login_Button'))
 
-Thread.sleep(4000)
-
 WebUI.waitForElementClickable(findTestObject('TestUser/clickToCheck'), 70)
+
+Thread.sleep(4000)
 
 WebUI.click(findTestObject('TestUser/clickToCheck'))
 

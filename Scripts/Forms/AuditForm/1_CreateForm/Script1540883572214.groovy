@@ -42,6 +42,14 @@ Thread.sleep(3000)
 
 WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/formDesign_selectResource'), findTestObject('Form_Selection_Creation/Target_Res_Object'))
 
+WebUI.waitForElementClickable(findTestObject('Form_Selection_Creation/select1Res'), 45)
+
+WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/select1Res'), findTestObject('Form_Selection_Creation/Target_Res_Object'))
+
+WebUI.waitForElementClickable(findTestObject('Form_Selection_Creation/select2Res'), 45)
+
+WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/select2Res'), findTestObject('Form_Selection_Creation/Target_Res_Object'))
+
 Thread.sleep(6000)
 
 WebUI.click(findTestObject('Form_Selection_Creation/formCreation_NextToDesignForm'))
@@ -85,6 +93,8 @@ WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/formDesign_Sel
 WebUI.setText(findTestObject('Form_Selection_Creation/formDesign_Select_OneName'), 'This is Select One')
 
 Thread.sleep(2000)
+
+WebUI.waitForElementClickable(findTestObject('Form_Selection_Creation/button_AddNew1'), 30)
 
 WebUI.click(findTestObject('Form_Selection_Creation/button_AddNew1'))
 
@@ -151,4 +161,6 @@ Thread.sleep(5000)
 WebUI.click(findTestObject('Form_Selection_Creation/button_Release'))
 
 Thread.sleep(4000)
+
+WebUI.click(findTestObject('Form_Selection_Creation/home'))
 

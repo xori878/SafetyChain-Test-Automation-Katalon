@@ -300,9 +300,9 @@ class Submission{
 		}
 		if(!driver.findElements(By.xpath("//*[@id='breadCrumb']/span/span/a[contains(text(),'Resource Browser')]")).isEmpty()){
 			if(driver.findElement(By.xpath("//*[@id='breadCrumb']/span/span/a[contains(text(),'Resource Browser')]")).isDisplayed()){
-			//	click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
+				click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
 				Thread.sleep(5000)
-			//	click(driver,By.xpath("//button[contains(text(),'OK')]"))
+				click(driver,By.xpath("//button[contains(text(),'OK')]"))
 			}
 		}else{
 			if(flag1==0){
@@ -317,7 +317,7 @@ class Submission{
 			//	if(!driver.findElements(By.xpath("//*[@id='scs-save-form-button']")).isEmpty()){
 			//		click(driver,By.xpath("//*[@id='scs-save-form-button']"))
 			//	}
-		//	click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
+			click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
 			Thread.sleep(3000)
 			if(!driver.findElements(By.xpath("//*[@id='scs-form-resubmission-note']")).isEmpty()){
 				if(flag1==1){
@@ -329,7 +329,7 @@ class Submission{
 					Thread.sleep(2000)
 				}
 			}
-		//	driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click()
+			//	driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click()
 
 		}
 		Thread.sleep(12000)

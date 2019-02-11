@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>option</name>
+   <tag></tag>
+   <elementGuidId>1a4a30dd-bb42-4224-b204-dc3a4e1c74c4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-dpt-filters-grid&quot;]//tr//th[2]/a/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-dpt-filters-grid&quot;]//tr//th[2]/a/i</value>
+   </webElementProperties>
+</WebElementEntity>

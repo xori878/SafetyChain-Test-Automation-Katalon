@@ -152,7 +152,7 @@ not_run: WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/formD
 
 not_run: Thread.sleep(2000)
 
-not_run: WebUI.setText(findTestObject('Form_Selection_Creation/formDesignt_NumericName'), 'Age')
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/formDesign_NumericName'), 'Age')
 
 not_run: WebUI.click(findTestObject('RuleBuilder/advance_Button'))
 

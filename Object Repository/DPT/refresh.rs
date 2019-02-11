@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>refresh</name>
+   <tag></tag>
+   <elementGuidId>51c9167e-7cd0-4a28-9124-c95a847473b0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;scs-data-provisioning-import-grid-container&quot;]//a[@title=&quot;Refresh&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;scs-data-provisioning-import-grid-container&quot;]//a[@title=&quot;Refresh&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

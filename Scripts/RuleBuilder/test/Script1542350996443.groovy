@@ -165,7 +165,7 @@ WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/formDesign_Sel
 
 Thread.sleep(2000)
 
-WebUI.setText(findTestObject('Form_Selection_Creation/formDesignt_NumericName'), 'Age')
+WebUI.setText(findTestObject('Form_Selection_Creation/formDesign_NumericName'), 'Age')
 
 WebUI.click(findTestObject('RuleBuilder/advance_Button'))
 

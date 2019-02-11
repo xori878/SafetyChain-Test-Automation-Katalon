@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>formDesignt_NumericName</name>
+   <name>formDesign_NumericName</name>
    <tag></tag>
    <elementGuidId>39b15aef-f499-422d-aeaf-72902801f4bd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@type='text'])[8]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@id=&quot;field-Numeric-0&quot;]/div[1]/div/div[2]/span/input</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@type='text'])[8]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

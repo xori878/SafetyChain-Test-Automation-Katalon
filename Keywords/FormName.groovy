@@ -24,7 +24,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import internal.GlobalVariable
-
+import java.util.List;
 import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
@@ -57,6 +57,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions
 
 class FormName {
 	WebDriver driver =  DriverFactory.getWebDriver();
+	static String fileName = null;
 	//public String form_name = "AUTO_TOOL_KATALON_"+(int)(Math.random()*100)+"_FORM";
 	//public String form_name = "AUTOQUESTIONAIREFORMTEST7";
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy-HH:mm:ss");
@@ -283,6 +284,16 @@ class FormName {
 
 	}
 	@Keyword
+	def testStatus() {
+		int i=0;
+		while(true){
+			if(driver.findElements(By.xpath("//*[@id='scs-data-provisioning-export-grid-container']//tr[1]/td[1]/span[@class='scs-status-tooltip scs-success-status']")).isEmpty()){
+				Thread.sleep(5000)
+			}
+		}
+
+	}
+	@Keyword
 	def getDocumentName3() {
 		FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -348,6 +359,129 @@ class FormName {
 		} catch (Exception e) {
 			KeywordUtil.markFailed("Fail to click on element")
 		}
+	}
+	@Keyword
+	def testExportStatus() {
+		Actions actions = new Actions(driver);
+		int i=0;
+		while(true){
+			click(driver,By.xpath("//*[@id='scs-data-provisioning-export-grid-container']//tr[1]/td[3]"))
+			fileName = driver.findElement(By.xpath("//*[@id='scs-data-provisioning-export-grid-container']//tr[1]/td[3]")).getText()
+			String className = driver.findElement(By.xpath("//*[@id='scs-data-provisioning-export-grid-container']//tr[1]/td[1]/span")).getAttribute("class")
+			println className
+			FileInputStream file = new FileInputStream (new File(path+"/data.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			sheet.getRow(1).createCell(9).setCellValue(fileName);
+			file.close();
+			FileOutputStream outFile =new FileOutputStream(new File(path+"/data.xlsx"));
+			workbook.write(outFile);
+			outFile.close();
+			if(className != "scs-status-tooltip scs-success-status"){
+				if(className=="scs-status-tooltip scs-failure-status"){
+					fileName = 	driver.findElement(By.xpath("//*[@id='scs-data-provisioning-export-grid-container']//tr[1]/td[3]")).getText()
+					String errorMeessage = driver.findElement(By.xpath("//*[@id='scs-data-provisioning-export-grid-container']//tr[1]/td[5]")).getText()
+					println fileName
+					if(errorMeessage!=null){
+						println "Error Message - "+errorMeessage
+						throw new com.kms.katalon.core.exception.StepFailedException()
+					}
+					break;
+				}
+				Thread.sleep(5000)
+				i++;
+				click(driver,By.xpath("//*[@id='scs-data-provisioning-export-grid-container']/div/a[@title='Refresh']"))
+				Thread.sleep(3000)
+			}else{
+
+				fileName = 	driver.findElement(By.xpath("//*[@id='scs-data-provisioning-export-grid-container']//tr[1]/td[3]")).getText()
+				WebElement element = driver.findElement(By.xpath("//*[@id='scs-data-provisioning-export-grid-container']//tr[1]/td[3]"))
+				actions.moveToElement(element).doubleClick().build().perform()
+				Thread.sleep(4000)
+				println fileName
+				break;
+			}
+			if(i==3){
+
+
+				println "To Long to load"
+
+				throw new com.kms.katalon.core.exception.StepFailedException()
+
+				break;
+			}
+		}
+
+	}
+	@Keyword
+	def testImportStatus() {
+		Actions actions = new Actions(driver);
+		int i=0;
+		while(true){
+			click(driver,By.xpath("//*[@id='scs-data-provisioning-import-grid-container']//tr[1]/td[5]"))
+			String className = driver.findElement(By.xpath("//*[@id='scs-data-provisioning-import-grid-container']//tr[1]/td[1]/span")).getAttribute("class")
+			println className
+			if(className != "scs-status-tooltip scs-success-status"){
+				if(className=="scs-status-tooltip scs-failure-status"){
+					fileName = 	driver.findElement(By.xpath("//*[@id='scs-data-provisioning-import-grid-container']//tr[1]/td[5]")).getText()
+					String errorMeessage = driver.findElement(By.xpath("//*[@id='scs-data-provisioning-import-grid-container']//tr[1]/td[6]")).getText()
+					println fileName
+					if(errorMeessage!=null){
+						println "Error Message - "+errorMeessage
+						throw new com.kms.katalon.core.exception.StepFailedException()
+					}
+					break;
+				}
+				Thread.sleep(5000)
+				i++;
+				click(driver,By.xpath("//*[@id='scs-data-provisioning-import-grid-container']/div/a[@title='Refresh']"))
+				Thread.sleep(3000)
+			}else{
+
+				fileName = 	driver.findElement(By.xpath("//*[@id='scs-data-provisioning-import-grid-container']//tr[1]/td[3]")).getText()
+				WebElement element = driver.findElement(By.xpath("//*[@id='scs-data-provisioning-import-grid-container']//tr[1]/td[3]"))
+				actions.moveToElement(element).doubleClick().build().perform()
+				Thread.sleep(4000)
+				println fileName
+				break;
+			}
+			if(i==3){
+
+
+				println "To Long to load"
+
+				throw new com.kms.katalon.core.exception.StepFailedException()
+
+				break;
+			}
+		}
+
+	}
+	@Keyword
+	def TestCompliance() {
+
+		List<WebElement> min = driver.findElements(By.xpath("//*[@id='scs-form-level']//div[@data-fieldtype='Numeric']/div/div/div/span[3]/span[1]"))
+		List<WebElement> max = driver.findElements(By.xpath("//*[@id='scs-form-level']//div[@data-fieldtype='Numeric']/div/div/div/span[3]/span[3]"))
+		List<WebElement> uom = driver.findElements(By.xpath("//*[@id='scs-form-level']//div[@data-fieldtype='Numeric']/div/div/div/span[2]"))
+
+		for(int i=0;i<min.size();i++){
+			if(min.get(i).getText().toString()  == 	"Min: 4"){
+				println "MIN"
+			}
+			if(max.get(i).getText().toString()  == 	"Max: 8" ){
+				println "MAX"
+			}
+			if(uom.get(i).getText().toString()  == 	"CM"){
+				println "UOM"
+			}
+		}
+	}
+	@Keyword
+	def uploadExFile() {
+		Thread.sleep(2000)
+		println fileName
+		driver.findElement(By.xpath("//*[@id='scs-dpt-file-upload-input']")).sendKeys("C:\\Users\\pashine_a\\Downloads\\"+fileName);
+		Thread.sleep(2000)
 	}
 	@Keyword
 	def upload() {

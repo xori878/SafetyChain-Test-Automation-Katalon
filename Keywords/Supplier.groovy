@@ -181,15 +181,15 @@ class Supplier {
 		String namePath = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[2]"
 		WebElement element = driver.findElement(By.xpath(path1))
 		String docName = driver.findElement(By.xpath(namePath)).getText().toString()
-	/*	FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
-		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		XSSFSheet sheet = workbook.getSheetAt(0);
-		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
-		sheet.getRow(1).createCell(6).setCellValue(docName);
-		workbook.write(outFile);
-		outFile.close();
-		*/
+		/*	FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
+		 XSSFWorkbook workbook = new XSSFWorkbook(file);
+		 XSSFSheet sheet = workbook.getSheetAt(0);
+		 file.close();
+		 FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
+		 sheet.getRow(1).createCell(6).setCellValue(docName);
+		 workbook.write(outFile);
+		 outFile.close();
+		 */
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", element);
 	}
@@ -201,15 +201,15 @@ class Supplier {
 		String namePath = "//*[@id='scs-pp-acknowledgement-step-1-grid-container']//tr[1]/td[3]"
 		WebElement element = driver.findElement(By.xpath(path1))
 		String taskName = driver.findElement(By.xpath(namePath)).getText().toString()
-	/*	FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
-		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		XSSFSheet sheet = workbook.getSheetAt(0);
-		file.close();
-		FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
-		sheet.getRow(1).createCell(7).setCellValue(taskName);
-		workbook.write(outFile);
-		outFile.close();
-		*/
+		/*	FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
+		 XSSFWorkbook workbook = new XSSFWorkbook(file);
+		 XSSFSheet sheet = workbook.getSheetAt(0);
+		 file.close();
+		 FileOutputStream outFile =new FileOutputStream(new File(path+"/SupplierCred.xlsx"));
+		 sheet.getRow(1).createCell(7).setCellValue(taskName);
+		 workbook.write(outFile);
+		 outFile.close();
+		 */
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", element);
 	}
@@ -228,8 +228,8 @@ class Supplier {
 		String s1;
 		int t=0
 		for(int i=1;i<elements.size();i++){
-
-			s1=driver.findElement(By.xpath("//*[@id='scs-add-supplier-grid-container']/div[3]/table/tbody/tr["+i+"]/td")).getAttribute("innerHTML");
+			s1=driver.findElement(By.xpath("//div[@id='scs-add-supplier-grid-container']/div[2]/table/tbody/tr["+i+"]/td[2]")).getAttribute("innerHTML");
+			//	s1=driver.findElement(By.xpath("//*[@id='scs-add-supplier-grid-container']/div[3]/table/tbody/tr["+i+"]/td")).getAttribute("innerHTML");
 			//println "Z2-"+s1
 			if(s1.equals(s)){
 				t=i+1;
@@ -258,8 +258,8 @@ class Supplier {
 		String s1;
 		int t=0
 		for(int i=1;i<elements.size();i++){
-
-			s1=driver.findElement(By.xpath("//*[@id='scs-add-supplier-grid-container']/div[3]/table/tbody/tr["+i+"]/td")).getAttribute("innerHTML");
+			s1=driver.findElement(By.xpath("//div[@id='scs-add-supplier-grid-container']/div[2]/table/tbody/tr["+i+"]/td[2]")).getAttribute("innerHTML");
+			//	s1=driver.findElement(By.xpath("//*[@id='scs-add-supplier-grid-container']/div[3]/table/tbody/tr["+i+"]/td")).getAttribute("innerHTML");
 			//println "Z2-"+s1
 			if(s1.equals(s)){
 				t=i+1;
@@ -810,7 +810,7 @@ class Supplier {
 		sheet.getRow(1).createCell(5).setCellValue(formTaskName);
 		workbook.write(outFile);
 		outFile.close();
-	
+
 	}
 	@Keyword
 	def setDocTaskName() {
@@ -837,7 +837,7 @@ class Supplier {
 		sheet.getRow(1).createCell(7).setCellValue(ackTaskName);
 		workbook.write(outFile);
 		outFile.close();
-		
+
 	}
 	@Keyword
 	def setFormTaskName1() {

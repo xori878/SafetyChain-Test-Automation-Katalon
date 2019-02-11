@@ -179,7 +179,7 @@ Thread.sleep(2000)
 
 WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/formDesign_SelectNumeric'), findTestObject('Form_Selection_Creation/group_area'))
 
-WebUI.setText(findTestObject('Form_Selection_Creation/formDesignt_NumericName'), 'This is Numeric Field.')
+WebUI.setText(findTestObject('Form_Selection_Creation/formDesign_NumericName'), 'This is Numeric Field.')
 
 Thread.sleep(2000)
 

@@ -1,0 +1,209 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+UserCheck,Chrome 71.0.3578.98,,2019-02-01 13:09:52,2019-02-01 13:16:33,6m - 40.484s,PASSED
+,,,,,,
+Test Cases/TestUser/createUser,Chrome 71.0.3578.98,,2019-02-01 13:09:53,2019-02-01 13:12:45,2m - 51.989s,PASSED
+openBrowser(URL),Chrome 71.0.3578.98,,2019-02-01 13:09:54,2019-02-01 13:10:31,36.814s,PASSED
+maximizeWindow(),Chrome 71.0.3578.98,,2019-02-01 13:10:31,2019-02-01 13:10:32,1.394s,PASSED
+"waitForElementVisible(findTestObject(""TestUserLocation/login_Username""), 70)",Chrome 71.0.3578.98,,2019-02-01 13:10:32,2019-02-01 13:11:46,1m - 14.409s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Username""), UserName)",Chrome 71.0.3578.98,,2019-02-01 13:11:46,2019-02-01 13:11:46,0.149s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Password""), Password)",Chrome 71.0.3578.98,,2019-02-01 13:11:46,2019-02-01 13:11:47,0.168s,PASSED
+User.setNamePass(),Chrome 71.0.3578.98,,2019-02-01 13:11:47,2019-02-01 13:11:48,1.265s,PASSED
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-02-01 13:11:48,2019-02-01 13:11:49,1.477s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2019-02-01 13:11:49,2019-02-01 13:11:55,6.007s,PASSED
+"waitForElementClickable(findTestObject(""TestUserLocation/mainmenu_button""), 70)",Chrome 71.0.3578.98,,2019-02-01 13:11:55,2019-02-01 13:11:56,0.093s,PASSED
+"click(findTestObject(""TestUserLocation/mainmenu_button""))",Chrome 71.0.3578.98,,2019-02-01 13:11:56,2019-02-01 13:11:56,0.073s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_AdminTools""))",Chrome 71.0.3578.98,,2019-02-01 13:11:56,2019-02-01 13:11:56,0.105s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:11:56,2019-02-01 13:11:58,2.002s,PASSED
+"click(findTestObject(""TestUser/users""))",Chrome 71.0.3578.98,,2019-02-01 13:11:58,2019-02-01 13:11:58,0.257s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2019-02-01 13:11:58,2019-02-01 13:12:04,6.003s,PASSED
+"click(findTestObject(""TestUser/addNewUser""))",Chrome 71.0.3578.98,,2019-02-01 13:12:04,2019-02-01 13:12:04,0.131s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-02-01 13:12:04,2019-02-01 13:12:08,4.002s,PASSED
+"setText(findTestObject(""TestUser/userName""), findTestData(""UserData"").getValue(""UserName"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:12:08,2019-02-01 13:12:08,0.401s,PASSED
+"setText(findTestObject(""TestUser/password""), findTestData(""UserData"").getValue(""Password"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:12:08,2019-02-01 13:12:09,0.244s,PASSED
+"setText(findTestObject(""TestUser/firstName""), ""Test"")",Chrome 71.0.3578.98,,2019-02-01 13:12:09,2019-02-01 13:12:09,0.199s,PASSED
+"setText(findTestObject(""TestUser/lastName""), ""Auto"")",Chrome 71.0.3578.98,,2019-02-01 13:12:09,2019-02-01 13:12:09,0.158s,PASSED
+"setText(findTestObject(""TestUser/email""), ""test123@auto.com"")",Chrome 71.0.3578.98,,2019-02-01 13:12:09,2019-02-01 13:12:09,0.238s,PASSED
+"click(findTestObject(""TestUser/timeZoneOpen""))",Chrome 71.0.3578.98,,2019-02-01 13:12:09,2019-02-01 13:12:10,0.455s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:10,2019-02-01 13:12:12,2.001s,PASSED
+"click(findTestObject(""TestUser/selectTimeZone""))",Chrome 71.0.3578.98,,2019-02-01 13:12:12,2019-02-01 13:12:12,0.122s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:12,2019-02-01 13:12:14,2.001s,PASSED
+"click(findTestObject(""TestUser/clickOutside""))",Chrome 71.0.3578.98,,2019-02-01 13:12:14,2019-02-01 13:12:14,0.107s,PASSED
+"click(findTestObject(""TestUser/locationOpen""))",Chrome 71.0.3578.98,,2019-02-01 13:12:14,2019-02-01 13:12:14,0.308s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:14,2019-02-01 13:12:16,2.001s,PASSED
+"click(findTestObject(""TestUser/selectLocation""))",Chrome 71.0.3578.98,,2019-02-01 13:12:16,2019-02-01 13:12:17,0.204s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:17,2019-02-01 13:12:19,2.004s,PASSED
+"click(findTestObject(""TestUser/clickOutside""))",Chrome 71.0.3578.98,,2019-02-01 13:12:19,2019-02-01 13:12:19,0.087s,PASSED
+"click(findTestObject(""TestUser/roleOpen""))",Chrome 71.0.3578.98,,2019-02-01 13:12:19,2019-02-01 13:12:19,0.253s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:19,2019-02-01 13:12:21,2.000s,PASSED
+"setText(findTestObject(""TestUser/selectRole""), ""Superadmin"")",Chrome 71.0.3578.98,,2019-02-01 13:12:21,2019-02-01 13:12:21,0.219s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:21,2019-02-01 13:12:23,2.002s,PASSED
+"sendKeys(findTestObject(""TestUser/selectRole""), Keys.chord(ENTER))",Chrome 71.0.3578.98,,2019-02-01 13:12:23,2019-02-01 13:12:23,0.109s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:23,2019-02-01 13:12:25,2.000s,PASSED
+AdminTool_Location.moveCursor(),Chrome 71.0.3578.98,,2019-02-01 13:12:25,2019-02-01 13:12:25,0.033s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:25,2019-02-01 13:12:27,2.000s,PASSED
+"click(findTestObject(""TestUser/clickOutside""))",Chrome 71.0.3578.98,,2019-02-01 13:12:27,2019-02-01 13:12:27,0.081s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:27,2019-02-01 13:12:29,2.002s,PASSED
+"click(findTestObject(""TestUser/saveUser""))",Chrome 71.0.3578.98,,2019-02-01 13:12:29,2019-02-01 13:12:29,0.143s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:29,2019-02-01 13:12:31,2.001s,PASSED
+"waitForElementClickable(findTestObject(""TestUser/clickToCheck""), 30)",Chrome 71.0.3578.98,,2019-02-01 13:12:31,2019-02-01 13:12:32,0.066s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2019-02-01 13:12:32,2019-02-01 13:12:38,6.003s,PASSED
+"click(findTestObject(""TestUser/clickToCheck""))",Chrome 71.0.3578.98,,2019-02-01 13:12:38,2019-02-01 13:12:38,0.144s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:38,2019-02-01 13:12:40,2.001s,PASSED
+"click(findTestObject(""TestUser/logoutUser""))",Chrome 71.0.3578.98,,2019-02-01 13:12:40,2019-02-01 13:12:43,2.989s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:43,2019-02-01 13:12:45,2.000s,PASSED
+,,,,,,
+Test Cases/TestUser/userFirstLogin,Chrome 71.0.3578.98,,2019-02-01 13:12:45,2019-02-01 13:13:40,55.724s,PASSED
+openBrowser(URL),Chrome 71.0.3578.98,,2019-02-01 13:12:45,2019-02-01 13:12:45,0.002s,NOT_RUN
+maximizeWindow(),Chrome 71.0.3578.98,,2019-02-01 13:12:45,2019-02-01 13:12:45,0.001s,NOT_RUN
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-02-01 13:12:45,2019-02-01 13:12:49,4.002s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Username""), findTestData(""UserData"").getValue(""UserName"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:12:49,2019-02-01 13:12:49,0.217s,PASSED
+User.setNewPass(),Chrome 71.0.3578.98,,2019-02-01 13:12:49,2019-02-01 13:12:49,0.056s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Password""), findTestData(""UserData"").getValue(""Password"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:12:49,2019-02-01 13:12:49,0.173s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:49,2019-02-01 13:12:51,2.000s,PASSED
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-02-01 13:12:51,2019-02-01 13:12:52,0.730s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2019-02-01 13:12:52,2019-02-01 13:12:58,6.003s,PASSED
+"setText(findTestObject(""TestUser/newPassword""), ""a"")",Chrome 71.0.3578.98,,2019-02-01 13:12:58,2019-02-01 13:12:58,0.130s,PASSED
+"setText(findTestObject(""TestUser/confirmPassword""), ""b"")",Chrome 71.0.3578.98,,2019-02-01 13:12:58,2019-02-01 13:12:58,0.100s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:12:58,2019-02-01 13:13:00,2.000s,PASSED
+"click(findTestObject(""TestUser/createPasswordButton""))",Chrome 71.0.3578.98,,2019-02-01 13:13:00,2019-02-01 13:13:01,0.395s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-02-01 13:13:01,2019-02-01 13:13:05,4.002s,PASSED
+"click(findTestObject(""TestUser/passwordMatch""))",Chrome 71.0.3578.98,,2019-02-01 13:13:05,2019-02-01 13:13:05,0.094s,PASSED
+"setText(findTestObject(""TestUser/newPassword""), ""a"")",Chrome 71.0.3578.98,,2019-02-01 13:13:05,2019-02-01 13:13:05,0.114s,PASSED
+"setText(findTestObject(""TestUser/confirmPassword""), ""a"")",Chrome 71.0.3578.98,,2019-02-01 13:13:05,2019-02-01 13:13:05,0.114s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:13:05,2019-02-01 13:13:07,2.001s,PASSED
+AdminTool_Location.moveCursor(),Chrome 71.0.3578.98,,2019-02-01 13:13:07,2019-02-01 13:13:07,0.010s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:13:07,2019-02-01 13:13:09,2.002s,PASSED
+"click(findTestObject(""TestUser/createPasswordButton""))",Chrome 71.0.3578.98,,2019-02-01 13:13:09,2019-02-01 13:13:09,0.397s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-02-01 13:13:09,2019-02-01 13:13:13,4.001s,PASSED
+"click(findTestObject(""TestUser/characterLength""))",Chrome 71.0.3578.98,,2019-02-01 13:13:13,2019-02-01 13:13:14,0.134s,PASSED
+"setText(findTestObject(""TestUser/newPassword""), findTestData(""UserData"").getValue(""Password"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:13:14,2019-02-01 13:13:14,0.162s,PASSED
+"setText(findTestObject(""TestUser/confirmPassword""), findTestData(""UserData"").getValue(""Password"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:13:14,2019-02-01 13:13:14,0.144s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:13:14,2019-02-01 13:13:16,2.000s,PASSED
+"click(findTestObject(""TestUser/createPasswordButton""))",Chrome 71.0.3578.98,,2019-02-01 13:13:16,2019-02-01 13:13:16,0.412s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-02-01 13:13:16,2019-02-01 13:13:20,4.001s,PASSED
+"click(findTestObject(""TestUser/specialCharacater""))",Chrome 71.0.3578.98,,2019-02-01 13:13:20,2019-02-01 13:13:20,0.098s,PASSED
+"setText(findTestObject(""TestUser/newPassword""), findTestData(""UserData"").getValue(""NewPassword"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:13:20,2019-02-01 13:13:21,0.151s,PASSED
+"setText(findTestObject(""TestUser/confirmPassword""), findTestData(""UserData"").getValue(""NewPassword"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:13:21,2019-02-01 13:13:21,0.162s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:13:21,2019-02-01 13:13:23,2.000s,PASSED
+"click(findTestObject(""TestUser/createPasswordButton""))",Chrome 71.0.3578.98,,2019-02-01 13:13:23,2019-02-01 13:13:23,0.658s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-02-01 13:13:23,2019-02-01 13:13:27,4.000s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Username""), findTestData(""UserData"").getValue(""UserName"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:13:27,2019-02-01 13:13:28,0.222s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Password""), findTestData(""UserData"").getValue(""NewPassword"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:13:28,2019-02-01 13:13:28,0.160s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:13:28,2019-02-01 13:13:30,2.001s,PASSED
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-02-01 13:13:30,2019-02-01 13:13:31,1.602s,PASSED
+"waitForElementClickable(findTestObject(""TestUser/clickToCheck""), 70)",Chrome 71.0.3578.98,,2019-02-01 13:13:31,2019-02-01 13:13:33,2.048s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-02-01 13:13:33,2019-02-01 13:13:37,4.001s,PASSED
+"click(findTestObject(""TestUser/clickToCheck""))",Chrome 71.0.3578.98,,2019-02-01 13:13:37,2019-02-01 13:13:38,0.110s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:13:38,2019-02-01 13:13:40,2.001s,PASSED
+"click(findTestObject(""TestUser/logoutUser""))",Chrome 71.0.3578.98,,2019-02-01 13:13:40,2019-02-01 13:13:40,0.886s,PASSED
+,,,,,,
+Test Cases/TestUser/CheckUser_Invalid,Chrome 71.0.3578.98,,2019-02-01 13:13:40,2019-02-01 13:14:19,38.999s,PASSED
+openBrowser(URL),Chrome 71.0.3578.98,,2019-02-01 13:13:41,2019-02-01 13:13:41,0.002s,NOT_RUN
+maximizeWindow(),Chrome 71.0.3578.98,,2019-02-01 13:13:41,2019-02-01 13:13:41,0.001s,NOT_RUN
+for (def index : (0..10)),Chrome 71.0.3578.98,,2019-02-01 13:13:41,2019-02-01 13:14:13,32.650s,PASSED
+"click(findTestObject(""TestUser/lockedAccount""))",Chrome 71.0.3578.98,,2019-02-01 13:14:13,2019-02-01 13:14:13,0.115s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2019-02-01 13:14:13,2019-02-01 13:14:19,6.001s,PASSED
+"click(findTestObject(""TestUser/clickToCheck""))",Chrome 71.0.3578.98,,2019-02-01 13:14:19,2019-02-01 13:14:19,0.001s,NOT_RUN
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:14:19,2019-02-01 13:14:19,0.001s,NOT_RUN
+"click(findTestObject(""TestUser/logoutUser""))",Chrome 71.0.3578.98,,2019-02-01 13:14:19,2019-02-01 13:14:19,0.001s,NOT_RUN
+"setText(findTestObject(""TestUserLocation/login_Username""), findTestData(""UserData"").getValue(""UserName"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:14:19,2019-02-01 13:14:19,0.002s,NOT_RUN
+"setText(findTestObject(""TestUserLocation/login_Password""), findTestData(""UserData"").getValue(""NewPassword"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:14:19,2019-02-01 13:14:19,0.008s,NOT_RUN
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-02-01 13:14:19,2019-02-01 13:14:19,0.001s,NOT_RUN
+,,,,,,
+Test Cases/TestUser/UnlockUser,Chrome 71.0.3578.98,,2019-02-01 13:14:19,2019-02-01 13:15:04,44.104s,PASSED
+openBrowser(URL),Chrome 71.0.3578.98,,2019-02-01 13:14:20,2019-02-01 13:14:20,0.001s,NOT_RUN
+maximizeWindow(),Chrome 71.0.3578.98,,2019-02-01 13:14:20,2019-02-01 13:14:20,0.001s,NOT_RUN
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:14:20,2019-02-01 13:14:22,2.001s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Username""), UserName)",Chrome 71.0.3578.98,,2019-02-01 13:14:22,2019-02-01 13:14:22,0.144s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Password""), Password)",Chrome 71.0.3578.98,,2019-02-01 13:14:22,2019-02-01 13:14:22,0.121s,PASSED
+User.setNamePass(),Chrome 71.0.3578.98,,2019-02-01 13:14:22,2019-02-01 13:14:22,0.001s,NOT_RUN
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-02-01 13:14:22,2019-02-01 13:14:24,1.836s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2019-02-01 13:14:24,2019-02-01 13:14:30,6.001s,PASSED
+"click(findTestObject(""TestUserLocation/mainmenu_button""))",Chrome 71.0.3578.98,,2019-02-01 13:14:30,2019-02-01 13:14:30,0.142s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_AdminTools""))",Chrome 71.0.3578.98,,2019-02-01 13:14:30,2019-02-01 13:14:30,0.107s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:14:30,2019-02-01 13:14:32,2.001s,PASSED
+"click(findTestObject(""TestUser/users""))",Chrome 71.0.3578.98,,2019-02-01 13:14:32,2019-02-01 13:14:32,0.281s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-02-01 13:14:32,2019-02-01 13:14:36,4.001s,PASSED
+"setText(findTestObject(""TestUser/filterUser""), findTestData(""UserData"").getValue(""UserName"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:14:36,2019-02-01 13:14:37,0.366s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:14:37,2019-02-01 13:14:39,2.001s,PASSED
+"sendKeys(findTestObject(""TestUser/filterUser""), Keys.chord(ENTER))",Chrome 71.0.3578.98,,2019-02-01 13:14:39,2019-02-01 13:14:39,0.195s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-02-01 13:14:39,2019-02-01 13:14:43,4.001s,PASSED
+AdminTool_Location.moveCursor(),Chrome 71.0.3578.98,,2019-02-01 13:14:43,2019-02-01 13:14:43,0.014s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:14:43,2019-02-01 13:14:45,2.000s,PASSED
+"waitForElementPresent(findTestObject(""TestUser/moveToUser""), 30)",Chrome 71.0.3578.98,,2019-02-01 13:14:45,2019-02-01 13:14:45,0.060s,PASSED
+"click(findTestObject(""TestUser/moveToUser""))",Chrome 71.0.3578.98,,2019-02-01 13:14:45,2019-02-01 13:14:45,0.101s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:14:45,2019-02-01 13:14:47,2.001s,PASSED
+"click(findTestObject(""TestUser/openUserOptions""))",Chrome 71.0.3578.98,,2019-02-01 13:14:47,2019-02-01 13:14:47,0.115s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:14:47,2019-02-01 13:14:49,2.001s,PASSED
+"click(findTestObject(""TestUser/unlockUserOption""))",Chrome 71.0.3578.98,,2019-02-01 13:14:49,2019-02-01 13:14:49,0.165s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:14:49,2019-02-01 13:14:51,2.001s,PASSED
+"click(findTestObject(""TestUser/confirmUserYes""))",Chrome 71.0.3578.98,,2019-02-01 13:14:51,2019-02-01 13:14:51,0.118s,PASSED
+"waitForElementClickable(findTestObject(""TestUser/clickToCheck""), 30)",Chrome 71.0.3578.98,,2019-02-01 13:14:51,2019-02-01 13:14:52,0.048s,PASSED
+Thread.sleep(7000),Chrome 71.0.3578.98,,2019-02-01 13:14:52,2019-02-01 13:14:59,7.002s,PASSED
+"click(findTestObject(""TestUser/clickToCheck""))",Chrome 71.0.3578.98,,2019-02-01 13:14:59,2019-02-01 13:14:59,0.094s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:14:59,2019-02-01 13:15:01,2.001s,PASSED
+"click(findTestObject(""TestUser/logoutUser""))",Chrome 71.0.3578.98,,2019-02-01 13:15:01,2019-02-01 13:15:02,0.903s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:15:02,2019-02-01 13:15:04,2.002s,PASSED
+,,,,,,
+Test Cases/TestUser/LoginUser_Unlock,Chrome 71.0.3578.98,,2019-02-01 13:15:04,2019-02-01 13:15:29,25.683s,PASSED
+openBrowser(URL),Chrome 71.0.3578.98,,2019-02-01 13:15:04,2019-02-01 13:15:04,0.001s,NOT_RUN
+maximizeWindow(),Chrome 71.0.3578.98,,2019-02-01 13:15:04,2019-02-01 13:15:04,0.080s,NOT_RUN
+"setText(findTestObject(""TestUserLocation/login_Username""), findTestData(""UserData"").getValue(""UserName"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:15:04,2019-02-01 13:15:04,0.329s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Password""), findTestData(""UserData"").getValue(""NewPassword"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:15:04,2019-02-01 13:15:04,0.179s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:15:04,2019-02-01 13:15:06,2.004s,PASSED
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-02-01 13:15:06,2019-02-01 13:15:08,1.859s,PASSED
+Thread.sleep(10000),Chrome 71.0.3578.98,,2019-02-01 13:15:08,2019-02-01 13:15:18,10.002s,PASSED
+AdminTool_Location.moveCursor(),Chrome 71.0.3578.98,,2019-02-01 13:15:18,2019-02-01 13:15:18,0.009s,PASSED
+"waitForElementClickable(findTestObject(""TestUser/clickToCheck""), 30)",Chrome 71.0.3578.98,,2019-02-01 13:15:18,2019-02-01 13:15:18,0.066s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:15:18,2019-02-01 13:15:20,2.002s,PASSED
+"click(findTestObject(""TestUser/clickToCheck""))",Chrome 71.0.3578.98,,2019-02-01 13:15:20,2019-02-01 13:15:20,0.109s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:15:20,2019-02-01 13:15:22,2.000s,PASSED
+"click(findTestObject(""TestUser/logoutUser""))",Chrome 71.0.3578.98,,2019-02-01 13:15:22,2019-02-01 13:15:23,0.872s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2019-02-01 13:15:23,2019-02-01 13:15:29,6.002s,PASSED
+,,,,,,
+Test Cases/TestUser/DeactivateUser,Chrome 71.0.3578.98,,2019-02-01 13:15:29,2019-02-01 13:16:13,43.571s,PASSED
+openBrowser(URL),Chrome 71.0.3578.98,,2019-02-01 13:15:30,2019-02-01 13:15:30,0.002s,NOT_RUN
+maximizeWindow(),Chrome 71.0.3578.98,,2019-02-01 13:15:30,2019-02-01 13:15:30,0.001s,NOT_RUN
+"setText(findTestObject(""TestUserLocation/login_Username""), UserName)",Chrome 71.0.3578.98,,2019-02-01 13:15:30,2019-02-01 13:15:30,0.162s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Password""), Password)",Chrome 71.0.3578.98,,2019-02-01 13:15:30,2019-02-01 13:15:30,0.135s,PASSED
+User.setNamePass(),Chrome 71.0.3578.98,,2019-02-01 13:15:30,2019-02-01 13:15:30,0.000s,NOT_RUN
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-02-01 13:15:30,2019-02-01 13:15:31,1.403s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2019-02-01 13:15:31,2019-02-01 13:15:37,6.001s,PASSED
+"click(findTestObject(""TestUserLocation/mainmenu_button""))",Chrome 71.0.3578.98,,2019-02-01 13:15:37,2019-02-01 13:15:37,0.102s,PASSED
+"click(findTestObject(""Form_Selection_Creation/mainMenu_AdminTools""))",Chrome 71.0.3578.98,,2019-02-01 13:15:37,2019-02-01 13:15:37,0.108s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:15:37,2019-02-01 13:15:39,2.002s,PASSED
+"click(findTestObject(""TestUser/users""))",Chrome 71.0.3578.98,,2019-02-01 13:15:39,2019-02-01 13:15:40,0.262s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2019-02-01 13:15:40,2019-02-01 13:15:46,6.000s,PASSED
+"setText(findTestObject(""TestUser/filterUser""), findTestData(""UserData"").getValue(""UserName"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:15:46,2019-02-01 13:15:46,0.293s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:15:46,2019-02-01 13:15:48,2.000s,PASSED
+"sendKeys(findTestObject(""TestUser/filterUser""), Keys.chord(ENTER))",Chrome 71.0.3578.98,,2019-02-01 13:15:48,2019-02-01 13:15:48,0.261s,PASSED
+Thread.sleep(4000),Chrome 71.0.3578.98,,2019-02-01 13:15:48,2019-02-01 13:15:52,4.002s,PASSED
+AdminTool_Location.moveCursor(),Chrome 71.0.3578.98,,2019-02-01 13:15:52,2019-02-01 13:15:52,0.003s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:15:52,2019-02-01 13:15:54,2.001s,PASSED
+"click(findTestObject(""TestUser/moveToUser""))",Chrome 71.0.3578.98,,2019-02-01 13:15:54,2019-02-01 13:15:54,0.100s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:15:54,2019-02-01 13:15:56,2.000s,PASSED
+"click(findTestObject(""TestUser/openUserOptions""))",Chrome 71.0.3578.98,,2019-02-01 13:15:56,2019-02-01 13:15:56,0.103s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:15:56,2019-02-01 13:15:58,2.000s,PASSED
+"click(findTestObject(""TestUser/deactivateUserOption""))",Chrome 71.0.3578.98,,2019-02-01 13:15:58,2019-02-01 13:15:59,0.136s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:15:59,2019-02-01 13:16:01,2.001s,PASSED
+"click(findTestObject(""TestUser/confirmUserYes""))",Chrome 71.0.3578.98,,2019-02-01 13:16:01,2019-02-01 13:16:01,0.111s,PASSED
+"waitForElementClickable(findTestObject(""TestUser/clickToCheck""), 30)",Chrome 71.0.3578.98,,2019-02-01 13:16:01,2019-02-01 13:16:01,0.053s,PASSED
+Thread.sleep(7000),Chrome 71.0.3578.98,,2019-02-01 13:16:01,2019-02-01 13:16:08,7.000s,PASSED
+"click(findTestObject(""TestUser/clickToCheck""))",Chrome 71.0.3578.98,,2019-02-01 13:16:08,2019-02-01 13:16:08,0.098s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:16:08,2019-02-01 13:16:10,2.002s,PASSED
+"click(findTestObject(""TestUser/logoutUser""))",Chrome 71.0.3578.98,,2019-02-01 13:16:10,2019-02-01 13:16:11,0.923s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:16:11,2019-02-01 13:16:13,2.000s,PASSED
+,,,,,,
+Test Cases/TestUser/LoginUser_Deactivate,Chrome 71.0.3578.98,,2019-02-01 13:16:13,2019-02-01 13:16:32,19.093s,PASSED
+openBrowser(URL),Chrome 71.0.3578.98,,2019-02-01 13:16:13,2019-02-01 13:16:13,0.002s,NOT_RUN
+maximizeWindow(),Chrome 71.0.3578.98,,2019-02-01 13:16:13,2019-02-01 13:16:13,0.001s,NOT_RUN
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:16:13,2019-02-01 13:16:15,2.000s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Username""), findTestData(""UserData"").getValue(""UserName"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:16:15,2019-02-01 13:16:15,0.241s,PASSED
+"setText(findTestObject(""TestUserLocation/login_Password""), findTestData(""UserData"").getValue(""NewPassword"", 1))",Chrome 71.0.3578.98,,2019-02-01 13:16:15,2019-02-01 13:16:15,0.151s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:16:15,2019-02-01 13:16:17,2.001s,PASSED
+"click(findTestObject(""TestUserLocation/login_Button""))",Chrome 71.0.3578.98,,2019-02-01 13:16:17,2019-02-01 13:16:18,0.422s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2019-02-01 13:16:18,2019-02-01 13:16:24,6.002s,PASSED
+AdminTool_Location.moveCursor(),Chrome 71.0.3578.98,,2019-02-01 13:16:24,2019-02-01 13:16:24,0.004s,PASSED
+Thread.sleep(2000),Chrome 71.0.3578.98,,2019-02-01 13:16:24,2019-02-01 13:16:26,2.001s,PASSED
+"click(findTestObject(""TestUser/deactivateTest""))",Chrome 71.0.3578.98,,2019-02-01 13:16:26,2019-02-01 13:16:26,0.088s,PASSED
+Thread.sleep(6000),Chrome 71.0.3578.98,,2019-02-01 13:16:26,2019-02-01 13:16:32,6.002s,PASSED

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>exportTab</name>
+   <tag></tag>
+   <elementGuidId>0207e464-7d97-4061-b6d1-bb2258c3e9c6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;dataprovisioning-tabstrip&quot;]//span[contains(text(),&quot;Export&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;dataprovisioning-tabstrip&quot;]//span[contains(text(),&quot;Export&quot;)]</value>
+   </webElementProperties>
+</WebElementEntity>

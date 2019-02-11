@@ -131,7 +131,7 @@ not_run: Thread.sleep(2000)
 
 not_run: WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/formDesign_SelectNumeric'), findTestObject('Form_Selection_Creation/questionGroupArea'))
 
-not_run: WebUI.setText(findTestObject('Form_Selection_Creation/formDesignt_NumericName'), 'This is Numeric Field')
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/formDesign_NumericName'), 'This is Numeric Field')
 
 not_run: Thread.sleep(2000)
 

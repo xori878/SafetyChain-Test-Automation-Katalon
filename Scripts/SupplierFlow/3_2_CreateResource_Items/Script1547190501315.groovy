@@ -89,6 +89,10 @@ not_run: WebUI.setText(findTestObject('TestResource/setPhoneNumber'), '912378456
 
 Thread.sleep(2000)
 
+CustomKeywords.'Submission.createResource'()
+
+Thread.sleep(2000)
+
 WebUI.click(findTestObject('TestResource/saveDetailButton'))
 
 not_run: Thread.sleep(7000)

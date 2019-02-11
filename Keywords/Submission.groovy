@@ -300,9 +300,9 @@ class Submission{
 		}
 		if(!driver.findElements(By.xpath("//*[@id='breadCrumb']/span/span/a[contains(text(),'Resource Browser')]")).isEmpty()){
 			if(driver.findElement(By.xpath("//*[@id='breadCrumb']/span/span/a[contains(text(),'Resource Browser')]")).isDisplayed()){
-				click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
+			//	click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
 				Thread.sleep(5000)
-				click(driver,By.xpath("//button[contains(text(),'OK')]"))
+			//	click(driver,By.xpath("//button[contains(text(),'OK')]"))
 			}
 		}else{
 			if(flag1==0){
@@ -317,7 +317,7 @@ class Submission{
 			//	if(!driver.findElements(By.xpath("//*[@id='scs-save-form-button']")).isEmpty()){
 			//		click(driver,By.xpath("//*[@id='scs-save-form-button']"))
 			//	}
-			click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
+		//	click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
 			Thread.sleep(3000)
 			if(!driver.findElements(By.xpath("//*[@id='scs-form-resubmission-note']")).isEmpty()){
 				if(flag1==1){
@@ -329,7 +329,7 @@ class Submission{
 					Thread.sleep(2000)
 				}
 			}
-			driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click()
+		//	driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click()
 
 		}
 		Thread.sleep(12000)
@@ -408,9 +408,11 @@ class Submission{
 	}
 	@Keyword
 	def createResource(){
+		Thread.sleep(2000);
 		List<WebElement> allInput = driver.findElements(By.xpath("//input[@class='field-prop-value scs-fieldcontainer-input scs-manage-res-text-input ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength ng-valid-required' or @class='field-prop-value scs-fieldcontainer-input scs-manage-res-text-input ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength requiredFields']"))
 		List<WebElement> allNum = driver.findElements(By.xpath("//*[@class='k-numeric-wrap k-state-default']//input"))
-		List<WebElement> allSelectOne = driver.findElements(By.xpath("//span[@aria-label='select']"))
+		//	List<WebElement> allSelectOne = driver.findElements(By.xpath("//span[@aria-label='select']"))
+		List<WebElement> allSelectOne = driver.findElements(By.xpath("//*[@id='scsResourceDetails']/ul/li/div/span/span/span[2]"))
 		List<WebElement> selectLastOption = driver.findElements(By.xpath("//body/div/div/div/ul/li[last()]"))
 		List<WebElement> selectFirstOption =driver.findElements(By.xpath("//form[@id='scsResourceDetails']//input[@placeholder='Select...']"))
 		//*[@class='k-numeric-wrap k-state-default']//span[@title='Increase value']
@@ -426,13 +428,33 @@ class Submission{
 				Thread.sleep(2000);
 			}
 		}
-		for(int i=0;i<allSelectOne.size();i++){
-			allSelectOne.get(i).click()
+		Thread.sleep(4000);
+		int p=0;
+		for(int i=0;i<selectFirstOption.size();i++){
+			while(true){
+				p++;
+				if(!driver.findElements(By.xpath("//*[@id='scsResourceDetails']/ul/li["+p+"]/div/span/span/span[2]/span")).isEmpty()){
+					if(driver.findElement(By.xpath("//*[@id='scsResourceDetails']/ul/li["+p+"]/div/span/span/span[2]/span")).isDisplayed()){
+						driver.findElement(By.xpath("//*[@id='scsResourceDetails']/ul/li["+p+"]/div/span/span/span[2]/span")).click()
+						Thread.sleep(3000);
+						//	driver.findElement(By.xpath("//*[@id='scsResourceDetails']/ul/li["+p+"]/div/span/span/input")).click()
+						driver.findElement(By.xpath("//*[@id='scsResourceDetails']/ul/li["+p+"]/div/span/span/input")).sendKeys(Keys.ARROW_DOWN)
+						Thread.sleep(3000);
+						driver.findElement(By.xpath("//*[@id='scsResourceDetails']/ul/li["+p+"]/div/span/span/input")).sendKeys(Keys.ENTER)
+						Thread.sleep(2000);
+						break;
+						/*	selectFirstOption.get(i).click()
+						 Thread.sleep(2000);
+						 selectFirstOption.get(i).sendKeys(Keys.ARROW_DOWN)
+						 Thread.sleep(2000);
+						 selectFirstOption.get(i).sendKeys(Keys.ENTER)
+						 Thread.sleep(2000); */
+					}
+				}
+
+			}
 			Thread.sleep(2000);
-			selectFirstOption.get(i).sendKeys(Keys.ARROW_DOWN)
-			Thread.sleep(2000);
-			selectFirstOption.get(i).sendKeys(Keys.ENTER)
-			Thread.sleep(2000);
+
 		}
 		/*	for(int i=0;i<allSelectOne.size();i++){
 		 allSelectOne.get(i).click()

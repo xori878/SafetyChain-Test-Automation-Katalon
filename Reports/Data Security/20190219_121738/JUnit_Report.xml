@@ -1,0 +1,2329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Data Security" time="1222" tests="12" failures="0" errors="0">
+   <testsuite name="Data Security" tests="12" failures="0" errors="0" time="1222" timestamp="2019-02-19 12:17:41" hostname="pashine_a - Abhishek-Pashine.India.XoriantCorp.com" id="Test Suites/Data Security">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\Data Security\\20190219_121738"/>
+         <property name="logFiles" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\Data Security\\20190219_121738\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="pashine_a - Abhishek-Pashine.India.XoriantCorp.com"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.10.1.1"/>
+         <property name="browser" value="Chrome 72.0.3626.109"/>
+         <property name="hostAddress" value="10.21.7.147"/>
+         <property name="sessionId" value="5857083463b0e971fba5f45ae077ade8"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Data-Security/Create_Location" classname="Test Cases/Data-Security/Create_Location" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:17:41 - [TEST_CASE][PASSED] - Test Cases/Data-Security/Create_Location: Test Cases/Data-Security/Create_Location
+
+2019-02-19 12:17:42 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2019-02-19 12:17:43 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-02-19 12:17:43 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-02-19 12:18:24 - [MESSAGE][PASSED] - Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2019-02-19 12:18:24 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-02-19 12:18:26 - [MESSAGE][PASSED] - Current window maximized
+
+2019-02-19 12:18:26 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/login_Username"), UserName): Text 'tester' is set on object 'Object Repository/TestUserLocation/login_Username'
+
+2019-02-19 12:18:29 - [MESSAGE][PASSED] - Text 'tester' is set on object 'Object Repository/TestUserLocation/login_Username'
+
+2019-02-19 12:18:29 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/login_Password"), Password): Text 'TestSt@ge' is set on object 'Object Repository/TestUserLocation/login_Password'
+
+2019-02-19 12:18:29 - [MESSAGE][PASSED] - Text 'TestSt@ge' is set on object 'Object Repository/TestUserLocation/login_Password'
+
+2019-02-19 12:18:29 - [TEST_STEP][PASSED] - AdminTool_Location.setLocationName(): AdminTool_Location.setLocationName is PASSED
+
+2019-02-19 12:18:35 - [MESSAGE][PASSED] - AdminTool_Location.setLocationName is PASSED
+
+2019-02-19 12:18:35 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/login_Button")): Object: 'Object Repository/TestUserLocation/login_Button' is clicked on
+
+2019-02-19 12:18:42 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/login_Button' is clicked on
+
+2019-02-19 12:18:42 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:18:46 - [TEST_STEP][PASSED] - AdminTool_Location.setLocationNameInLocation(): AdminTool_Location.setLocationNameInLocation is PASSED
+
+2019-02-19 12:18:50 - [MESSAGE][PASSED] - AdminTool_Location.setLocationNameInLocation is PASSED
+
+2019-02-19 12:18:50 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:18:50 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:18:50 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:18:52 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/adminTool")): Object: 'Object Repository/TestUserLocation/adminTool' is clicked on
+
+2019-02-19 12:18:52 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/adminTool' is clicked on
+
+2019-02-19 12:18:52 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:18:54 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuResourceDesigner")): Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-02-19 12:18:55 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-02-19 12:18:55 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:18:59 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/locations")): Object: 'Object Repository/TestUserLocation/locations' is clicked on
+
+2019-02-19 12:18:59 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/locations' is clicked on
+
+2019-02-19 12:18:59 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/categories"), 30): Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-02-19 12:18:59 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-02-19 12:18:59 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:19:03 - [TEST_STEP][NOT_RUN] - refresh(): NOT_RUN: refresh()
+
+2019-02-19 12:19:03 - [MESSAGE][NOT_RUN] - NOT_RUN: refresh()
+
+2019-02-19 12:19:03 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:19:03 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:19:03 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/categories")): Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-02-19 12:19:03 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-02-19 12:19:03 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:19:05 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/defaultArea")): Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-02-19 12:19:05 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-02-19 12:19:05 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/hoverHeading")): Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-02-19 12:19:05 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-02-19 12:19:05 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:19:05 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:19:05 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("LocationName", 1)): Text 'Location_19/02/19-12:18' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:19:06 - [MESSAGE][PASSED] - Text 'Location_19/02/19-12:18' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:19:06 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:19:08 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveButton")): Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-02-19 12:19:08 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-02-19 12:19:08 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:19:12 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:19:12 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:19:12 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:19:14 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:19:14 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:19:14 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuLocation")): Object: 'Object Repository/TestUserLocation/mainMenuLocation' is clicked on
+
+2019-02-19 12:19:14 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuLocation' is clicked on
+
+2019-02-19 12:19:14 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:19:18 - [TEST_STEP][PASSED] - AdminTool_Location.selectLocation(): Element has been clicked
+
+2019-02-19 12:19:23 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:19:23 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:19:23 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:19:23 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:19:25 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubLocationName", 1)): Text 'SubLocation1_19/02/19-12:18' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:19:25 - [MESSAGE][PASSED] - Text 'SubLocation1_19/02/19-12:18' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:19:25 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:19:27 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveLocationDetailButton")): Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on
+
+2019-02-19 12:19:28 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on
+
+2019-02-19 12:19:28 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:19:32 - [TEST_STEP][PASSED] - AdminTool_Location.selectLocation2(): Element has been clicked
+
+2019-02-19 12:19:32 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:19:32 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:19:32 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:19:32 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:19:34 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubLocationName", 2)): Text 'SubLocation2_19/02/19-12:18' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:19:34 - [MESSAGE][PASSED] - Text 'SubLocation2_19/02/19-12:18' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:19:34 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:19:36 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveLocationDetailButton")): Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on
+
+2019-02-19 12:19:36 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on
+
+2019-02-19 12:19:36 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/customerSelect")): NOT_RUN: click(findTestObject("TestUserLocation/customerSelect"))
+
+2019-02-19 12:19:36 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/customerSelect"))
+
+2019-02-19 12:19:36 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:19:36 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:19:36 - [TEST_STEP][NOT_RUN] - check(findTestObject("TestUserLocation/select4ResouceInCustomer")): NOT_RUN: check(findTestObject("TestUserLocation/select4ResouceInCustomer"))
+
+2019-02-19 12:19:36 - [MESSAGE][NOT_RUN] - NOT_RUN: check(findTestObject("TestUserLocation/select4ResouceInCustomer"))
+
+2019-02-19 12:19:36 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-02-19 12:19:36 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-02-19 12:19:36 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/saveLocationDetailButton")): NOT_RUN: click(findTestObject("TestUserLocation/saveLocationDetailButton"))
+
+2019-02-19 12:19:36 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/saveLocationDetailButton"))]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data-Security/CreateRes_Customer" classname="Test Cases/Data-Security/CreateRes_Customer" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:19:36 - [TEST_CASE][PASSED] - Test Cases/Data-Security/CreateRes_Customer: Test Cases/Data-Security/CreateRes_Customer
+
+2019-02-19 12:19:37 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:19:37 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:19:37 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-02-19 12:19:37 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-02-19 12:19:37 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-02-19 12:19:37 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-02-19 12:19:37 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-02-19 12:19:37 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-02-19 12:19:37 - [TEST_STEP][PASSED] - AdminTool_Location.setCustomerName(): AdminTool_Location.setCustomerName is PASSED
+
+2019-02-19 12:19:37 - [MESSAGE][PASSED] - AdminTool_Location.setCustomerName is PASSED
+
+2019-02-19 12:19:37 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-02-19 12:19:37 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-02-19 12:19:37 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:19:41 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:19:41 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:19:41 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/adminTool")): NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-02-19 12:19:41 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-02-19 12:19:41 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuResourceDesigner")): Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-02-19 12:19:41 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-02-19 12:19:41 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:19:45 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/customers")): Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-02-19 12:19:45 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-02-19 12:19:45 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:19:49 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/categories"), 45): Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-02-19 12:19:49 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-02-19 12:19:49 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/categories")): Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-02-19 12:19:49 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-02-19 12:19:49 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:19:51 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/defaultArea")): Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-02-19 12:19:52 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-02-19 12:19:52 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:19:54 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/hoverHeading"), 45): Object 'Object Repository/TestUserLocation/hoverHeading' is clickable
+
+2019-02-19 12:19:54 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/hoverHeading' is clickable
+
+2019-02-19 12:19:54 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/hoverHeading")): Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-02-19 12:19:54 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-02-19 12:19:54 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:19:54 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:19:54 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("CustomerName", 1)): Text 'Customer_19/02/19-12:19' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:19:54 - [MESSAGE][PASSED] - Text 'Customer_19/02/19-12:19' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:19:54 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:19:56 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveButton")): Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-02-19 12:19:56 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-02-19 12:19:56 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:20:00 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:20:01 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:20:01 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:20:03 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/mainMenu_resources")): Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:20:03 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:20:03 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:20:07 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/customers")): Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-02-19 12:20:07 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-02-19 12:20:07 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:20:11 - [TEST_STEP][PASSED] - AdminTool_Location.selectCustomer(): Element has been clicked
+
+2019-02-19 12:20:15 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:20:15 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:20:19 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/addPlusIcon"), 45): Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:20:19 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:20:19 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:20:19 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:20:19 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:20:21 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubCustomerName1", 1)): Text 'SubCustomer1_19/02/19-12:19' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:20:22 - [MESSAGE][PASSED] - Text 'SubCustomer1_19/02/19-12:19' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:20:22 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:20:24 - [TEST_STEP][PASSED] - Submission.createResource(): Submission.createResource is PASSED
+
+2019-02-19 12:21:08 - [MESSAGE][PASSED] - Submission.createResource is PASSED
+
+2019-02-19 12:21:08 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:21:10 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:21:10 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:21:10 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:21:10 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:21:10 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:21:17 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/disableResource")): Object: 'Object Repository/TestResource/disableResource' is clicked on
+
+2019-02-19 12:21:17 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/disableResource' is clicked on
+
+2019-02-19 12:21:17 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:21:19 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/button2Yes")): Object: 'Object Repository/TestResource/button2Yes' is clicked on
+
+2019-02-19 12:21:19 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/button2Yes' is clicked on
+
+2019-02-19 12:21:19 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:21:21 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:21:21 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:21:21 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/locationTab"), 45): Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:21:22 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:21:22 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:21:29 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/locationTab")): Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:21:29 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:21:29 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-19 12:21:34 - [TEST_STEP][PASSED] - AdminTool_Location.checkLocation(): AdminTool_Location.checkLocation is PASSED
+
+2019-02-19 12:21:36 - [MESSAGE][PASSED] - AdminTool_Location.checkLocation is PASSED
+
+2019-02-19 12:21:36 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:21:40 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveLocation")): Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:21:40 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:21:40 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:21:42 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:21:42 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:21:42 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:21:44 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/mainMenu_resources")): Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:21:44 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:21:44 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:21:48 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/customers")): Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-02-19 12:21:48 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-02-19 12:21:48 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:21:52 - [TEST_STEP][PASSED] - AdminTool_Location.selectCustomer(): Element has been clicked
+
+2019-02-19 12:21:57 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:21:57 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:22:01 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/addPlusIcon"), 45): Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:22:01 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:22:01 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:22:01 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:22:01 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:22:03 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubCustomerName2", 1)): Text 'SubCustomer2_19/02/19-12:19' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:22:03 - [MESSAGE][PASSED] - Text 'SubCustomer2_19/02/19-12:19' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:22:03 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:22:05 - [TEST_STEP][PASSED] - Submission.createResource(): Submission.createResource is PASSED
+
+2019-02-19 12:23:06 - [MESSAGE][PASSED] - Submission.createResource is PASSED
+
+2019-02-19 12:23:06 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:23:08 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:23:08 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:23:08 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/locationTab"), 45): Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:23:08 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:23:08 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:23:15 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/locationTab")): Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:23:15 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:23:15 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-19 12:23:20 - [TEST_STEP][PASSED] - AdminTool_Location.checkLocation(): AdminTool_Location.checkLocation is PASSED
+
+2019-02-19 12:23:22 - [MESSAGE][PASSED] - AdminTool_Location.checkLocation is PASSED
+
+2019-02-19 12:23:22 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:23:26 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveLocation")): Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:23:26 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:23:26 - [TEST_STEP][PASSED] - Thread.sleep(2000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data-Security/CreateRes_Equipment" classname="Test Cases/Data-Security/CreateRes_Equipment" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:23:28 - [TEST_CASE][PASSED] - Test Cases/Data-Security/CreateRes_Equipment: Test Cases/Data-Security/CreateRes_Equipment
+
+2019-02-19 12:23:29 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:23:29 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:23:29 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-02-19 12:23:29 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-02-19 12:23:29 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-02-19 12:23:29 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-02-19 12:23:29 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-02-19 12:23:29 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-02-19 12:23:29 - [TEST_STEP][PASSED] - AdminTool_Location.setEquipmentName(): AdminTool_Location.setEquipmentName is PASSED
+
+2019-02-19 12:23:29 - [MESSAGE][PASSED] - AdminTool_Location.setEquipmentName is PASSED
+
+2019-02-19 12:23:29 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-02-19 12:23:29 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-02-19 12:23:29 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:23:33 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:23:33 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:23:33 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:23:35 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/adminTool")): NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-02-19 12:23:35 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-02-19 12:23:35 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuResourceDesigner")): Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-02-19 12:23:35 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-02-19 12:23:35 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:23:39 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/equipment")): Object: 'Object Repository/TestResource/equipment' is clicked on
+
+2019-02-19 12:23:39 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/equipment' is clicked on
+
+2019-02-19 12:23:39 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:23:43 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/categories"), 45): Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-02-19 12:23:43 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-02-19 12:23:43 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/categories")): Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-02-19 12:23:43 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-02-19 12:23:43 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:23:45 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/defaultArea")): Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-02-19 12:23:46 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-02-19 12:23:46 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:23:48 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/hoverHeading")): Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-02-19 12:23:48 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-02-19 12:23:48 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:23:48 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:23:48 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("EquipmentName", 1)): Text 'Equipment_19/02/19-12:23' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:23:48 - [MESSAGE][PASSED] - Text 'Equipment_19/02/19-12:23' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:23:48 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:23:50 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveButton")): Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-02-19 12:23:50 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-02-19 12:23:50 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:23:54 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:23:54 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:23:54 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:23:56 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/mainMenu_resources")): Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:23:56 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:23:56 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:24:00 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/equipment")): Object: 'Object Repository/TestResource/equipment' is clicked on
+
+2019-02-19 12:24:01 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/equipment' is clicked on
+
+2019-02-19 12:24:01 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:24:05 - [TEST_STEP][PASSED] - AdminTool_Location.selectEquipment(): Element has been clicked
+
+2019-02-19 12:24:09 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:24:09 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:24:13 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/addPlusIcon"), 45): Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:24:13 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:24:13 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:24:13 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:24:13 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:24:15 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubEquipmentName1", 1)): Text 'SubEquipment1_19/02/19-12:23' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:24:15 - [MESSAGE][PASSED] - Text 'SubEquipment1_19/02/19-12:23' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:24:15 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:24:17 - [TEST_STEP][PASSED] - Submission.createResource(): Submission.createResource is PASSED
+
+2019-02-19 12:24:28 - [MESSAGE][PASSED] - Submission.createResource is PASSED
+
+2019-02-19 12:24:28 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:24:30 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:24:30 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:24:30 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:24:30 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:24:30 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:24:37 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/disableResource")): Object: 'Object Repository/TestResource/disableResource' is clicked on
+
+2019-02-19 12:24:37 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/disableResource' is clicked on
+
+2019-02-19 12:24:37 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:24:39 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/button2Yes")): Object: 'Object Repository/TestResource/button2Yes' is clicked on
+
+2019-02-19 12:24:39 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/button2Yes' is clicked on
+
+2019-02-19 12:24:39 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:24:41 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:24:41 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:24:41 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/locationTab"), 45): Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:24:41 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:24:41 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:24:48 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/locationTab")): Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:24:48 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:24:48 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-19 12:24:53 - [TEST_STEP][PASSED] - AdminTool_Location.checkLocation2(): AdminTool_Location.checkLocation2 is PASSED
+
+2019-02-19 12:24:56 - [MESSAGE][PASSED] - AdminTool_Location.checkLocation2 is PASSED
+
+2019-02-19 12:24:56 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:25:00 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveLocation")): Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:25:00 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:25:00 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:25:02 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:25:02 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:25:02 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:25:04 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/mainMenu_resources")): Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:25:04 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:25:04 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:25:08 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:25:08 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:25:08 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:25:10 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/equipment")): Object: 'Object Repository/TestResource/equipment' is clicked on
+
+2019-02-19 12:25:10 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/equipment' is clicked on
+
+2019-02-19 12:25:10 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:25:14 - [TEST_STEP][PASSED] - AdminTool_Location.selectEquipment(): Element has been clicked
+
+2019-02-19 12:25:18 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:25:18 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:25:22 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/addPlusIcon"), 45): Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:25:22 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:25:22 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:25:22 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:25:22 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:25:24 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubEquipmentName2", 1)): Text 'SubEquipment2_19/02/19-12:23' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:25:25 - [MESSAGE][PASSED] - Text 'SubEquipment2_19/02/19-12:23' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:25:25 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:25:27 - [TEST_STEP][PASSED] - Submission.createResource(): Submission.createResource is PASSED
+
+2019-02-19 12:25:37 - [MESSAGE][PASSED] - Submission.createResource is PASSED
+
+2019-02-19 12:25:37 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:25:39 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:25:39 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:25:39 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/locationTab"), 45): Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:25:39 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:25:39 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:25:46 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/locationTab")): Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:25:46 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:25:46 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-19 12:25:51 - [TEST_STEP][PASSED] - AdminTool_Location.checkLocation2(): AdminTool_Location.checkLocation2 is PASSED
+
+2019-02-19 12:25:53 - [MESSAGE][PASSED] - AdminTool_Location.checkLocation2 is PASSED
+
+2019-02-19 12:25:53 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:25:57 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveLocation")): Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:25:58 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:25:58 - [TEST_STEP][PASSED] - Thread.sleep(2000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data-Security/CreateRes_Items" classname="Test Cases/Data-Security/CreateRes_Items" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:26:00 - [TEST_CASE][PASSED] - Test Cases/Data-Security/CreateRes_Items: Test Cases/Data-Security/CreateRes_Items
+
+2019-02-19 12:26:00 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:26:00 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:26:00 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-02-19 12:26:00 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-02-19 12:26:00 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-02-19 12:26:00 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-02-19 12:26:00 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-02-19 12:26:00 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-02-19 12:26:00 - [TEST_STEP][PASSED] - AdminTool_Location.setItemName(): AdminTool_Location.setItemName is PASSED
+
+2019-02-19 12:26:00 - [MESSAGE][PASSED] - AdminTool_Location.setItemName is PASSED
+
+2019-02-19 12:26:00 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-02-19 12:26:00 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-02-19 12:26:00 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:26:00 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:26:00 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:26:00 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:26:00 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/adminTool")): NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-02-19 12:26:00 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-02-19 12:26:00 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuResourceDesigner")): Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-02-19 12:26:00 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-02-19 12:26:00 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:26:02 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:26:06 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/items")): Object: 'Object Repository/TestResource/items' is clicked on
+
+2019-02-19 12:26:06 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/items' is clicked on
+
+2019-02-19 12:26:06 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:26:10 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/categories"), 45): Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-02-19 12:26:10 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-02-19 12:26:10 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/categories")): Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-02-19 12:26:11 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-02-19 12:26:11 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:26:13 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/defaultArea")): Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-02-19 12:26:13 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-02-19 12:26:13 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:26:15 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/hoverHeading")): Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-02-19 12:26:15 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-02-19 12:26:15 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:26:15 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:26:15 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("ItemsName", 1)): Text 'Item_19/02/19-12:26' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:26:15 - [MESSAGE][PASSED] - Text 'Item_19/02/19-12:26' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:26:15 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:26:17 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveButton")): Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-02-19 12:26:17 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-02-19 12:26:17 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:26:21 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:26:21 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:26:21 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:26:23 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/mainMenu_resources")): Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:26:24 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:26:24 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:26:28 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/items")): Object: 'Object Repository/TestResource/items' is clicked on
+
+2019-02-19 12:26:28 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/items' is clicked on
+
+2019-02-19 12:26:28 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:26:32 - [TEST_STEP][PASSED] - AdminTool_Location.selectItem(): Element has been clicked
+
+2019-02-19 12:26:36 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:26:36 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:26:40 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/addPlusIcon"), 45): Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:26:40 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:26:40 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:26:40 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:26:40 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:26:42 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubItemsName1", 1)): Text 'SubItem1_19/02/19-12:26' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:26:42 - [MESSAGE][PASSED] - Text 'SubItem1_19/02/19-12:26' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:26:42 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:26:44 - [TEST_STEP][PASSED] - Submission.createResource(): Submission.createResource is PASSED
+
+2019-02-19 12:26:55 - [MESSAGE][PASSED] - Submission.createResource is PASSED
+
+2019-02-19 12:26:55 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:26:57 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:26:57 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:26:57 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:27:04 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/disableResource")): Object: 'Object Repository/TestResource/disableResource' is clicked on
+
+2019-02-19 12:27:04 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/disableResource' is clicked on
+
+2019-02-19 12:27:04 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:27:06 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/button2Yes")): Object: 'Object Repository/TestResource/button2Yes' is clicked on
+
+2019-02-19 12:27:06 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/button2Yes' is clicked on
+
+2019-02-19 12:27:06 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:27:08 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:27:08 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:27:08 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/locationTab"), 45): Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:27:08 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:27:08 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:27:08 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:27:08 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:27:15 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/locationTab")): Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:27:15 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:27:15 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-19 12:27:20 - [TEST_STEP][PASSED] - AdminTool_Location.checkLocation(): AdminTool_Location.checkLocation is PASSED
+
+2019-02-19 12:27:22 - [MESSAGE][PASSED] - AdminTool_Location.checkLocation is PASSED
+
+2019-02-19 12:27:22 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:27:26 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveLocation")): Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:27:27 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:27:27 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:27:29 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:27:29 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:27:29 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:27:31 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/mainMenu_resources")): Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:27:31 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:27:31 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:27:35 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/items")): Object: 'Object Repository/TestResource/items' is clicked on
+
+2019-02-19 12:27:35 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/items' is clicked on
+
+2019-02-19 12:27:35 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:27:39 - [TEST_STEP][PASSED] - AdminTool_Location.selectItem(): Element has been clicked
+
+2019-02-19 12:27:43 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:27:43 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:27:47 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/addPlusIcon"), 45): Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:27:47 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:27:47 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:27:47 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:27:47 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:27:49 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubItemsName2", 1)): Text 'SubItem2_19/02/19-12:26' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:27:50 - [MESSAGE][PASSED] - Text 'SubItem2_19/02/19-12:26' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:27:50 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:27:52 - [TEST_STEP][PASSED] - Submission.createResource(): Submission.createResource is PASSED
+
+2019-02-19 12:28:02 - [MESSAGE][PASSED] - Submission.createResource is PASSED
+
+2019-02-19 12:28:02 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:28:04 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:28:04 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:28:04 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/locationTab"), 45): Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:28:04 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:28:04 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:28:11 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/locationTab")): Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:28:11 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:28:11 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-19 12:28:16 - [TEST_STEP][PASSED] - AdminTool_Location.checkLocation(): AdminTool_Location.checkLocation is PASSED
+
+2019-02-19 12:28:18 - [MESSAGE][PASSED] - AdminTool_Location.checkLocation is PASSED
+
+2019-02-19 12:28:18 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:28:22 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveLocation")): Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:28:23 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:28:23 - [TEST_STEP][PASSED] - Thread.sleep(2000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data-Security/CreateRes_Supplier" classname="Test Cases/Data-Security/CreateRes_Supplier" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:28:25 - [TEST_CASE][PASSED] - Test Cases/Data-Security/CreateRes_Supplier: Test Cases/Data-Security/CreateRes_Supplier
+
+2019-02-19 12:28:25 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:28:25 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:28:25 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-02-19 12:28:25 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-02-19 12:28:25 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-02-19 12:28:25 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-02-19 12:28:25 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-02-19 12:28:25 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-02-19 12:28:25 - [TEST_STEP][PASSED] - AdminTool_Location.setSupplierName(): AdminTool_Location.setSupplierName is PASSED
+
+2019-02-19 12:28:25 - [MESSAGE][PASSED] - AdminTool_Location.setSupplierName is PASSED
+
+2019-02-19 12:28:25 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-02-19 12:28:25 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-02-19 12:28:25 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:28:29 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:28:29 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:28:29 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:28:31 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/adminTool")): NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-02-19 12:28:31 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-02-19 12:28:31 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuResourceDesigner")): Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-02-19 12:28:31 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-02-19 12:28:31 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:28:35 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/SuppliersDesign")): Object: 'Object Repository/TestResource/SuppliersDesign' is clicked on
+
+2019-02-19 12:28:35 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/SuppliersDesign' is clicked on
+
+2019-02-19 12:28:35 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:28:39 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/categories"), 45): Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-02-19 12:28:39 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-02-19 12:28:39 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/categories")): Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-02-19 12:28:39 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-02-19 12:28:39 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:28:41 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/defaultArea")): Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-02-19 12:28:41 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-02-19 12:28:41 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:28:43 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/hoverHeading")): Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-02-19 12:28:44 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-02-19 12:28:44 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:28:44 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:28:44 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SuppliersName", 1)): Text 'Supplier_19/02/19-12:28' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:28:44 - [MESSAGE][PASSED] - Text 'Supplier_19/02/19-12:28' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:28:44 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:28:46 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveButton")): Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-02-19 12:28:46 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-02-19 12:28:46 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:28:50 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:28:50 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:28:50 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:28:52 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/mainMenu_resources")): Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:28:52 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:28:52 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:28:56 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/suppliers")): Object: 'Object Repository/TestResource/suppliers' is clicked on
+
+2019-02-19 12:28:57 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/suppliers' is clicked on
+
+2019-02-19 12:28:57 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:29:01 - [TEST_STEP][PASSED] - AdminTool_Location.selectSupplier(): Element has been clicked
+
+2019-02-19 12:29:05 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:29:05 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:29:09 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/addPlusIcon"), 45): Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:29:09 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:29:09 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:29:09 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:29:09 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:29:11 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubSuppliersName1", 1)): Text 'SubSupplier1_19/02/19-12:28' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:29:11 - [MESSAGE][PASSED] - Text 'SubSupplier1_19/02/19-12:28' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:29:11 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:29:13 - [TEST_STEP][PASSED] - Submission.createResource(): Submission.createResource is PASSED
+
+2019-02-19 12:29:22 - [MESSAGE][PASSED] - Submission.createResource is PASSED
+
+2019-02-19 12:29:22 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:29:24 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:29:24 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:29:24 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:29:31 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/disableResource")): Object: 'Object Repository/TestResource/disableResource' is clicked on
+
+2019-02-19 12:29:31 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/disableResource' is clicked on
+
+2019-02-19 12:29:31 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:29:33 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/button2Yes")): Object: 'Object Repository/TestResource/button2Yes' is clicked on
+
+2019-02-19 12:29:34 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/button2Yes' is clicked on
+
+2019-02-19 12:29:34 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:29:36 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:29:36 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:29:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/locationTab"), 45): Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:29:36 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:29:36 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:29:36 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:29:36 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:29:43 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/locationTab")): Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:29:43 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:29:43 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-19 12:29:48 - [TEST_STEP][PASSED] - AdminTool_Location.checkLocation2(): AdminTool_Location.checkLocation2 is PASSED
+
+2019-02-19 12:29:51 - [MESSAGE][PASSED] - AdminTool_Location.checkLocation2 is PASSED
+
+2019-02-19 12:29:51 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:29:55 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveLocation")): Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:29:55 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:29:55 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:29:57 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:29:57 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:29:57 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:29:59 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/mainMenu_resources")): Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:29:59 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-02-19 12:29:59 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:30:03 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/suppliers")): Object: 'Object Repository/TestResource/suppliers' is clicked on
+
+2019-02-19 12:30:03 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/suppliers' is clicked on
+
+2019-02-19 12:30:03 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:30:07 - [TEST_STEP][PASSED] - AdminTool_Location.selectSupplier(): Element has been clicked
+
+2019-02-19 12:30:11 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:30:11 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:30:15 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/addPlusIcon"), 45): Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:30:15 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-02-19 12:30:15 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:30:16 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-02-19 12:30:16 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:30:18 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubSuppliersName2", 1)): Text 'SubSupplier2_19/02/19-12:28' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:30:18 - [MESSAGE][PASSED] - Text 'SubSupplier2_19/02/19-12:28' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-02-19 12:30:18 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:30:20 - [TEST_STEP][PASSED] - Submission.createResource(): Submission.createResource is PASSED
+
+2019-02-19 12:30:28 - [MESSAGE][PASSED] - Submission.createResource is PASSED
+
+2019-02-19 12:30:28 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:30:30 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:30:31 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-02-19 12:30:31 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/locationTab"), 45): Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:30:31 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-02-19 12:30:31 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:30:38 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/locationTab")): Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:30:38 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-02-19 12:30:38 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-19 12:30:43 - [TEST_STEP][PASSED] - AdminTool_Location.checkLocation2(): AdminTool_Location.checkLocation2 is PASSED
+
+2019-02-19 12:30:45 - [MESSAGE][PASSED] - AdminTool_Location.checkLocation2 is PASSED
+
+2019-02-19 12:30:45 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:30:49 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveLocation")): Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:30:49 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-02-19 12:30:49 - [TEST_STEP][PASSED] - Thread.sleep(2000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data-Security/createUser" classname="Test Cases/Data-Security/createUser" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:30:51 - [TEST_CASE][PASSED] - Test Cases/Data-Security/createUser: Test Cases/Data-Security/createUser
+
+2019-02-19 12:30:51 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:30:51 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:30:51 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-02-19 12:30:51 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-02-19 12:30:51 - [TEST_STEP][NOT_RUN] - waitForElementVisible(findTestObject("TestUserLocation/login_Username"), 70): NOT_RUN: waitForElementVisible(findTestObject("TestUserLocation/login_Username"), 70)
+
+2019-02-19 12:30:51 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementVisible(findTestObject("TestUserLocation/login_Username"), 70)
+
+2019-02-19 12:30:51 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-02-19 12:30:51 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-02-19 12:30:51 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-02-19 12:30:51 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-02-19 12:30:51 - [TEST_STEP][PASSED] - User.setNamePass(): User.setNamePass is PASSED
+
+2019-02-19 12:30:51 - [MESSAGE][PASSED] - User.setNamePass is PASSED
+
+2019-02-19 12:30:51 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-02-19 12:30:51 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-02-19 12:30:51 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-02-19 12:30:57 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/mainmenu_button"), 70): Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-02-19 12:30:58 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-02-19 12:30:58 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:30:58 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-02-19 12:30:58 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools")): NOT_RUN: click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools"))
+
+2019-02-19 12:30:58 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools"))
+
+2019-02-19 12:30:58 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:31:00 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/users")): Object: 'Object Repository/TestUser/users' is clicked on
+
+2019-02-19 12:31:00 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/users' is clicked on
+
+2019-02-19 12:31:00 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-02-19 12:31:06 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/addNewUser")): Object: 'Object Repository/TestUser/addNewUser' is clicked on
+
+2019-02-19 12:31:06 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/addNewUser' is clicked on
+
+2019-02-19 12:31:06 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:31:10 - [TEST_STEP][PASSED] - setText(findTestObject("TestUser/userName"), findTestData("UserData").getValue("UserName", 1)): Text 'User_On_19/02/19-12:30' is set on object 'Object Repository/TestUser/userName'
+
+2019-02-19 12:31:10 - [MESSAGE][PASSED] - Text 'User_On_19/02/19-12:30' is set on object 'Object Repository/TestUser/userName'
+
+2019-02-19 12:31:10 - [TEST_STEP][PASSED] - setText(findTestObject("TestUser/password"), findTestData("UserData").getValue("Password", 1)): Text 'password' is set on object 'Object Repository/TestUser/password'
+
+2019-02-19 12:31:10 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/TestUser/password'
+
+2019-02-19 12:31:10 - [TEST_STEP][PASSED] - setText(findTestObject("TestUser/firstName"), "Test"): Text 'Test' is set on object 'Object Repository/TestUser/firstName'
+
+2019-02-19 12:31:10 - [MESSAGE][PASSED] - Text 'Test' is set on object 'Object Repository/TestUser/firstName'
+
+2019-02-19 12:31:11 - [TEST_STEP][PASSED] - setText(findTestObject("TestUser/lastName"), "Auto"): Text 'Auto' is set on object 'Object Repository/TestUser/lastName'
+
+2019-02-19 12:31:11 - [MESSAGE][PASSED] - Text 'Auto' is set on object 'Object Repository/TestUser/lastName'
+
+2019-02-19 12:31:11 - [TEST_STEP][PASSED] - setText(findTestObject("TestUser/email"), "test123@auto.com"): Text 'test123@auto.com' is set on object 'Object Repository/TestUser/email'
+
+2019-02-19 12:31:11 - [MESSAGE][PASSED] - Text 'test123@auto.com' is set on object 'Object Repository/TestUser/email'
+
+2019-02-19 12:31:11 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/timeZoneOpen")): Object: 'Object Repository/TestUser/timeZoneOpen' is clicked on
+
+2019-02-19 12:31:11 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/timeZoneOpen' is clicked on
+
+2019-02-19 12:31:11 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:31:13 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/selectTimeZone")): Object: 'Object Repository/TestUser/selectTimeZone' is clicked on
+
+2019-02-19 12:31:13 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/selectTimeZone' is clicked on
+
+2019-02-19 12:31:13 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:31:15 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/clickOutside")): Object: 'Object Repository/TestUser/clickOutside' is clicked on
+
+2019-02-19 12:31:16 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/clickOutside' is clicked on
+
+2019-02-19 12:31:16 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/locationOpen")): Object: 'Object Repository/TestUser/locationOpen' is clicked on
+
+2019-02-19 12:31:16 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/locationOpen' is clicked on
+
+2019-02-19 12:31:16 - [TEST_STEP][PASSED] - AdminTool_Location.selectLocations(): Element has been clicked
+
+2019-02-19 12:31:23 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:31:23 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:31:25 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUser/selectLocation")): NOT_RUN: click(findTestObject("TestUser/selectLocation"))
+
+2019-02-19 12:31:25 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUser/selectLocation"))
+
+2019-02-19 12:31:25 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-02-19 12:31:25 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-02-19 12:31:25 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/clickOutside")): Object: 'Object Repository/TestUser/clickOutside' is clicked on
+
+2019-02-19 12:31:25 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/clickOutside' is clicked on
+
+2019-02-19 12:31:25 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/roleOpen")): Object: 'Object Repository/TestUser/roleOpen' is clicked on
+
+2019-02-19 12:31:25 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/roleOpen' is clicked on
+
+2019-02-19 12:31:25 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:31:27 - [TEST_STEP][PASSED] - setText(findTestObject("TestUser/selectRole"), "Superadmin"): Text 'Superadmin' is set on object 'Object Repository/TestUser/selectRole'
+
+2019-02-19 12:31:27 - [MESSAGE][PASSED] - Text 'Superadmin' is set on object 'Object Repository/TestUser/selectRole'
+
+2019-02-19 12:31:27 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:31:29 - [TEST_STEP][PASSED] - sendKeys(findTestObject("TestUser/selectRole"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/TestUser/selectRole'
+
+2019-02-19 12:31:29 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/TestUser/selectRole'
+
+2019-02-19 12:31:29 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:31:31 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:31:31 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:31:31 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:31:33 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/clickOutside")): Object: 'Object Repository/TestUser/clickOutside' is clicked on
+
+2019-02-19 12:31:33 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/clickOutside' is clicked on
+
+2019-02-19 12:31:33 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:31:35 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/saveUser")): Object: 'Object Repository/TestUser/saveUser' is clicked on
+
+2019-02-19 12:31:36 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/saveUser' is clicked on
+
+2019-02-19 12:31:36 - [TEST_STEP][PASSED] - Thread.sleep(6000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data-Security/5_CreateWG" classname="Test Cases/Data-Security/5_CreateWG" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:31:42 - [TEST_CASE][PASSED] - Test Cases/Data-Security/5_CreateWG: Test Cases/Data-Security/5_CreateWG
+
+2019-02-19 12:31:42 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:31:42 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:31:42 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-02-19 12:31:42 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-02-19 12:31:42 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Form_Selection_Creation/login_Username"), UserName): NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Username"), UserName)
+
+2019-02-19 12:31:42 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Username"), UserName)
+
+2019-02-19 12:31:42 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Form_Selection_Creation/login_Password"), Password): NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Password"), Password)
+
+2019-02-19 12:31:42 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Password"), Password)
+
+2019-02-19 12:31:42 - [TEST_STEP][PASSED] - Supplier.setWG(): Supplier.setWG is PASSED
+
+2019-02-19 12:31:42 - [MESSAGE][PASSED] - Supplier.setWG is PASSED
+
+2019-02-19 12:31:42 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/login_Button")): NOT_RUN: click(findTestObject("Form_Selection_Creation/login_Button"))
+
+2019-02-19 12:31:42 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/login_Button"))
+
+2019-02-19 12:31:42 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:31:46 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-02-19 12:31:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-02-19 12:31:46 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools")): NOT_RUN: click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools"))
+
+2019-02-19 12:31:46 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools"))
+
+2019-02-19 12:31:46 - [TEST_STEP][PASSED] - click(findTestObject("SupplierFlow/workgroup")): Object: 'Object Repository/SupplierFlow/workgroup' is clicked on
+
+2019-02-19 12:31:46 - [MESSAGE][PASSED] - Object: 'Object Repository/SupplierFlow/workgroup' is clicked on
+
+2019-02-19 12:31:46 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-19 12:31:51 - [TEST_STEP][PASSED] - click(findTestObject("SupplierFlow/addButtonWG")): Object: 'Object Repository/SupplierFlow/addButtonWG' is clicked on
+
+2019-02-19 12:31:52 - [MESSAGE][PASSED] - Object: 'Object Repository/SupplierFlow/addButtonWG' is clicked on
+
+2019-02-19 12:31:52 - [TEST_STEP][PASSED] - setText(findTestObject("SupplierFlow/setWGText"), findTestData("SupplierData").getValue("WorkGroupName", 1)): Text 'WorkGroup_19/02/19-12:31' is set on object 'Object Repository/SupplierFlow/setWGText'
+
+2019-02-19 12:31:52 - [MESSAGE][PASSED] - Text 'WorkGroup_19/02/19-12:31' is set on object 'Object Repository/SupplierFlow/setWGText'
+
+2019-02-19 12:31:52 - [TEST_STEP][PASSED] - sendKeys(findTestObject("SupplierFlow/setWGText"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/SupplierFlow/setWGText'
+
+2019-02-19 12:31:52 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/SupplierFlow/setWGText'
+
+2019-02-19 12:31:52 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-02-19 12:31:58 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:31:58 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:31:58 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:32:00 - [TEST_STEP][PASSED] - setText(findTestObject("SupplierFlow/searchUserInWG"), findTestData("UserData").getValue("UserName", 1)): Text 'User_On_19/02/19-12:30' is set on object 'Object Repository/SupplierFlow/searchUserInWG'
+
+2019-02-19 12:32:01 - [MESSAGE][PASSED] - Text 'User_On_19/02/19-12:30' is set on object 'Object Repository/SupplierFlow/searchUserInWG'
+
+2019-02-19 12:32:01 - [TEST_STEP][NOT_RUN] - setText(findTestObject("SupplierFlow/searchUserInWG"), "tester"): NOT_RUN: setText(findTestObject("SupplierFlow/searchUserInWG"), "tester")
+
+2019-02-19 12:32:01 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("SupplierFlow/searchUserInWG"), "tester")
+
+2019-02-19 12:32:01 - [TEST_STEP][PASSED] - sendKeys(findTestObject("SupplierFlow/searchUserInWG"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/SupplierFlow/searchUserInWG'
+
+2019-02-19 12:32:02 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/SupplierFlow/searchUserInWG'
+
+2019-02-19 12:32:02 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:32:06 - [TEST_STEP][PASSED] - check(findTestObject("SupplierFlow/checkUserinWG")): Object 'Object Repository/SupplierFlow/checkUserinWG' is checked
+
+2019-02-19 12:32:06 - [MESSAGE][PASSED] - Object 'Object Repository/SupplierFlow/checkUserinWG' is checked
+
+2019-02-19 12:32:06 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-02-19 12:32:09 - [TEST_STEP][PASSED] - clearText(findTestObject("SupplierFlow/searchUserInWG"), STOP_ON_FAILURE): Text of object 'Object Repository/SupplierFlow/searchUserInWG' is cleared
+
+2019-02-19 12:32:09 - [MESSAGE][PASSED] - Text of object 'Object Repository/SupplierFlow/searchUserInWG' is cleared
+
+2019-02-19 12:32:09 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:32:11 - [TEST_STEP][PASSED] - setText(findTestObject("SupplierFlow/searchUserInWG"), UserName): Text 'tester' is set on object 'Object Repository/SupplierFlow/searchUserInWG'
+
+2019-02-19 12:32:11 - [MESSAGE][PASSED] - Text 'tester' is set on object 'Object Repository/SupplierFlow/searchUserInWG'
+
+2019-02-19 12:32:11 - [TEST_STEP][PASSED] - sendKeys(findTestObject("SupplierFlow/searchUserInWG"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/SupplierFlow/searchUserInWG'
+
+2019-02-19 12:32:11 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/SupplierFlow/searchUserInWG'
+
+2019-02-19 12:32:11 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:32:15 - [TEST_STEP][PASSED] - check(findTestObject("SupplierFlow/checkUserinWG")): Object 'Object Repository/SupplierFlow/checkUserinWG' is checked
+
+2019-02-19 12:32:15 - [MESSAGE][PASSED] - Object 'Object Repository/SupplierFlow/checkUserinWG' is checked
+
+2019-02-19 12:32:15 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-02-19 12:32:18 - [TEST_STEP][PASSED] - click(findTestObject("SupplierFlow/saveInWG")): Object: 'Object Repository/SupplierFlow/saveInWG' is clicked on
+
+2019-02-19 12:32:18 - [MESSAGE][PASSED] - Object: 'Object Repository/SupplierFlow/saveInWG' is clicked on
+
+2019-02-19 12:32:18 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-02-19 12:32:21 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/home")): Object: 'Object Repository/Form_Selection_Creation/home' is clicked on
+
+2019-02-19 12:32:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/home' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data-Security/UploadDocumentFromAdmin" classname="Test Cases/Data-Security/UploadDocumentFromAdmin" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:32:21 - [TEST_CASE][PASSED] - Test Cases/Data-Security/UploadDocumentFromAdmin: Test Cases/Data-Security/UploadDocumentFromAdmin
+
+2019-02-19 12:32:22 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:32:22 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:32:22 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-02-19 12:32:22 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-02-19 12:32:22 - [TEST_STEP][NOT_RUN] - setText(findTestObject("DMS_Forms/login_Username"), UserName): NOT_RUN: setText(findTestObject("DMS_Forms/login_Username"), UserName)
+
+2019-02-19 12:32:22 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("DMS_Forms/login_Username"), UserName)
+
+2019-02-19 12:32:22 - [TEST_STEP][NOT_RUN] - setText(findTestObject("DMS_Forms/login_Password"), Password): NOT_RUN: setText(findTestObject("DMS_Forms/login_Password"), Password)
+
+2019-02-19 12:32:22 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("DMS_Forms/login_Password"), Password)
+
+2019-02-19 12:32:22 - [TEST_STEP][PASSED] - path = relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", getProjectDir()): null
+
+2019-02-19 12:32:22 - [TEST_STEP][NOT_RUN] - click(findTestObject("DMS_Forms/login_Button")): NOT_RUN: click(findTestObject("DMS_Forms/login_Button"))
+
+2019-02-19 12:32:22 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("DMS_Forms/login_Button"))
+
+2019-02-19 12:32:22 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:32:26 - [TEST_STEP][PASSED] - click(findTestObject("DMS_Forms/mainmenu_button")): Object: 'Object Repository/DMS_Forms/mainmenu_button' is clicked on
+
+2019-02-19 12:32:26 - [MESSAGE][PASSED] - Object: 'Object Repository/DMS_Forms/mainmenu_button' is clicked on
+
+2019-02-19 12:32:26 - [TEST_STEP][PASSED] - click(findTestObject("DMS_Forms/mainmenu_Document")): Object: 'Object Repository/DMS_Forms/mainmenu_Document' is clicked on
+
+2019-02-19 12:32:26 - [MESSAGE][PASSED] - Object: 'Object Repository/DMS_Forms/mainmenu_Document' is clicked on
+
+2019-02-19 12:32:26 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:32:30 - [TEST_STEP][PASSED] - Submission.docUploadAdmin(): Submission.docUploadAdmin is PASSED
+
+2019-02-19 12:32:43 - [MESSAGE][PASSED] - Submission.docUploadAdmin is PASSED
+
+2019-02-19 12:32:43 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:32:47 - [TEST_STEP][PASSED] - setText(findTestObject("DMS/searchDocument"), findTestData("LocationData").getValue(8, 1)): Text 'SubCustomer2_19/02/19-12:19' is set on object 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:32:47 - [MESSAGE][PASSED] - Text 'SubCustomer2_19/02/19-12:19' is set on object 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:32:47 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:32:49 - [TEST_STEP][PASSED] - sendKeys(findTestObject("DMS/searchDocument"), Keys.chord(DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:32:49 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:32:49 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:32:51 - [TEST_STEP][PASSED] - sendKeys(findTestObject("DMS/searchDocument"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:32:52 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:32:52 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-02-19 12:32:58 - [TEST_STEP][PASSED] - filePath = path + "/Lighthouse.jpg": null
+
+2019-02-19 12:32:58 - [TEST_STEP][PASSED] - sendKeys(findTestObject("DMS/uploadFile"), filePath): Keys 'D:\Git Data\SafetyChain-Test-Automation-Katalon\SCTestData/Lighthouse.jpg' sent to object: 'Object Repository/DMS/uploadFile'
+
+2019-02-19 12:32:58 - [MESSAGE][PASSED] - Keys 'D:\Git Data\SafetyChain-Test-Automation-Katalon\SCTestData/Lighthouse.jpg' sent to object: 'Object Repository/DMS/uploadFile'
+
+2019-02-19 12:32:58 - [TEST_STEP][PASSED] - Thread.sleep(6000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data-Security/1_CreateForm" classname="Test Cases/Data-Security/1_CreateForm" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:33:04 - [TEST_CASE][PASSED] - Test Cases/Data-Security/1_CreateForm: Test Cases/Data-Security/1_CreateForm
+
+2019-02-19 12:33:04 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:33:04 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:33:04 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-02-19 12:33:04 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-02-19 12:33:04 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Form_Selection_Creation/login_Username"), UserName): NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Username"), UserName)
+
+2019-02-19 12:33:04 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Username"), UserName)
+
+2019-02-19 12:33:04 - [TEST_STEP][NOT_RUN] - setText(findTestObject("Form_Selection_Creation/login_Password"), Password): NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Password"), Password)
+
+2019-02-19 12:33:04 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("Form_Selection_Creation/login_Password"), Password)
+
+2019-02-19 12:33:04 - [TEST_STEP][PASSED] - FormName.setData(): FormName.setData is PASSED
+
+2019-02-19 12:33:04 - [MESSAGE][PASSED] - FormName.setData is PASSED
+
+2019-02-19 12:33:04 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/login_Button")): NOT_RUN: click(findTestObject("Form_Selection_Creation/login_Button"))
+
+2019-02-19 12:33:04 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/login_Button"))
+
+2019-02-19 12:33:04 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-02-19 12:33:07 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:33:07 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:33:07 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-02-19 12:33:07 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-02-19 12:33:07 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-02-19 12:33:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-02-19 12:33:07 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools")): NOT_RUN: click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools"))
+
+2019-02-19 12:33:07 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools"))
+
+2019-02-19 12:33:07 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Form_Selection_Creation/mainMenu_AdminTools_FormDesigner"), 45): Object 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is visible
+
+2019-02-19 12:33:07 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is visible
+
+2019-02-19 12:33:07 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools_FormDesigner")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2019-02-19 12:33:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2019-02-19 12:33:07 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/selectCheckForm")): Object: 'Object Repository/Form_Selection_Creation/selectCheckForm' is clicked on
+
+2019-02-19 12:33:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/selectCheckForm' is clicked on
+
+2019-02-19 12:33:07 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-02-19 12:33:10 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/formDesign_selectResource"), 25): Object 'Object Repository/Form_Selection_Creation/formDesign_selectResource' is clickable
+
+2019-02-19 12:33:10 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/formDesign_selectResource' is clickable
+
+2019-02-19 12:33:10 - [TEST_STEP][PASSED] - AdminTool_Location.dragDropCust(2): Element has been clicked
+
+2019-02-19 12:33:15 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:33:15 - [TEST_STEP][NOT_RUN] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object")): NOT_RUN: dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object"))
+
+2019-02-19 12:33:15 - [MESSAGE][NOT_RUN] - NOT_RUN: dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object"))
+
+2019-02-19 12:33:15 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/openResType"), 25): Object 'Object Repository/Form_Selection_Creation/openResType' is clickable
+
+2019-02-19 12:33:15 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/openResType' is clickable
+
+2019-02-19 12:33:15 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:33:19 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/openResType")): Object: 'Object Repository/Form_Selection_Creation/openResType' is clicked on
+
+2019-02-19 12:33:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/openResType' is clicked on
+
+2019-02-19 12:33:19 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:33:21 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/selectEquipment")): Object: 'Object Repository/Form_Selection_Creation/selectEquipment' is clicked on
+
+2019-02-19 12:33:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/selectEquipment' is clicked on
+
+2019-02-19 12:33:21 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/formDesign_selectResource"), 25): Object 'Object Repository/Form_Selection_Creation/formDesign_selectResource' is clickable
+
+2019-02-19 12:33:21 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/formDesign_selectResource' is clickable
+
+2019-02-19 12:33:21 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:33:23 - [TEST_STEP][PASSED] - AdminTool_Location.dragDropCust(3): Element has been clicked
+
+2019-02-19 12:33:27 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:33:27 - [TEST_STEP][NOT_RUN] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object")): NOT_RUN: dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object"))
+
+2019-02-19 12:33:27 - [MESSAGE][NOT_RUN] - NOT_RUN: dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object"))
+
+2019-02-19 12:33:27 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/openResType"), 25): Object 'Object Repository/Form_Selection_Creation/openResType' is clickable
+
+2019-02-19 12:33:27 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/openResType' is clickable
+
+2019-02-19 12:33:27 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:33:31 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/openResType")): Object: 'Object Repository/Form_Selection_Creation/openResType' is clicked on
+
+2019-02-19 12:33:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/openResType' is clicked on
+
+2019-02-19 12:33:32 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:33:34 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/selectItem")): Object: 'Object Repository/Form_Selection_Creation/selectItem' is clicked on
+
+2019-02-19 12:33:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/selectItem' is clicked on
+
+2019-02-19 12:33:34 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/formDesign_selectResource"), 25): Object 'Object Repository/Form_Selection_Creation/formDesign_selectResource' is clickable
+
+2019-02-19 12:33:34 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/formDesign_selectResource' is clickable
+
+2019-02-19 12:33:34 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:33:36 - [TEST_STEP][PASSED] - AdminTool_Location.dragDropCust(4): Element has been clicked
+
+2019-02-19 12:33:40 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:33:40 - [TEST_STEP][NOT_RUN] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object")): NOT_RUN: dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object"))
+
+2019-02-19 12:33:40 - [MESSAGE][NOT_RUN] - NOT_RUN: dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object"))
+
+2019-02-19 12:33:40 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/openResType"), 25): Object 'Object Repository/Form_Selection_Creation/openResType' is clickable
+
+2019-02-19 12:33:40 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/openResType' is clickable
+
+2019-02-19 12:33:40 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:33:44 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/openResType")): Object: 'Object Repository/Form_Selection_Creation/openResType' is clicked on
+
+2019-02-19 12:33:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/openResType' is clicked on
+
+2019-02-19 12:33:44 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:33:46 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/selectSupplier")): Object: 'Object Repository/Form_Selection_Creation/selectSupplier' is clicked on
+
+2019-02-19 12:33:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/selectSupplier' is clicked on
+
+2019-02-19 12:33:46 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/formDesign_selectResource"), 25): Object 'Object Repository/Form_Selection_Creation/formDesign_selectResource' is clickable
+
+2019-02-19 12:33:46 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/formDesign_selectResource' is clickable
+
+2019-02-19 12:33:46 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:33:48 - [TEST_STEP][PASSED] - AdminTool_Location.dragDropCust(5): Element has been clicked
+
+2019-02-19 12:33:53 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-02-19 12:33:53 - [TEST_STEP][NOT_RUN] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object")): NOT_RUN: dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object"))
+
+2019-02-19 12:33:53 - [MESSAGE][NOT_RUN] - NOT_RUN: dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_selectResource"), findTestObject("Form_Selection_Creation/Target_Res_Object"))
+
+2019-02-19 12:33:53 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/formDesign_selectResource"), 25): Object 'Object Repository/Form_Selection_Creation/formDesign_selectResource' is clickable
+
+2019-02-19 12:33:53 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/formDesign_selectResource' is clickable
+
+2019-02-19 12:33:53 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:33:57 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/formCreation_NextToDesignForm")): Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-02-19 12:33:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-02-19 12:33:57 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:34:01 - [TEST_STEP][PASSED] - FormName.createForm(findTestObject("Form_Selection_Creation/formDesign_FormName")): FormName.createForm is PASSED
+
+2019-02-19 12:34:01 - [MESSAGE][PASSED] - FormName.createForm is PASSED
+
+2019-02-19 12:34:01 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:03 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectSection"), findTestObject("Form_Selection_Creation/default_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2019-02-19 12:34:04 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectSection' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/default_area'' successfully
+
+2019-02-19 12:34:04 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_SectionName"), "This is a Section"): Text 'This is a Section' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName'
+
+2019-02-19 12:34:05 - [MESSAGE][PASSED] - Text 'This is a Section' is set on object 'Object Repository/Form_Selection_Creation/formDesign_SectionName'
+
+2019-02-19 12:34:05 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:07 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectFieldgroup"), findTestObject("Form_Selection_Creation/section_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2019-02-19 12:34:07 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFieldgroup' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/section_area'' successfully
+
+2019-02-19 12:34:07 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_FieldGroupName"), "This is Field Group"): Text 'This is Field Group' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FieldGroupName'
+
+2019-02-19 12:34:08 - [MESSAGE][PASSED] - Text 'This is Field Group' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FieldGroupName'
+
+2019-02-19 12:34:08 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:10 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectFree Text"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:11 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectFree Text' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:11 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_FreetextName"), "This is Free Text"): Text 'This is Free Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FreetextName'
+
+2019-02-19 12:34:11 - [MESSAGE][PASSED] - Text 'This is Free Text' is set on object 'Object Repository/Form_Selection_Creation/formDesign_FreetextName'
+
+2019-02-19 12:34:11 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:13 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectParagraphText"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:14 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectParagraphText' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:14 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_ParagraphName"), "This is Paragraph"): Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName'
+
+2019-02-19 12:34:14 - [MESSAGE][PASSED] - Text 'This is Paragraph' is set on object 'Object Repository/Form_Selection_Creation/formDesign_ParagraphName'
+
+2019-02-19 12:34:14 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:16 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_Select_SelectOne"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:17 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectOne' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:17 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_Select_OneName"), "This is Select One"): Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName'
+
+2019-02-19 12:34:18 - [MESSAGE][PASSED] - Text 'This is Select One' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_OneName'
+
+2019-02-19 12:34:18 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-02-19 12:34:21 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_Add New")): Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2019-02-19 12:34:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2019-02-19 12:34:21 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/addSingleValue1"), "Select Option1"): Text 'Select Option1' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue1'
+
+2019-02-19 12:34:21 - [MESSAGE][PASSED] - Text 'Select Option1' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue1'
+
+2019-02-19 12:34:21 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:23 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_Add New")): Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2019-02-19 12:34:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Add New' is clicked on
+
+2019-02-19 12:34:23 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/addSingleValue2"), "Select Option2"): Text 'Select Option2' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue2'
+
+2019-02-19 12:34:23 - [MESSAGE][PASSED] - Text 'Select Option2' is set on object 'Object Repository/Form_Selection_Creation/addSingleValue2'
+
+2019-02-19 12:34:23 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:25 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_Select_SelectMultiple"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:26 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_Select_SelectMultiple' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:26 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_Select_MultipleName"), "This is Select Multiple "): Text 'This is Select Multiple ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName'
+
+2019-02-19 12:34:27 - [MESSAGE][PASSED] - Text 'This is Select Multiple ' is set on object 'Object Repository/Form_Selection_Creation/formDesign_Select_MultipleName'
+
+2019-02-19 12:34:27 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-02-19 12:34:30 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_AddNewMul")): Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2019-02-19 12:34:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2019-02-19 12:34:30 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/addMultipleValue1"), "Multiple Option1"): Text 'Multiple Option1' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue1'
+
+2019-02-19 12:34:30 - [MESSAGE][PASSED] - Text 'Multiple Option1' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue1'
+
+2019-02-19 12:34:30 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:32 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_AddNewMul")): Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2019-02-19 12:34:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_AddNewMul' is clicked on
+
+2019-02-19 12:34:32 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/addMultipleValue2"), "Multiple Option2"): Text 'Multiple Option2' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue2'
+
+2019-02-19 12:34:33 - [MESSAGE][PASSED] - Text 'Multiple Option2' is set on object 'Object Repository/Form_Selection_Creation/addMultipleValue2'
+
+2019-02-19 12:34:33 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:35 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectNumeric"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:35 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectNumeric' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:35 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_NumericName"), "This is Numeric Field."): Text 'This is Numeric Field.' is set on object 'Object Repository/Form_Selection_Creation/formDesign_NumericName'
+
+2019-02-19 12:34:36 - [MESSAGE][PASSED] - Text 'This is Numeric Field.' is set on object 'Object Repository/Form_Selection_Creation/formDesign_NumericName'
+
+2019-02-19 12:34:36 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:38 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectDate"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:39 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDate' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:39 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_DateName"), "This is Date"): Text 'This is Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName'
+
+2019-02-19 12:34:40 - [MESSAGE][PASSED] - Text 'This is Date' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateName'
+
+2019-02-19 12:34:40 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:42 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectTime"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:42 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:42 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_TimeName"), "This is Time"): Text 'This is Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName'
+
+2019-02-19 12:34:43 - [MESSAGE][PASSED] - Text 'This is Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_TimeName'
+
+2019-02-19 12:34:43 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:45 - [TEST_STEP][PASSED] - dragAndDropToObject(findTestObject("Form_Selection_Creation/formDesign_SelectDateTime"), findTestObject("Form_Selection_Creation/group_area")): Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:46 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/Form_Selection_Creation/formDesign_SelectDateTime' to object with id 'TestObject - 'Object Repository/Form_Selection_Creation/group_area'' successfully
+
+2019-02-19 12:34:46 - [TEST_STEP][PASSED] - setText(findTestObject("Form_Selection_Creation/formDesign_DateTimeName"), "This is Date-Time"): Text 'This is Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName'
+
+2019-02-19 12:34:46 - [MESSAGE][PASSED] - Text 'This is Date-Time' is set on object 'Object Repository/Form_Selection_Creation/formDesign_DateTimeName'
+
+2019-02-19 12:34:46 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:34:48 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/formCreation_NextToDesignForm")): Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-02-19 12:34:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/formCreation_NextToDesignForm' is clicked on
+
+2019-02-19 12:34:54 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-19 12:35:01 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/div_Preview             Form1")): Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2019-02-19 12:35:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/div_Preview             Form1' is clicked on
+
+2019-02-19 12:35:01 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-19 12:35:06 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/button_Release")): Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2019-02-19 12:35:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/button_Release' is clicked on
+
+2019-02-19 12:35:06 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:35:10 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUser/clickToCheck"), 45): Object 'Object Repository/TestUser/clickToCheck' is clickable
+
+2019-02-19 12:35:10 - [MESSAGE][PASSED] - Object 'Object Repository/TestUser/clickToCheck' is clickable
+
+2019-02-19 12:35:10 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:35:12 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/clickToCheck")): Object: 'Object Repository/TestUser/clickToCheck' is clicked on
+
+2019-02-19 12:35:12 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/clickToCheck' is clicked on
+
+2019-02-19 12:35:12 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:35:14 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/logoutUser")): Object: 'Object Repository/TestUser/logoutUser' is clicked on
+
+2019-02-19 12:35:18 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/logoutUser' is clicked on
+
+2019-02-19 12:35:18 - [TEST_STEP][PASSED] - Thread.sleep(2000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data-Security/userFirstLogin" classname="Test Cases/Data-Security/userFirstLogin" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:35:20 - [TEST_CASE][PASSED] - Test Cases/Data-Security/userFirstLogin: Test Cases/Data-Security/userFirstLogin
+
+2019-02-19 12:35:20 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:35:20 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:35:20 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-02-19 12:35:20 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-02-19 12:35:20 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:35:24 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/login_Username"), findTestData("UserData").getValue("UserName", 1)): Text 'User_On_19/02/19-12:30' is set on object 'Object Repository/TestUserLocation/login_Username'
+
+2019-02-19 12:35:25 - [MESSAGE][PASSED] - Text 'User_On_19/02/19-12:30' is set on object 'Object Repository/TestUserLocation/login_Username'
+
+2019-02-19 12:35:25 - [TEST_STEP][PASSED] - User.setNewPass(): User.setNewPass is PASSED
+
+2019-02-19 12:35:25 - [MESSAGE][PASSED] - User.setNewPass is PASSED
+
+2019-02-19 12:35:25 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/login_Password"), findTestData("UserData").getValue("Password", 1)): Text 'password' is set on object 'Object Repository/TestUserLocation/login_Password'
+
+2019-02-19 12:35:25 - [MESSAGE][PASSED] - Text 'password' is set on object 'Object Repository/TestUserLocation/login_Password'
+
+2019-02-19 12:35:25 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:35:27 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/login_Button")): Object: 'Object Repository/TestUserLocation/login_Button' is clicked on
+
+2019-02-19 12:35:27 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/login_Button' is clicked on
+
+2019-02-19 12:35:27 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:35:27 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:35:27 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:35:31 - [TEST_STEP][PASSED] - setText(findTestObject("TestUser/newPassword"), findTestData("UserData").getValue("NewPassword", 1)): Text 'password@123#' is set on object 'Object Repository/TestUser/newPassword'
+
+2019-02-19 12:35:32 - [MESSAGE][PASSED] - Text 'password@123#' is set on object 'Object Repository/TestUser/newPassword'
+
+2019-02-19 12:35:32 - [TEST_STEP][PASSED] - setText(findTestObject("TestUser/confirmPassword"), findTestData("UserData").getValue("NewPassword", 1)): Text 'password@123#' is set on object 'Object Repository/TestUser/confirmPassword'
+
+2019-02-19 12:35:32 - [MESSAGE][PASSED] - Text 'password@123#' is set on object 'Object Repository/TestUser/confirmPassword'
+
+2019-02-19 12:35:32 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:35:34 - [TEST_STEP][PASSED] - click(findTestObject("TestUser/createPasswordButton")): Object: 'Object Repository/TestUser/createPasswordButton' is clicked on
+
+2019-02-19 12:35:34 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUser/createPasswordButton' is clicked on
+
+2019-02-19 12:35:34 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:35:38 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/login_Username"), findTestData("UserData").getValue("UserName", 1)): Text 'User_On_19/02/19-12:30' is set on object 'Object Repository/TestUserLocation/login_Username'
+
+2019-02-19 12:35:39 - [MESSAGE][PASSED] - Text 'User_On_19/02/19-12:30' is set on object 'Object Repository/TestUserLocation/login_Username'
+
+2019-02-19 12:35:39 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/login_Password"), findTestData("UserData").getValue("NewPassword", 1)): Text 'password@123#' is set on object 'Object Repository/TestUserLocation/login_Password'
+
+2019-02-19 12:35:39 - [MESSAGE][PASSED] - Text 'password@123#' is set on object 'Object Repository/TestUserLocation/login_Password'
+
+2019-02-19 12:35:39 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:35:41 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/login_Button")): Object: 'Object Repository/TestUserLocation/login_Button' is clicked on
+
+2019-02-19 12:35:50 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/login_Button' is clicked on
+
+2019-02-19 12:35:50 - [TEST_STEP][PASSED] - Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data-Security/2_FormSubmission" classname="Test Cases/Data-Security/2_FormSubmission" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:35:54 - [TEST_CASE][PASSED] - Test Cases/Data-Security/2_FormSubmission: Test Cases/Data-Security/2_FormSubmission
+
+2019-02-19 12:35:54 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:35:54 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:35:54 - [TEST_STEP][NOT_RUN] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): NOT_RUN: waitForElementClickable(findTestObject("FormTab/selectForm"), 45)
+
+2019-02-19 12:35:54 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementClickable(findTestObject("FormTab/selectForm"), 45)
+
+2019-02-19 12:35:54 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:35:56 - [TEST_STEP][NOT_RUN] - refresh(): NOT_RUN: refresh()
+
+2019-02-19 12:35:56 - [MESSAGE][NOT_RUN] - NOT_RUN: refresh()
+
+2019-02-19 12:35:56 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-02-19 12:35:56 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-02-19 12:35:56 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:35:56 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:35:56 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-02-19 12:35:56 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), findTestData("UserData").getValue("UserName", 1)): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), findTestData("UserData").getValue("UserName", 1))
+
+2019-02-19 12:35:56 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), findTestData("UserData").getValue("UserName", 1))
+
+2019-02-19 12:35:56 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), findTestData("UserData").getValue("NewPassword", 1)): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), findTestData("UserData").getValue("NewPassword", 1))
+
+2019-02-19 12:35:56 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), findTestData("UserData").getValue("NewPassword", 1))
+
+2019-02-19 12:35:56 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/login_Button")): NOT_RUN: click(findTestObject("FormTab/login_Button"))
+
+2019-02-19 12:35:56 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/login_Button"))
+
+2019-02-19 12:35:56 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-02-19 12:35:56 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-02-19 12:35:56 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/home")): NOT_RUN: click(findTestObject("Form_Selection_Creation/home"))
+
+2019-02-19 12:35:56 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/home"))
+
+2019-02-19 12:35:56 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-02-19 12:36:02 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-02-19 12:36:02 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-02-19 12:36:02 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/form_Tab")): Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2019-02-19 12:36:02 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/form_Tab' is clicked on
+
+2019-02-19 12:36:02 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-02-19 12:36:03 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-02-19 12:36:03 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-02-19 12:36:09 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/clickToViewMoreOption")): NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-02-19 12:36:09 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/clickToViewMoreOption"))
+
+2019-02-19 12:36:09 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:36:09 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:36:09 - [TEST_STEP][NOT_RUN] - waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5): NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-02-19 12:36:09 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementNotVisible(findTestObject("FormTab/select500_Form"), 5)
+
+2019-02-19 12:36:09 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/select500_Form")): NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-02-19 12:36:09 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/select500_Form"))
+
+2019-02-19 12:36:09 - [TEST_STEP][NOT_RUN] - Thread.sleep(7000): NOT_RUN: Thread.sleep(7000)
+
+2019-02-19 12:36:09 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(7000)
+
+2019-02-19 12:36:09 - [TEST_STEP][NOT_RUN] - FormName.fillFormName(): NOT_RUN: FormName.fillFormName()
+
+2019-02-19 12:36:09 - [MESSAGE][NOT_RUN] - NOT_RUN: FormName.fillFormName()
+
+2019-02-19 12:36:09 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/options")): Object: 'Object Repository/FormTab/options' is clicked on
+
+2019-02-19 12:36:09 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/options' is clicked on
+
+2019-02-19 12:36:09 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:36:11 - [TEST_STEP][PASSED] - mouseOver(findTestObject("FormTab/filterOption")): Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-02-19 12:36:12 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterOption' is hovered
+
+2019-02-19 12:36:12 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:36:14 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:36:14 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-02-19 12:36:14 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:36:16 - [TEST_STEP][PASSED] - FormName.filterFormName(): FormName.filterFormName is PASSED
+
+2019-02-19 12:36:18 - [MESSAGE][PASSED] - FormName.filterFormName is PASSED
+
+2019-02-19 12:36:18 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:36:20 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/filterButton")): Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-02-19 12:36:20 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/filterButton' is clicked on
+
+2019-02-19 12:36:20 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:36:24 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("FormTab/selectForm"), 45): Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-02-19 12:36:24 - [MESSAGE][PASSED] - Object 'Object Repository/FormTab/selectForm' is clickable
+
+2019-02-19 12:36:24 - [TEST_STEP][PASSED] - click(findTestObject("FormTab/selectForm")): Object: 'Object Repository/FormTab/selectForm' is clicked on
+
+2019-02-19 12:36:24 - [MESSAGE][PASSED] - Object: 'Object Repository/FormTab/selectForm' is clicked on
+
+2019-02-19 12:36:24 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:36:28 - [TEST_STEP][PASSED] - Submission.testDS(): Submission.testDS is PASSED
+
+2019-02-19 12:37:23 - [MESSAGE][PASSED] - Submission.testDS is PASSED
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_OpenLocationOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_OpenLocationOption"))
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_OpenLocationOption"))
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectLocation")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectLocation"))
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectLocation"))
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_OpenResourceOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_OpenResourceOption"))
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_OpenResourceOption"))
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectResource")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectResource"))
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectResource"))
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText"): NOT_RUN: setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText")
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_FreeSingleText"), "MyText")
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph"): NOT_RUN: setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph")
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_ParagraphText"), "MyParagraph")
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_SelectOneOption"), "Select Option1"): NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectOneOption"), "Select Option1")
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectOneOption"), "Select Option1")
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(ENTER): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(ENTER)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[4]/div/field-template/div/div/div/div/span/span/input")).sendKeys(ENTER)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "Multiple Option1"): NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "Multiple Option1")
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_SelectMultipleOption"), "Multiple Option1")
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(ENTER): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(ENTER)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div/div/div/div[5]/div/field-template/div/div/div/div/div/div/input")).sendKeys(ENTER)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - Thread.sleep(3000): NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(3000)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SelectMultipleOption")): NOT_RUN: click(findTestObject("FormTab/fillForm_SelectMultipleOption"))
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SelectMultipleOption"))
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9"): NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9")
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: xpath("//*[@id='scs-form-level']/div/div/div/div[2]/div/div/div[6]/div/field-template/div/div[2]/div/div/span[1]/span/input[1]")).sendKeys("9")
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_DateText"), "10/18/2018"): NOT_RUN: setText(findTestObject("FormTab/fillForm_DateText"), "10/18/2018")
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_DateText"), "10/18/2018")
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_TimeText"), "9:00 AM"): NOT_RUN: setText(findTestObject("FormTab/fillForm_TimeText"), "9:00 AM")
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_TimeText"), "9:00 AM")
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/18/2018 9:00 AM"): NOT_RUN: setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/18/2018 9:00 AM")
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("FormTab/fillForm_DateTimeText"), "10/18/2018 9:00 AM")
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SubmitButton")): NOT_RUN: click(findTestObject("FormTab/fillForm_SubmitButton"))
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SubmitButton"))
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-02-19 12:37:23 - [TEST_STEP][NOT_RUN] - click(findTestObject("FormTab/fillForm_SubmissionOkButton")): NOT_RUN: click(findTestObject("FormTab/fillForm_SubmissionOkButton"))
+
+2019-02-19 12:37:23 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("FormTab/fillForm_SubmissionOkButton"))
+
+2019-02-19 12:37:23 - [TEST_STEP][PASSED] - Thread.sleep(2000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data-Security/VerifyDocumentFromUser" classname="Test Cases/Data-Security/VerifyDocumentFromUser" status="PASSED">
+         <system-out><![CDATA[2019-02-19 12:37:25 - [TEST_CASE][PASSED] - Test Cases/Data-Security/VerifyDocumentFromUser: Test Cases/Data-Security/VerifyDocumentFromUser
+
+2019-02-19 12:37:25 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:37:25 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-02-19 12:37:25 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-02-19 12:37:25 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-02-19 12:37:25 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), findTestData("UserData").getValue("UserName", 1)): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), findTestData("UserData").getValue("UserName", 1))
+
+2019-02-19 12:37:25 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), findTestData("UserData").getValue("UserName", 1))
+
+2019-02-19 12:37:25 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), findTestData("UserData").getValue("NewPassword", 1)): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), findTestData("UserData").getValue("NewPassword", 1))
+
+2019-02-19 12:37:25 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), findTestData("UserData").getValue("NewPassword", 1))
+
+2019-02-19 12:37:25 - [TEST_STEP][NOT_RUN] - path = relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", getProjectDir()): NOT_RUN: path = relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", getProjectDir())
+
+2019-02-19 12:37:25 - [MESSAGE][NOT_RUN] - NOT_RUN: path = relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", getProjectDir())
+
+2019-02-19 12:37:25 - [TEST_STEP][NOT_RUN] - click(findTestObject("DMS_Forms/login_Button")): NOT_RUN: click(findTestObject("DMS_Forms/login_Button"))
+
+2019-02-19 12:37:25 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("DMS_Forms/login_Button"))
+
+2019-02-19 12:37:25 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:37:29 - [TEST_STEP][PASSED] - click(findTestObject("DMS_Forms/mainmenu_button")): Object: 'Object Repository/DMS_Forms/mainmenu_button' is clicked on
+
+2019-02-19 12:37:29 - [MESSAGE][PASSED] - Object: 'Object Repository/DMS_Forms/mainmenu_button' is clicked on
+
+2019-02-19 12:37:29 - [TEST_STEP][PASSED] - click(findTestObject("DMS_Forms/mainmenu_Document")): Object: 'Object Repository/DMS_Forms/mainmenu_Document' is clicked on
+
+2019-02-19 12:37:30 - [MESSAGE][PASSED] - Object: 'Object Repository/DMS_Forms/mainmenu_Document' is clicked on
+
+2019-02-19 12:37:30 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:37:34 - [TEST_STEP][PASSED] - Submission.docUploadAdmin(): Submission.docUploadAdmin is PASSED
+
+2019-02-19 12:37:46 - [MESSAGE][PASSED] - Submission.docUploadAdmin is PASSED
+
+2019-02-19 12:37:46 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:37:50 - [TEST_STEP][PASSED] - setText(findTestObject("DMS/searchDocument"), findTestData("LocationData").getValue(8, 1)): Text 'SubCustomer2_19/02/19-12:19' is set on object 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:37:51 - [MESSAGE][PASSED] - Text 'SubCustomer2_19/02/19-12:19' is set on object 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:37:51 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:37:53 - [TEST_STEP][PASSED] - sendKeys(findTestObject("DMS/searchDocument"), Keys.chord(DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:37:53 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:37:53 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-19 12:37:55 - [TEST_STEP][PASSED] - sendKeys(findTestObject("DMS/searchDocument"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:37:55 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/DMS/searchDocument'
+
+2019-02-19 12:37:55 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-19 12:37:59 - [TEST_STEP][PASSED] - Submission.verifyDocInUSer(): Submission.verifyDocInUSer is PASSED
+
+2019-02-19 12:37:59 - [MESSAGE][PASSED] - Submission.verifyDocInUSer is PASSED
+
+2019-02-19 12:37:59 - [TEST_STEP][PASSED] - Thread.sleep(4000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-02-19 12:17:41 - [TEST_SUITE][PASSED] - Data Security: Test Cases/Data-Security/VerifyDocumentFromUser]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -463,16 +463,31 @@ class FormName {
 		List<WebElement> min = driver.findElements(By.xpath("//*[@id='scs-form-level']//div[@data-fieldtype='Numeric']/div/div/div/span[3]/span[1]"))
 		List<WebElement> max = driver.findElements(By.xpath("//*[@id='scs-form-level']//div[@data-fieldtype='Numeric']/div/div/div/span[3]/span[3]"))
 		List<WebElement> uom = driver.findElements(By.xpath("//*[@id='scs-form-level']//div[@data-fieldtype='Numeric']/div/div/div/span[2]"))
-
+		List<WebElement> nonComp = driver.findElements(By.xpath("//*[@class='fa fa-close']"))
 		for(int i=0;i<min.size();i++){
-			if(min.get(i).getText().toString()  == 	"Min: 4"){
-				println "MIN"
+			if(min.get(i).getText().toString()  == 	"Min: 1"){
+				println "MIN Compliance is working"
+			}else{
+				println "Min Compliance is not working"
+				throw new com.kms.katalon.core.exception.StepFailedException()
 			}
-			if(max.get(i).getText().toString()  == 	"Max: 8" ){
-				println "MAX"
+			if(max.get(i).getText().toString()  == 	"Max: 12" ){
+				println "MAX  Compliance is working"
+			}else{
+				println "Max Compliance is not working"
+				throw new com.kms.katalon.core.exception.StepFailedException()
 			}
 			if(uom.get(i).getText().toString()  == 	"CM"){
-				println "UOM"
+				println "UOM  Compliance is working"
+			}else{
+				println "UOM Compliance is not working"
+				throw new com.kms.katalon.core.exception.StepFailedException()
+			}
+			if(!driver.findElements(By.xpath("//*[@class='fa fa-close']")).isEmpty()){
+				println "Compliance is not working"
+				throw new com.kms.katalon.core.exception.StepFailedException()
+			}else{
+				println "Compliance is working"
 			}
 		}
 	}
@@ -505,4 +520,23 @@ class FormName {
 			KeywordUtil.markFailed("Fail to click on element")
 		}
 	}
+
+	@Keyword
+	def selectWGInDMS() {
+		try {
+			FileInputStream file = new FileInputStream (new File(path+"/SupplierCred.xlsx"))
+			XSSFWorkbook workbook = new XSSFWorkbook(file);
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			String wg = sheet.getRow(1).getCell(4)
+			file.close();
+			String s = driver.findElement(By.xpath("//*[@id='scs-popup']//div[div[contains(text(),'Assign To')]]/div/span/span/span[1]")).getText()
+			Thread.sleep(3000)
+			driver.findElement(By.xpath("//ul[li[contains(text(),'"+s+"')]]/li[contains(text(),'"+wg+"')]")).click()
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+	}
+
 }

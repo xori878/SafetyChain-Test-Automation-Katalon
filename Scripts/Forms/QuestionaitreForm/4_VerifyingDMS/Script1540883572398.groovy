@@ -39,5 +39,11 @@ Thread.sleep(4000)
 
 WebUI.doubleClick(findTestObject('DMS_Forms/openDocument'))
 
+Thread.sleep(2000)
+
+CustomKeywords.'Submission.verifyData'()
+
+Thread.sleep(2000)
+
 Thread.sleep(4000)
 

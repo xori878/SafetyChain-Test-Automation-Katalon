@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>firstLoc</name>
+   <tag></tag>
+   <elementGuidId>be6e549e-bebe-48c2-8f5f-5d439bb12e7c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;tabstrip-3&quot;]/div/table/tbody/tr[1]/td/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;tabstrip-3&quot;]/div/table/tbody/tr[1]/td/span</value>
+   </webElementProperties>
+</WebElementEntity>

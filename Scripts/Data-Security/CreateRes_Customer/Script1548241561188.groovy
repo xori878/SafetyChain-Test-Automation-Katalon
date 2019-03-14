@@ -41,6 +41,8 @@ Thread.sleep(4000)
 
 WebUI.waitForElementClickable(findTestObject('TestUserLocation/categories'), 45)
 
+Thread.sleep(2000)
+
 WebUI.click(findTestObject('TestUserLocation/categories'))
 
 Thread.sleep(2000)

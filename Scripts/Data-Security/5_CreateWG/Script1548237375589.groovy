@@ -36,7 +36,9 @@ not_run: WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools
 
 WebUI.click(findTestObject('SupplierFlow/workgroup'))
 
-Thread.sleep(5000)
+WebUI.waitForElementClickable(findTestObject('SupplierFlow/addButtonWG'), 30)
+
+Thread.sleep(4000)
 
 WebUI.click(findTestObject('SupplierFlow/addButtonWG'))
 

@@ -15,15 +15,15 @@ import internal.GlobalVariable as GlobalVariable
 
 not_run: WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
 
-WebUI.openBrowser(GlobalVariable.URL)
+not_run: WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.maximizeWindow()
+not_run: WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Password'), GlobalVariable.Password)
 
-WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
+not_run: WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
 
 Thread.sleep(3000)
 
@@ -33,7 +33,7 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
 
-WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
+not_run: WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
 
 WebUI.click(findTestObject('DPT/import-export'))
 

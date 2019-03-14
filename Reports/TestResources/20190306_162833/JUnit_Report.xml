@@ -1,0 +1,1799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestResources" time="440" tests="3" failures="6" errors="0">
+   <testsuite name="TestResources" tests="3" failures="6" errors="0" time="440" timestamp="2019-03-06 16:28:35" hostname="pashine_a - Abhishek-Pashine.India.XoriantCorp.com" id="Test Suites/TestResources">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833"/>
+         <property name="logFiles" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\execution0.log"/>
+         <property name="attachments" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870347717.png, D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870348553.png, D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870351267.png, D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870351688.png, D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870354532.png, D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870354958.png"/>
+         <property name="hostName" value="pashine_a - Abhishek-Pashine.India.XoriantCorp.com"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="6.0.5.4"/>
+         <property name="browser" value="Chrome 72.0.3626.119"/>
+         <property name="hostAddress" value="10.21.7.147"/>
+         <property name="sessionId" value="aa08a710ac861f4547baa6df3b88f0cd"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/CheckResoucesAsPerLocation/1_CreateLocation" classname="Test Cases/CheckResoucesAsPerLocation/1_CreateLocation" status="PASSED">
+         <system-out><![CDATA[2019-03-06 16:28:36 - [TEST_CASE][PASSED] - Test Cases/CheckResoucesAsPerLocation/1_CreateLocation: Test Cases/CheckResoucesAsPerLocation/1_CreateLocation
+
+2019-03-06 16:28:36 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2019-03-06 16:28:37 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-03-06 16:28:37 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-03-06 16:29:12 - [MESSAGE][PASSED] - Browser is opened with url: 'https://test2.stage.safetychain.com'
+
+2019-03-06 16:29:12 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-03-06 16:29:13 - [MESSAGE][PASSED] - Current window maximized
+
+2019-03-06 16:29:13 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/login_Username"), UserName): Text 'tester' is set on object 'Object Repository/TestUserLocation/login_Username'
+
+2019-03-06 16:29:17 - [MESSAGE][PASSED] - Text 'tester' is set on object 'Object Repository/TestUserLocation/login_Username'
+
+2019-03-06 16:29:17 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/login_Password"), Password): Text 'TestSt@ge' is set on object 'Object Repository/TestUserLocation/login_Password'
+
+2019-03-06 16:29:17 - [MESSAGE][PASSED] - Text 'TestSt@ge' is set on object 'Object Repository/TestUserLocation/login_Password'
+
+2019-03-06 16:29:17 - [TEST_STEP][PASSED] - AdminTool_Location.setLocationName(): AdminTool_Location.setLocationName is PASSED
+
+2019-03-06 16:29:23 - [MESSAGE][PASSED] - AdminTool_Location.setLocationName is PASSED
+
+2019-03-06 16:29:23 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/login_Button")): Object: 'Object Repository/TestUserLocation/login_Button' is clicked on
+
+2019-03-06 16:29:25 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/login_Button' is clicked on
+
+2019-03-06 16:29:25 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/mainmenu_button"), 30): Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:29:31 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:29:31 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:29:33 - [TEST_STEP][PASSED] - AdminTool_Location.setLocationNameInLocation(): AdminTool_Location.setLocationNameInLocation is PASSED
+
+2019-03-06 16:29:37 - [MESSAGE][PASSED] - AdminTool_Location.setLocationNameInLocation is PASSED
+
+2019-03-06 16:29:37 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:29:37 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:29:37 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:29:39 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/adminTool")): Object: 'Object Repository/TestUserLocation/adminTool' is clicked on
+
+2019-03-06 16:29:39 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/adminTool' is clicked on
+
+2019-03-06 16:29:39 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:29:41 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuResourceDesigner")): Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-03-06 16:29:41 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-03-06 16:29:41 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/locations"), 30): Object 'Object Repository/TestUserLocation/locations' is clickable
+
+2019-03-06 16:29:42 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/locations' is clickable
+
+2019-03-06 16:29:42 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:29:44 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/locations")): Object: 'Object Repository/TestUserLocation/locations' is clicked on
+
+2019-03-06 16:29:44 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/locations' is clicked on
+
+2019-03-06 16:29:44 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:29:46 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/testAttLoad"), 30): Object 'Object Repository/TestUserLocation/testAttLoad' is clickable
+
+2019-03-06 16:29:46 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/testAttLoad' is clickable
+
+2019-03-06 16:29:46 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/categories"), 30): Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-03-06 16:29:46 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-03-06 16:29:46 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-03-06 16:29:50 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/categories")): Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-03-06 16:29:50 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-03-06 16:29:50 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:29:52 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/defaultArea")): Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-03-06 16:29:52 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-03-06 16:29:52 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/hoverHeading")): Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-03-06 16:29:53 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-03-06 16:29:53 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-03-06 16:29:53 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-03-06 16:29:53 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:29:55 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("LocationName", 1)): Text 'Location_06/03/19-16:29' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-03-06 16:29:55 - [MESSAGE][PASSED] - Text 'Location_06/03/19-16:29' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-03-06 16:29:55 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:29:57 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveButton")): Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-03-06 16:29:58 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-03-06 16:29:58 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/mainmenu_button"), 30): Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:29:58 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:29:58 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-03-06 16:29:58 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-03-06 16:29:58 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:00 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:30:00 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:30:00 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuLocation")): Object: 'Object Repository/TestUserLocation/mainMenuLocation' is clicked on
+
+2019-03-06 16:30:00 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuLocation' is clicked on
+
+2019-03-06 16:30:00 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/firstLocationVisable"), 30): Object 'Object Repository/TestUserLocation/firstLocationVisable' is clickable
+
+2019-03-06 16:30:03 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/firstLocationVisable' is clickable
+
+2019-03-06 16:30:03 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:05 - [TEST_STEP][PASSED] - AdminTool_Location.selectLocation(): Element has been clicked
+
+2019-03-06 16:30:10 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-03-06 16:30:10 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-03-06 16:30:10 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-03-06 16:30:10 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:12 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubLocationName", 1)): Text 'SubLocation1_06/03/19-16:29' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-03-06 16:30:13 - [MESSAGE][PASSED] - Text 'SubLocation1_06/03/19-16:29' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-03-06 16:30:13 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:15 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveLocationDetailButton")): Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on
+
+2019-03-06 16:30:15 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on
+
+2019-03-06 16:30:15 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/customerSelect"), 30): Object 'Object Repository/TestUserLocation/customerSelect' is clickable
+
+2019-03-06 16:30:15 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/customerSelect' is clickable
+
+2019-03-06 16:30:15 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:17 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/customerSelect")): Object: 'Object Repository/TestUserLocation/customerSelect' is clicked on
+
+2019-03-06 16:30:17 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/customerSelect' is clicked on
+
+2019-03-06 16:30:17 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/select4ResouceInCustomer"), 30): Object 'Object Repository/TestUserLocation/select4ResouceInCustomer' is clickable
+
+2019-03-06 16:30:18 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/select4ResouceInCustomer' is clickable
+
+2019-03-06 16:30:18 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:20 - [TEST_STEP][PASSED] - check(findTestObject("TestUserLocation/select4ResouceInCustomer")): Object 'Object Repository/TestUserLocation/select4ResouceInCustomer' is checked
+
+2019-03-06 16:30:20 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/select4ResouceInCustomer' is checked
+
+2019-03-06 16:30:20 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:22 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveLocationDetailButton")): Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on
+
+2019-03-06 16:30:23 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveLocationDetailButton' is clicked on
+
+2019-03-06 16:30:23 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/select4ResouceInCustomer"), 30): Object 'Object Repository/TestUserLocation/select4ResouceInCustomer' is clickable
+
+2019-03-06 16:30:23 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/select4ResouceInCustomer' is clickable
+
+2019-03-06 16:30:23 - [TEST_STEP][PASSED] - Thread.sleep(2000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CheckResoucesAsPerLocation/CreateResource_Customer" classname="Test Cases/CheckResoucesAsPerLocation/CreateResource_Customer" status="PASSED">
+         <system-out><![CDATA[2019-03-06 16:30:25 - [TEST_CASE][PASSED] - Test Cases/CheckResoucesAsPerLocation/CreateResource_Customer: Test Cases/CheckResoucesAsPerLocation/CreateResource_Customer
+
+2019-03-06 16:30:25 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:30:25 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:30:25 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-03-06 16:30:25 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-03-06 16:30:25 - [TEST_STEP][NOT_RUN] - waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45): NOT_RUN: waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45)
+
+2019-03-06 16:30:25 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45)
+
+2019-03-06 16:30:25 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:30:25 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:30:25 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:30:25 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:30:25 - [TEST_STEP][PASSED] - AdminTool_Location.setCustomerName(): AdminTool_Location.setCustomerName is PASSED
+
+2019-03-06 16:30:25 - [MESSAGE][PASSED] - AdminTool_Location.setCustomerName is PASSED
+
+2019-03-06 16:30:25 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:30:25 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:30:25 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-03-06 16:30:25 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-03-06 16:30:25 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/mainmenu_button"), 30): Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:30:25 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:30:25 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:27 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:30:27 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:30:27 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:29 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/adminTool")): NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-03-06 16:30:29 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-03-06 16:30:29 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuResourceDesigner")): Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-03-06 16:30:30 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-03-06 16:30:30 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/customers"), 30): Object 'Object Repository/TestResource/customers' is clickable
+
+2019-03-06 16:30:30 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/customers' is clickable
+
+2019-03-06 16:30:30 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-03-06 16:30:30 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-03-06 16:30:30 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/yesDelete")): NOT_RUN: click(findTestObject("TestUserLocation/yesDelete"))
+
+2019-03-06 16:30:30 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/yesDelete"))
+
+2019-03-06 16:30:30 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:32 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/customers")): Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-03-06 16:30:32 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-03-06 16:30:32 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-03-06 16:30:32 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-03-06 16:30:32 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:34 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/testAttLoad"), 30): Object 'Object Repository/TestUserLocation/testAttLoad' is clickable
+
+2019-03-06 16:30:34 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/testAttLoad' is clickable
+
+2019-03-06 16:30:34 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/categories"), 30): Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-03-06 16:30:34 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/categories' is clickable
+
+2019-03-06 16:30:34 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-03-06 16:30:38 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/categories")): Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-03-06 16:30:39 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/categories' is clicked on
+
+2019-03-06 16:30:39 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:41 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/defaultArea")): Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-03-06 16:30:41 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/defaultArea' is clicked on
+
+2019-03-06 16:30:41 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:43 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/hoverHeading"), 45): Object 'Object Repository/TestUserLocation/hoverHeading' is clickable
+
+2019-03-06 16:30:43 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/hoverHeading' is clickable
+
+2019-03-06 16:30:43 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/hoverHeading")): Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-03-06 16:30:43 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/hoverHeading' is clicked on
+
+2019-03-06 16:30:43 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-03-06 16:30:43 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-03-06 16:30:43 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("CustomerName", 1)): Text 'Customer_06/03/19-16:30' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-03-06 16:30:44 - [MESSAGE][PASSED] - Text 'Customer_06/03/19-16:30' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-03-06 16:30:44 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:46 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/saveButton")): Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-03-06 16:30:46 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/saveButton' is clicked on
+
+2019-03-06 16:30:46 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/mainmenu_button"), 30): Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:30:46 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:30:46 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-03-06 16:30:46 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-03-06 16:30:46 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:48 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:30:48 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:30:48 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:50 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/mainMenu_resources")): Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-03-06 16:30:51 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-03-06 16:30:51 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/customers"), 30): Object 'Object Repository/TestResource/customers' is clickable
+
+2019-03-06 16:30:51 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/customers' is clickable
+
+2019-03-06 16:30:51 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:53 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/customers")): Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-03-06 16:30:53 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-03-06 16:30:53 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:55 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/linksTab"), 30): Object 'Object Repository/TestResource/linksTab' is clickable
+
+2019-03-06 16:30:55 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/linksTab' is clickable
+
+2019-03-06 16:30:55 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:30:57 - [TEST_STEP][PASSED] - AdminTool_Location.selectCustomer(): Element has been clicked
+
+2019-03-06 16:31:00 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-03-06 16:31:00 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:31:02 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/addPlusIcon"), 45): Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-03-06 16:31:02 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-03-06 16:31:02 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-03-06 16:31:07 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-03-06 16:31:07 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:31:09 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubCustomerName1", 1)): Text 'SubCustomer1_06/03/19-16:30' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-03-06 16:31:10 - [MESSAGE][PASSED] - Text 'SubCustomer1_06/03/19-16:30' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-03-06 16:31:10 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:31:12 - [TEST_STEP][PASSED] - Submission.createResource(): Submission.createResource is PASSED
+
+2019-03-06 16:31:58 - [MESSAGE][PASSED] - Submission.createResource is PASSED
+
+2019-03-06 16:31:58 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:00 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestResource/setPhoneNumber"), "912378456"): NOT_RUN: setText(findTestObject("TestResource/setPhoneNumber"), "912378456")
+
+2019-03-06 16:32:00 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestResource/setPhoneNumber"), "912378456")
+
+2019-03-06 16:32:00 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-03-06 16:32:01 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-03-06 16:32:01 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/saveDetailButton"), 30): Object 'Object Repository/TestResource/saveDetailButton' is clickable
+
+2019-03-06 16:32:01 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/saveDetailButton' is clickable
+
+2019-03-06 16:32:01 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:03 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/disableResource"), 30): Object 'Object Repository/TestResource/disableResource' is clickable
+
+2019-03-06 16:32:03 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/disableResource' is clickable
+
+2019-03-06 16:32:03 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:05 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/disableResource")): Object: 'Object Repository/TestResource/disableResource' is clicked on
+
+2019-03-06 16:32:05 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/disableResource' is clicked on
+
+2019-03-06 16:32:05 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:07 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/button2Yes")): Object: 'Object Repository/TestResource/button2Yes' is clicked on
+
+2019-03-06 16:32:07 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/button2Yes' is clicked on
+
+2019-03-06 16:32:07 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:09 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/saveDetailButton"), 30): Object 'Object Repository/TestResource/saveDetailButton' is clickable
+
+2019-03-06 16:32:09 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/saveDetailButton' is clickable
+
+2019-03-06 16:32:09 - [TEST_STEP][NOT_RUN] - Thread.sleep(2000): NOT_RUN: Thread.sleep(2000)
+
+2019-03-06 16:32:09 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(2000)
+
+2019-03-06 16:32:09 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-03-06 16:32:09 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-03-06 16:32:09 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/saveDetailButton"), 30): Object 'Object Repository/TestResource/saveDetailButton' is clickable
+
+2019-03-06 16:32:10 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/saveDetailButton' is clickable
+
+2019-03-06 16:32:10 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/linksTab"), 30): Object 'Object Repository/TestResource/linksTab' is clickable
+
+2019-03-06 16:32:10 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/linksTab' is clickable
+
+2019-03-06 16:32:10 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-03-06 16:32:14 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/linksTab")): Object: 'Object Repository/TestResource/linksTab' is clicked on
+
+2019-03-06 16:32:14 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/linksTab' is clicked on
+
+2019-03-06 16:32:14 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/addLink"), 30): Object 'Object Repository/TestResource/addLink' is clickable
+
+2019-03-06 16:32:15 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/addLink' is clickable
+
+2019-03-06 16:32:15 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:17 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/addLink")): Object: 'Object Repository/TestResource/addLink' is clicked on
+
+2019-03-06 16:32:17 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/addLink' is clicked on
+
+2019-03-06 16:32:17 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/selectSecondResourceToLink"), 30): Object 'Object Repository/TestResource/selectSecondResourceToLink' is clickable
+
+2019-03-06 16:32:18 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/selectSecondResourceToLink' is clickable
+
+2019-03-06 16:32:18 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:20 - [TEST_STEP][PASSED] - check(findTestObject("TestResource/selectSecondResourceToLink")): Object 'Object Repository/TestResource/selectSecondResourceToLink' is checked
+
+2019-03-06 16:32:20 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/selectSecondResourceToLink' is checked
+
+2019-03-06 16:32:20 - [TEST_STEP][PASSED] - AdminTool_Location.resourceLinkName(): AdminTool_Location.resourceLinkName is PASSED
+
+2019-03-06 16:32:21 - [MESSAGE][PASSED] - AdminTool_Location.resourceLinkName is PASSED
+
+2019-03-06 16:32:21 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:23 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/button2Save")): Object: 'Object Repository/TestResource/button2Save' is clicked on
+
+2019-03-06 16:32:23 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/button2Save' is clicked on
+
+2019-03-06 16:32:23 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/locationTab"), 30): Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-03-06 16:32:23 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-03-06 16:32:23 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:25 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/locationTab")): Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-03-06 16:32:25 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-03-06 16:32:25 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/firstLoc"), 30): Object 'Object Repository/TestResource/firstLoc' is clickable
+
+2019-03-06 16:32:25 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/firstLoc' is clickable
+
+2019-03-06 16:32:25 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:27 - [TEST_STEP][PASSED] - AdminTool_Location.checkLocation(): AdminTool_Location.checkLocation is PASSED
+
+2019-03-06 16:32:29 - [MESSAGE][PASSED] - AdminTool_Location.checkLocation is PASSED
+
+2019-03-06 16:32:29 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:31 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveLocation")): Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-03-06 16:32:31 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-03-06 16:32:31 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/mainmenu_button"), 30): Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:32:32 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:32:32 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:34 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:32:34 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:32:34 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:36 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/mainMenu_resources")): Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-03-06 16:32:36 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/mainMenu_resources' is clicked on
+
+2019-03-06 16:32:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/customers"), 30): Object 'Object Repository/TestResource/customers' is clickable
+
+2019-03-06 16:32:36 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/customers' is clickable
+
+2019-03-06 16:32:36 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:38 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/customers")): Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-03-06 16:32:38 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/customers' is clicked on
+
+2019-03-06 16:32:38 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:40 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/linksTab"), 30): Object 'Object Repository/TestResource/linksTab' is clickable
+
+2019-03-06 16:32:40 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/linksTab' is clickable
+
+2019-03-06 16:32:40 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:42 - [TEST_STEP][PASSED] - AdminTool_Location.selectCustomer(): Element has been clicked
+
+2019-03-06 16:32:45 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-03-06 16:32:45 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:47 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/addPlusIcon"), 45): Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-03-06 16:32:47 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/addPlusIcon' is clickable
+
+2019-03-06 16:32:47 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/addPlusIcon")): Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-03-06 16:32:47 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/addPlusIcon' is clicked on
+
+2019-03-06 16:32:47 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:49 - [TEST_STEP][PASSED] - setText(findTestObject("TestUserLocation/setNewName"), findTestData("LocationData").getValue("SubCustomerName2", 1)): Text 'SubCustomer2_06/03/19-16:30' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-03-06 16:32:50 - [MESSAGE][PASSED] - Text 'SubCustomer2_06/03/19-16:30' is set on object 'Object Repository/TestUserLocation/setNewName'
+
+2019-03-06 16:32:50 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:32:52 - [TEST_STEP][PASSED] - Submission.createResource(): Submission.createResource is PASSED
+
+2019-03-06 16:33:49 - [MESSAGE][PASSED] - Submission.createResource is PASSED
+
+2019-03-06 16:33:49 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestResource/setPhoneNumber"), "912378456"): NOT_RUN: setText(findTestObject("TestResource/setPhoneNumber"), "912378456")
+
+2019-03-06 16:33:49 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestResource/setPhoneNumber"), "912378456")
+
+2019-03-06 16:33:49 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:33:51 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveDetailButton")): Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-03-06 16:33:52 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveDetailButton' is clicked on
+
+2019-03-06 16:33:52 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/saveDetailButton"), 30): Object 'Object Repository/TestResource/saveDetailButton' is clickable
+
+2019-03-06 16:33:52 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/saveDetailButton' is clickable
+
+2019-03-06 16:33:52 - [TEST_STEP][PASSED] - AdminTool_Location.moveCursor(): AdminTool_Location.moveCursor is PASSED
+
+2019-03-06 16:33:52 - [MESSAGE][PASSED] - AdminTool_Location.moveCursor is PASSED
+
+2019-03-06 16:33:52 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:33:54 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/linksTab"), 30): Object 'Object Repository/TestResource/linksTab' is clickable
+
+2019-03-06 16:33:54 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/linksTab' is clickable
+
+2019-03-06 16:33:54 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-03-06 16:33:58 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/linksTab")): Object: 'Object Repository/TestResource/linksTab' is clicked on
+
+2019-03-06 16:33:58 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/linksTab' is clicked on
+
+2019-03-06 16:33:58 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/addLink"), 30): Object 'Object Repository/TestResource/addLink' is clickable
+
+2019-03-06 16:33:58 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/addLink' is clickable
+
+2019-03-06 16:33:58 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:34:00 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/addLink")): Object: 'Object Repository/TestResource/addLink' is clicked on
+
+2019-03-06 16:34:00 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/addLink' is clicked on
+
+2019-03-06 16:34:00 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/selectSecondResourceToLink"), 30): Object 'Object Repository/TestResource/selectSecondResourceToLink' is clickable
+
+2019-03-06 16:34:01 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/selectSecondResourceToLink' is clickable
+
+2019-03-06 16:34:01 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:34:03 - [TEST_STEP][PASSED] - check(findTestObject("TestResource/selectSecondResourceToLink")): Object 'Object Repository/TestResource/selectSecondResourceToLink' is checked
+
+2019-03-06 16:34:04 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/selectSecondResourceToLink' is checked
+
+2019-03-06 16:34:04 - [TEST_STEP][PASSED] - AdminTool_Location.resourceLinkName(): AdminTool_Location.resourceLinkName is PASSED
+
+2019-03-06 16:34:04 - [MESSAGE][PASSED] - AdminTool_Location.resourceLinkName is PASSED
+
+2019-03-06 16:34:04 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:34:06 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/button2Save")): Object: 'Object Repository/TestResource/button2Save' is clicked on
+
+2019-03-06 16:34:06 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/button2Save' is clicked on
+
+2019-03-06 16:34:06 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/locationTab"), 30): Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-03-06 16:34:06 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/locationTab' is clickable
+
+2019-03-06 16:34:06 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:34:08 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/locationTab")): Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-03-06 16:34:08 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/locationTab' is clicked on
+
+2019-03-06 16:34:08 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/firstLoc"), 30): Object 'Object Repository/TestResource/firstLoc' is clickable
+
+2019-03-06 16:34:08 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/firstLoc' is clickable
+
+2019-03-06 16:34:08 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:34:10 - [TEST_STEP][PASSED] - AdminTool_Location.checkLocation(): AdminTool_Location.checkLocation is PASSED
+
+2019-03-06 16:34:13 - [MESSAGE][PASSED] - AdminTool_Location.checkLocation is PASSED
+
+2019-03-06 16:34:13 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:34:15 - [TEST_STEP][PASSED] - click(findTestObject("TestResource/saveLocation")): Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-03-06 16:34:15 - [MESSAGE][PASSED] - Object: 'Object Repository/TestResource/saveLocation' is clicked on
+
+2019-03-06 16:34:15 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/saveLocation"), 30): Object 'Object Repository/TestResource/saveLocation' is clickable
+
+2019-03-06 16:34:15 - [MESSAGE][PASSED] - Object 'Object Repository/TestResource/saveLocation' is clickable
+
+2019-03-06 16:34:15 - [TEST_STEP][PASSED] - Thread.sleep(2000): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CheckResoucesAsPerLocation/Validate" classname="Test Cases/CheckResoucesAsPerLocation/Validate" status="PASSED">
+         <system-out><![CDATA[2019-03-06 16:34:17 - [TEST_CASE][PASSED] - Test Cases/CheckResoucesAsPerLocation/Validate: Test Cases/CheckResoucesAsPerLocation/Validate
+
+2019-03-06 16:34:17 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:34:17 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:34:17 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-03-06 16:34:17 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-03-06 16:34:17 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:34:17 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:34:17 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:34:17 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:34:17 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:34:17 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:34:17 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/mainMenu_Button"), 30): Object 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clickable
+
+2019-03-06 16:34:17 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clickable
+
+2019-03-06 16:34:17 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-03-06 16:34:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clicked on
+
+2019-03-06 16:34:17 - [TEST_STEP][NOT_RUN] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools")): NOT_RUN: click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools"))
+
+2019-03-06 16:34:17 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools"))
+
+2019-03-06 16:34:17 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Form_Selection_Creation/mainMenu_AdminTools_FormDesigner"), 45): Object 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is visible
+
+2019-03-06 16:34:17 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is visible
+
+2019-03-06 16:34:17 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/mainMenu_AdminTools_FormDesigner")): Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2019-03-06 16:34:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/mainMenu_AdminTools_FormDesigner' is clicked on
+
+2019-03-06 16:34:18 - [TEST_STEP][PASSED] - click(findTestObject("Form_Selection_Creation/selectCheckForm")): Object: 'Object Repository/Form_Selection_Creation/selectCheckForm' is clicked on
+
+2019-03-06 16:34:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Form_Selection_Creation/selectCheckForm' is clicked on
+
+2019-03-06 16:34:18 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-03-06 16:34:22 - [TEST_STEP][PASSED] - AdminTool_Location.selectResType(): AdminTool_Location.selectResType is PASSED
+
+2019-03-06 16:34:26 - [MESSAGE][PASSED] - AdminTool_Location.selectResType is PASSED
+
+2019-03-06 16:34:26 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-03-06 16:34:30 - [TEST_STEP][PASSED] - AdminTool_Location.dragDropRes(): Element has been clicked
+
+2019-03-06 16:34:34 - [MESSAGE][PASSED] - Element has been clicked
+
+2019-03-06 16:34:34 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-03-06 16:34:38 - [TEST_STEP][PASSED] - AdminTool_Location.validate(): AdminTool_Location.validate is PASSED
+
+2019-03-06 16:34:38 - [MESSAGE][PASSED] - AdminTool_Location.validate is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CheckResoucesAsPerLocation/CreateResource_Equipment" classname="Test Cases/CheckResoucesAsPerLocation/CreateResource_Equipment" status="FAILED">
+         <failure type="FAILED" message="Test Cases/CheckResoucesAsPerLocation/CreateResource_Equipment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestResource/equipment'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Equipment.run(CreateResource_Equipment:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+"/>
+         <system-out><![CDATA[2019-03-06 16:34:38 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/CreateResource_Equipment: Test Cases/CheckResoucesAsPerLocation/CreateResource_Equipment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestResource/equipment'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Equipment.run(CreateResource_Equipment:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:34:39 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:34:39 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:34:39 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-03-06 16:34:39 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-03-06 16:34:39 - [TEST_STEP][NOT_RUN] - waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45): NOT_RUN: waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45)
+
+2019-03-06 16:34:39 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45)
+
+2019-03-06 16:34:39 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:34:39 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:34:39 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:34:39 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:34:39 - [TEST_STEP][PASSED] - AdminTool_Location.setEquipmentName(): AdminTool_Location.setEquipmentName is PASSED
+
+2019-03-06 16:34:39 - [MESSAGE][PASSED] - AdminTool_Location.setEquipmentName is PASSED
+
+2019-03-06 16:34:39 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:34:39 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:34:39 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-03-06 16:34:39 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-03-06 16:34:39 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/mainmenu_button"), 30): Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:34:39 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:34:39 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:34:41 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainmenu_button")): Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:34:41 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainmenu_button' is clicked on
+
+2019-03-06 16:34:41 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:34:43 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/adminTool")): NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-03-06 16:34:43 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/adminTool"))
+
+2019-03-06 16:34:43 - [TEST_STEP][PASSED] - click(findTestObject("TestUserLocation/mainMenuResourceDesigner")): Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-03-06 16:34:43 - [MESSAGE][PASSED] - Object: 'Object Repository/TestUserLocation/mainMenuResourceDesigner' is clicked on
+
+2019-03-06 16:34:43 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestResource/equipment"), 30): Web element with id: 'Object Repository/TestResource/equipment' located by 'By.xpath: //*[@id="scs-manage-resource-list-view-data"]/div/div/div/div[2]/div[1]' not found
+
+2019-03-06 16:35:14 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="scs-manage-resource-list-view-data"]/div/div/div/div[2]/div[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-03-06 16:35:14 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/TestResource/equipment' located by 'By.xpath: //*[@id="scs-manage-resource-list-view-data"]/div/div/div/div[2]/div[1]' not found
+
+2019-03-06 16:35:14 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:35:16 - [TEST_STEP][FAILED] - click(findTestObject("TestResource/equipment")): click(findTestObject("TestResource/equipment")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestResource/equipment'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Equipment.run(CreateResource_Equipment:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:35:47 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="scs-manage-resource-list-view-data"]/div/div/div/div[2]/div[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-03-06 16:35:48 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/TestResource/equipment'
+[[ATTACHMENT|D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870347717.png]]
+
+2019-03-06 16:35:48 - [MESSAGE][FAILED] - click(findTestObject("TestResource/equipment")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestResource/equipment'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Equipment.run(CreateResource_Equipment:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-03-06 16:34:38 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/CreateResource_Equipment: Test Cases/CheckResoucesAsPerLocation/CreateResource_Equipment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestResource/equipment'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Equipment.run(CreateResource_Equipment:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CheckResoucesAsPerLocation/Validate" classname="Test Cases/CheckResoucesAsPerLocation/Validate" status="FAILED">
+         <failure type="FAILED" message="Test Cases/CheckResoucesAsPerLocation/Validate FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+"/>
+         <system-out><![CDATA[2019-03-06 16:35:48 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/Validate: Test Cases/CheckResoucesAsPerLocation/Validate FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:35:48 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:35:48 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:35:48 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-03-06 16:35:48 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-03-06 16:35:48 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:35:48 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:35:48 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:35:48 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:35:48 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:35:48 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:35:48 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/mainMenu_Button"), 30): Object 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clickable
+
+2019-03-06 16:35:48 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clickable
+
+2019-03-06 16:35:48 - [TEST_STEP][FAILED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")): click(findTestObject("Form_Selection_Creation/mainMenu_Button")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:35:48 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+[[ATTACHMENT|D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870348553.png]]
+
+2019-03-06 16:35:48 - [MESSAGE][FAILED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-03-06 16:35:48 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/Validate: Test Cases/CheckResoucesAsPerLocation/Validate FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CheckResoucesAsPerLocation/CreateResource_Items" classname="Test Cases/CheckResoucesAsPerLocation/CreateResource_Items" status="FAILED">
+         <failure type="FAILED" message="Test Cases/CheckResoucesAsPerLocation/CreateResource_Items FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Items.run(CreateResource_Items:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+"/>
+         <system-out><![CDATA[2019-03-06 16:35:48 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/CreateResource_Items: Test Cases/CheckResoucesAsPerLocation/CreateResource_Items FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Items.run(CreateResource_Items:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:35:49 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:35:49 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:35:49 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-03-06 16:35:49 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-03-06 16:35:49 - [TEST_STEP][NOT_RUN] - waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45): NOT_RUN: waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45)
+
+2019-03-06 16:35:49 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45)
+
+2019-03-06 16:35:49 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:35:49 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:35:49 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:35:49 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:35:49 - [TEST_STEP][PASSED] - AdminTool_Location.setItemName(): AdminTool_Location.setItemName is PASSED
+
+2019-03-06 16:35:49 - [MESSAGE][PASSED] - AdminTool_Location.setItemName is PASSED
+
+2019-03-06 16:35:49 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:35:49 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:35:49 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-03-06 16:35:49 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-03-06 16:35:49 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/mainmenu_button"), 30): Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:35:49 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:35:49 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:35:51 - [TEST_STEP][FAILED] - click(findTestObject("TestUserLocation/mainmenu_button")): click(findTestObject("TestUserLocation/mainmenu_button")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Items.run(CreateResource_Items:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:35:51 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+[[ATTACHMENT|D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870351267.png]]
+
+2019-03-06 16:35:51 - [MESSAGE][FAILED] - click(findTestObject("TestUserLocation/mainmenu_button")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Items.run(CreateResource_Items:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-03-06 16:35:48 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/CreateResource_Items: Test Cases/CheckResoucesAsPerLocation/CreateResource_Items FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Items.run(CreateResource_Items:35)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CheckResoucesAsPerLocation/Validate" classname="Test Cases/CheckResoucesAsPerLocation/Validate" status="FAILED">
+         <failure type="FAILED" message="Test Cases/CheckResoucesAsPerLocation/Validate FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+"/>
+         <system-out><![CDATA[2019-03-06 16:35:51 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/Validate: Test Cases/CheckResoucesAsPerLocation/Validate FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:35:51 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:35:51 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:35:51 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-03-06 16:35:51 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-03-06 16:35:51 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:35:51 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:35:51 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:35:51 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:35:51 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:35:51 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:35:51 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/mainMenu_Button"), 30): Object 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clickable
+
+2019-03-06 16:35:51 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clickable
+
+2019-03-06 16:35:51 - [TEST_STEP][FAILED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")): click(findTestObject("Form_Selection_Creation/mainMenu_Button")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:35:52 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+[[ATTACHMENT|D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870351688.png]]
+
+2019-03-06 16:35:52 - [MESSAGE][FAILED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-03-06 16:35:51 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/Validate: Test Cases/CheckResoucesAsPerLocation/Validate FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CheckResoucesAsPerLocation/CreateResource_Supplier" classname="Test Cases/CheckResoucesAsPerLocation/CreateResource_Supplier" status="FAILED">
+         <failure type="FAILED" message="Test Cases/CheckResoucesAsPerLocation/CreateResource_Supplier FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Supplier.run(CreateResource_Supplier:36)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+"/>
+         <system-out><![CDATA[2019-03-06 16:35:52 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/CreateResource_Supplier: Test Cases/CheckResoucesAsPerLocation/CreateResource_Supplier FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Supplier.run(CreateResource_Supplier:36)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:35:52 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:35:52 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:35:52 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-03-06 16:35:52 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-03-06 16:35:52 - [TEST_STEP][NOT_RUN] - waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45): NOT_RUN: waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45)
+
+2019-03-06 16:35:52 - [MESSAGE][NOT_RUN] - NOT_RUN: waitForElementClickable(findTestObject("TestUserLocation/login_Username"), 45)
+
+2019-03-06 16:35:52 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:35:52 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:35:52 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:35:52 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:35:52 - [TEST_STEP][PASSED] - AdminTool_Location.setSupplierName(): AdminTool_Location.setSupplierName is PASSED
+
+2019-03-06 16:35:52 - [MESSAGE][PASSED] - AdminTool_Location.setSupplierName is PASSED
+
+2019-03-06 16:35:52 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:35:52 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:35:52 - [TEST_STEP][NOT_RUN] - Thread.sleep(4000): NOT_RUN: Thread.sleep(4000)
+
+2019-03-06 16:35:52 - [MESSAGE][NOT_RUN] - NOT_RUN: Thread.sleep(4000)
+
+2019-03-06 16:35:52 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("TestUserLocation/mainmenu_button"), 30): Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:35:52 - [MESSAGE][PASSED] - Object 'Object Repository/TestUserLocation/mainmenu_button' is clickable
+
+2019-03-06 16:35:52 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-03-06 16:35:54 - [TEST_STEP][FAILED] - click(findTestObject("TestUserLocation/mainmenu_button")): click(findTestObject("TestUserLocation/mainmenu_button")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Supplier.run(CreateResource_Supplier:36)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:35:54 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+[[ATTACHMENT|D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870354532.png]]
+
+2019-03-06 16:35:54 - [MESSAGE][FAILED] - click(findTestObject("TestUserLocation/mainmenu_button")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Supplier.run(CreateResource_Supplier:36)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-03-06 16:35:52 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/CreateResource_Supplier: Test Cases/CheckResoucesAsPerLocation/CreateResource_Supplier FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestUserLocation/mainmenu_button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Supplier.run(CreateResource_Supplier:36)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CheckResoucesAsPerLocation/Validate" classname="Test Cases/CheckResoucesAsPerLocation/Validate" status="FAILED">
+         <failure type="FAILED" message="Test Cases/CheckResoucesAsPerLocation/Validate FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+"/>
+         <system-out><![CDATA[2019-03-06 16:35:54 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/Validate: Test Cases/CheckResoucesAsPerLocation/Validate FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:35:54 - [TEST_STEP][NOT_RUN] - openBrowser(URL): NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:35:54 - [MESSAGE][NOT_RUN] - NOT_RUN: openBrowser(URL)
+
+2019-03-06 16:35:54 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-03-06 16:35:54 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-03-06 16:35:54 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Username"), UserName): NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:35:54 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Username"), UserName)
+
+2019-03-06 16:35:54 - [TEST_STEP][NOT_RUN] - setText(findTestObject("TestUserLocation/login_Password"), Password): NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:35:54 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("TestUserLocation/login_Password"), Password)
+
+2019-03-06 16:35:54 - [TEST_STEP][NOT_RUN] - click(findTestObject("TestUserLocation/login_Button")): NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:35:54 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("TestUserLocation/login_Button"))
+
+2019-03-06 16:35:54 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Form_Selection_Creation/mainMenu_Button"), 30): Object 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clickable
+
+2019-03-06 16:35:54 - [MESSAGE][PASSED] - Object 'Object Repository/Form_Selection_Creation/mainMenu_Button' is clickable
+
+2019-03-06 16:35:54 - [TEST_STEP][FAILED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")): click(findTestObject("Form_Selection_Creation/mainMenu_Button")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)
+
+
+2019-03-06 16:35:55 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+[[ATTACHMENT|D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\TestResources\\20190306_162833\\1551870354958.png]]
+
+2019-03-06 16:35:55 - [MESSAGE][FAILED] - click(findTestObject("Form_Selection_Creation/mainMenu_Button")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-03-06 16:35:54 - [TEST_CASE][FAILED] - Test Cases/CheckResoucesAsPerLocation/Validate: Test Cases/CheckResoucesAsPerLocation/Validate FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Form_Selection_Creation/mainMenu_Button'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Validate.run(Validate:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-03-06 16:28:35 - [TEST_SUITE][FAILED] - TestResources: Test Cases/CheckResoucesAsPerLocation/CreateResource_Equipment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestResource/equipment'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Equipment.run(CreateResource_Equipment:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-03-06 16:28:35 - [TEST_SUITE][FAILED] - TestResources: Test Cases/CheckResoucesAsPerLocation/CreateResource_Equipment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/TestResource/equipment'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at CreateResource_Equipment.run(CreateResource_Equipment:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1551869913139.run(TempTestSuite1551869913139.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

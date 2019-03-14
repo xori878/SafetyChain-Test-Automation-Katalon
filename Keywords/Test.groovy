@@ -119,9 +119,9 @@ class Test {
 		FileOutputStream outFile =new FileOutputStream(new File(fileLocation));
 
 		for(int i=0;i<c-1;i++){
-			sheet.getRow(12+i).getCell(cellNo+2).setCellValue(4)
+			sheet.getRow(12+i).getCell(cellNo+2).setCellValue(1)
 			sheet.getRow(12+i).getCell(cellNo+3).setCellValue(6)
-			sheet.getRow(12+i).getCell(cellNo+4).setCellValue(8)
+			sheet.getRow(12+i).getCell(cellNo+4).setCellValue(12)
 			sheet.getRow(12+i).getCell(cellNo+5).setCellValue("CM")
 		}
 
@@ -200,7 +200,7 @@ class Test {
 			KeywordUtil.markFailed("Fail to click on element"+e)
 		}
 	}
-	
+
 
 	/**
 	 * Get all rows of HTML table

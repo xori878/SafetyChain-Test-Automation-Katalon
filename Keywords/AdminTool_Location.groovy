@@ -103,7 +103,6 @@ class AdminTool_Location {
 			action.doubleClick(element)
 			Thread.sleep(4000)
 			action.moveToElement(element).build().perform()
-
 			KeywordUtil.markPassed("Element has been clicked")
 		} catch (WebElementNotFoundException e) {
 			KeywordUtil.markFailed("Element not found")
@@ -176,6 +175,7 @@ class AdminTool_Location {
 	@Keyword
 	def selectCustomer() {
 		try {
+			Thread.sleep(2000)
 			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
@@ -187,9 +187,9 @@ class AdminTool_Location {
 			outFile.close();
 			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+resourceName+"')]"))
 			Actions action = new Actions(driver)
-			action.doubleClick(element)
-			Thread.sleep(4000)
-			action.moveToElement(element).build().perform()
+			//	action.doubleClick(element)
+			//	Thread.sleep(4000)
+			action.moveToElement(element).doubleClick().build().perform()
 
 			KeywordUtil.markPassed("Element has been clicked")
 		} catch (WebElementNotFoundException e) {
@@ -232,9 +232,7 @@ class AdminTool_Location {
 			outFile.close();
 			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+resourceName+"')]"))
 			Actions action = new Actions(driver)
-			action.doubleClick(element)
-			Thread.sleep(4000)
-			action.moveToElement(element).build().perform()
+			action.moveToElement(element).doubleClick().build().perform()
 
 			KeywordUtil.markPassed("Element has been clicked")
 		} catch (WebElementNotFoundException e) {
@@ -258,9 +256,7 @@ class AdminTool_Location {
 			outFile.close();
 			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+resourceName+"')]"))
 			Actions action = new Actions(driver)
-			action.doubleClick(element)
-			Thread.sleep(4000)
-			action.moveToElement(element).build().perform()
+			action.moveToElement(element).doubleClick().build().perform()
 
 			KeywordUtil.markPassed("Element has been clicked")
 		} catch (WebElementNotFoundException e) {
@@ -283,9 +279,7 @@ class AdminTool_Location {
 			outFile.close();
 			WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+resourceName+"')]"))
 			Actions action = new Actions(driver)
-			action.doubleClick(element)
-			Thread.sleep(4000)
-			action.moveToElement(element).build().perform()
+			action.moveToElement(element).doubleClick().build().perform()
 
 			KeywordUtil.markPassed("Element has been clicked")
 		} catch (WebElementNotFoundException e) {
@@ -367,10 +361,9 @@ class AdminTool_Location {
 			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
-
 			String resName= sheet.getRow(1).getCell(col).toString();
+			file.close();
 			Actions action = new Actions(driver)
-
 			WebElement element = driver.findElement(By.xpath("//*[@id='scs-left-panel-treeview']/ul/li/ul/li/div/span[contains(text(),'"+resName+"')]"))
 			WebElement target = driver.findElement(By.xpath("//*[@id='scs-formdesigner-select-resource-grid']"))
 			Thread.sleep(2000)
@@ -378,7 +371,7 @@ class AdminTool_Location {
 			Thread.sleep(2000)
 			action.dragAndDrop(element, target).build().perform()
 
-			file.close();
+
 
 
 
@@ -401,9 +394,8 @@ class AdminTool_Location {
 			file.close();
 			String selectresource = "//*[@id='scs-product-dropdown_listbox']/li[contains(text(),'"+resType+"')]"
 			click(driver,By.xpath("//*[@id='scs-form-designer-selectresource-container']/div/div/div[1]/span"))
-			Thread.sleep(4000)
+			Thread.sleep(2000)
 			click(driver,By.xpath(selectresource))
-			Thread.sleep(4000)
 		}catch (Exception e) {
 			KeywordUtil.markFailed("Fail to click on element")
 		}
@@ -602,6 +594,7 @@ class AdminTool_Location {
 	@Keyword
 	def checkLocation2() {
 		try {
+			Thread.sleep(2000)
 			FileInputStream file = new FileInputStream (new File(path+"/location.xlsx"))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
@@ -610,7 +603,6 @@ class AdminTool_Location {
 			String lcnBlc = "//td[span[contains(text(),'Locations > "+name+"')]]"
 			WebElement location = driver.findElement(By.xpath(lcn));
 			WebElement locationBlock = driver.findElement(By.xpath(lcnBlc));
-
 			file.close();
 			println location
 			Actions action = new Actions(driver)

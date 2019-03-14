@@ -228,7 +228,13 @@ class Supplier {
 		String s1;
 		int t=0
 		for(int i=1;i<elements.size();i++){
-			s1=driver.findElement(By.xpath("//div[@id='scs-add-supplier-grid-container']/div[2]/table/tbody/tr["+i+"]/td[2]")).getAttribute("innerHTML");
+			if(driver.findElements(By.xpath("//*[@id='scs-add-supplier-grid-container']/div/table/tbody/tr["+i+"]/td[2]")).isEmpty()){
+				s1=driver.findElement(By.xpath("//*[@id='scs-add-supplier-grid-container']/div[3]/table/tbody/tr["+i+"]/td")).getAttribute("innerHTML");
+			}else{
+				s1=driver.findElement(By.xpath("//*[@id='scs-add-supplier-grid-container']/div/table/tbody/tr["+i+"]/td[2]")).getAttribute("innerHTML");
+			}
+			//	s1=driver.findElement(By.xpath("//*[@id='scs-add-supplier-grid-container']/div[3]/table/tbody/tr["+i+"]/td")).getAttribute("innerHTML");
+			//		s1=driver.findElement(By.xpath("//div[@id='scs-add-supplier-grid-container']/div[2]/table/tbody/tr["+i+"]/td[2]")).getAttribute("innerHTML");
 			//	s1=driver.findElement(By.xpath("//*[@id='scs-add-supplier-grid-container']/div[3]/table/tbody/tr["+i+"]/td")).getAttribute("innerHTML");
 			//println "Z2-"+s1
 			if(s1.equals(s)){
@@ -258,7 +264,11 @@ class Supplier {
 		String s1;
 		int t=0
 		for(int i=1;i<elements.size();i++){
-			s1=driver.findElement(By.xpath("//div[@id='scs-add-supplier-grid-container']/div[2]/table/tbody/tr["+i+"]/td[2]")).getAttribute("innerHTML");
+			if(driver.findElements(By.xpath("//div[@id='scs-add-supplier-grid-container']/div/table/tbody/tr["+i+"]/td[2]")).isEmpty()){
+				s1=driver.findElement(By.xpath("//div[@id='scs-add-supplier-grid-container']/div[3]/table/tbody/tr["+i+"]/td")).getAttribute("innerHTML");
+			}else{
+				s1=driver.findElement(By.xpath("//div[@id='scs-add-supplier-grid-container']/div/table/tbody/tr["+i+"]/td[2]")).getAttribute("innerHTML");
+			}
 			//	s1=driver.findElement(By.xpath("//*[@id='scs-add-supplier-grid-container']/div[3]/table/tbody/tr["+i+"]/td")).getAttribute("innerHTML");
 			//println "Z2-"+s1
 			if(s1.equals(s)){

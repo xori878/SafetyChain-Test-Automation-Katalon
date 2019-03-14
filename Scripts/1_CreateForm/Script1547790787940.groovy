@@ -29,13 +29,9 @@ WebUI.waitForElementVisible(findTestObject('FormTab/form_Tab'), 45)
 
 Thread.sleep(3000)
 
-WebUI.verifyElementText(findTestObject('FormTab/form_Tab'), 'Forms')
+WebUI.click(findTestObject('FormTab/form_Tab'), FailureHandling.STOP_ON_FAILURE)
 
 Thread.sleep(3000)
-
-WebUI.deselectOptionByValue(findTestObject(null), '', false)
-
-WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
 
 not_run: WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_AdminTools'))
 

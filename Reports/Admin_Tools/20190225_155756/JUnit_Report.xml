@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Admin_Tools" time="235" tests="3" failures="0" errors="0">
+   <testsuite name="Admin_Tools" tests="3" failures="0" errors="0" time="235" timestamp="2019-02-25 15:58:03" hostname="pashine_a - Abhishek-Pashine.India.XoriantCorp.com" id="Test Suites/Admin_Tools">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\Admin_Tools\\20190225_155756"/>
+         <property name="logFiles" value="D:\\Git Data\\SafetyChain-Test-Automation-Katalon\\Reports\\Admin_Tools\\20190225_155756\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="pashine_a - Abhishek-Pashine.India.XoriantCorp.com"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.10.1.1"/>
+         <property name="browser" value="Chrome 72.0.3626.109"/>
+         <property name="hostAddress" value="10.21.7.147"/>
+         <property name="sessionId" value="58b8b6ea1e4b7bc44c10dd52f769b8fd"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/AdminTools/InternalUser" classname="Test Cases/AdminTools/InternalUser" status="PASSED">
+         <system-out><![CDATA[2019-02-25 15:58:04 - [TEST_CASE][PASSED] - Test Cases/AdminTools/InternalUser: Test Cases/AdminTools/InternalUser
+
+2019-02-25 15:58:04 - [TEST_STEP][PASSED] - sc.sc_customkeywords.UniqueName("UserName"): sc.sc_customkeywords.UniqueName is PASSED
+
+2019-02-25 15:58:06 - [MESSAGE][PASSED] - sc.sc_customkeywords.UniqueName is PASSED
+
+2019-02-25 15:58:06 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-02-25 15:58:07 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-02-25 15:58:07 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-02-25 15:58:14 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-02-25 15:58:14 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-02-25 15:58:15 - [MESSAGE][PASSED] - Current window maximized
+
+2019-02-25 15:58:15 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2019-02-25 15:58:44 - [MESSAGE][PASSED] - Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2019-02-25 15:58:44 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-25 15:58:49 - [TEST_STEP][PASSED] - setText(findTestObject("CommonObjects/Login_UserName"), UserName): Text 'tester' is set on object 'Object Repository/CommonObjects/Login_UserName'
+
+2019-02-25 15:58:49 - [MESSAGE][PASSED] - Text 'tester' is set on object 'Object Repository/CommonObjects/Login_UserName'
+
+2019-02-25 15:58:49 - [TEST_STEP][PASSED] - setText(findTestObject("CommonObjects/Login_Password"), Password): Text 'TestSt@ge' is set on object 'Object Repository/CommonObjects/Login_Password'
+
+2019-02-25 15:58:49 - [MESSAGE][PASSED] - Text 'TestSt@ge' is set on object 'Object Repository/CommonObjects/Login_Password'
+
+2019-02-25 15:58:49 - [TEST_STEP][PASSED] - click(findTestObject("CommonObjects/Login_LoginButton")): Object: 'Object Repository/CommonObjects/Login_LoginButton' is clicked on
+
+2019-02-25 15:58:51 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/Login_LoginButton' is clicked on
+
+2019-02-25 15:58:51 - [TEST_STEP][PASSED] - click(findTestObject("CommonObjects/MainMenu_Icon")): Object: 'Object Repository/CommonObjects/MainMenu_Icon' is clicked on
+
+2019-02-25 15:58:57 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/MainMenu_Icon' is clicked on
+
+2019-02-25 15:58:57 - [TEST_STEP][PASSED] - click(findTestObject("CommonObjects/MainMenu_AdminTools")): Object: 'Object Repository/CommonObjects/MainMenu_AdminTools' is clicked on
+
+2019-02-25 15:58:57 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/MainMenu_AdminTools' is clicked on
+
+2019-02-25 15:58:57 - [TEST_STEP][PASSED] - click(findTestObject("InternalUser/MainMenu_Users")): Object: 'Object Repository/InternalUser/MainMenu_Users' is clicked on
+
+2019-02-25 15:58:57 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/MainMenu_Users' is clicked on
+
+2019-02-25 15:58:57 - [TEST_STEP][PASSED] - click(findTestObject("InternalUser/ManageUsers_AddNewButton")): Object: 'Object Repository/InternalUser/ManageUsers_AddNewButton' is clicked on
+
+2019-02-25 15:59:01 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_AddNewButton' is clicked on
+
+2019-02-25 15:59:01 - [TEST_STEP][PASSED] - setText(findTestObject("InternalUser/ManageUser_NewUserPopUp_Username"), findTestData("TestData").getValue("UserName", 1)): Text 'UserName1551090484881' is set on object 'Object Repository/InternalUser/ManageUser_NewUserPopUp_Username'
+
+2019-02-25 15:59:06 - [MESSAGE][PASSED] - Text 'UserName1551090484881' is set on object 'Object Repository/InternalUser/ManageUser_NewUserPopUp_Username'
+
+2019-02-25 15:59:06 - [TEST_STEP][PASSED] - setText(findTestObject("InternalUser/ManageUsers_NewUserPopUp_Password"), "Test"): Text 'Test' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Password'
+
+2019-02-25 15:59:06 - [MESSAGE][PASSED] - Text 'Test' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Password'
+
+2019-02-25 15:59:06 - [TEST_STEP][PASSED] - setText(findTestObject("InternalUser/ManageUsers_NewUserPopUp_FirstName"), "Katalon1"): Text 'Katalon1' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_FirstName'
+
+2019-02-25 15:59:06 - [MESSAGE][PASSED] - Text 'Katalon1' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_FirstName'
+
+2019-02-25 15:59:06 - [TEST_STEP][PASSED] - setText(findTestObject("InternalUser/ManageUsers_NewUserPopUp_LastName"), "User"): Text 'User' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_LastName'
+
+2019-02-25 15:59:06 - [MESSAGE][PASSED] - Text 'User' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_LastName'
+
+2019-02-25 15:59:06 - [TEST_STEP][PASSED] - setText(findTestObject("InternalUser/ManageUsers_NewUserPopUp_Email"), "test@xoriant.com"): Text 'test@xoriant.com' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Email'
+
+2019-02-25 15:59:07 - [MESSAGE][PASSED] - Text 'test@xoriant.com' is set on object 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Email'
+
+2019-02-25 15:59:07 - [TEST_STEP][PASSED] - click(findTestObject("InternalUser/ManageUsers_NewUserPopUp_Roles")): Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Roles' is clicked on
+
+2019-02-25 15:59:07 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Roles' is clicked on
+
+2019-02-25 15:59:07 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-25 15:59:12 - [TEST_STEP][PASSED] - click(findTestObject("InternalUser/ManageUsers_NewUserPopUp_RolesSuperadmin")): Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_RolesSuperadmin' is clicked on
+
+2019-02-25 15:59:12 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_RolesSuperadmin' is clicked on
+
+2019-02-25 15:59:12 - [TEST_STEP][PASSED] - click(findTestObject("InternalUser/ManageUsers_NewUserPopUp_Location")): Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Location' is clicked on
+
+2019-02-25 15:59:12 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_Location' is clicked on
+
+2019-02-25 15:59:12 - [TEST_STEP][PASSED] - Thread.sleep(7000): null
+
+2019-02-25 15:59:19 - [TEST_STEP][PASSED] - click(findTestObject("InternalUser/ManageUsers_NewUserPopUp_AllLocation")): Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_AllLocation' is clicked on
+
+2019-02-25 15:59:19 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_AllLocation' is clicked on
+
+2019-02-25 15:59:19 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2019-02-25 15:59:21 - [TEST_STEP][PASSED] - click(findTestObject("InternalUser/ManageUsers_NewUserPopUp_SaveButton")): Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_SaveButton' is clicked on
+
+2019-02-25 15:59:22 - [MESSAGE][PASSED] - Object: 'Object Repository/InternalUser/ManageUsers_NewUserPopUp_SaveButton' is clicked on
+
+2019-02-25 15:59:22 - [TEST_STEP][PASSED] - Thread.sleep(8000): null
+
+2019-02-25 15:59:30 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-02-25 15:59:30 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/AdminTools/Roles" classname="Test Cases/AdminTools/Roles" status="PASSED">
+         <system-out><![CDATA[2019-02-25 15:59:30 - [TEST_CASE][PASSED] - Test Cases/AdminTools/Roles: Test Cases/AdminTools/Roles
+
+2019-02-25 15:59:31 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-02-25 15:59:31 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-02-25 15:59:33 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-02-25 15:59:33 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2019-02-25 16:00:07 - [MESSAGE][PASSED] - Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2019-02-25 16:00:07 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-02-25 16:00:08 - [MESSAGE][PASSED] - Current window maximized
+
+2019-02-25 16:00:08 - [TEST_STEP][PASSED] - setText(findTestObject("Role-Latest/ManageRoles_input_USER NAME_Username"), UserName): Text 'tester' is set on object 'Object Repository/Role-Latest/ManageRoles_input_USER NAME_Username'
+
+2019-02-25 16:00:12 - [MESSAGE][PASSED] - Text 'tester' is set on object 'Object Repository/Role-Latest/ManageRoles_input_USER NAME_Username'
+
+2019-02-25 16:00:12 - [TEST_STEP][PASSED] - setText(findTestObject("Role-Latest/ManageRoles_input_PASSWORD_Password"), Password): Text 'TestSt@ge' is set on object 'Object Repository/Role-Latest/ManageRoles_input_PASSWORD_Password'
+
+2019-02-25 16:00:12 - [MESSAGE][PASSED] - Text 'TestSt@ge' is set on object 'Object Repository/Role-Latest/ManageRoles_input_PASSWORD_Password'
+
+2019-02-25 16:00:12 - [TEST_STEP][PASSED] - click(findTestObject("Role-Latest/ManageRoles_button_LOGIN")): Object: 'Object Repository/Role-Latest/ManageRoles_button_LOGIN' is clicked on
+
+2019-02-25 16:00:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_button_LOGIN' is clicked on
+
+2019-02-25 16:00:14 - [TEST_STEP][PASSED] - click(findTestObject("Role-Latest/ManageRoles_svg_STAGE_scsIcon scs-hamburge")): Object: 'Object Repository/Role-Latest/ManageRoles_svg_STAGE_scsIcon scs-hamburge' is clicked on
+
+2019-02-25 16:00:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_svg_STAGE_scsIcon scs-hamburge' is clicked on
+
+2019-02-25 16:00:19 - [TEST_STEP][PASSED] - click(findTestObject("Role-Latest/ManageRoles_div_Admin Tools")): Object: 'Object Repository/Role-Latest/ManageRoles_div_Admin Tools' is clicked on
+
+2019-02-25 16:00:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_div_Admin Tools' is clicked on
+
+2019-02-25 16:00:19 - [TEST_STEP][PASSED] - click(findTestObject("Role-Latest/ManageRoles_div_Roles")): Object: 'Object Repository/Role-Latest/ManageRoles_div_Roles' is clicked on
+
+2019-02-25 16:00:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_div_Roles' is clicked on
+
+2019-02-25 16:00:20 - [TEST_STEP][PASSED] - click(findTestObject("Role-Latest/ManageRoles_i_UserAdmin_fa fa-plus-circle")): Object: 'Object Repository/Role-Latest/ManageRoles_i_UserAdmin_fa fa-plus-circle' is clicked on
+
+2019-02-25 16:00:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_i_UserAdmin_fa fa-plus-circle' is clicked on
+
+2019-02-25 16:00:20 - [TEST_STEP][PASSED] - RandomRoles.clickElement(findTestObject("Role-Latest/ManageRoles_input_UserAdmin_scs-list-view-")): RandomRoles.clickElement is PASSED
+
+2019-02-25 16:00:20 - [MESSAGE][PASSED] - RandomRoles.clickElement is PASSED
+
+2019-02-25 16:00:20 - [TEST_STEP][PASSED] - click(findTestObject("Role-Latest/ManageRoles_div_SAVE")): Object: 'Object Repository/Role-Latest/ManageRoles_div_SAVE' is clicked on
+
+2019-02-25 16:00:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_div_SAVE' is clicked on
+
+2019-02-25 16:00:25 - [TEST_STEP][PASSED] - Thread.sleep(6000): null
+
+2019-02-25 16:00:31 - [TEST_STEP][PASSED] - click(findTestObject("User_role Attachment-Latest/UserRoleLink_span_Users")): Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_span_Users' is clicked on
+
+2019-02-25 16:00:31 - [MESSAGE][PASSED] - Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_span_Users' is clicked on
+
+2019-02-25 16:00:31 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-25 16:00:35 - [TEST_STEP][PASSED] - setText(findTestObject("User_role Attachment-Latest/UserRoleLink_input_SAVE_scs-manage-roles-se"), "Superadmin"): Text 'Superadmin' is set on object 'Object Repository/User_role Attachment-Latest/UserRoleLink_input_SAVE_scs-manage-roles-se'
+
+2019-02-25 16:00:35 - [MESSAGE][PASSED] - Text 'Superadmin' is set on object 'Object Repository/User_role Attachment-Latest/UserRoleLink_input_SAVE_scs-manage-roles-se'
+
+2019-02-25 16:00:35 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-25 16:00:39 - [TEST_STEP][PASSED] - click(findTestObject("User_role Attachment-Latest/UserRoleLink_span_SAVE_fa fa-search")): Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_span_SAVE_fa fa-search' is clicked on
+
+2019-02-25 16:00:40 - [MESSAGE][PASSED] - Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_span_SAVE_fa fa-search' is clicked on
+
+2019-02-25 16:00:40 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-25 16:00:44 - [TEST_STEP][PASSED] - click(findTestObject("User_role Attachment-Latest/UserRoleLink_input_select_scs-grid-row-chec")): Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_input_select_scs-grid-row-chec' is clicked on
+
+2019-02-25 16:00:44 - [MESSAGE][PASSED] - Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_input_select_scs-grid-row-chec' is clicked on
+
+2019-02-25 16:00:44 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-25 16:00:48 - [TEST_STEP][PASSED] - click(findTestObject("User_role Attachment-Latest/UserRoleLink_div_SAVE")): Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_div_SAVE' is clicked on
+
+2019-02-25 16:00:48 - [MESSAGE][PASSED] - Object: 'Object Repository/User_role Attachment-Latest/UserRoleLink_div_SAVE' is clicked on
+
+2019-02-25 16:00:48 - [TEST_STEP][PASSED] - Thread.sleep(4000): null
+
+2019-02-25 16:00:52 - [TEST_STEP][PASSED] - click(findTestObject("Role-Latest/ManageRoles_div_adit s_scs-user-icon")): Object: 'Object Repository/Role-Latest/ManageRoles_div_adit s_scs-user-icon' is clicked on
+
+2019-02-25 16:00:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_div_adit s_scs-user-icon' is clicked on
+
+2019-02-25 16:00:52 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2019-02-25 16:00:57 - [TEST_STEP][PASSED] - verifyElementChecked(findTestObject("User_role Attachment-Latest/Page_SafetyChain/Page_SafetyChain/ToCheckElementIsTicked"), 5): Object 'Object Repository/User_role Attachment-Latest/Page_SafetyChain/Page_SafetyChain/ToCheckElementIsTicked' is checked
+
+2019-02-25 16:00:57 - [MESSAGE][PASSED] - Object 'Object Repository/User_role Attachment-Latest/Page_SafetyChain/Page_SafetyChain/ToCheckElementIsTicked' is checked
+
+2019-02-25 16:00:57 - [TEST_STEP][PASSED] - click(findTestObject("Role-Latest/ManageRoles_li_Logout")): Object: 'Object Repository/Role-Latest/ManageRoles_li_Logout' is clicked on
+
+2019-02-25 16:01:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Role-Latest/ManageRoles_li_Logout' is clicked on
+
+2019-02-25 16:01:01 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-02-25 16:01:01 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/AdminTools/WorkGroup" classname="Test Cases/AdminTools/WorkGroup" status="PASSED">
+         <system-out><![CDATA[2019-02-25 16:01:01 - [TEST_CASE][PASSED] - Test Cases/AdminTools/WorkGroup: Test Cases/AdminTools/WorkGroup
+
+2019-02-25 16:01:02 - [TEST_STEP][PASSED] - sc.sc_customkeywords.UniqueName("WorkGroup"): sc.sc_customkeywords.UniqueName is PASSED
+
+2019-02-25 16:01:02 - [MESSAGE][PASSED] - sc.sc_customkeywords.UniqueName is PASSED
+
+2019-02-25 16:01:02 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-02-25 16:01:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-02-25 16:01:04 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-02-25 16:01:04 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-02-25 16:01:05 - [MESSAGE][PASSED] - Current window maximized
+
+2019-02-25 16:01:05 - [TEST_STEP][PASSED] - navigateToUrl(URL): Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2019-02-25 16:01:31 - [MESSAGE][PASSED] - Navigate to 'https://test2.stage.safetychain.com' successfully
+
+2019-02-25 16:01:31 - [TEST_STEP][PASSED] - setText(findTestObject("CommonObjects/Login_UserName"), UserName): Text 'tester' is set on object 'Object Repository/CommonObjects/Login_UserName'
+
+2019-02-25 16:01:36 - [MESSAGE][PASSED] - Text 'tester' is set on object 'Object Repository/CommonObjects/Login_UserName'
+
+2019-02-25 16:01:36 - [TEST_STEP][PASSED] - setText(findTestObject("CommonObjects/Login_Password"), Password): Text 'TestSt@ge' is set on object 'Object Repository/CommonObjects/Login_Password'
+
+2019-02-25 16:01:36 - [MESSAGE][PASSED] - Text 'TestSt@ge' is set on object 'Object Repository/CommonObjects/Login_Password'
+
+2019-02-25 16:01:36 - [TEST_STEP][PASSED] - click(findTestObject("CommonObjects/Login_LoginButton")): Object: 'Object Repository/CommonObjects/Login_LoginButton' is clicked on
+
+2019-02-25 16:01:39 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/Login_LoginButton' is clicked on
+
+2019-02-25 16:01:39 - [TEST_STEP][PASSED] - click(findTestObject("CommonObjects/FSQA_MainMenu")): Object: 'Object Repository/CommonObjects/FSQA_MainMenu' is clicked on
+
+2019-02-25 16:01:45 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/FSQA_MainMenu' is clicked on
+
+2019-02-25 16:01:45 - [TEST_STEP][PASSED] - click(findTestObject("CommonObjects/MainMenu_AdminTools")): Object: 'Object Repository/CommonObjects/MainMenu_AdminTools' is clicked on
+
+2019-02-25 16:01:45 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/MainMenu_AdminTools' is clicked on
+
+2019-02-25 16:01:45 - [TEST_STEP][PASSED] - click(findTestObject("CommonObjects/MainMenu_WorkGroups")): Object: 'Object Repository/CommonObjects/MainMenu_WorkGroups' is clicked on
+
+2019-02-25 16:01:45 - [MESSAGE][PASSED] - Object: 'Object Repository/CommonObjects/MainMenu_WorkGroups' is clicked on
+
+2019-02-25 16:01:45 - [TEST_STEP][PASSED] - click(findTestObject("WorkGroup/WorkGroup_PlusIcon")): Object: 'Object Repository/WorkGroup/WorkGroup_PlusIcon' is clicked on
+
+2019-02-25 16:01:49 - [MESSAGE][PASSED] - Object: 'Object Repository/WorkGroup/WorkGroup_PlusIcon' is clicked on
+
+2019-02-25 16:01:49 - [TEST_STEP][PASSED] - setText(findTestObject("WorkGroup/WorkGroup_AddingNewTextField"), findTestData("TestData").getValue("WorkGroup", 1)): Text 'WorkGroup1551090662155' is set on object 'Object Repository/WorkGroup/WorkGroup_AddingNewTextField'
+
+2019-02-25 16:01:49 - [MESSAGE][PASSED] - Text 'WorkGroup1551090662155' is set on object 'Object Repository/WorkGroup/WorkGroup_AddingNewTextField'
+
+2019-02-25 16:01:49 - [TEST_STEP][PASSED] - click(findTestObject("WorkGroup/WorkGroup_SaveButton")): Object: 'Object Repository/WorkGroup/WorkGroup_SaveButton' is clicked on
+
+2019-02-25 16:01:53 - [MESSAGE][PASSED] - Object: 'Object Repository/WorkGroup/WorkGroup_SaveButton' is clicked on
+
+2019-02-25 16:01:53 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2019-02-25 16:01:56 - [TEST_STEP][PASSED] - verifyTextPresent(findTestData("TestData").getValue("WorkGroup", 1), false): Text 'WorkGroup1551090662155' is present on page 
+
+2019-02-25 16:01:58 - [MESSAGE][PASSED] - Text 'WorkGroup1551090662155' is present on page 
+
+2019-02-25 16:01:58 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-02-25 16:01:59 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-02-25 15:58:03 - [TEST_SUITE][PASSED] - Admin_Tools: Test Cases/AdminTools/WorkGroup]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

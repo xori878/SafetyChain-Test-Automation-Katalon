@@ -47,11 +47,13 @@ Thread.sleep(3000)
 
 WebUI.waitForElementClickable(findTestObject('Form_Selection_Creation/formDesign_selectResource'), 25)
 
+Thread.sleep(3000)
+
 CustomKeywords.'AdminTool_Location.dragDropCust'(2)
 
 not_run: WebUI.dragAndDropToObject(findTestObject('Form_Selection_Creation/formDesign_selectResource'), findTestObject('Form_Selection_Creation/Target_Res_Object'))
 
-WebUI.waitForElementClickable(findTestObject('Form_Selection_Creation/openResType'), 25)
+WebUI.waitForElementClickable(findTestObject('Form_Selection_Creation/openResType'), 45)
 
 Thread.sleep(4000)
 

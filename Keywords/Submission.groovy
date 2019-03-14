@@ -69,9 +69,15 @@ class Submission{
 	WebDriver driver =  DriverFactory.getWebDriver();
 
 	DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-	DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("hh:mm a");
-	DateTimeFormatter dtf3 = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a");
+	DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("h:mm a");
+	DateTimeFormatter dtf3 = DateTimeFormatter.ofPattern("MM/dd/yyyy h:mm a");
 	static String path = PathUtil.relativeToAbsolutePath("../SafetyChain-Test-Automation-Katalon/SCTestData", RunConfiguration.getProjectDir())
+	static List<String> allParagraph = new ArrayList<String>();
+	static List<String> allNumber = new ArrayList<String>();
+	static List<String> allSelectOne = new ArrayList<String>();
+	static List<String> allSelectMul = new ArrayList<String>();
+	static List<String> allElement = new ArrayList<String>();
+	static List<String> allComments = new ArrayList<String>();
 
 	static int flag1=0
 
@@ -83,28 +89,28 @@ class Submission{
 	public void click(WebDriver driver, By by) {
 		WebElement element = driver.findElement(by);
 		Actions action = new Actions(driver);
-		(new WebDriverWait(driver,120)).until(ExpectedConditions.elementToBeClickable(by));
+		(new WebDriverWait(driver,45)).until(ExpectedConditions.elementToBeClickable(by));
 		Thread.sleep(1000)
 		action.moveToElement(element).click().build().perform()
 	}
 	public void click(WebElement element) {
 		Actions action = new Actions(driver);
-		(new WebDriverWait(driver,120)).until(ExpectedConditions.elementToBeClickable(element));
+		(new WebDriverWait(driver,45)).until(ExpectedConditions.elementToBeClickable(element));
 		Thread.sleep(1000)
 		action.moveToElement(element).click().build().perform()
 	}
 	public void doubleClick(WebDriver driver, By by) {
 		WebElement element = driver.findElement(by);
 		Actions action = new Actions(driver);
-		(new WebDriverWait(driver,120)).until(ExpectedConditions.elementToBeClickable(by));
+		(new WebDriverWait(driver,45)).until(ExpectedConditions.elementToBeClickable(by));
 		Thread.sleep(1000)
 		action.moveToElement(element).doubleClick().build().perform()
 	}
 	public void waitToClick(WebDriver driver, By by) {
-		(new WebDriverWait(driver,121)).until(ExpectedConditions.elementToBeClickable(by));
+		(new WebDriverWait(driver,45)).until(ExpectedConditions.elementToBeClickable(by));
 	}
 	public void waits(WebDriver driver, By by) {
-		(new WebDriverWait(driver,122)).until(ExpectedConditions.visibilityOfElementLocated(by));
+		(new WebDriverWait(driver,45)).until(ExpectedConditions.visibilityOfElementLocated(by));
 	}
 	public String getFieldType(String fieldId){
 		String type= driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']")).getAttribute("data-fieldtype").toString()
@@ -178,6 +184,186 @@ class Submission{
 		Thread.sleep(8000)
 	}
 	public void submitForm(){
+		allParagraph = new ArrayList<String>();
+		allNumber = new ArrayList<String>();
+		allSelectOne = new ArrayList<String>();
+		allSelectMul = new ArrayList<String>();
+		allElement = new ArrayList<String>();
+		allComments = new ArrayList<String>();
+		Thread.sleep(2000)
+		int cnt=0;
+		String openLoc = "//*[@id='scs-header-level']/div[1]/div/span/span/span[2]";
+		List<WebElement> allLoc;
+		if(!driver.findElements(By.xpath(openLoc)).isEmpty()){
+			if(driver.findElement(By.xpath(openLoc)).isDisplayed()){
+				click(driver,By.xpath(openLoc))
+				Thread.sleep(2000)
+				click(driver,By.xpath("/html/body/div/div/div/ul[@aria-live='off']/li[1]"))
+				Thread.sleep(2000)
+				click(driver,By.xpath("//*[@id='scs-header-level']/div[2]/div/span/span/span[2]"))
+				Thread.sleep(2000)
+				List<WebElement> options = driver.findElements(By.xpath("/html/body/div/div/div/ul[@aria-live='polite']/li[1]"))
+				while(cnt<options.size()){
+					println "Field - "+options.get(cnt).getText()
+					if(options.get(cnt).isDisplayed()){
+						println "Field Displayed - "+options.get(cnt).getText()
+						options.get(cnt).click()
+						break;
+					}
+					cnt++;
+
+				}
+				Thread.sleep(2000)
+			}
+		}
+		Thread.sleep(3000)
+		int n= 0;
+		LocalDateTime now = LocalDateTime.now();
+		String date = dtf1.format(now);
+		String time = dtf2.format(now);
+		String dateTime = dtf3.format(now);
+		Thread.sleep(4000)
+		println "Form Submission"
+		String fieldId = null,fieldPath = "//field-template/div[@data-field]",
+		fileFieldPath="//input[@type='file']",
+		commentPath = "//*[@ng-model='field.Comment']";
+		String type = null;
+		int c=0;
+		boolean status = true,st = false;
+
+		waits(driver, By.xpath(fieldPath))
+		Thread.sleep(2000)
+
+		List<WebElement> total = driver.findElements(By.xpath(fieldPath))
+		List<WebElement> totalFileIn = driver.findElements(By.xpath(fileFieldPath))
+		List<WebElement> totalComment = driver.findElements(By.xpath(commentPath))
+		//	println total.size()
+		if(flag1==0){
+			for(int i=0;i<total.size();i++){
+				n= Math.random()*100
+				fieldId = total.get(i).getAttribute("data-field").toString()
+				status = right(fieldId)
+				type = getFieldType(fieldId)
+				//	println type
+				if(total.get(i).isDisplayed() && status){
+					if(type=="FreeText" || type=="SingleLineText"){
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("This is Text")
+						allElement.add("This is Text")
+						Thread.sleep(2000)
+					}
+					if(type=="Paragraph"){
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//textarea")).sendKeys("This is Paragraph")
+						allParagraph.add("This is Paragraph")
+						Thread.sleep(2000)
+					}
+					if(type=="SelectOne"){
+						st = false;
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//span[input]/span[last()]")).click()
+						Thread.sleep(2000)
+						while(!st){
+							c++;
+							st = check("//div["+c+"]//ul/li[@data-offset-index='0']")
+							//			println "//div["+c+"]//ul/li[@data-offset-index='0']"
+						}
+						//	println driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).getText().toString()
+						allSelectOne.add(driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).getText().toString())
+						driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).click()
+						Thread.sleep(2000)
+					}
+					if(type=="SelectMultiple"){
+						st = false;
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//div[@class='k-multiselect-wrap k-floatwrap']")).click()
+						Thread.sleep(2000)
+						while(!st){
+							c++;
+							st = check("//div["+c+"]//ul/li[@data-offset-index='0']")
+							//	println "//div["+c+"]//ul/li[@data-offset-index='0']"
+						}
+						allSelectMul.add(driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).getText().toString())
+						driver.findElement(By.xpath("//div["+c+"]//ul/li[@data-offset-index='0']")).click()
+						Thread.sleep(2000)
+					}
+					if(type=="Numeric"){
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("1")
+						Thread.sleep(2000)
+
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//span[@title='Increase value']")).click()
+						//	driver.findElement(By.xpath("//*[@data-fieldtype='Numeric']//span[@title='Increase value']")).click()
+						allNumber.add("2")
+						Thread.sleep(2000)
+					}
+					if(type=="Date"){
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys(date)
+						allElement.add(date)
+						Thread.sleep(2000)
+					}
+					if(type=="Time"){
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys(time)
+						allElement.add(time)
+						Thread.sleep(2000)
+					}
+					if(type=="DateTime"){
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys(dateTime)
+						allElement.add(dateTime)
+						Thread.sleep(2000)
+					}
+				}
+
+
+			}
+			for(int i=0;i<totalFileIn.size();i++){
+				fieldId = totalFileIn.get(i).getAttribute("id").toString()
+				if(driver.findElement(By.xpath("//div[input[@id='"+fieldId+"']]")).isDisplayed()){
+					totalFileIn.get(i).sendKeys(path+"/Tulips.jpg")
+					Thread.sleep(6000)
+				}
+			}
+			for(int i=0;i<totalComment.size();i++){
+				if(totalComment.get(i).isDisplayed()){
+					totalComment.get(i).sendKeys("This is automatic comment")
+					Thread.sleep(1000)
+					allComments.add("This is automatic comment")
+				}
+			}
+		}
+		if(!driver.findElements(By.xpath("//*[@id='breadCrumb']/span/span/a[contains(text(),'Resource Browser')]")).isEmpty()){
+			if(driver.findElement(By.xpath("//*[@id='breadCrumb']/span/span/a[contains(text(),'Resource Browser')]")).isDisplayed()){
+				click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
+				Thread.sleep(5000)
+				click(driver,By.xpath("//button[contains(text(),'OK')]"))
+			}
+		}else{
+			if(flag1==0){
+				click(driver, By.xpath("//i[@class='fa fa-paperclip']"))
+				Thread.sleep(2000)
+				waitToClick(driver,By.xpath("//*[@id='scs-formlevelfiles-container']/div/div/div/span"))
+				driver.findElement(By.xpath("//*[@id='formlevelfiles']")).sendKeys(path+"/Lighthouse.jpg")
+				Thread.sleep(9000)
+				click(driver, By.xpath("//button[contains(text(),'CLOSE')]"))
+			}
+			Thread.sleep(3000)
+			//	if(!driver.findElements(By.xpath("//*[@id='scs-save-form-button']")).isEmpty()){
+			//		click(driver,By.xpath("//*[@id='scs-save-form-button']"))
+			//	}
+			click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
+			Thread.sleep(3000)
+			if(!driver.findElements(By.xpath("//*[@id='scs-form-resubmission-note']")).isEmpty()){
+				if(flag1==1){
+					driver.findElement(By.xpath("//*[@id='scs-form-resubmission-note']")).sendKeys("Automatic Form Re - Submission")
+					flag1=0;
+					Thread.sleep(2000)
+				}else{
+					driver.findElement(By.xpath("//*[@id='scs-form-resubmission-note']")).sendKeys("Automatic Form Submission")
+					Thread.sleep(2000)
+				}
+			}
+			driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click()
+
+		}
+		Thread.sleep(12000)
+	}
+	@Keyword
+	def fillForm(){
 		Thread.sleep(2000)
 		int cnt=0;
 		String openLoc = "//*[@id='scs-header-level']/div[1]/div/span/span/span[2]";
@@ -231,7 +417,7 @@ class Submission{
 				//	println type
 				if(total.get(i).isDisplayed() && status){
 					if(type=="FreeText" || type=="SingleLineText"){
-						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("This is Text")
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("MyTest")
 						Thread.sleep(2000)
 					}
 					if(type=="Paragraph"){
@@ -263,9 +449,9 @@ class Submission{
 						Thread.sleep(2000)
 					}
 					if(type=="Numeric"){
-						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("9")
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//input")).sendKeys("1")
 						Thread.sleep(2000)
-						driver.findElement(By.xpath("//*[@data-fieldtype='Numeric']//span[@title='Increase value']")).click()
+						driver.findElement(By.xpath("//*[@id='scs-form-level']//div[@data-field='"+fieldId+"']//span[@title='Increase value']")).click()
 						Thread.sleep(2000)
 					}
 					if(type=="Date"){
@@ -281,58 +467,8 @@ class Submission{
 
 					}
 				}
-
-
-			}
-			for(int i=0;i<totalFileIn.size();i++){
-				fieldId = totalFileIn.get(i).getAttribute("id").toString()
-				if(driver.findElement(By.xpath("//div[input[@id='"+fieldId+"']]")).isDisplayed()){
-					totalFileIn.get(i).sendKeys(path+"/Tulips.jpg")
-					Thread.sleep(6000)
-				}
-			}
-			for(int i=0;i<totalComment.size();i++){
-				if(totalComment.get(i).isDisplayed()){
-					totalComment.get(i).sendKeys("This is automatic comment")
-					Thread.sleep(1000)
-				}
 			}
 		}
-		if(!driver.findElements(By.xpath("//*[@id='breadCrumb']/span/span/a[contains(text(),'Resource Browser')]")).isEmpty()){
-			if(driver.findElement(By.xpath("//*[@id='breadCrumb']/span/span/a[contains(text(),'Resource Browser')]")).isDisplayed()){
-				click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
-				Thread.sleep(5000)
-				click(driver,By.xpath("//button[contains(text(),'OK')]"))
-			}
-		}else{
-			if(flag1==0){
-				click(driver, By.xpath("//i[@class='fa fa-paperclip']"))
-				Thread.sleep(2000)
-				waitToClick(driver,By.xpath("//*[@id='scs-formlevelfiles-container']/div/div/div/span"))
-				driver.findElement(By.xpath("//*[@id='formlevelfiles']")).sendKeys(path+"/Lighthouse.jpg")
-				Thread.sleep(9000)
-				click(driver, By.xpath("//button[contains(text(),'CLOSE')]"))
-			}
-			Thread.sleep(3000)
-			//	if(!driver.findElements(By.xpath("//*[@id='scs-save-form-button']")).isEmpty()){
-			//		click(driver,By.xpath("//*[@id='scs-save-form-button']"))
-			//	}
-			click(driver,By.xpath("//*[@id='scs-submit-form-button']"))
-			Thread.sleep(3000)
-			if(!driver.findElements(By.xpath("//*[@id='scs-form-resubmission-note']")).isEmpty()){
-				if(flag1==1){
-					driver.findElement(By.xpath("//*[@id='scs-form-resubmission-note']")).sendKeys("Automatic Form Re - Submission")
-					flag1=0;
-					Thread.sleep(2000)
-				}else{
-					driver.findElement(By.xpath("//*[@id='scs-form-resubmission-note']")).sendKeys("Automatic Form Submission")
-					Thread.sleep(2000)
-				}
-			}
-			//	driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click()
-
-		}
-		Thread.sleep(12000)
 	}
 	@Keyword
 	def formSubmission(){
@@ -522,7 +658,7 @@ class Submission{
 		String res = findTestData('LocationData').getValue(8,1).toString()
 
 		click(driver, By.xpath("//*[@id='scs-documentmgmt-left-panel']/div/span/span/span[2]"))
-		Thread.sleep(2000)
+		Thread.sleep(4000)
 		click(driver,By.xpath("//*[@id='scs-product-dropdown_listbox']/li[2]/span"))
 		Thread.sleep(8000)
 		/*	click(driver, By.xpath("//*[@id='scs-left-panel-treeview']/ul/li/ul/li//div[span/span/span[contains(text(),'"+resCat+"')]]/span[1]"))
@@ -547,4 +683,74 @@ class Submission{
 		 Thread.sleep(4000)
 		 driver.findElement(By.xpath("//*[@id='scs-document-file-upload-input']")).sendKeys(path+"/Tulips.jpg") */
 	}
+
+	@Keyword
+	def verifyData(){
+		List<WebElement> paragraphElement = driver.findElements(By.xpath("//div[@ng-if=\"(field.Type === 'Paragraph')\"]/span"));
+		List<WebElement> selectoneElement = driver.findElements(By.xpath("//div[@ng-if=\"(field.Type === 'SelectOne')\"]/span"));
+		List<WebElement> selectMulElement = driver.findElements(By.xpath("//div[@ng-if=\"(field.Type === 'SelectMultiple')\"]/span"));
+		List<WebElement> numericElement = driver.findElements(By.xpath("//div[@ng-if=\"(field.Type === 'Numeric' || field.Type === 'Aggregate')\"]/span[1]"));
+		List<WebElement> element = driver.findElements(By.xpath("//div[@ng-if=\"(field.Type === 'Date' || field.Type === 'Time' || field.Type === 'DateTime' || field.Type === 'SingleLineText' || field.Type === 'FreeText')\"]/span"));
+		List<WebElement> commentElement = driver.findElements(By.xpath("//div[@ng-if=\"(field.AllowComments && field.Comment)\"]/div[2]"));
+		for(int i=0;i<allSelectOne.size();i++){
+			String s1 = allSelectOne.get(i).toString()
+			String s2 = selectoneElement.get(i).getText().toString()
+			if(s1.equals(s2)){
+				println "Select One Matches."
+			}else{
+				println "Not Matched."
+			}
+		}
+		for(int i=0;i<allSelectMul.size();i++){
+			String s1 = allSelectMul.get(i).toString()
+			String s2 = selectMulElement.get(i).getText().toString()
+			if(s1.equals(s2)){
+				println "Select Multiple Matches."
+			}else{
+				println "Not Matched."
+			}
+		}
+		for(int i=0;i<allParagraph.size();i++){
+			String s1 = allParagraph.get(i).toString()
+			String s2 = paragraphElement.get(i).getText().toString()
+			if(s1.equals(s2)){
+				println "Paragraph  Matches."
+			}else{
+				println "Not Matched."
+			}
+		}
+		for(int i=0;i<allNumber.size();i++){
+			String s1 = allNumber.get(i).toString()
+			String s2 = numericElement.get(i).getText().toString()
+			if(s1.equals(s2)){
+				println "Numeric Matches."
+			}else{
+				println "Not Matched."
+			}
+		}
+		for(int i=0;i<allElement.size();i++){
+			String s1 = allElement.get(i).toString()
+			String s2 = element.get(i).getText().toString()
+			if(s1.equals(s2)){
+				println "Matches."
+			}else{
+				println s1
+				println s2
+				println "Not Matched."
+			}
+		}
+		for(int i=0;i<allComments.size();i++){
+			String s1 = allComments.get(i).toString()
+			String s2 = commentElement.get(i).getText().toString()
+			if(s1.equals(s2)){
+				println "Comment Matches."
+			}else{
+				println s1
+				println s2
+				println "Not Matched."
+			}
+		}
+	}
+
+
 }

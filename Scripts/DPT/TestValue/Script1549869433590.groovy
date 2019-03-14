@@ -15,6 +15,10 @@ import internal.GlobalVariable as GlobalVariable
 
 not_run: WebUI.openBrowser(GlobalVariable.URL)
 
+WebUI.callTestCase(findTestCase('DPT/1_CreateForm'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('DPT/FormCompliance'), [:], FailureHandling.STOP_ON_FAILURE)
+
 not_run: WebUI.maximizeWindow()
 
 not_run: WebUI.setText(findTestObject('Form_Selection_Creation/login_Username'), GlobalVariable.UserName)
@@ -60,6 +64,10 @@ not_run: WebUI.click(findTestObject('Form_Selection_Creation/selectFirstRes'))
 not_run: Thread.sleep(2000)
 
 WebUI.waitForElementClickable(findTestObject('Form_Selection_Creation/button_Release'), 30)
+
+Thread.sleep(2000)
+
+WebUI.click(findTestObject('Form_Selection_Creation/button_Release'), FailureHandling.STOP_ON_FAILURE)
 
 Thread.sleep(4000)
 
@@ -107,7 +115,7 @@ WebUI.click(findTestObject('FormTab/selectForm'))
 
 Thread.sleep(4000)
 
-CustomKeywords.'Submission.formSubmission'()
+CustomKeywords.'Submission.fillForm'()
 
 CustomKeywords.'FormName.TestCompliance'()
 

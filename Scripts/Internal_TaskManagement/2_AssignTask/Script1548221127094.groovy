@@ -17,17 +17,17 @@ import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.By as By
 
-WebUI.openBrowser(GlobalVariable.URL)
+not_run: WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.maximizeWindow()
+not_run: WebUI.maximizeWindow()
 
-WebDriver driver = DriverFactory.getWebDriver()
+not_run: WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName)
+not_run: WebUI.setText(findTestObject('FormTab/login_Username'), GlobalVariable.UserName)
 
-WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password)
+not_run: WebUI.setText(findTestObject('FormTab/login_Password'), GlobalVariable.Password)
 
-WebUI.click(findTestObject('FormTab/login_Button'))
+not_run: WebUI.click(findTestObject('FormTab/login_Button'))
 
 WebUI.waitForElementClickable(findTestObject('DocumentTab/wait'), 20)
 

@@ -61,7 +61,13 @@ WebUI.waitForElementClickable(findTestObject('DocumentTab/selectDocument'), 45)
 
 WebUI.doubleClick(findTestObject('DocumentTab/selectDocument'))
 
+Thread.sleep(2000)
+
+CustomKeywords.'Submission.verifyData'()
+
+Thread.sleep(2000)
+
 not_run: CustomKeywords.'FormName.documentFormName'()
 
-Thread.sleep(4000)
+Thread.sleep(2000)
 

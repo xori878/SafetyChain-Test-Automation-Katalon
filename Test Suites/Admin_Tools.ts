@@ -31,7 +31,7 @@
    <testCaseLink>
       <guid>22ed3b0b-55c4-41de-9ae4-471927c41065</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AdminTools/NewInternalUser</testCaseId>
    </testCaseLink>
    <testCaseLink>

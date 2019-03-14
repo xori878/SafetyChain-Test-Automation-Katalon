@@ -17,12 +17,6 @@
       <testCaseId>Test Cases/SupplierFlow/1_CreateForm</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>4164ab85-5801-4d30-93e5-15885c905ac2</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/SupplierFlow/2_CreateLocation</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>05d6a5bc-81fe-4895-84cd-581767bd3037</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

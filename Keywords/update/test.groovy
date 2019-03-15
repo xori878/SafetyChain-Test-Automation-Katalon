@@ -74,7 +74,7 @@ class test {
 	static String fileName = "C:\\Users\\pashine_a\\Documents\\rockymountain.xlsx";
 	static String d1,curTask,curResource;
 	static int curCount;
-	static List<String[]> alltasks= new ArrayList<String>(),allResource= new ArrayList<Integer>();
+	static List<String[]> alltasks= new ArrayList<String>(),allResource= new ArrayList<Integer>(),allLoc= new ArrayList<String>();
 	static List<Integer[]> taskCount= new ArrayList<Integer>();
 	static WebDriver driver =  DriverFactory.getWebDriver();
 	public static void click(WebElement element) {
@@ -227,6 +227,7 @@ class test {
 		}
 	}
 	public static void   selectLocation(int row) {
+		int flag1=0;
 		String firstEl = "//*[@id='scs-ts-task-grid-container']/div/table/tbody/tr[1]/td/p"
 		String searchLocation = "//*[@id='scs-task-scheduler-location-list']//input";
 		String openLocation = "//div//div[label[contains(text(),'Location') or contains(text(),'LOCATION')]]/span/span/span[last()]";
@@ -255,18 +256,27 @@ class test {
 			setText(searchLocation, location)
 			Thread.sleep(7000)
 			driver.findElement(By.xpath(searchLocation)).sendKeys(Keys.DOWN)
-			alltasks = null
-			allResource = null
-			taskCount = null
-			alltasks= new ArrayList<String>()
-			allResource= new ArrayList<String>();
-			taskCount= new ArrayList<Integer>();
+			for(int j=0;j<allLoc.size();j++){
+				if(allLoc.get(j).toString().equals(location)){
+					flag1=1;
+					break
+
+				}
+			}
+			if(flag1==0){
+				alltasks = null
+				allResource = null
+				taskCount = null
+				alltasks= new ArrayList<String>()
+				allResource= new ArrayList<String>();
+				taskCount= new ArrayList<Integer>();
+			}
 			selectDate(row)
 		}
 	}
 	public static void  selectTask1(int row) {
 		try {
-			int ind=1;
+			int ind=1,flag1=0;
 			Robot hal = new Robot();
 			Random random = new Random();
 			int x = random.nextInt() % 640;
@@ -295,11 +305,26 @@ class test {
 			//			String tn = "//*[@id='scs-ts-task-grid-container']//table[@class='k-selectable']//tr[td[contains(text(),'"+resource+"')] or td[contains(text(),'-')] and td/span[contains(text(),'"+task+"')]]/td/span[contains(text(),'"+task+"')]]["+count+"]";
 
 			//		WebElement tskn = driver.findElement(By.xpath("//*[@id='scs-ts-task-grid-container']//table[@class=k-selectable"]//tr[td[contains(text(),'HyLife Foods')] or td[contains(text(),'-')] and td/span[contains(text(),'M-11 Daily Temperature Log')]][10]"));
+
+			if(allLoc==null || allLoc.size()==0 || allLoc.isEmpty()){
+				allLoc.add(location)
+
+			}
 			if(alltasks==null || alltasks.size()==0 || alltasks.isEmpty()){
 				//		println "SZ - "+alltasks.size()
 				alltasks.add(curTask)
 				allResource.add(curResource)
 				taskCount.add(0)
+				for(int j=0;j<allLoc.size();j++){
+					if(allLoc.get(j).toString().equals(location)){
+						flag1=1;
+						break
+
+					}
+				}
+				if(flag1==0){
+					allLoc.add(location)
+				}
 				test12(0)
 
 			}else{
@@ -370,8 +395,16 @@ class test {
 			Thread.sleep(2000);
 		}
 		waitToClick(editSc)
-		Thread.sleep(2000)
+		Thread.sleep(6000)
+		waitToClick("//*[@id='scs-ts-details-clsoe' or contains(text(),'Close')]")
 		click("//*[@id='scs-ts-details-clsoe' or contains(text(),'Close')]")
+		Thread.sleep(2000)
+		if(!driver.findElements(By.xpath("//*[@id='scs-ts-details-clsoe' or contains(text(),'Close')]")).isEmpty()){
+			Thread.sleep(6000)
+			println "Waiting"
+			click("//*[@id='scs-ts-details-clsoe' or contains(text(),'Close')]")
+			Thread.sleep(2000)
+		}
 		for(int i=0;i<alltasks.size();i++){
 			println "Data"
 			println alltasks.get(i)

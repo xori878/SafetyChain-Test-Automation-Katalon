@@ -71,7 +71,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions
 class test {
 
 	// = new String[7][7];
-	static String fileName = "C:\\Users\\pashine_a\\Documents\\rockymountain.xlsx";
+	static String fileName = "C:\\Users\\choubey_a\\Documents\\FigLive.xlsx";
 	static String d1,curTask,curResource;
 	static int curCount;
 	static List<String[]> alltasks= new ArrayList<String>(),allResource= new ArrayList<Integer>(),allLoc= new ArrayList<String>();
@@ -144,6 +144,10 @@ class test {
 	}
 
 	public static void test12(int i) {
+		String r = "\"" + curResource + "\"";
+		String t = "\"" + curTask + "\"";
+		//	println r
+		//	String tn = "//*[@id='scs-ts-task-grid-container']//tr[td[contains(text(),"+r+")] or td[contains(text(),'-')] and td/span[contains(text(),"+t+")]]/td/span[contains(text(),"+t+")]";
 		String firstEl = "//*[@id='scs-ts-task-grid-container']/div/table/tbody/tr[1]/td/p"
 		if(driver.findElements(By.xpath(firstEl)).isEmpty()){
 			waitToLoad(firstEl)
@@ -152,8 +156,8 @@ class test {
 		//	int s = el2.size()
 		println "IND - "+i
 		//	for(int i=0;i<s;i++){
-		println "Path - "+"//tr[td/span[contains(text(),'"+curTask+"')] and td[contains(text(),'-') or contains(text(),'"+curResource+"')]]/td/span[@class='scs-ts-task-name-col']"
-		WebElement el = driver.findElements(By.xpath("//tr[td/span[contains(text(),'"+curTask+"')] and td[contains(text(),'-') or contains(text(),'"+curResource+"')]]/td/span[@class='scs-ts-task-name-col']")).get(i)
+		println "Path - "+"//tr[td/span[contains(text(),"+t+")] and td[contains(text(),'-') or contains(text(),"+r+")]]/td/span[@class='scs-ts-task-name-col']"
+		WebElement el = driver.findElements(By.xpath("//tr[td/span[contains(text(),"+t+")] and td[contains(text(),'-') or contains(text(),"+r+")]]/td/span[@class='scs-ts-task-name-col']")).get(i)
 		//		println el.getTagName()
 		click(el)
 
@@ -296,7 +300,12 @@ class test {
 			curResource = sheet.getRow(row).getCell(2)
 			curTask =  sheet.getRow(row).getCell(3)
 			file.close();
-			String tn = "//*[@id='scs-ts-task-grid-container']//tr[td[contains(text(),'"+resource+"')] or td[contains(text(),'-')] and td/span[contains(text(),'"+task+"')]]/td/span[contains(text(),'"+task+"')]";
+			//	String r = "\"" + resource + "\"";
+			//	String t = "\"" + task + "\"";
+			//	println r
+			//	String tn = "//*[@id='scs-ts-task-grid-container']//tr[td[contains(text(),"+r+")] or td[contains(text(),'-')] and td/span[contains(text(),"+t+")]]/td/span[contains(text(),"+t+")]";
+			//	String tn = "//*[@id='scs-ts-task-grid-container']//tr[td[contains(text(),\""+resource+"\")] or td[contains(text(),'-')] and td/span[contains(text(),\""+task+"\")]]/td/span[contains(text(),\""+task+"\")]";
+
 			//			println tn
 			if(driver.findElements(By.xpath(firstEl)).isEmpty()){
 				waitToLoad(firstEl)

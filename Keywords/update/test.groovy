@@ -71,6 +71,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions
 class test {
 
 	// = new String[7][7];
+	static String fileName = "C:\\Users\\pashine_a\\Documents\\rockymountain.xlsx";
 	static String d1,curTask,curResource;
 	static int curCount;
 	static List<String[]> alltasks= new ArrayList<String>(),allResource= new ArrayList<Integer>();
@@ -118,12 +119,12 @@ class test {
 		Thread.sleep(1000)
 	}
 	public static void waitToLoad() {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		println "Wait Load"
 	}
 	public static void waitToLoad(String path) {
 		if(driver.findElements(By.xpath(path)).isEmpty()){
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			println "Loading"
 			println path
 			waitToLoad(path)
@@ -136,9 +137,9 @@ class test {
 	}
 	@Keyword
 	def selectTask() {
-		Thread.sleep(15000)
+		//Thread.sleep(15000)
 		getData()
-		
+
 		//test12()
 	}
 
@@ -149,7 +150,9 @@ class test {
 		}
 		//<WebElement> el2 =  driver.findElements(By.xpath("//tr[td/span[contains(text(),'M-11 Daily Temperature Log')] and td[contains(text(),'-') or contains(text(),'HyLife')]]"))
 		//	int s = el2.size()
+		println "IND - "+i
 		//	for(int i=0;i<s;i++){
+		println "Path - "+"//tr[td/span[contains(text(),'"+curTask+"')] and td[contains(text(),'-') or contains(text(),'"+curResource+"')]]/td/span[@class='scs-ts-task-name-col']"
 		WebElement el = driver.findElements(By.xpath("//tr[td/span[contains(text(),'"+curTask+"')] and td[contains(text(),'-') or contains(text(),'"+curResource+"')]]/td/span[@class='scs-ts-task-name-col']")).get(i)
 		//		println el.getTagName()
 		click(el)
@@ -159,7 +162,7 @@ class test {
 		int curIndex=0;
 		int presentIn,flag=0;
 		for(int i=0;i<alltasks.size();i++){
-			println "Hello"
+			//		println "Hello"
 			if(alltasks.get(i).toString().equals(curTask)){
 				if(allResource.get(i).equals(curResource)){
 					presentIn = taskCount.get(i)
@@ -179,7 +182,7 @@ class test {
 	}
 
 	public static void   getData() {
-		FileInputStream file = new FileInputStream (new File("C:\\Users\\pashine_a\\Documents\\hylifestage.xlsx"))
+		FileInputStream file = new FileInputStream (new File(fileName))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		int rowCount = sheet.getLastRowNum()
@@ -191,15 +194,13 @@ class test {
 	}
 	public static void   selectDate(int row) {
 		String firstEl = "//*[@id='scs-ts-task-grid-container']/div/table/tbody/tr[1]/td/p"
-		FileInputStream file = new FileInputStream (new File("C:\\Users\\pashine_a\\Documents\\hylifestage.xlsx"))
+		FileInputStream file = new FileInputStream (new File(fileName))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		int rowCount = sheet.getLastRowNum()
 		String d =  sheet.getRow(row).getCell(6)
-
 		file.close();
-		Thread.sleep(2000)
-		println d
+		//	println d
 		String[] s1 = new String[3];
 		s1 = d.split("-")
 		String date = s1[1] +" "+s1[0] + " "+ s1[2]
@@ -216,6 +217,12 @@ class test {
 		}else{
 			click("//*[@id='scs-ts-header-components']/div[2]/button[@ng-click='navigateNext()']")
 			Thread.sleep(2000)
+			alltasks = null
+			allResource = null
+			taskCount = null
+			alltasks = new ArrayList<String>()
+			allResource = new ArrayList<String>();
+			taskCount = new ArrayList<Integer>();
 			selectDate(row)
 		}
 	}
@@ -223,14 +230,12 @@ class test {
 		String firstEl = "//*[@id='scs-ts-task-grid-container']/div/table/tbody/tr[1]/td/p"
 		String searchLocation = "//*[@id='scs-task-scheduler-location-list']//input";
 		String openLocation = "//div//div[label[contains(text(),'Location') or contains(text(),'LOCATION')]]/span/span/span[last()]";
-		FileInputStream file = new FileInputStream (new File("C:\\Users\\pashine_a\\Documents\\hylifestage.xlsx"))
+		FileInputStream file = new FileInputStream (new File(fileName))
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		int rowCount = sheet.getLastRowNum()
-
 		String location =  sheet.getRow(row).getCell(4)
 		file.close();
-		Thread.sleep(2000)
 		if(driver.findElements(By.xpath(firstEl)).isEmpty()){
 			waitToLoad(firstEl)
 		}
@@ -239,7 +244,6 @@ class test {
 			//selectLocation(row)
 		}
 		waitToClick(openLocation)
-		Thread.sleep(2000)
 		String nowLocation = driver.findElement(By.xpath("//*[@id='scs-ts-header-components']/div/single-select-dropdown-list/div/span/span/span[1]")).getText().toString()
 		println "Current Location - "+nowLocation
 		if(nowLocation.equals(location)){
@@ -249,8 +253,14 @@ class test {
 			click(openLocation)
 			Thread.sleep(2000)
 			setText(searchLocation, location)
-			Thread.sleep(6000)
+			Thread.sleep(7000)
 			driver.findElement(By.xpath(searchLocation)).sendKeys(Keys.DOWN)
+			alltasks = null
+			allResource = null
+			taskCount = null
+			alltasks= new ArrayList<String>()
+			allResource= new ArrayList<String>();
+			taskCount= new ArrayList<Integer>();
 			selectDate(row)
 		}
 	}
@@ -267,7 +277,7 @@ class test {
 			String openLocation = "//div//div[label[contains(text(),'Location') or contains(text(),'LOCATION')]]/span/span/span[last()]";
 			String searchLocation = "//*[@id='scs-task-scheduler-location-list']//input";
 			println "Row Number - "+row
-			FileInputStream file = new FileInputStream (new File("C:\\Users\\pashine_a\\Documents\\hylifestage.xlsx"))
+			FileInputStream file = new FileInputStream (new File(fileName))
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			String resource = sheet.getRow(row).getCell(2)
@@ -278,7 +288,6 @@ class test {
 			file.close();
 			String tn = "//*[@id='scs-ts-task-grid-container']//tr[td[contains(text(),'"+resource+"')] or td[contains(text(),'-')] and td/span[contains(text(),'"+task+"')]]/td/span[contains(text(),'"+task+"')]";
 			//			println tn
-			Thread.sleep(4000)
 			if(driver.findElements(By.xpath(firstEl)).isEmpty()){
 				waitToLoad(firstEl)
 			}
@@ -286,15 +295,15 @@ class test {
 			//			String tn = "//*[@id='scs-ts-task-grid-container']//table[@class='k-selectable']//tr[td[contains(text(),'"+resource+"')] or td[contains(text(),'-')] and td/span[contains(text(),'"+task+"')]]/td/span[contains(text(),'"+task+"')]]["+count+"]";
 
 			//		WebElement tskn = driver.findElement(By.xpath("//*[@id='scs-ts-task-grid-container']//table[@class=k-selectable"]//tr[td[contains(text(),'HyLife Foods')] or td[contains(text(),'-')] and td/span[contains(text(),'M-11 Daily Temperature Log')]][10]"));
-			if(alltasks==null || alltasks.size()==0){
-				//println "SZ - "+alltasks.size()
+			if(alltasks==null || alltasks.size()==0 || alltasks.isEmpty()){
+				//		println "SZ - "+alltasks.size()
 				alltasks.add(curTask)
 				allResource.add(curResource)
 				taskCount.add(0)
 				test12(0)
 
 			}else{
-			//	println alltasks.size()
+				//	println alltasks.size()
 				test12(testAvail())
 			}
 
@@ -322,7 +331,6 @@ class test {
 		String w = "//*[@id='scs-ts-edit-schedule-form']/div[1]/div[5]/div[1]"
 		String editSc = "//*[@id='scs-ts-details-edit-schedule']"
 		String wg = "//div[div[contains(text(),'ASSIGN TO WORKGROUP')]]//span[contains(text(),'Select')]"
-		Thread.sleep(2000)
 		if(driver.findElements(By.xpath(editSc)).isEmpty()){
 			waitToLoad(editSc)
 			update()
@@ -332,12 +340,12 @@ class test {
 		if(!driver.findElements(By.xpath(editSc)).isEmpty()){
 			waitToLoad(editSc)
 			click(editSc);
-			Thread.sleep(3000)
+			Thread.sleep(2000)
 		}
 		if(!driver.findElements(By.xpath(editSc)).isEmpty()){
 			waitToLoad(editSc)
 			click(editSc);
-			Thread.sleep(3000)
+			Thread.sleep(2000)
 		}
 		if(driver.findElements(By.xpath(w)).isEmpty()){
 			waitToLoad(w)
@@ -346,8 +354,13 @@ class test {
 		waitToClick(w);
 		Thread.sleep(2000)
 		click("//button[contains(text(),'UPDATE')]")
-		Thread.sleep(8000)
+		Thread.sleep(4000)
 		if(!driver.findElements(By.xpath("//button[contains(text(),'UPDATE')]")).isEmpty()){
+			Thread.sleep(6000)
+			println "Waiting"
+		}
+		if(!driver.findElements(By.xpath("//button[contains(text(),'UPDATE')]")).isEmpty()){
+			waitToClick("//button[contains(text(),'CANCEL')]");
 			Thread.sleep(2000)
 			println "CANCELED"
 			click("//button[contains(text(),'CANCEL')]")

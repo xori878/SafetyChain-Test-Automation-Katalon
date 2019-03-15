@@ -25,7 +25,13 @@ WebUI.click(findTestObject('Form_Selection_Creation/login_Button'))
 
 Thread.sleep(3000)
 
+WebUI.waitForElementClickable(findTestObject('Form_Selection_Creation/mainMenu_Button'), 60)
+
 WebUI.click(findTestObject('Form_Selection_Creation/mainMenu_Button'))
+
+WebUI.waitForElementClickable(findTestObject('UpdateTask/taskSchedular'), 60)
+
+Thread.sleep(1000)
 
 WebUI.click(findTestObject('UpdateTask/taskSchedular'))
 

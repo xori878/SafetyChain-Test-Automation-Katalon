@@ -68,7 +68,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions
 
 
 
-class test {
+class Test {
 
 	// = new String[7][7];
 	static String fileName = "C:\\Users\\pashine_a\\Documents\\rockymountain.xlsx";
@@ -135,6 +135,8 @@ class test {
 		(new WebDriverWait(driver,60)).until(ExpectedConditions.elementToBeClickable(element));
 		Thread.sleep(1000)
 	}
+
+
 	@Keyword
 	def selectTask() {
 		//Thread.sleep(15000)
@@ -144,6 +146,11 @@ class test {
 	}
 
 	public static void test12(int i) {
+
+		String r = "\"" + curResource + "\"";
+		String t = "\"" + curTask + "\"";
+		//	println r
+		//	String tn = "//*[@id='scs-ts-task-grid-container']//tr[td[contains(text(),"+r+")] or td[contains(text(),'-')] and td/span[contains(text(),"+t+")]]/td/span[contains(text(),"+t+")]";
 		String firstEl = "//*[@id='scs-ts-task-grid-container']/div/table/tbody/tr[1]/td/p"
 		if(driver.findElements(By.xpath(firstEl)).isEmpty()){
 			waitToLoad(firstEl)
@@ -152,10 +159,24 @@ class test {
 		//	int s = el2.size()
 		println "IND - "+i
 		//	for(int i=0;i<s;i++){
-		println "Path - "+"//tr[td/span[contains(text(),'"+curTask+"')] and td[contains(text(),'-') or contains(text(),'"+curResource+"')]]/td/span[@class='scs-ts-task-name-col']"
-		WebElement el = driver.findElements(By.xpath("//tr[td/span[contains(text(),'"+curTask+"')] and td[contains(text(),'-') or contains(text(),'"+curResource+"')]]/td/span[@class='scs-ts-task-name-col']")).get(i)
+		println "Path - "+"//tr[td/span[contains(text(),"+t+")] and td[contains(text(),'-') or contains(text(),"+r+")]]/td/span[@class='scs-ts-task-name-col']"
+		WebElement el = driver.findElements(By.xpath("//tr[td/span[contains(text(),"+t+")] and td[contains(text(),'-') or contains(text(),"+r+")]]/td/span[@class='scs-ts-task-name-col']")).get(i)
 		//		println el.getTagName()
 		click(el)
+
+
+		//		String firstEl = "//*[@id='scs-ts-task-grid-container']/div/table/tbody/tr[1]/td/p"
+		//		if(driver.findElements(By.xpath(firstEl)).isEmpty()){
+		//			waitToLoad(firstEl)
+		//		}
+		//		//<WebElement> el2 =  driver.findElements(By.xpath("//tr[td/span[contains(text(),'M-11 Daily Temperature Log')] and td[contains(text(),'-') or contains(text(),'HyLife')]]"))
+		//		//	int s = el2.size()
+		//		println "IND - "+i
+		//		//	for(int i=0;i<s;i++){
+		//		println "Path - "+"//tr[td/span[contains(text(),'"+curTask+"')] and td[contains(text(),'-') or contains(text(),'"+curResource+"')]]/td/span[@class='scs-ts-task-name-col']"
+		//		WebElement el = driver.findElements(By.xpath("//tr[td/span[contains(text(),'"+curTask+"')] and td[contains(text(),'-') or contains(text(),'"+curResource+"')]]/td/span[@class='scs-ts-task-name-col']")).get(i)
+		//		//		println el.getTagName()
+		//		click(el)
 
 	}
 	public static int  testAvail() {
@@ -176,8 +197,11 @@ class test {
 		if(flag==0){
 			alltasks.add(curTask)
 			allResource.add(curResource)
-			taskCount.add(1)
+			taskCount.add(0)
 		}
+		println curTask
+		println curResource
+		println curIndex
 		return curIndex
 	}
 
@@ -372,6 +396,12 @@ class test {
 			click(editSc);
 			Thread.sleep(2000)
 		}
+		Thread.sleep(2000)
+		if(!driver.findElements(By.xpath(editSc)).isEmpty()){
+			waitToLoad(editSc)
+			click(editSc);
+			Thread.sleep(2000)
+		}
 		if(driver.findElements(By.xpath(w)).isEmpty()){
 			waitToLoad(w)
 			waitToClick(w);
@@ -382,7 +412,11 @@ class test {
 		Thread.sleep(4000)
 		if(!driver.findElements(By.xpath("//button[contains(text(),'UPDATE')]")).isEmpty()){
 			Thread.sleep(6000)
-			println "Waiting"
+			if(!driver.findElements(By.xpath("//button[contains(text(),'UPDATE')]")).isEmpty()){
+				Thread.sleep(6000)
+				println "Waiting"
+				click("//button[contains(text(),'UPDATE')]")
+			}
 		}
 		if(!driver.findElements(By.xpath("//button[contains(text(),'UPDATE')]")).isEmpty()){
 			waitToClick("//button[contains(text(),'CANCEL')]");
@@ -405,11 +439,19 @@ class test {
 			click("//*[@id='scs-ts-details-clsoe' or contains(text(),'Close')]")
 			Thread.sleep(2000)
 		}
-		for(int i=0;i<alltasks.size();i++){
-			println "Data"
-			println alltasks.get(i)
-			println allResource.get(i)
-			println taskCount.get(i)
+		Thread.sleep(2000)
+		if(!driver.findElements(By.xpath("//*[@id='scs-ts-details-clsoe' or contains(text(),'Close')]")).isEmpty()){
+			Thread.sleep(6000)
+			println "Waiting"
+			click("//*[@id='scs-ts-details-clsoe' or contains(text(),'Close')]")
+			Thread.sleep(2000)
 		}
+
+		//		for(int i=0;i<alltasks.size();i++){
+		//			println "Data"
+		//			println alltasks.get(i)
+		//			println allResource.get(i)
+		//			println taskCount.get(i)
+		//		}
 	}
 }

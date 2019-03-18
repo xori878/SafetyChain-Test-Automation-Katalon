@@ -68,10 +68,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions
 
 
 
-class Test {
+class test {
 
 	// = new String[7][7];
-	static String fileName = "C:\\Users\\pashine_a\\Documents\\rockymountain.xlsx";
+	static String fileName = "C:\\Users\\choubey_a\\Documents\\FigLive.xlsx";
 	static String d1,curTask,curResource;
 	static int curCount;
 	static List<String[]> alltasks= new ArrayList<String>(),allResource= new ArrayList<Integer>(),allLoc= new ArrayList<String>();
@@ -135,8 +135,6 @@ class Test {
 		(new WebDriverWait(driver,60)).until(ExpectedConditions.elementToBeClickable(element));
 		Thread.sleep(1000)
 	}
-
-
 	@Keyword
 	def selectTask() {
 		//Thread.sleep(15000)
@@ -146,7 +144,6 @@ class Test {
 	}
 
 	public static void test12(int i) {
-
 		String r = "\"" + curResource + "\"";
 		String t = "\"" + curTask + "\"";
 		//	println r
@@ -163,20 +160,6 @@ class Test {
 		WebElement el = driver.findElements(By.xpath("//tr[td/span[contains(text(),"+t+")] and td[contains(text(),'-') or contains(text(),"+r+")]]/td/span[@class='scs-ts-task-name-col']")).get(i)
 		//		println el.getTagName()
 		click(el)
-
-
-		//		String firstEl = "//*[@id='scs-ts-task-grid-container']/div/table/tbody/tr[1]/td/p"
-		//		if(driver.findElements(By.xpath(firstEl)).isEmpty()){
-		//			waitToLoad(firstEl)
-		//		}
-		//		//<WebElement> el2 =  driver.findElements(By.xpath("//tr[td/span[contains(text(),'M-11 Daily Temperature Log')] and td[contains(text(),'-') or contains(text(),'HyLife')]]"))
-		//		//	int s = el2.size()
-		//		println "IND - "+i
-		//		//	for(int i=0;i<s;i++){
-		//		println "Path - "+"//tr[td/span[contains(text(),'"+curTask+"')] and td[contains(text(),'-') or contains(text(),'"+curResource+"')]]/td/span[@class='scs-ts-task-name-col']"
-		//		WebElement el = driver.findElements(By.xpath("//tr[td/span[contains(text(),'"+curTask+"')] and td[contains(text(),'-') or contains(text(),'"+curResource+"')]]/td/span[@class='scs-ts-task-name-col']")).get(i)
-		//		//		println el.getTagName()
-		//		click(el)
 
 	}
 	public static int  testAvail() {
@@ -197,11 +180,8 @@ class Test {
 		if(flag==0){
 			alltasks.add(curTask)
 			allResource.add(curResource)
-			taskCount.add(0)
+			taskCount.add(1)
 		}
-		println curTask
-		println curResource
-		println curIndex
 		return curIndex
 	}
 
@@ -320,7 +300,12 @@ class Test {
 			curResource = sheet.getRow(row).getCell(2)
 			curTask =  sheet.getRow(row).getCell(3)
 			file.close();
-			String tn = "//*[@id='scs-ts-task-grid-container']//tr[td[contains(text(),'"+resource+"')] or td[contains(text(),'-')] and td/span[contains(text(),'"+task+"')]]/td/span[contains(text(),'"+task+"')]";
+			//	String r = "\"" + resource + "\"";
+			//	String t = "\"" + task + "\"";
+			//	println r
+			//	String tn = "//*[@id='scs-ts-task-grid-container']//tr[td[contains(text(),"+r+")] or td[contains(text(),'-')] and td/span[contains(text(),"+t+")]]/td/span[contains(text(),"+t+")]";
+			//	String tn = "//*[@id='scs-ts-task-grid-container']//tr[td[contains(text(),\""+resource+"\")] or td[contains(text(),'-')] and td/span[contains(text(),\""+task+"\")]]/td/span[contains(text(),\""+task+"\")]";
+
 			//			println tn
 			if(driver.findElements(By.xpath(firstEl)).isEmpty()){
 				waitToLoad(firstEl)
@@ -396,12 +381,6 @@ class Test {
 			click(editSc);
 			Thread.sleep(2000)
 		}
-		Thread.sleep(2000)
-		if(!driver.findElements(By.xpath(editSc)).isEmpty()){
-			waitToLoad(editSc)
-			click(editSc);
-			Thread.sleep(2000)
-		}
 		if(driver.findElements(By.xpath(w)).isEmpty()){
 			waitToLoad(w)
 			waitToClick(w);
@@ -412,11 +391,7 @@ class Test {
 		Thread.sleep(4000)
 		if(!driver.findElements(By.xpath("//button[contains(text(),'UPDATE')]")).isEmpty()){
 			Thread.sleep(6000)
-			if(!driver.findElements(By.xpath("//button[contains(text(),'UPDATE')]")).isEmpty()){
-				Thread.sleep(6000)
-				println "Waiting"
-				click("//button[contains(text(),'UPDATE')]")
-			}
+			println "Waiting"
 		}
 		if(!driver.findElements(By.xpath("//button[contains(text(),'UPDATE')]")).isEmpty()){
 			waitToClick("//button[contains(text(),'CANCEL')]");
@@ -439,19 +414,11 @@ class Test {
 			click("//*[@id='scs-ts-details-clsoe' or contains(text(),'Close')]")
 			Thread.sleep(2000)
 		}
-		Thread.sleep(2000)
-		if(!driver.findElements(By.xpath("//*[@id='scs-ts-details-clsoe' or contains(text(),'Close')]")).isEmpty()){
-			Thread.sleep(6000)
-			println "Waiting"
-			click("//*[@id='scs-ts-details-clsoe' or contains(text(),'Close')]")
-			Thread.sleep(2000)
+		for(int i=0;i<alltasks.size();i++){
+			println "Data"
+			println alltasks.get(i)
+			println allResource.get(i)
+			println taskCount.get(i)
 		}
-
-		//		for(int i=0;i<alltasks.size();i++){
-		//			println "Data"
-		//			println alltasks.get(i)
-		//			println allResource.get(i)
-		//			println taskCount.get(i)
-		//		}
 	}
 }

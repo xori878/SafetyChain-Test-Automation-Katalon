@@ -37,5 +37,5 @@ WebUI.click(findTestObject('UpdateTask/taskSchedular'))
 
 Thread.sleep(2000)
 
-CustomKeywords.'update.Test.selectTask'()
+CustomKeywords.'update.Test12.selectTask'()
 
